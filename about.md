@@ -2,7 +2,7 @@
 layout: page
 title: About this blog
 description: An optional about page for BlogInn Jekyll theme
-banner_image: entrepreneurs.jpg
+banner_image: Entrepreneurs.jpg
 ---
 
 **Randy Walker** is a Owner and President at [Harvest Data Corp](https://www.harvestdatacorp.com), a MicroISV that has provided data extraction for the largest manufacturers for the past 12 years.
