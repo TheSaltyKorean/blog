@@ -4,7 +4,7 @@ title:  "Microsoft no longer marketing Windows Live OneCare"
 date:   2008-11-21
 banner_image: 
 tags: []
-post_image: /assets/images/art/bg5.webp
+post_image: /assets/images/art/thumb/bg5.webp
 badge_color: "bg-blue"
 categories: [microsoft, development]
 ---

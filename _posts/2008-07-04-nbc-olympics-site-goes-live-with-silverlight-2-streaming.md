@@ -4,7 +4,7 @@ title:  "NBC Olympics site goes live with Silverlight 2 streaming"
 date:   2008-07-04
 banner_image: nbc_1.png
 tags: [2008 Olympics, Microsoft, Silverlight, NBC]
-post_image: /assets/images/art/bg8.webp
+post_image: /assets/images/art/thumb/bg8.webp
 badge_color: "bg-blue"
 categories: [microsoft, development]
 ---

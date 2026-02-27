@@ -4,7 +4,7 @@ title:  "Software Developers Beware of Sales Tax"
 date:   2007-12-20
 banner_image: 
 tags: []
-post_image: /assets/images/art/bg3.webp
+post_image: /assets/images/art/thumb/bg3.webp
 badge_color: "bg-orange"
 categories: [entrepreneurship, business]
 ---

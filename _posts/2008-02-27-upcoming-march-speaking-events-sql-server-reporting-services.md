@@ -4,7 +4,7 @@ title:  "Upcoming March speaking events - SQL Server Reporting Services"
 date:   2008-02-27
 banner_image: 
 tags: []
-post_image: /assets/images/art/bg10.webp
+post_image: /assets/images/art/thumb/bg10.webp
 badge_color: "bg-teal"
 categories: [data, development]
 ---

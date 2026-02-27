@@ -4,7 +4,7 @@ title:  "When Wal-Mart speaks, everyone listens - the final destruction of HD-DV
 date:   2008-02-16
 banner_image: 
 tags: []
-post_image: /assets/images/art/bg1.webp
+post_image: /assets/images/art/thumb/bg1.webp
 badge_color: "bg-blue"
 categories: [technology]
 ---

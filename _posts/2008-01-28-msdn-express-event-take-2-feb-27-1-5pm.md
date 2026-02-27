@@ -4,7 +4,7 @@ title:  "MSDN Express Event Take #2 - Feb 27 1-5pm"
 date:   2008-01-28
 banner_image: 
 tags: [Northwest Arkansas, Microsoft, MSDN, MSDN Express]
-post_image: /assets/images/art/bg5.webp
+post_image: /assets/images/art/thumb/bg5.webp
 badge_color: "bg-blue"
 categories: [microsoft, development]
 ---

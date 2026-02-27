@@ -4,7 +4,7 @@ title:  "Northwest Arkansas SQL Server User Group 1st Meeting"
 date:   2008-05-09
 banner_image: 
 tags: [Northwest Arkansas, SQL Server]
-post_image: /assets/images/art/bg10.webp
+post_image: /assets/images/art/thumb/bg10.webp
 badge_color: "bg-teal"
 categories: [data, development]
 ---

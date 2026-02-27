@@ -4,7 +4,7 @@ title:  "Performance Tuning in Azure SQL Data Warehouse"
 date:   2017-03-14
 banner_image: compete_index_azure.png
 tags: []
-post_image: /assets/images/art/bg10.webp
+post_image: /assets/images/art/thumb/bg10.webp
 badge_color: "bg-teal"
 categories: [data, development]
 ---

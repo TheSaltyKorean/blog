@@ -4,7 +4,7 @@ title:  "New FedEx SSL Cert is bound to cause problems"
 date:   2009-03-20
 banner_image: 
 tags: []
-post_image: /assets/images/art/bg4.webp
+post_image: /assets/images/art/thumb/bg4.webp
 badge_color: "bg-blue"
 categories: [technology]
 ---

@@ -4,7 +4,7 @@ title:  "Take advantage of the stimulus plan by hiring someone!"
 date:   2010-03-25
 banner_image: businessWelcome_4_thumb.jpg
 tags: []
-post_image: /assets/images/art/bg23.webp
+post_image: /assets/images/art/thumb/bg23.webp
 badge_color: "bg-orange"
 categories: [entrepreneurship, business]
 ---

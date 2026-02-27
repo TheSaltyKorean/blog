@@ -4,7 +4,7 @@ title:  "We Are Microsoft 2008 Event in Dallas"
 date:   2008-01-21
 banner_image: DSC00334_thumb.jpg
 tags: [We Are Microsoft, Charity, .Net]
-post_image: /assets/images/art/bg20.webp
+post_image: /assets/images/art/thumb/bg20.webp
 badge_color: "bg-blue"
 categories: [microsoft, development]
 ---

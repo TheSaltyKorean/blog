@@ -4,7 +4,7 @@ title:  "cloudxplorer-discount"
 date:   2018-02-16
 banner_image: cloudxplorer.jpg
 tags: [harvest,azure]
-post_image: /assets/images/art/bg29.webp
+post_image: /assets/images/art/thumb/bg29.webp
 badge_color: "bg-blue"
 categories: [technology]
 ---

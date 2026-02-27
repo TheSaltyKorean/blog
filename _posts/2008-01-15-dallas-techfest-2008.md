@@ -4,7 +4,7 @@ title:  "Dallas TechFest 2008"
 date:   2008-01-15
 banner_image: logo_3.gif
 tags: []
-post_image: /assets/images/art/bg18.webp
+post_image: /assets/images/art/thumb/bg18.webp
 badge_color: "bg-leaf"
 categories: [community, career]
 ---

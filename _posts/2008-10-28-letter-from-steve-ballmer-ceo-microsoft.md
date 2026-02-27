@@ -4,7 +4,7 @@ title:  "Letter from Steve Ballmer, CEO Microsoft"
 date:   2008-10-28
 banner_image: 
 tags: [Microsoft, Azure]
-post_image: /assets/images/art/bg4.webp
+post_image: /assets/images/art/thumb/bg4.webp
 badge_color: "bg-blue"
 categories: [microsoft, development]
 ---

@@ -4,7 +4,7 @@ title:  "Microsoft BizSpark for technology startups"
 date:   2008-11-21
 banner_image: 
 tags: []
-post_image: /assets/images/art/bg23.webp
+post_image: /assets/images/art/thumb/bg23.webp
 badge_color: "bg-blue"
 categories: [microsoft, development]
 ---

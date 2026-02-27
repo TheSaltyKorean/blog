@@ -4,7 +4,7 @@ title:  "Microsoft Certification Exam Voucher Giveaway"
 date:   2008-06-17
 banner_image: 
 tags: [Microsoft Certification]
-post_image: /assets/images/art/bg2.webp
+post_image: /assets/images/art/thumb/bg2.webp
 badge_color: "bg-blue"
 categories: [microsoft, development]
 ---

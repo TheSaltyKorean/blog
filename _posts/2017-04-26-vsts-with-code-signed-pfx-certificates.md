@@ -4,7 +4,7 @@ title:  "VSTS with code signed PFX certificates"
 date:   2017-04-26
 banner_image: Visual-Studio-Team-Services.png
 tags: []
-post_image: /assets/images/art/bg14.webp
+post_image: /assets/images/art/thumb/bg14.webp
 badge_color: "bg-dark"
 categories: [devops, development]
 ---

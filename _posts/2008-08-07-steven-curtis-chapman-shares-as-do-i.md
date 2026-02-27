@@ -4,7 +4,7 @@ title:  "Steven Curtis Chapman shares, as do I"
 date:   2008-08-07
 banner_image: 
 tags: [Steven Curtis Chapman, faith]
-post_image: /assets/images/art/bg26.webp
+post_image: /assets/images/art/thumb/bg26.webp
 badge_color: "bg-pink"
 categories: [personal]
 ---

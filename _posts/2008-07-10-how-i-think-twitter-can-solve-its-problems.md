@@ -4,7 +4,7 @@ title:  "How I think Twitter can solve it's problems!"
 date:   2008-07-10
 banner_image: 
 tags: [Twitter]
-post_image: /assets/images/art/bg30.webp
+post_image: /assets/images/art/thumb/bg30.webp
 badge_color: "bg-blue"
 categories: [technology]
 ---

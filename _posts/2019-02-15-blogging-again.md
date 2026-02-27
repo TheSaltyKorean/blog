@@ -4,7 +4,7 @@ title:  "Blogging Again"
 date:   2018-02-15
 banner_image: logo-jekyll-udemy.png
 tags: []
-post_image: /assets/images/art/bg28.webp
+post_image: /assets/images/art/thumb/bg28.webp
 badge_color: "bg-blue"
 categories: [technology]
 ---

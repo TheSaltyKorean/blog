@@ -4,7 +4,7 @@ title:  "Chris William's 9 Questions"
 date:   2008-07-31
 banner_image: 
 tags: [Chris Williams, Visual Basic, Randy Walker]
-post_image: /assets/images/art/bg2.webp
+post_image: /assets/images/art/thumb/bg2.webp
 badge_color: "bg-blue"
 categories: [technology]
 ---

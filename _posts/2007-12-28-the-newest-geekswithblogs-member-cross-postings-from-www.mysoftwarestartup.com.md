@@ -4,7 +4,7 @@ title:  "The newest GeeksWithBlogs member - cross postings from www.mysoftwarest
 date:   2007-12-28
 banner_image: Geekswithblogs_v3_07.jpg
 tags: []
-post_image: /assets/images/art/bg23.webp
+post_image: /assets/images/art/thumb/bg23.webp
 badge_color: "bg-orange"
 categories: [entrepreneurship, business]
 ---

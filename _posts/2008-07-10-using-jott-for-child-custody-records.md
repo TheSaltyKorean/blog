@@ -4,7 +4,7 @@ title:  "Using Jott for Child Custody records"
 date:   2008-07-10
 banner_image: logo_beta_3.gif
 tags: [Voice Recognition, Divorce]
-post_image: /assets/images/art/bg3.webp
+post_image: /assets/images/art/thumb/bg3.webp
 badge_color: "bg-pink"
 categories: [personal]
 ---

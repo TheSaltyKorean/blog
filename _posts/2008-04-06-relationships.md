@@ -4,7 +4,7 @@ title:  "Relationships"
 date:   2008-04-06
 banner_image: 
 tags: [Relationships]
-post_image: /assets/images/art/bg26.webp
+post_image: /assets/images/art/thumb/bg26.webp
 badge_color: "bg-pink"
 categories: [personal]
 ---
