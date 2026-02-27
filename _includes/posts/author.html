@@ -1,0 +1,76 @@
+{% if include.simple_post %}
+{% assign check_author = site.authors | where: "title", page.author %}
+{% for author_data in check_author %}
+<div class="wrapper light-wrapper">
+  <div class="container inner">
+    <div class="row">
+      {% if author_data.avatar %}
+      <div class="col-md-4">
+        <figure class="rounded">
+          <a href="/authors/{{author_data.title | slugify}}"><img alt="{{author_data.title}}"
+              src="{{author_data.avatar}}" /></a>
+        </figure>
+      </div>
+      <!--/column -->
+      {% endif %}
+      <div class="col-md-8">
+        <h4>{{author_data.title}}</h4>
+        {% if author_data.bio %}
+        <p class="mb-10">{{author_data.bio}}</p>
+        {% endif %}
+        {% if author_data.social_accounts %}
+        <ul class="social">
+          {% for author_social in author_data.social_accounts %}
+          <li><a href="{{author_social.url}}"><i class="{{author_social.icon}}"></i></a></li>
+          {% endfor %}
+        </ul>
+        {% endif %}
+      </div>
+      <!--/column -->
+    </div>
+    <!-- /.row -->
+  </div>
+  <!-- /.container -->
+</div>
+<!-- /.wrapper -->
+{% endfor %}
+{% elsif include.boxed %}
+{% assign check_author = site.authors | where: "title", page.author %}
+{% for author_data in check_author %}
+<div class="wrapper light-wrapper">
+  <div class="container inner">
+  <div class="box bg-white shadow">
+    <div class="row">
+          {% if author_data.avatar %}
+          <div class="col-md-4">
+            <figure class="rounded">
+              <a href="/authors/{{author_data.title | slugify}}"><img alt="{{author_data.title}}" src="{{author_data.avatar}}" /></a>
+            </figure>
+          </div>
+          <!--/column -->
+          {% endif %}
+          <div class="col-md-8">
+            <h4>{{author_data.title}}</h4>
+            {% if author_data.bio %}
+            <p class="mb-10">{{author_data.bio}}</p>
+            {% endif %}
+            {% if author_data.social_accounts %}
+            <ul class="social">
+              {% for author_social in author_data.social_accounts %}
+               <li><a href="{{author_social.url}}"><i class="{{author_social.icon}}"></i></a></li>
+              {% endfor %}
+            </ul>
+            {% endif %}
+          </div>
+          <!--/column -->
+        
+      
+    </div>
+    <!-- /.row -->
+  </div>
+</div>
+<!-- /.container -->
+</div>
+<!-- /.wrapper -->
+  {% endfor %}
+{% endif %}

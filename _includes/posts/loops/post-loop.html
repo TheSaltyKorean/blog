@@ -1,0 +1,72 @@
+{% comment %} Flexible Post Loop Template {% endcomment %}
+
+{% assign title_length = include.title_length | default: 60 %}
+{% assign excerpt_length = include.excerpt_length | default: 30 %}
+{% assign layout_class = include.layout_class | default: 'col-md-6 col-lg-4' %}
+{% assign is_boxed = include.is_boxed | default: false %}
+{% assign is_grid = include.is_grid | default: false %}
+{% assign text_alignment = include.text_alignment | default: '' %}
+
+{% if is_grid %}
+<div class="item post grid-sizer {{ layout_class }}">
+    {% else %}
+    <div class="post">
+{% endif %}
+  {% if is_boxed %}
+  <div class="box bg-white shadow p-30">
+    {% endif %}
+
+    {% if post.post_image %}
+    <figure class="main mb-30 overlay overlay1 rounded">
+      <a href="{{ post.url }}">
+        <img src="{{ post.post_image }}" alt="{{ post.title }}" />
+      </a>
+      <figcaption>
+        <h5 class="from-top mb-0">Read More</h5>
+      </figcaption>
+    </figure>
+    {% endif %}
+
+    {% if post.categories %}
+    <div class="category {{ text_alignment }}">
+      {% for category in post.categories %}
+      <a href="/category/{{ category | downcase }}" 
+         class="badge badge-pill {{ post.badge_color | default: 'bg-purple' }}">
+        {{ category }}
+      </a>
+      {% endfor %}
+    </div>
+    {% endif %}
+
+    <h2 class="post-title {{ text_alignment }}">
+      <a href="{{ post.url }}">
+        {{ post.title | truncate: title_length }}
+      </a>
+    </h2>
+
+    <div class="post-content {{ text_alignment }}">
+      <p>{{ post.excerpt | strip_html | truncatewords: excerpt_length }}</p>
+    </div>
+
+    <div class="meta mb-0 {{ text_alignment }}">
+      {% if post.date %}
+      <span class="date">
+        <i class="jam jam-clock"></i>
+        {{ post.date | date_to_string }}
+      </span>
+      {% endif %}
+
+      {% if post.author %}
+      <span class="author"><i class="jam jam-user"></i><a href="/{{post.author | slugify}}">By {{post.author}}</a></span>
+      {% endif %}
+
+    </div>
+{% if is_boxed %}
+  </div>
+
+{% endif %}
+{% if is_grid %}
+</div>
+{% else %}
+</div>
+{% endif %}

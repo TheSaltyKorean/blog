@@ -1,0 +1,19 @@
+{% assign carousel_images = include.images | default: page.gallery %}
+<div class="post-slider light-gallery-wrapper carousel-layout-dots">
+  <div class="basic-slider owl-carousel" data-margin="5">
+    {% for image in carousel_images %}
+    <div class="item">
+      <figure class="overlay overlay1 rounded">
+        <a href="{{ image.img | default: image }}" class="lightbox">
+          <img src="{{ image.img | default: image }}" alt="{{ image.alt | default: 'Carousel Image' }}">
+        </a>
+        {% if image.caption %}
+        <figcaption>
+          <h5 class="from-top mb-0">{{ image.caption }}</h5>
+        </figcaption>
+        {% endif %}
+      </figure>
+    </div>
+    {% endfor %}
+  </div>
+</div>

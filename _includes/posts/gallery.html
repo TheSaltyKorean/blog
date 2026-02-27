@@ -1,0 +1,23 @@
+
+<div class="space20"></div>
+<div class="post-gallery light-gallery-wrapper">
+    <div class="tiles tiles-s">
+        <div class="items row">
+            {% for gallery in page.gallery %}
+            <div class="item {% if forloop.index < 3 %} col-md-6 {% else %} col-md-4 {% endif %}">
+                <figure class="overlay overlay1 rounded">
+                    <a href="{{gallery.img}}" class="lightbox">
+                        <img src="{{gallery.img}}" alt="{{gallery.img}}"></a>
+                    <figcaption>
+                        <h5 class="from-top mb-0">View Larger</h5>
+                    </figcaption>
+                </figure>
+            </div>
+            <!--/.item -->
+            {% endfor %}
+        </div>
+        <!--/.items -->
+    </div>
+    <!--/.tiles -->
+</div>
+<!--/.post-gallery -->
