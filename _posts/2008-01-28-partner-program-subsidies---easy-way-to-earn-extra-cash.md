@@ -4,7 +4,7 @@ title:  "Partner Program Subsidies - Easy way to earn extra cash"
 date:   2008-01-28
 banner_image: partnerprogram_3.png
 tags: []
-post_image: "/assets/images/art/tb13.webp"
+post_image: /assets/images/art/bg24.webp
 badge_color: "bg-orange"
 categories: [entrepreneurship, business]
 ---

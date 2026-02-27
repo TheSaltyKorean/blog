@@ -4,7 +4,7 @@ title:  "Microsoft adCenter needs a workshop?"
 date:   2008-05-19
 banner_image: 
 tags: [Microsoft, AdCenter]
-post_image: "/assets/images/art/tb5.webp"
+post_image: /assets/images/art/bg23.webp
 badge_color: "bg-blue"
 categories: [microsoft, development]
 ---

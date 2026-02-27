@@ -4,7 +4,7 @@ title:  "Pictures of the 1st Fort Smith .Net User Group Meeting"
 date:   2008-03-11
 banner_image: 
 tags: []
-post_image: "/assets/images/art/tb3.webp"
+post_image: /assets/images/art/bg6.webp
 badge_color: "bg-leaf"
 categories: [community, career]
 ---

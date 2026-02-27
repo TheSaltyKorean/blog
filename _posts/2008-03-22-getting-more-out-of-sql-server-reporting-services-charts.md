@@ -4,7 +4,7 @@ title:  "Getting more out of SQL Server Reporting Services Charts"
 date:   2008-03-22
 banner_image: 
 tags: []
-post_image: "/assets/images/art/tb8.webp"
+post_image: /assets/images/art/bg10.webp
 badge_color: "bg-teal"
 categories: [data, development]
 ---

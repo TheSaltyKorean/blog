@@ -4,7 +4,7 @@ title:  "Fun & Games–Microsoft’s new AoE Online"
 date:   2010-08-17
 banner_image: image_thumb.png
 tags: []
-post_image: "/assets/images/art/tb6.webp"
+post_image: /assets/images/art/bg4.webp
 badge_color: "bg-blue"
 categories: [microsoft, development]
 ---

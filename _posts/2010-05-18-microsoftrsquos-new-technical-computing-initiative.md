@@ -4,7 +4,7 @@ title:  "Microsoft’s new technical computing initiative"
 date:   2010-05-18
 banner_image: 
 tags: []
-post_image: "/assets/images/art/tb6.webp"
+post_image: /assets/images/art/bg4.webp
 badge_color: "bg-blue"
 categories: [microsoft, development]
 ---

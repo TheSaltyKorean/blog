@@ -4,7 +4,7 @@ title:  "More free Microsoft Partner Training"
 date:   2008-01-28
 banner_image: partnerprogram_thumb.png
 tags: []
-post_image: "/assets/images/art/tb6.webp"
+post_image: /assets/images/art/bg4.webp
 badge_color: "bg-blue"
 categories: [microsoft, development]
 ---

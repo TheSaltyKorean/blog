@@ -4,7 +4,7 @@ title:  "Upcoming Developer Events"
 date:   2009-01-22
 banner_image: 
 tags: []
-post_image: "/assets/images/art/tb3.webp"
+post_image: /assets/images/art/bg2.webp
 badge_color: "bg-leaf"
 categories: [community, career]
 ---

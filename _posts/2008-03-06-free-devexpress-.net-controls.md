@@ -4,7 +4,7 @@ title:  "Free DevExpress .net controls"
 date:   2008-03-06
 banner_image: 
 tags: [.Net]
-post_image: "/assets/images/art/tb11.webp"
+post_image: /assets/images/art/bg5.webp
 badge_color: "bg-dark"
 categories: [development]
 ---

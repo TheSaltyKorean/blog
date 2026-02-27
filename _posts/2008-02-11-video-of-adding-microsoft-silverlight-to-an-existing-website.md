@@ -4,7 +4,7 @@ title:  "Video of adding Microsoft Silverlight to an existing website"
 date:   2008-02-11
 banner_image: 
 tags: []
-post_image: "/assets/images/art/tb5.webp"
+post_image: /assets/images/art/bg5.webp
 badge_color: "bg-blue"
 categories: [microsoft, development]
 ---

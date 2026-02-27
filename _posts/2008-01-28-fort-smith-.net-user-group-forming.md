@@ -4,7 +4,7 @@ title:  "Fort Smith .Net User Group forming"
 date:   2008-01-28
 banner_image: 
 tags: [Fort Smith, .Net]
-post_image: "/assets/images/art/tb3.webp"
+post_image: /assets/images/art/bg8.webp
 badge_color: "bg-leaf"
 categories: [community, career]
 ---

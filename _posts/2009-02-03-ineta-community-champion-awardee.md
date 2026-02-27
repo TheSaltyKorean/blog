@@ -4,7 +4,7 @@ title:  "INETA Community Champion Awardee"
 date:   2009-02-03
 banner_image: ChampionWinner_thumb.jpg
 tags: []
-post_image: "/assets/images/art/tb2.webp"
+post_image: /assets/images/art/bg18.webp
 badge_color: "bg-leaf"
 categories: [community, career]
 ---

@@ -4,7 +4,7 @@ title:  "Join the Microsoft Game Studios Beta Program"
 date:   2008-03-22
 banner_image: 
 tags: [Microsoft, Gaming]
-post_image: "/assets/images/art/tb5.webp"
+post_image: /assets/images/art/bg1.webp
 badge_color: "bg-blue"
 categories: [microsoft, development]
 ---

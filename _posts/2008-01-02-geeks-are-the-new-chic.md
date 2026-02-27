@@ -4,7 +4,7 @@ title:  "Geeks are the new Chic"
 date:   2008-01-02
 banner_image: 
 tags: []
-post_image: "/assets/images/art/tb2.webp"
+post_image: /assets/images/art/bg4.webp
 badge_color: "bg-pink"
 categories: [personal]
 ---

@@ -4,7 +4,7 @@ title:  "Wasted Opportunities?"
 date:   2008-08-26
 banner_image: 
 tags: []
-post_image: "/assets/images/art/tb2.webp"
+post_image: /assets/images/art/bg4.webp
 badge_color: "bg-pink"
 categories: [personal]
 ---

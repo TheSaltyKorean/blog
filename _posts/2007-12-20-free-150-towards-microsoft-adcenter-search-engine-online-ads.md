@@ -4,7 +4,7 @@ title:  "Free $150 towards Microsoft AdCenter Search Engine online ads"
 date:   2007-12-20
 banner_image: 
 tags: []
-post_image: "/assets/images/art/tb5.webp"
+post_image: /assets/images/art/bg23.webp
 badge_color: "bg-blue"
 categories: [microsoft, development]
 ---

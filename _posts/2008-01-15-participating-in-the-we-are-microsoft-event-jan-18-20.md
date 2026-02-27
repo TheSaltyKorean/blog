@@ -4,7 +4,7 @@ title:  "Participating in the We Are Microsoft Event - Jan 18-20 2008"
 date:   2008-01-15
 banner_image: Logo.gif
 tags: []
-post_image: "/assets/images/art/tb5.webp"
+post_image: /assets/images/art/bg3.webp
 badge_color: "bg-blue"
 categories: [microsoft, development]
 ---

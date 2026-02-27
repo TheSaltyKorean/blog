@@ -4,7 +4,7 @@ title:  "Founder of Yahoo! Groups dies in airplane crash in Panama - 12 yr old s
 date:   2007-12-26
 banner_image: ma_grp_1_thumb.gif
 tags: []
-post_image: "/assets/images/art/tb1.webp"
+post_image: /assets/images/art/bg1.webp
 badge_color: "bg-pink"
 categories: [personal]
 ---

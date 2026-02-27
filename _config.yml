@@ -3,13 +3,13 @@ url: "https://thesaltykorean.com" # the base hostname & protocol for your site
 permalink: "/:title"
 
 # Site identity
-title: "The Salty Korean"
+title: "Randy Walker"
 description: "Randy Walker's thoughts, stories and ideas. President of Harvest Data Corp, Microsoft MVP award winner, ASP Insider and tech enthusiast."
 tagline: "Technology leadership, career insights, and the business of innovation."
 
 # Author
 author_name: "Randy Walker"
-author_bio: "Randy is an entrepreneur, software developer, Microsoft MVP, and technology leader. President of Harvest Data Corp."
+author_bio: "Owner of SK Meridian LLC, former President of Harvest Data Corp, and former Microsoft MVP."
 author_url: "https://thesaltykorean.com"
 author_location: "Bentonville, Arkansas"
 author_image: "/assets/images/authors/randy-walker.jpg"

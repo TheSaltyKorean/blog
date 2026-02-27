@@ -4,7 +4,7 @@ title:  "Go Green, Say no to Fireplace and Yes to Yule Log"
 date:   2007-12-23
 banner_image: images_thumb.jpg
 tags: []
-post_image: "/assets/images/art/tb1.webp"
+post_image: /assets/images/art/bg3.webp
 badge_color: "bg-pink"
 categories: [personal]
 ---

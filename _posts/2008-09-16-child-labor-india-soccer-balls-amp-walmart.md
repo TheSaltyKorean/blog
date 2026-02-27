@@ -4,7 +4,7 @@ title:  "Child Labor, India, Soccer Balls & Walmart"
 date:   2008-09-16
 banner_image: websiteotherballs_thumb.jpg
 tags: [Child Labor, India, Soccer, Walmart]
-post_image: "/assets/images/art/tb12.webp"
+post_image: /assets/images/art/bg23.webp
 badge_color: "bg-orange"
 categories: [entrepreneurship, business]
 ---

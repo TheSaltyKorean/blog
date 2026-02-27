@@ -4,7 +4,7 @@ title:  "Updated Blog"
 date:   2016-10-17
 banner_image: data.jpg
 tags: []
-post_image: "/assets/images/art/tb4.webp"
+post_image: /assets/images/art/bg29.webp
 badge_color: "bg-blue"
 categories: [technology]
 ---

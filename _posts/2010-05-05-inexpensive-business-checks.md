@@ -4,7 +4,7 @@ title:  "Inexpensive Business Checks"
 date:   2010-05-05
 banner_image: tc_logo_3.jpg
 tags: []
-post_image: "/assets/images/art/tb13.webp"
+post_image: /assets/images/art/bg2.webp
 badge_color: "bg-orange"
 categories: [entrepreneurship, business]
 ---

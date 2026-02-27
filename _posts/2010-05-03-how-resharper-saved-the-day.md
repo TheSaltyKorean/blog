@@ -4,7 +4,7 @@ title:  "How ReSharper saved the day"
 date:   2010-05-03
 banner_image: 
 tags: []
-post_image: "/assets/images/art/tb11.webp"
+post_image: /assets/images/art/bg15.webp
 badge_color: "bg-dark"
 categories: [development]
 ---

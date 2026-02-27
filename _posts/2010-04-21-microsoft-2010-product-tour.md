@@ -4,7 +4,7 @@ title:  "Microsoft 2010 Product Tour"
 date:   2010-04-21
 banner_image: Walker_MSProductTour_thumb.jpg
 tags: []
-post_image: "/assets/images/art/tb5.webp"
+post_image: /assets/images/art/bg3.webp
 badge_color: "bg-blue"
 categories: [microsoft, development]
 ---

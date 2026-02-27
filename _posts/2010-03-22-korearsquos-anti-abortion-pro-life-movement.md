@@ -4,7 +4,7 @@ title:  "Korea’s Anti Abortion / Pro Life Movement"
 date:   2010-03-22
 banner_image: 
 tags: []
-post_image: "/assets/images/art/tb2.webp"
+post_image: /assets/images/art/bg27.webp
 badge_color: "bg-pink"
 categories: [personal]
 ---

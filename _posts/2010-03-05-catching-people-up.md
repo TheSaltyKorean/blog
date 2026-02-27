@@ -4,7 +4,7 @@ title:  "Catching people up"
 date:   2010-03-05
 banner_image: 
 tags: []
-post_image: "/assets/images/art/tb3.webp"
+post_image: /assets/images/art/bg1.webp
 badge_color: "bg-blue"
 categories: [technology]
 ---

@@ -4,7 +4,7 @@ title:  "Get 2 FREE Vista style Icons"
 date:   2007-12-28
 banner_image: titlefirm.png
 tags: []
-post_image: "/assets/images/art/tb5.webp"
+post_image: /assets/images/art/bg3.webp
 badge_color: "bg-blue"
 categories: [microsoft, development]
 ---

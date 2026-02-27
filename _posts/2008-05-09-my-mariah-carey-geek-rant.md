@@ -4,7 +4,7 @@ title:  "My Mariah Carey Geek Rant"
 date:   2008-05-09
 banner_image: 
 tags: [Funny, Geeks]
-post_image: "/assets/images/art/tb2.webp"
+post_image: /assets/images/art/bg27.webp
 badge_color: "bg-pink"
 categories: [personal]
 ---

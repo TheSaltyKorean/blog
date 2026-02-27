@@ -4,7 +4,7 @@ title:  "Nashville devLink Recap"
 date:   2008-09-01
 banner_image: 2008-08-21 002_thumb.jpg
 tags: [devLink]
-post_image: "/assets/images/art/tb3.webp"
+post_image: /assets/images/art/bg20.webp
 badge_color: "bg-leaf"
 categories: [community, career]
 ---

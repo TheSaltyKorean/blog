@@ -4,7 +4,7 @@ title:  "Winner of 6th place at Community-Credit.com"
 date:   2008-01-02
 banner_image: MyEntireLife.jpg
 tags: []
-post_image: "/assets/images/art/tb2.webp"
+post_image: /assets/images/art/bg1.webp
 badge_color: "bg-leaf"
 categories: [community, career]
 ---

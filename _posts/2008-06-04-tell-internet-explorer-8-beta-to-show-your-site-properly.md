@@ -4,7 +4,7 @@ title:  "Tell Internet Explorer 8 Beta to show your site properly using IE7"
 date:   2008-06-04
 banner_image: clip_image002_thumb.jpg
 tags: [Internet Explorer, IE8, IE7]
-post_image: "/assets/images/art/tb6.webp"
+post_image: /assets/images/art/bg4.webp
 badge_color: "bg-blue"
 categories: [microsoft, development]
 ---

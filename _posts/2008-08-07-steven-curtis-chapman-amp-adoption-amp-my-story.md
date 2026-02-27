@@ -4,7 +4,7 @@ title:  "Steven Curtis Chapman & Adoption & my story"
 date:   2008-08-07
 banner_image: 
 tags: [Steven Curtis Chapman, Adoption, Randy Walker]
-post_image: "/assets/images/art/tb2.webp"
+post_image: /assets/images/art/bg27.webp
 badge_color: "bg-pink"
 categories: [personal]
 ---

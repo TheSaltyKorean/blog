@@ -4,7 +4,7 @@ title:  "Selected for Trip to Korea"
 date:   2008-11-11
 banner_image: 
 tags: []
-post_image: "/assets/images/art/tb1.webp"
+post_image: /assets/images/art/bg26.webp
 badge_color: "bg-pink"
 categories: [personal]
 ---

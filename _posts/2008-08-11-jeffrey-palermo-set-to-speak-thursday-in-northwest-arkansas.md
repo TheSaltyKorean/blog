@@ -4,7 +4,7 @@ title:  "Jeffrey Palermo set to speak Thursday in Northwest Arkansas"
 date:   2008-08-11
 banner_image: 
 tags: [Northwest Arkansas, Northwest Arkansas .Net User Group]
-post_image: "/assets/images/art/tb3.webp"
+post_image: /assets/images/art/bg2.webp
 badge_color: "bg-leaf"
 categories: [community, career]
 ---

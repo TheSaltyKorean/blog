@@ -4,7 +4,7 @@ title:  "INETA Board of Directors Appointment"
 date:   2009-03-20
 banner_image: INETALogo_thumb.jpg
 tags: []
-post_image: "/assets/images/art/tb2.webp"
+post_image: /assets/images/art/bg19.webp
 badge_color: "bg-leaf"
 categories: [community, career]
 ---
