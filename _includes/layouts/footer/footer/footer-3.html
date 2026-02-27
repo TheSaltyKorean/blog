@@ -1,0 +1,25 @@
+<!-- Simple Footer v3-->
+<footer class="{% if include.extra_class %} {{include.extra_class}} {% else %} dark-wrapper inverse-text text-center {% endif %}">
+    <div class="container inner pt-80 pb-80">
+      <div class="widget"> 
+        <a href="{{site.url}}">
+          {% assign logo_type = include.default_logo | default: 'white' %}
+          {% if logo_type == 'white' %}
+            <img src="{{site.data.general_settings.light_logo_1x}}" srcset="{{site.data.general_settings.light_logo_1x}} 1x, {{site.data.general_settings.light_logo_2x}} 2x" alt="{{site.data.general_settings.title}}" />
+          {% elsif logo_type == 'black' %}
+            <img src="{{site.data.general_settings.black_logo_1x}}" srcset="{{site.data.general_settings.black_logo_1x}} 1x, {{site.data.general_settings.black_logo_2x}} 2x" alt="{{site.data.general_settings.title}}" />
+          {% endif %}
+        </a>          
+        <div class="space30"></div>
+        <p>{{site.data.general_settings.copyright_text}}</p>
+        <div class="space10"></div>
+        <ul class="social social-mute social-s ms-auto">
+            {% for social_links in site.data.general_settings.social_accounts.links %}
+            <li><a href="{{social_links.url}}"><i class="{{social_links.icon}}"></i></a></li>
+           {% endfor %}
+        </ul>
+      </div>
+      <!-- /.widget -->
+    </div>
+    <!-- /.container -->
+  </footer>
