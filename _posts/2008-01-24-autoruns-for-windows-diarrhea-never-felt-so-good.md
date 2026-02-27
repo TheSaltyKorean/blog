@@ -4,7 +4,7 @@ title:  "AutoRuns for Windows - Diarrhea never felt so good!"
 date:   2008-01-24
 banner_image: hero_windows_sysinternals_thumb.jpg
 tags: [Windows Tools, Microsoft Tools, Sysinternals]
-post_image: "/assets/images/art/tb5.webp"
+post_image: /assets/images/art/bg7.webp
 badge_color: "bg-blue"
 categories: [technology]
 ---

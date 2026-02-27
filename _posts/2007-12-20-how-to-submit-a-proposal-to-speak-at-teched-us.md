@@ -4,7 +4,7 @@ title:  "How to Submit a Proposal to Speak at TechEd US 2008"
 date:   2007-12-20
 banner_image: 
 tags: []
-post_image: "/assets/images/art/tb3.webp"
+post_image: /assets/images/art/bg19.webp
 badge_color: "bg-leaf"
 categories: [community, career]
 ---

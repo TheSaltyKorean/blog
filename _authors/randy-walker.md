@@ -4,8 +4,8 @@ display_name: Randy Walker
 primary_author: true
 avatar: "/assets/images/authors/randy-walker.jpg"
 bio: >
-  Randy Walker is an entrepreneur, technology leader, and Microsoft MVP with over two decades of experience in enterprise cloud transformation, data strategy, and software development.
-  President of Harvest Data Corp and a recognized ASP Insider, Randy writes about technology leadership, career insights, and the business of innovation.
+  Randy Walker is a technology entrepreneur and software developer with over two decades of experience in cloud transformation, data strategy, and platform engineering.
+  Owner of SK Meridian LLC, former President of Harvest Data Corp, and former Microsoft MVP and ASP Insider.
 social_accounts:
   - icon: "jam jam-twitter"
     url: "https://twitter.com/TheSaltyKorean"

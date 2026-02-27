@@ -4,7 +4,7 @@ title:  "Free Source Code Outliner PowerToy for Visual Studio 2008"
 date:   2008-02-03
 banner_image: 
 tags: [.Net, Visual Studio 2008]
-post_image: "/assets/images/art/tb12.webp"
+post_image: /assets/images/art/bg8.webp
 badge_color: "bg-dark"
 categories: [development]
 ---

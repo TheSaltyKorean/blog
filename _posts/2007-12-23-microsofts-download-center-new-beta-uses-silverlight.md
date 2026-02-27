@@ -4,7 +4,7 @@ title:  "Microsoft's Download Center new Beta uses Silverlight"
 date:   2007-12-23
 banner_image: image_thumb (2).png
 tags: []
-post_image: "/assets/images/art/tb6.webp"
+post_image: /assets/images/art/bg8.webp
 badge_color: "bg-blue"
 categories: [microsoft, development]
 ---

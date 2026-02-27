@@ -4,7 +4,7 @@ title:  "Scott Guthrie announces .Net Framework Source Code availability"
 date:   2008-01-16
 banner_image: 
 tags: [.Net, Visual Studio 2008, MONO]
-post_image: "/assets/images/art/tb12.webp"
+post_image: /assets/images/art/bg8.webp
 badge_color: "bg-dark"
 categories: [development]
 ---

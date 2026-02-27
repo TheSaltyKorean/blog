@@ -4,7 +4,7 @@ title:  "Second Shot Program for Microsoft Certification exams"
 date:   2007-12-20
 banner_image: 
 tags: []
-post_image: "/assets/images/art/tb6.webp"
+post_image: /assets/images/art/bg2.webp
 badge_color: "bg-blue"
 categories: [microsoft, development]
 ---

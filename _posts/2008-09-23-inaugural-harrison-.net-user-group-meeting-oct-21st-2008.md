@@ -4,7 +4,7 @@ title:  "Inaugural Harrison .Net User Group meeting Oct 21st 2008"
 date:   2008-09-23
 banner_image: 
 tags: []
-post_image: "/assets/images/art/tb2.webp"
+post_image: /assets/images/art/bg7.webp
 badge_color: "bg-leaf"
 categories: [community, career]
 ---

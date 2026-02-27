@@ -4,7 +4,7 @@ title:  "Securely Sending XML Messages via Digital Signing in .Net"
 date:   2008-02-12
 banner_image: 
 tags: []
-post_image: "/assets/images/art/tb12.webp"
+post_image: /assets/images/art/bg6.webp
 badge_color: "bg-dark"
 categories: [development]
 ---

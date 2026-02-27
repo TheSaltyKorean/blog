@@ -4,7 +4,7 @@ title:  "I still think Twitter is dead … but"
 date:   2010-04-03
 banner_image: 
 tags: []
-post_image: "/assets/images/art/tb3.webp"
+post_image: /assets/images/art/bg30.webp
 badge_color: "bg-blue"
 categories: [technology]
 ---

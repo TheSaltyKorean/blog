@@ -4,7 +4,7 @@ title:  "Community Credit - They give stupid prizes to smart people"
 date:   2007-12-30
 banner_image: logosmall5.gif
 tags: []
-post_image: "/assets/images/art/tb3.webp"
+post_image: /assets/images/art/bg2.webp
 badge_color: "bg-leaf"
 categories: [community, career]
 ---

@@ -4,7 +4,7 @@ title:  "A proud Influencer (I’m giving a $10k+ Prize Giveaway)"
 date:   2009-04-24
 banner_image: 
 tags: []
-post_image: "/assets/images/art/tb6.webp"
+post_image: /assets/images/art/bg2.webp
 badge_color: "bg-blue"
 categories: [technology]
 ---

@@ -4,7 +4,7 @@ title:  "SQL Server Management Pack"
 date:   2008-03-05
 banner_image: 
 tags: [SQL Server, SQL Server Utilities]
-post_image: "/assets/images/art/tb8.webp"
+post_image: /assets/images/art/bg9.webp
 badge_color: "bg-teal"
 categories: [data, development]
 ---

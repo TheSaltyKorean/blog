@@ -4,7 +4,7 @@ title:  "Free CodeSmith License!"
 date:   2010-03-26
 banner_image: logo_header_3.gif
 tags: []
-post_image: "/assets/images/art/tb12.webp"
+post_image: /assets/images/art/bg16.webp
 badge_color: "bg-dark"
 categories: [development]
 ---

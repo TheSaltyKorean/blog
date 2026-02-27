@@ -4,7 +4,7 @@ title:  "Received Microsoft MVP award"
 date:   2008-04-06
 banner_image: 
 tags: [Microsoft, MVP, Randy Walker, Northwest Arkansas]
-post_image: "/assets/images/art/tb6.webp"
+post_image: /assets/images/art/bg22.webp
 badge_color: "bg-blue"
 categories: [microsoft, development]
 ---

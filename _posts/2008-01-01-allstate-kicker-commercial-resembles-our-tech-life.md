@@ -4,7 +4,7 @@ title:  "Allstate Kicker commercial resembles our tech life"
 date:   2008-01-01
 banner_image: 
 tags: []
-post_image: "/assets/images/art/tb5.webp"
+post_image: /assets/images/art/bg3.webp
 badge_color: "bg-blue"
 categories: [technology]
 ---

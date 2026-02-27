@@ -4,7 +4,7 @@ title:  "First Fort Smith .Net User Group Meeting"
 date:   2008-03-04
 banner_image: 
 tags: [Fort Smith, .Net, Northwest Arkansas]
-post_image: "/assets/images/art/tb2.webp"
+post_image: /assets/images/art/bg7.webp
 badge_color: "bg-leaf"
 categories: [community, career]
 ---

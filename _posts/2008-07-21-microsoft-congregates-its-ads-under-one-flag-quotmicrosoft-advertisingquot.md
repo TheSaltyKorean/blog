@@ -4,7 +4,7 @@ title:  "Microsoft congregates it's ads under one flag Microsoft Advertising"
 date:   2008-07-21
 banner_image: 
 tags: [Microsoft, Advertising, adCenter]
-post_image: "/assets/images/art/tb6.webp"
+post_image: /assets/images/art/bg4.webp
 badge_color: "bg-blue"
 categories: [microsoft, development]
 ---

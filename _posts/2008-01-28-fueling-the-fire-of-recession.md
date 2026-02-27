@@ -4,7 +4,7 @@ title:  "Fueling the Fire of Recession"
 date:   2008-01-28
 banner_image: 
 tags: []
-post_image: "/assets/images/art/tb13.webp"
+post_image: /assets/images/art/bg23.webp
 badge_color: "bg-orange"
 categories: [entrepreneurship, business]
 ---

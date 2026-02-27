@@ -4,7 +4,7 @@ title:  "Growing your software business, stuck in a rut"
 date:   2008-06-15
 banner_image: 
 tags: []
-post_image: "/assets/images/art/tb12.webp"
+post_image: /assets/images/art/bg1.webp
 badge_color: "bg-orange"
 categories: [entrepreneurship, business]
 ---

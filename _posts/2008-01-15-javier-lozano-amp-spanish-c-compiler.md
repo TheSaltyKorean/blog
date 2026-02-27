@@ -4,7 +4,7 @@ title:  "Javier Lozano & Spanish C# Compiler"
 date:   2008-01-15
 banner_image: 
 tags: [.Net]
-post_image: "/assets/images/art/tb6.webp"
+post_image: /assets/images/art/bg2.webp
 badge_color: "bg-blue"
 categories: [technology]
 ---

@@ -1,9 +1,8 @@
 # General Settings
-title: "The Salty Korean"
+title: "Randy Walker"
 email: "randy.walker@live.com"
 description: >-
-  Randy Walker's thoughts, stories and ideas. President of Harvest Data Corp,
-  Microsoft MVP award winner, ASP Insider and tech enthusiast.
+  Randy Walker's thoughts on technology leadership, cloud transformation, entrepreneurship, and the business of innovation.
 favicon: "/assets/images/favicon.webp"
 
 # Seo Meta Settings
@@ -23,7 +22,7 @@ light_logo_1x: "/assets/images/logo-light.svg"
 light_logo_2x: "/assets/images/logo-light.svg"
 
 # Site Wide Copyright
-copyright_text: "© 2026 The Salty Korean. All rights reserved."
+copyright_text: "© 2026 Randy Walker. All rights reserved."
 
 # Site Wide Google Analytics
 google_analytics:

@@ -4,7 +4,7 @@ title:  "Northwest Arkansas Technology Council Inaugural Meeting 2009-03-10"
 date:   2009-03-09
 banner_image: nwaTechSummit_2009_v3_thumb.jpg
 tags: []
-post_image: "/assets/images/art/tb2.webp"
+post_image: /assets/images/art/bg1.webp
 badge_color: "bg-leaf"
 categories: [community, career]
 ---

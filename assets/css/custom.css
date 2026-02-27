@@ -1,0 +1,20 @@
+/* ===== Randy Walker Blog — Custom Overrides ===== */
+
+/* Constrain post feature images to a reasonable landscape height */
+.blog .post figure img,
+.post-content figure img,
+.blog.classic-view .post figure img {
+  max-height: 220px;
+  width: 100%;
+  object-fit: cover;
+  object-position: center top;
+}
+
+/* Grid card images — keep uniform, shorter height */
+.blog.grid-view .post figure img,
+.blog.grid .post figure img {
+  max-height: 180px;
+  width: 100%;
+  object-fit: cover;
+  object-position: center top;
+}

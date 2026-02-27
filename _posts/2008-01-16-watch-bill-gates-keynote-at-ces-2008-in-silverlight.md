@@ -4,7 +4,7 @@ title:  "Watch Bill Gates keynote at CES 2008 in Silverlight"
 date:   2008-01-16
 banner_image: 
 tags: [Microsoft, Bill Gates, CES]
-post_image: "/assets/images/art/tb5.webp"
+post_image: /assets/images/art/bg5.webp
 badge_color: "bg-blue"
 categories: [microsoft, development]
 ---

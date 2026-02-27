@@ -4,7 +4,7 @@ title:  "Writing to .Net Config Files"
 date:   2008-06-05
 banner_image: 
 tags: []
-post_image: "/assets/images/art/tb11.webp"
+post_image: /assets/images/art/bg7.webp
 badge_color: "bg-dark"
 categories: [development]
 ---

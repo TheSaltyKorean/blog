@@ -4,7 +4,7 @@ title:  "Visual Studio 2008 & .Net 3.5 Training Kit"
 date:   2007-12-20
 banner_image: 
 tags: []
-post_image: "/assets/images/art/tb6.webp"
+post_image: /assets/images/art/bg6.webp
 badge_color: "bg-blue"
 categories: [microsoft, development]
 ---

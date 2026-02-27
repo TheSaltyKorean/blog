@@ -4,7 +4,7 @@ title:  "Retail Link data storage requirements"
 date:   2010-04-21
 banner_image: 
 tags: []
-post_image: "/assets/images/art/tb8.webp"
+post_image: /assets/images/art/bg11.webp
 badge_color: "bg-teal"
 categories: [data, development]
 ---
