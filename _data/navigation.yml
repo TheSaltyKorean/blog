@@ -2,6 +2,8 @@ main_menu:
 
   - text: "Home"
     url: "/"
+    menu_type: "simple"
 
   - text: "About"
     url: "/about"
+    menu_type: "simple"
