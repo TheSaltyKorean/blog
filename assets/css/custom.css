@@ -1,23 +1,38 @@
 /* ===== Randy Walker Blog — Custom Overrides ===== */
+
+/* Force uniform card image height on grid/list views */
 .blog.grid figure.main,
 .blog.grid-view figure.main,
-.blog .post figure.main,
 figure.main {
   height: 200px !important;
   overflow: hidden !important;
-  display: block;
+  display: block !important;
+  position: relative;
 }
+
+/* Anchor must also fill the figure so img percentage works */
+.blog.grid figure.main > a,
+.blog.grid-view figure.main > a,
+figure.main > a {
+  display: block !important;
+  height: 100% !important;
+  overflow: hidden !important;
+}
+
+/* Image fills the anchor fully and covers uniformly */
 .blog.grid figure.main img,
 .blog.grid-view figure.main img,
-.blog .post figure.main img,
-figure.main img,
-figure.main a img {
+figure.main img {
   width: 100% !important;
   height: 100% !important;
   object-fit: cover !important;
   object-position: center center !important;
-  display: block;
+  display: block !important;
+  max-width: none !important;
+  max-height: none !important;
 }
+
+/* Post detail page: cap article images reasonably */
 .col-lg-8 .post figure img,
 .col-lg-10 .post figure img,
 .post-content figure img {
