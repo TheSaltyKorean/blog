@@ -1,30 +1,29 @@
 /* ===== Randy Walker Blog — Custom Overrides ===== */
-
-/* ---- Post feature images: constrain height everywhere ---- */
-
-/* Grid view card images (homepage, blog listing) */
-.blog .post figure img,
-.blog .post figure.main img,
-.blog.grid figure img,
-.blog.grid figure.main img,
-.blog.grid-view figure img,
-.blog.classic-view figure img,
-figure.main img,
-.post figure img {
-  max-height: 200px;
-  width: 100%;
-  object-fit: cover;
-  object-position: center center;
+.blog.grid figure.main,
+.blog.grid-view figure.main,
+.blog .post figure.main,
+figure.main {
+  height: 200px !important;
+  overflow: hidden !important;
   display: block;
 }
-
-/* Single post page (post-sidebar, post layouts) */
-.blog.classic-view .post .post-content figure img,
-.wrapper .post-content figure img,
-.col-lg-8 figure img,
-.col-lg-10 figure img {
+.blog.grid figure.main img,
+.blog.grid-view figure.main img,
+.blog .post figure.main img,
+figure.main img,
+figure.main a img {
+  width: 100% !important;
+  height: 100% !important;
+  object-fit: cover !important;
+  object-position: center center !important;
+  display: block;
+}
+.col-lg-8 .post figure img,
+.col-lg-10 .post figure img,
+.post-content figure img {
   max-height: 260px;
   width: 100%;
   object-fit: cover;
   object-position: center center;
+  display: block;
 }
