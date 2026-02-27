@@ -5,7 +5,7 @@ date: 2026-02-27 09:00:00 -0600
 categories: [career]
 tags: [recruiting, hiring, leadership, career]
 author: "Randy Walker"
-post_image: "/assets/images/art/tb1.webp"
+post_image: /assets/images/art/thumb/tb1.webp
 badge_color: "bg-dark"
 slider_post: false
 meta_title: "When the Recruiter Becomes the Bottleneck"
