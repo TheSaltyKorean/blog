@@ -1,0 +1,12 @@
+<!-- Header with no image and white bg-->
+<div class="wrapper light-wrapper page-title-wrapper">
+  <div class="container inner text-center">
+    <h1 class="page-title">{{page.title}}</h1>
+    <p class="lead">{{page.sub_title}}</p>
+    {% if page.breadcrumbs %}
+      {% include breadcrumbs/breadcrumbs.html %}
+    {% endif %}
+  </div>
+  <!-- /.container -->
+</div>
+<!-- /.wrapper -->

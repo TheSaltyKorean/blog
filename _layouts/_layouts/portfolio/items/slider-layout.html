@@ -1,0 +1,65 @@
+---
+layout: default
+---
+{% include layouts/nav/nav-10.html default_logo="black" drop_search=true alignment_class="ms-auto" %}
+{% include layouts/header/page-title3.html %}
+
+<div class="wrapper light-wrapper">
+  <div class="container inner">
+    <!-- Slider Section -->
+    {% if page.slider_images %}
+      <div class="basic-slider owl-carousel" data-margin="5">
+        {% for image in page.slider_images %}
+          <div class="item">
+            <img src="{{ image }}" alt="Slider Image"  />
+          </div>
+        {% endfor %}
+      </div>
+    {% endif %}
+    <!-- /.basic-slider -->
+
+    <div class="space90"></div>
+
+    <!-- About the Project Section -->
+    <div class="row">
+      <div class="col-lg-10 offset-lg-1">
+        <div class="row no-gutters">
+          <div class="col-md-9 text-justify">
+            <!-- Render Markdown content -->
+            {{ content }}
+          </div>
+          <!--/column -->
+          <div class="col-md-2 ms-auto">
+            <ul class="list-unstyled">
+              <li>
+                <h5 class="mb-5">Date</h5>
+                <p>{{ page.date | date: "%d %B %Y" }}</p>
+              </li>
+              <li>
+                <h5 class="mb-5">Categories</h5>
+                {% assign capitalized_filters = "" | split: "" %}
+                {% for filter in page.filters %}
+                {% assign capitalized_filter = filter | capitalize %}
+                {% assign capitalized_filters = capitalized_filters | push: capitalized_filter %}
+                {% endfor %}
+                <p>{{ capitalized_filters | join: ", " }}</p>
+              </li>
+              <li>
+                <h5 class="mb-5">Client Name</h5>
+                <p>{{ page.client }}</p>
+              </li>
+            </ul>
+          </div>
+          <!--/column -->
+        </div>
+        <!--/.row -->
+      </div>
+      <!-- /column -->
+    </div>
+    <!-- /.row -->
+  </div>
+</div>
+
+<!-- Other Projects Section -->
+{% include components/portfolio/related-projects.html %}
+{% include layouts/footer/footer-1.html %}

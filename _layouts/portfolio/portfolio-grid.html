@@ -1,0 +1,30 @@
+---
+layout: page
+---
+<div class="wrapper light-wrapper">
+  <div class="container inner">
+    <div class="grid grid-view">
+      <div class="isotope-filter text-center">
+        <ul>
+          <li><a class="button active" data-filter="*">All</a></li>
+          {% for post in page.portfolio_area.categories %}
+           <li><a class="button" data-filter=".{{post.filter}}">{{post.title}}</a></li>
+          {% endfor %}
+        </ul>
+      </div>
+      <div class="clearfix"></div>
+      <div class="tiles tiles-m light-gallery-wrapper">
+        <div class="row isotope">
+          {% include components/portfolio/loops/grid-loop.html 
+            is_boxed=false
+            is_grid=true 
+            layout_class="col-md-6 col-lg-4" 
+            hide_content=true %}
+        </div>
+        <!-- /.row -->
+      </div>
+      <!-- /.tiles -->
+    </div>
+    <!-- /.grid -->
+  </div>
+</div>

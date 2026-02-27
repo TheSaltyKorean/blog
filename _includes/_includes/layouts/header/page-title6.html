@@ -1,0 +1,17 @@
+<!--Header with colored background-->
+<div class="wrapper {% if page.bg_color %}
+{{page.bg_color}} {% else %}
+bg-default
+{% endif %}  page-title-wrapper inverse-text">
+  <div class="container inner text-center">
+    <div class="space90"></div>
+    <h1 class="page-title">{{page.title}}</h1>
+    <p class="lead">{{page.sub_title}}</p>
+    {% if page.breadcrumbs %}
+      {% include breadcrumbs/breadcrumbs.html %}
+    {% endif %}
+    <div class="space120"></div>
+  </div>
+  <!-- /.container -->
+</div>
+<!-- /.wrapper -->

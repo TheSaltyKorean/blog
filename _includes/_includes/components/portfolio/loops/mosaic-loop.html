@@ -1,0 +1,24 @@
+{% comment %} Mosaic Portfolio Loop {% endcomment %}
+
+{% assign mosaic_width = include.mosaic_width | default: 2 %}
+{% assign mosaic_height = include.mosaic_height | default: 2 %}
+{% assign items = site.portfolio | where:"grouped_by","mosaic" | sort: 'order' %}
+
+    {% for post in items %}
+      <div class="item grid-sizer 
+        {% if post.width2 %}width2 {% endif %}
+        {% if post.height2 %}height2 {% endif %}
+      ">
+        <figure class="overlay overlay1 rounded">
+          <a href="{{ post.url }}"> 
+            <img src="{{ post.thumbnail }}" alt="{{ post.title | escape }}" />
+          </a>
+          <figcaption>
+            <h5 class="from-top mb-0">{{ post.title }}</h5>
+          </figcaption>
+        </figure>
+      </div>
+      <!-- /.item -->
+    {% endfor %}
+    
+  

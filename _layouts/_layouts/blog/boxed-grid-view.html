@@ -1,0 +1,25 @@
+---
+layout: default
+---
+
+{% include layouts/nav/nav-10.html default_logo="black" drop_search=true alignment_class="ms-auto" %}
+{% include layouts/header/page-title3.html %}
+<div class="wrapper light-wrapper">
+  <div class="container inner">
+    <div class="blog grid grid-view boxed">
+      <div class="row isotope">
+          {% for post in paginator.posts %}
+          {% include posts/loops/post-loop.html 
+            title_length=27
+            excerpt_length=40
+            is_boxed=true
+            is_grid=true
+          %}
+          {% endfor %}
+      </div>
+    </div>
+    {% include utilities/pagination.html %}
+  </div>
+  <!-- /.container -->
+</div>
+{% include layouts/footer/footer-1.html %}

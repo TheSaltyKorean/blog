@@ -1,0 +1,68 @@
+---
+layout: default
+---
+{% include layouts/nav/nav-1.html drop_search=true alignment_class="ms-auto" %}
+{% include layouts/header/page-title.html %}
+<div class="wrapper light-wrapper">
+  <div class="container inner">
+    <div class="row text-center">
+      <div class="col-md-3">
+        <h5>Date</h5>
+        <p>{{ page.date | date_to_string }}</p>
+      </div>
+      <div class="col-md-3">
+        <h5>Categories</h5>
+        {% assign capitalized_filters = "" | split: "" %}
+        {% for filter in page.filters %}
+        {% assign capitalized_filter = filter | capitalize %}
+        {% assign capitalized_filters = capitalized_filters | push: capitalized_filter %}
+        {% endfor %}
+        <p>{{ capitalized_filters | join: ", " }}</p>
+      </div>
+      <div class="col-md-3">
+        <h5>Client Name</h5>
+        <p>{{ page.client }}</p>
+      </div>
+      <div class="col-md-3">
+        <h5>Link</h5>
+        <a href="{{ page.link }}" class="nocolor p-more">See Project</a>
+      </div>
+    </div>
+    <div class="space40"></div>
+    <div class="space80"></div>
+    <div class="row text-justify">
+      <div class="col-md-10 offset-md-1">
+
+        {% assign galleries = content | split: "<!-- gallery -->" %}
+        <!-- Render all content including text between galleries -->
+        {% for gallery in galleries %}
+        {% if forloop.index > 1 %}
+        <!-- Render the gallery -->
+        <div class="tiles post-gallery">
+          <div class="items row">
+            {% assign gallery_index = forloop.index | minus: 2 %}
+            {% assign gallery_images = page.galleries[gallery_index].images %}
+            {% for image in gallery_images %}
+            <div class="item col-md-{{ image.col }}" data-aos="fade-up">
+              <figure class="rounded">
+                <img src="{{ image.path }}" alt="Portfolio Image" loading="lazy" />
+              </figure>
+            </div>
+            {% endfor %}
+          </div>
+        </div>
+        {% endif %}
+        <!-- Render the text content -->
+        <div class="text-content">
+          {{ gallery | strip_newlines }}
+        </div>
+        {% endfor %}
+
+      </div>
+    </div>
+  </div>
+</div>
+
+{% include components/portfolio/related-projects.html %}
+
+{% include layouts/footer/footer-1.html %}

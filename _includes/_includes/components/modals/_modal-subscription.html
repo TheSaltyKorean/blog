@@ -1,0 +1,38 @@
+<div class="modal fade" id="modal-01" tabindex="-1" role="dialog" aria-labelledby="modal-01" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-md" role="document">
+      <div class="modal-content">
+        <div class="container-fluid boxed p-0">
+          <button type="button" class="close" data-bs-dismiss="modal" aria-label="Close"></button>
+          <div class="image-block-wrapper">
+            <div class="image-block col-lg-6">
+              <div class="image-block-bg bg-image" data-image-src="{{page.subscription_modal.image}}"></div>
+            </div>
+            <div>
+              <div class="row g-0">
+                <div class="col-lg-6 offset-lg-6">
+                  <div class="box p-50 d-flex">
+                    <div class="align-self-center">
+                      {% if page.subscription_modal.title %}
+                          <h3>{{page.subscription_modal.title}}</h3>
+                      {% endif %}
+                      {% if page.subscription_modal.sub_title %}
+                          <p>{{page.subscription_modal.sub_title}}</p>
+                      {% endif %}
+                      <form action="https://formsubmit.io/send/{{page.subscription_modal.form_action}}" method="POST" class="validate" target="_blank" novalidate>
+                        <div class="input-group">
+                          <input type="email" name="EMAIL" class="form-control mb-0 me-2" placeholder="Email Address" required>
+                          <button type="submit" class="btn btn-rounded btn-default">{{page.subscription_modal.button_text}}</button>
+                        </div>
+                      </form>
+                      <small class="text-muted">{{page.subscription_modal.form_sub_text}}</small>
+                    </div> 
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  

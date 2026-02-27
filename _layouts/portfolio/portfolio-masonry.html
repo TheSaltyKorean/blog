@@ -1,0 +1,30 @@
+---
+layout: page
+---
+
+<div class="wrapper light-wrapper">
+  <div class="container inner">
+    <div class="grid grid-view">
+      <div class="isotope-filter text-center">
+        <ul>
+          <li><a class="button active" data-filter="*">All</a></li>
+          {% for post in page.portfolio_area.categories %}
+           <li><a class="button" data-filter=".{{post.filter}}">{{post.title}}</a></li>
+          {% endfor %}
+        </ul>
+      </div>
+      <div class="clearfix"></div>
+      <div class="tiles tiles-m">
+        <div class="row isotope">
+          {% include components/portfolio/loops/masonry-loop.html 
+            layout_class="col-md-6 col-lg-4" 
+            is_boxed=false
+            hide_content=true %}
+        </div>
+        <!-- /.row -->
+      </div>
+      <!-- /.tiles -->
+    </div>
+    <!-- /.grid -->
+  </div>
+</div>

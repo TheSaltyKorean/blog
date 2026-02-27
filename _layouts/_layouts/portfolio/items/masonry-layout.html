@@ -1,0 +1,81 @@
+---
+layout: default
+---
+{% include layouts/nav/nav-1.html drop_search=true alignment_class="ms-auto" %}
+{% include layouts/header/page-title.html %}
+
+<div class="wrapper light-wrapper">
+  <div class="container inner">
+    <!-- About the Project Section -->
+    <div class="row">
+      <div class="col-lg-10 offset-lg-1">
+        <div class="row no-gutters">
+          <div class="col-md-9 text-justify">
+            <!-- Render Markdown content -->
+            {{ content }}
+          </div>
+          <!--/column -->
+          <div class="col-md-2 ms-auto">
+            <ul class="list-unstyled">
+              <li>
+                <h5 class="mb-5">Date</h5>
+                <p>{{ page.date | date: "%d %B %Y" }}</p>
+              </li>
+              <li>
+                <h5 class="mb-5">Categories</h5>
+                {% assign capitalized_filters = "" | split: "" %}
+                {% for filter in page.filters %}
+                {% assign capitalized_filter = filter | capitalize %}
+                {% assign capitalized_filters = capitalized_filters | push: capitalized_filter %}
+                {% endfor %}
+                <p>{{ capitalized_filters | join: ", " }}</p>
+              </li>
+              <li>
+                <h5 class="mb-5">Client Name</h5>
+                <p>{{ page.client }}</p>
+              </li>
+            </ul>
+          </div>
+          <!--/column -->
+        </div>
+        <!--/.row -->
+      </div>
+      <!-- /column -->
+    </div>
+    <!-- /.row -->
+
+    <div class="space50"></div>
+
+    <!-- Masonry Grid Section -->
+    <div class="grid grid-view">
+      <div class="tiles tiles-m light-gallery-wrapper">
+        <div class="row isotope">
+          {% for image in page.masonry_images %}
+          <div class="item grid-sizer col-md-{{ image.col }}" data-aos="fade-up">
+            <figure class="overlay overlay2 rounded">
+              <a href="{{ image.full_size }}" class="lightbox">
+                <span class="bg"></span>
+                <img src="{{ image.thumbnail }}" alt="Masonry Image" loading="lazy" />
+              </a>
+            </figure>
+          </div>
+          {% endfor %}
+          <!-- /.item -->
+        </div>
+        <!-- /.row -->
+      </div>
+      <!-- /.tiles -->
+    </div>
+    <!-- /.grid -->
+
+    <div class="space50"></div>
+    <div class="text-center">
+      <a href="#" class="btn">See Project</a>
+    </div>
+  </div>
+</div>
+
+<!-- Other Projects Section -->
+{% include components/portfolio/related-projects.html %}
+
+{% include layouts/footer/footer-1.html %}

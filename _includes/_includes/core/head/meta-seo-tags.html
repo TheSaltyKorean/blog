@@ -1,0 +1,10 @@
+<meta charset="utf-8" />
+<!-- Primary Meta Tags -->
+<title>{% if page.meta_title %} {{ page.meta_title }} {% elsif page.title %} {{ page.title }} {% else %} {{
+    site.data.general_settings.title }}{% endif %}</title>
+<meta name="title" content="{% if page.meta_title %} {{ page.meta_title }} {% elsif page.title %} {{ page.title }} {% else %} {{ site.data.general_settings.title }}{% endif %}">
+<meta name="description" content="{% if page.meta_description %} {{ page.meta_description }} {% elsif page.description %} {{ page.description}} {% else %}
+         {{ site.data.general_settings.description }}{% endif %}">
+{% if page.meta_keywords %}
+<meta name="keywords" content="{{ page.meta_keywords }}">
+{% endif %}

@@ -1,0 +1,12 @@
+<!--header with image-->
+<div class="wrapper image-wrapper bg-image page-title-wrapper inverse-text" data-image-src="{% if page.header_image %} {{page.header_image}} {% elsif page.product_heading.header_image %}{{page.product_heading.header_image}} {% else %}
+{{page.background_image}} 
+{% endif %} ">
+  <div class="container inner text-center">
+    <div class="space90"></div>
+    <h1 class="page-title">{% if page.title %} {{page.title}} {% else %}{{page.page_header.title}} {% endif %}</h1>
+    <p class="lead">{% if page.sub_title %} {{page.sub_title}} {% else %}{{page.page_header.sub_title}} {% endif %}</p>
+  </div>
+  <!-- /.container -->
+</div>
+<!-- /.wrapper -->

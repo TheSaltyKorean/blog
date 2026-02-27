@@ -1,0 +1,72 @@
+---
+layout: default
+---
+{% include layouts/nav/nav-10.html default_logo="black" drop_search=true alignment_class="ms-auto" %}
+{% include layouts/header/page-title3.html %}
+<div class="wrapper light-wrapper">
+  <div class="container inner">
+    {% assign sections = content | split: '<section' %} {% for section in sections %} {% if section
+      contains 'alignment="left"' %} <div class="row no-gutters d-flex align-items-center" data-aos="fade-up">
+      <div class="col-lg-7 text-center">
+        {% capture image_markdown %}
+        {{ section | split: '![' | last | split: ')' | first | strip }}
+        {% endcapture %}
+        {% assign image_parts = image_markdown | split: '](' %}
+        {% assign image_alt = image_parts[0] | strip %}
+        {% assign image_src = image_parts[1] | strip %}
+        <figure class="rounded">
+          <img src="{{ image_src }}" alt="{{ image_alt }}" class="img-fluid" />
+        </figure>
+
+      </div>
+      <div class="space40 d-lg-none"></div>
+      <div class="col-lg-4 ml-auto">
+        {% capture section_content %}{{ section | split: '##' | last }}{% endcapture %}
+        {% assign title = section_content | split: "**" | first | strip %}
+        {% assign remaining = section_content | remove_first: title %}
+        {% assign link_text = remaining | split: "[" | last | split: "]" | first %}
+        {% assign main_content = remaining | split: "[" | first %}
+        <h2>{{ title }}</h2>
+        {{ main_content | markdownify }}
+        {% if link_text != remaining %}
+          {% assign url = remaining | split: "(" | last | split: ")" | first %}
+          <a href="{{ url }}" class="btn btn-primary">{{ link_text }}</a>
+        {% endif %}
+      </div>
+  </div>
+  {% elsif section contains 'alignment="right"' %}
+  <div class="row no-gutters d-flex align-items-center" data-aos="fade-up">
+    <div class="col-lg-4">
+      {% capture section_content %}{{ section | split: '##' | last }}{% endcapture %}
+      {% assign title = section_content | split: "**" | first | strip %}
+      {% assign remaining = section_content | remove_first: title %}
+      {% assign link_text = remaining | split: "[" | last | split: "]" | first %}
+      {% assign main_content = remaining | split: "[" | first %}
+      <h2>{{ title }}</h2>
+      {{ main_content | markdownify }}
+      {% if link_text != remaining %}
+        {% assign url = remaining | split: "(" | last | split: ")" | first %}
+        <a href="{{ url }}" class="btn btn-primary">{{ link_text }}</a>
+      {% endif %}
+    </div>
+    <div class="space40 d-lg-none"></div>
+    <div class="col-lg-7 ml-auto text-center">
+      {% capture image_markdown %}
+      {{ section | split: '![' | last | split: ')' | first | strip }}
+      {% endcapture %}
+      {% assign image_parts = image_markdown | split: '](' %}
+      {% assign image_alt = image_parts[0] | strip %}
+      {% assign image_src = image_parts[1] | strip %}
+      <figure class="rounded">
+        <img src="{{ image_src }}" alt="{{ image_alt }}" class="img-fluid" />
+      </figure>
+
+    </div>
+  </div>
+  {% endif %}
+  <div class="space200 d-none d-md-block"></div>
+  <div class="space100 d-md-none"></div>
+  {% endfor %}
+</div>
+{% include components/portfolio/related-projects.html %}
+{% include layouts/footer/footer-1.html %}

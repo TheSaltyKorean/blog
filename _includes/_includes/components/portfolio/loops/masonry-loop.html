@@ -1,0 +1,33 @@
+{% comment %} Masonry Portfolio Loop {% endcomment %}
+
+{% assign layout_class = include.layout_class | default: 'col-md-6 col-lg-4' %}
+{% assign text_alignment = include.text_alignment | default: '' %}
+{% assign items = site.portfolio | where:"grouped_by","masonry" %}
+{% assign hide_content = include.hide_content | default: false %}
+{% assign is_boxed = include.is_boxed | default: false %}
+
+{% for post in items %}
+<div class="item item-detailed grid-sizer {{ layout_class }} {% for filter in post.filters %} {{filter}} {% endfor %}">
+  {% if is_boxed %}
+  <div class="box bg-white shadow p-30">
+    <figure class="main overlay overlay2 rounded mb-30">
+      <a href="{{post.big_image}}" class="lightbox"> <img src="{{post.thumbnail}}" alt="" /></a>
+    </figure>
+    {% unless hide_content %}
+    <div class="post-content">
+      <h2 class="post-title mb-10"><a href="{{post.url}}">{{post.title}}</a></h2>
+      <div class="meta mb-0">{{post.filters | join: ", "}}</div>
+    </div>
+    {% endunless %}
+  </div>
+  {% else %}
+  <figure class="overlay overlay1 rounded"><a href="{{post.url}}">
+    <span class="bg"></span>
+    <img src="{{post.thumbnail}}" alt=""></a>
+    <figcaption>
+      <h5 class="from-top mb-0">{{post.title}}</h5>
+    </figcaption>
+  </figure>
+  {% endif %}
+</div>
+{% endfor %}

@@ -1,0 +1,67 @@
+---
+layout: default
+---
+{% include layouts/nav/nav-1.html drop_search=true alignment_class="ms-auto" %}
+{% include layouts/header/page-title.html %}
+
+<div class="wrapper light-wrapper">
+  <div class="container inner">
+    <div class="row">
+      <div class="col-lg-10 offset-lg-1">
+        <div class="row no-gutters">
+          <div class="col-md-9 text-justify">
+            <!-- Render the Markdown content -->
+            {{ content }}
+          </div>
+          <!--/column -->
+          <div class="col-md-2 ms-auto">
+            <ul class="list-unstyled">
+              <li>
+                <h5 class="mb-5">Date</h5>
+                <p>{{ page.date | date: "%d %B %Y" }}</p>
+              </li>
+              <li>
+                <h5 class="mb-5">Categories</h5>
+                {% assign capitalized_filters = "" | split: "" %}
+                {% for filter in page.filters %}
+                {% assign capitalized_filter = filter | capitalize %}
+                {% assign capitalized_filters = capitalized_filters | push: capitalized_filter %}
+                {% endfor %}
+                <p>{{ capitalized_filters | join: ", " }}</p>
+              </li>
+              <li>
+                <h5 class="mb-5">Client Name</h5>
+                <p>{{ page.client }}</p>
+              </li> 
+            </ul>
+          </div>
+          <!--/column -->
+        </div>
+        <!--/.row -->
+      </div>
+      <!-- /column -->
+    </div>
+    <!-- /.row -->
+  </div>
+  <!-- /.container -->
+  <!-- Carousel Section -->
+  <div class="container-fluid pl-30 pr-30">
+    <div class="grid-view">
+      <div class="carousel owl-carousel" data-margin="30" data-dots="true" data-autoplay="false" data-autoplay-timeout="5000" data-responsive='{"0":{"items": "1"}, "768":{"items": "2"}, "1441":{"items": "3"}}'>
+        {% for image in page.carousel_images %}
+          <div class="item">
+            <img src="{{ image }}" alt="Portfolio Image" loading="lazy" />
+          </div>
+        {% endfor %}
+      </div>
+      <!-- /.owl-carousel -->
+      <div class="space140"></div>
+    </div>
+    <!-- /.grid-view -->
+  </div>
+  <!-- /.container-fluid -->
+</div>
+
+{% include components/portfolio/related-projects.html %}
+
+{% include layouts/footer/footer-1.html %}

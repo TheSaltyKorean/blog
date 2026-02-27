@@ -1,0 +1,16 @@
+{% comment %} Fullscreen Portfolio Loop {% endcomment %}
+
+{% assign items = site.portfolio | where:"grouped_by","fullscreen_grid" %}
+
+{% for post in items %}
+<div class="item grid-sizer col-md-6 col-lg-6 col-xl-4 col-xxl-3 {% for filter in post.filters %} {{filter}} {% endfor %}">
+  <figure class="overlay overlay1 rounded">
+    <a href="{{post.url}}">
+      <img src="{{post.thumbnail}}" alt="{{post.title}}" />
+    </a>
+    <figcaption>
+      <h5 class="from-top mb-0">{{post.title}}</h5>
+    </figcaption>
+  </figure>
+</div>
+{% endfor %}
