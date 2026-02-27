@@ -4,7 +4,7 @@ title:  "Steve Ballmer’s recent CEO letter – Do More with Less"
 date:   2009-09-29
 banner_image: 
 tags: []
-post_image: /assets/images/art/bg4.webp
+post_image: /assets/images/art/thumb/bg4.webp
 badge_color: "bg-blue"
 categories: [technology]
 ---

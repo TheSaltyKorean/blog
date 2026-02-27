@@ -4,7 +4,7 @@ title:  "Microsoft MVP Award"
 date:   2013-04-06
 banner_image: MVP_Horizontal_FullColor_small_thumb.png
 tags: []
-post_image: /assets/images/art/bg22.webp
+post_image: /assets/images/art/thumb/bg22.webp
 badge_color: "bg-blue"
 categories: [microsoft, development]
 ---

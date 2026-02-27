@@ -4,7 +4,7 @@ title:  "Bulgogi to Beignets"
 date:   2010-04-18
 banner_image: 1165377504bulgogi_thumb.jpg
 tags: []
-post_image: /assets/images/art/bg27.webp
+post_image: /assets/images/art/thumb/bg27.webp
 badge_color: "bg-pink"
 categories: [personal]
 ---

@@ -4,7 +4,7 @@ title:  "Microsoft Changes Satisfaction Index in Partner Program"
 date:   2008-01-10
 banner_image: 
 tags: [Microsoft Partner Program]
-post_image: /assets/images/art/bg24.webp
+post_image: /assets/images/art/thumb/bg24.webp
 badge_color: "bg-blue"
 categories: [microsoft, development]
 ---

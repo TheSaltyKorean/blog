@@ -4,7 +4,7 @@ title:  "To bug the Microsoft MSDN Evangelist, or not to bug"
 date:   2008-03-22
 banner_image: 
 tags: []
-post_image: /assets/images/art/bg8.webp
+post_image: /assets/images/art/thumb/bg8.webp
 badge_color: "bg-blue"
 categories: [microsoft, development]
 ---

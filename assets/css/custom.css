@@ -1,42 +1,20 @@
 /* ===== Randy Walker Blog — Custom Overrides ===== */
 
-/* Force uniform card image height on grid/list views */
-.blog.grid figure.main,
-.blog.grid-view figure.main,
-figure.main {
-  height: 200px !important;
-  overflow: hidden !important;
-  display: block !important;
-  position: relative;
-}
-
-/* Anchor must also fill the figure so img percentage works */
-.blog.grid figure.main > a,
-.blog.grid-view figure.main > a,
-figure.main > a {
-  display: block !important;
-  height: 100% !important;
-  overflow: hidden !important;
-}
-
-/* Image fills the anchor fully and covers uniformly */
-.blog.grid figure.main img,
-.blog.grid-view figure.main img,
+/* Post card images: thumbnails are 600x338 (16:9).
+   max-height caps any edge cases; object-fit ensures proper fill. */
 figure.main img {
-  width: 100% !important;
-  height: 100% !important;
-  object-fit: cover !important;
-  object-position: center center !important;
-  display: block !important;
-  max-width: none !important;
-  max-height: none !important;
+  width: 100%;
+  max-height: 338px;
+  object-fit: cover;
+  object-position: center center;
+  display: block;
 }
 
-/* Post detail page: cap article images reasonably */
+/* Post detail page: cap article inline images */
 .col-lg-8 .post figure img,
 .col-lg-10 .post figure img,
 .post-content figure img {
-  max-height: 260px;
+  max-height: 400px;
   width: 100%;
   object-fit: cover;
   object-position: center center;

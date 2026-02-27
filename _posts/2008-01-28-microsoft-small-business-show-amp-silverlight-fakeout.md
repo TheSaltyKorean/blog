@@ -4,7 +4,7 @@ title:  "Microsoft Small Business Show & Silverlight fakeout"
 date:   2008-01-28
 banner_image: image_thumb (1).png
 tags: []
-post_image: /assets/images/art/bg7.webp
+post_image: /assets/images/art/thumb/bg7.webp
 badge_color: "bg-blue"
 categories: [microsoft, development]
 ---

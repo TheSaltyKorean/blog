@@ -4,7 +4,7 @@ title:  "INETA Speakers Bureau Update"
 date:   2009-08-06
 banner_image: 
 tags: []
-post_image: /assets/images/art/bg20.webp
+post_image: /assets/images/art/thumb/bg20.webp
 badge_color: "bg-leaf"
 categories: [community, career]
 ---

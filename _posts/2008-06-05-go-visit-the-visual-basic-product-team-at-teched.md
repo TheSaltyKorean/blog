@@ -4,7 +4,7 @@ title:  "Go visit the Visual Basic Product Team at TechEd!"
 date:   2008-06-05
 banner_image: 
 tags: []
-post_image: /assets/images/art/bg20.webp
+post_image: /assets/images/art/thumb/bg20.webp
 badge_color: "bg-leaf"
 categories: [community, career]
 ---

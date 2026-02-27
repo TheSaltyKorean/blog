@@ -4,7 +4,7 @@ title:  "Updated MSDN Flash features Zain Naboulsi"
 date:   2007-12-20
 banner_image:
 tags: []
-post_image: /assets/images/art/bg5.webp
+post_image: /assets/images/art/thumb/bg5.webp
 badge_color: "bg-blue"
 categories: [microsoft, development]
 ---

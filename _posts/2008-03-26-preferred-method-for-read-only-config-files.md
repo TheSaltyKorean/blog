@@ -4,7 +4,7 @@ title:  "Preferred method for read only Config files"
 date:   2008-03-26
 banner_image: 
 tags: [.Net, Programming, config files]
-post_image: /assets/images/art/bg15.webp
+post_image: /assets/images/art/thumb/bg15.webp
 badge_color: "bg-dark"
 categories: [development]
 ---

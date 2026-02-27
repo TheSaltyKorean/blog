@@ -4,7 +4,7 @@ title:  "Free & Discounted Logo Testing for Windows Server 2008 Certifications"
 date:   2007-12-28
 banner_image: 
 tags: []
-post_image: /assets/images/art/bg6.webp
+post_image: /assets/images/art/thumb/bg6.webp
 badge_color: "bg-blue"
 categories: [microsoft, development]
 ---

@@ -4,7 +4,7 @@ title:  "MVP Summit here we come!"
 date:   2013-01-30
 banner_image: 
 tags: []
-post_image: /assets/images/art/bg18.webp
+post_image: /assets/images/art/thumb/bg18.webp
 badge_color: "bg-leaf"
 categories: [community, career]
 ---

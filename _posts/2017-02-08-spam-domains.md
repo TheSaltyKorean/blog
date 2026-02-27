@@ -4,7 +4,7 @@ title:  "Spam domains"
 date:   2017-02-08
 banner_image: spam_tabla.jpg
 tags: []
-post_image: /assets/images/art/bg29.webp
+post_image: /assets/images/art/thumb/bg29.webp
 badge_color: "bg-blue"
 categories: [technology]
 ---

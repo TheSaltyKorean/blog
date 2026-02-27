@@ -4,7 +4,7 @@ title:  "Windows Installer – InstallAware (coupon)"
 date:   2010-05-10
 banner_image: install-ware-logo_thumb.gif
 tags: []
-post_image: /assets/images/art/bg7.webp
+post_image: /assets/images/art/thumb/bg7.webp
 badge_color: "bg-dark"
 categories: [development]
 ---

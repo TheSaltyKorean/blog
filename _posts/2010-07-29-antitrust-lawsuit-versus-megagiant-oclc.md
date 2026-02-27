@@ -4,7 +4,7 @@ title:  "Antitrust Lawsuit versus megagiant OCLC"
 date:   2010-07-29
 banner_image: 
 tags: []
-post_image: /assets/images/art/bg2.webp
+post_image: /assets/images/art/thumb/bg2.webp
 badge_color: "bg-blue"
 categories: [technology]
 ---

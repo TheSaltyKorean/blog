@@ -4,7 +4,7 @@ title:  "Power of social computing, new school viral vs old school"
 date:   2008-02-13
 banner_image: road.jpg
 tags: [Social Computing, Social Networking, Facebook, Twitter, LinkedIn, Viral]
-post_image: /assets/images/art/bg29.webp
+post_image: /assets/images/art/thumb/bg29.webp
 badge_color: "bg-blue"
 categories: [technology]
 ---

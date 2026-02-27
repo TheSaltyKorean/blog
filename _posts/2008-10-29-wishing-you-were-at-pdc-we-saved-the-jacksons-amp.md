@@ -4,7 +4,7 @@ title:  "Wishing you were at PDC? We saved the Jacksons & still get the content!
 date:   2008-10-29
 banner_image: 
 tags: []
-post_image: /assets/images/art/bg2.webp
+post_image: /assets/images/art/thumb/bg2.webp
 badge_color: "bg-blue"
 categories: [technology]
 ---

@@ -4,7 +4,7 @@ title:  "American Express Line of Credit woes and rant"
 date:   2008-01-29
 banner_image: americanexpress_thumb.gif
 tags: [American Express]
-post_image: /assets/images/art/bg3.webp
+post_image: /assets/images/art/thumb/bg3.webp
 badge_color: "bg-orange"
 categories: [entrepreneurship, business]
 ---

@@ -4,7 +4,7 @@ title:  "SQL Injection article"
 date:   2008-03-22
 banner_image: 
 tags: []
-post_image: /assets/images/art/bg9.webp
+post_image: /assets/images/art/thumb/bg9.webp
 badge_color: "bg-teal"
 categories: [data, development]
 ---

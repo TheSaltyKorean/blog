@@ -4,7 +4,7 @@ title:  "Congratulations & Thanks to Scott Spradlin"
 date:   2009-02-15
 banner_image: 
 tags: []
-post_image: /assets/images/art/bg4.webp
+post_image: /assets/images/art/thumb/bg4.webp
 badge_color: "bg-blue"
 categories: [technology]
 ---

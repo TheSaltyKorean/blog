@@ -4,7 +4,7 @@ title:  "MSDN access changed for Microsoft Partners"
 date:   2008-02-27
 banner_image: partnerprogram_masthead_ltr_en-us_thumb.gif
 tags: [MSDN, Microsoft Partner Program]
-post_image: /assets/images/art/bg5.webp
+post_image: /assets/images/art/thumb/bg5.webp
 badge_color: "bg-blue"
 categories: [microsoft, development]
 ---

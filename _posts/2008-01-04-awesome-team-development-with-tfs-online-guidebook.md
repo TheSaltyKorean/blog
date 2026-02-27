@@ -4,7 +4,7 @@ title:  "Awesome Team Development with TFS - Online Guidebook"
 date:   2008-01-04
 banner_image: TeamDevGuide_thumb.gif
 tags: []
-post_image: /assets/images/art/bg2.webp
+post_image: /assets/images/art/thumb/bg2.webp
 badge_color: "bg-blue"
 categories: [technology]
 ---

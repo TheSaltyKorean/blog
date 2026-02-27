@@ -4,7 +4,7 @@ title:  "Speaking at Nashville devLink"
 date:   2008-08-07
 banner_image: 
 tags: [Nashville, devLink, Business Help]
-post_image: /assets/images/art/bg19.webp
+post_image: /assets/images/art/thumb/bg19.webp
 badge_color: "bg-leaf"
 categories: [community, career]
 ---

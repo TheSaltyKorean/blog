@@ -4,7 +4,7 @@ title:  "MVP Summit, Being Busy, plus Presenting @ the Little Rock .Net User Gro
 date:   2008-06-05
 banner_image: 
 tags: [Little Rock, Programming, SQL Server]
-post_image: /assets/images/art/bg18.webp
+post_image: /assets/images/art/thumb/bg18.webp
 badge_color: "bg-leaf"
 categories: [community, career]
 ---

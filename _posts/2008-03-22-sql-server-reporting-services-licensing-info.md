@@ -4,7 +4,7 @@ title:  "SQL Server Reporting Services Licensing Info"
 date:   2008-03-22
 banner_image: 
 tags: [SQL Server Licensing]
-post_image: /assets/images/art/bg10.webp
+post_image: /assets/images/art/thumb/bg10.webp
 badge_color: "bg-teal"
 categories: [data, development]
 ---

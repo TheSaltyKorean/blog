@@ -4,7 +4,7 @@ title:  "Free Partner Training - Windows Server 2008 for Developers"
 date:   2008-01-14
 banner_image: 
 tags: []
-post_image: /assets/images/art/bg8.webp
+post_image: /assets/images/art/thumb/bg8.webp
 badge_color: "bg-blue"
 categories: [microsoft, development]
 ---
