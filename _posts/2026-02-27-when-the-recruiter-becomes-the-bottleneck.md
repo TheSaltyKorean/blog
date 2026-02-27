@@ -1,5 +1,5 @@
 ---
-layout: posts/post
+layout: posts/post-sidebar
 title: "When the Recruiter Becomes the Bottleneck"
 date: 2026-02-27 09:00:00 -0600
 categories: [career]

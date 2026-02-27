@@ -123,3 +123,12 @@ feed:
       path: "/index.xml"
 
 highlighter: rouge
+
+# Default layouts
+defaults:
+  - scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: "posts/post-sidebar"
+      author: "Randy Walker"
