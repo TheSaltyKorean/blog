@@ -1,12 +1,16 @@
 /* ===== Randy Walker Blog — Custom Overrides ===== */
 
-/* Post card thumbnails: 600x338 source, render width:100%, natural ~200px tall */
+/* Post card thumbnails: cap display height; all images are 600x338 so
+   object-fit:cover crops uniformly across all cards */
 figure.main {
   overflow: hidden;
   line-height: 0;
 }
 figure.main img {
   width: 100%;
+  max-height: 150px;
+  object-fit: cover;
+  object-position: center center;
   display: block;
 }
 
