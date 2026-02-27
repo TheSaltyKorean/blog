@@ -4,6 +4,9 @@ title:  "Inexpensive Business Checks"
 date:   2010-05-05
 banner_image: tc_logo_3.jpg
 tags: []
+post_image: "/assets/images/art/tb13.webp"
+badge_color: "bg-orange"
+categories: [entrepreneurship, business]
 ---
 
 One of the most annoying things when setting up a business is paying the outrageous fees for business checks.  When starting out, rather than pay the $150 for the handful of computer printable checks, I had bought software that would create the checks for me.  But if you didn’t know, those little digits at the bottom of a check are magnetically encoded and requires special ink.

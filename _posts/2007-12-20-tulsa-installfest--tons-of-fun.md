@@ -4,6 +4,9 @@ title:  "Tulsa InstallFest = Tons of fun"
 date:   2007-12-20
 banner_image: 
 tags: []
+post_image: "/assets/images/art/tb3.webp"
+badge_color: "bg-leaf"
+categories: [community, career]
 ---
 
 A big thanks goes out to [Chris Koenig](http://blogs.msdn.com/chkoenig/) and the [Tulsa DNUG](http://www.tulsadnug.org) for hosting the Tulsa InstallFest on 12/3/2007.  Several of us from Northwest Arkansas .Net User Group traveled over there and participated in the fun.  A big shoutout to [Jay Smith](http://jaysmith.us) for volunteering and driving us over there.

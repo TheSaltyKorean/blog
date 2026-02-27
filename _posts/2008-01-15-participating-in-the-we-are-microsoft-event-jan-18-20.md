@@ -4,6 +4,9 @@ title:  "Participating in the We Are Microsoft Event - Jan 18-20 2008"
 date:   2008-01-15
 banner_image: Logo.gif
 tags: []
+post_image: "/assets/images/art/tb5.webp"
+badge_color: "bg-blue"
+categories: [microsoft, development]
 ---
 
 Please come join us at the Charity event "We Are Microsoft".  Throughout the weekend, starting this Friday, we will be working on charity software development.  Right now [Mark Leon Watson](http://www.markwatson.net/) and I will be working on <span class="skimlinks-unlinked">Irving.Net</span> web project, and I'm looking forward to working with someone whom I've only ever met online.

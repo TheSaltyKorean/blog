@@ -4,6 +4,9 @@ title:  "20 Business Tips from Intuit QuickBooks"
 date:   2008-05-19
 banner_image: 
 tags: [Business Help]
+post_image: "/assets/images/art/tb13.webp"
+badge_color: "bg-orange"
+categories: [entrepreneurship, business]
 ---
 
 Sadly I had meant to post this back in February.

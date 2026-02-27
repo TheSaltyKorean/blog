@@ -4,6 +4,9 @@ title:  "MVP Summit, Being Busy, plus Presenting @ the Little Rock .Net User Gro
 date:   2008-06-05
 banner_image: 
 tags: [Little Rock, Programming, SQL Server]
+post_image: "/assets/images/art/tb3.webp"
+badge_color: "bg-leaf"
+categories: [community, career]
 ---
 
 I suppose I was naive in thinking that once I received my Microsoft MVP award, I could breathe a bit.  But we've had sooo much Developer Community activity, I haven't had a chance to breathe, much less blog.  I still haven't had an opportunity to blog about the MVP Summit!  Needless to say, the MVP Summit was a blast (other than having a digestive track illness, where I missed the last day's keynotes).  The best thing about the Summit was the ability to meet and talk directly with the product teams.

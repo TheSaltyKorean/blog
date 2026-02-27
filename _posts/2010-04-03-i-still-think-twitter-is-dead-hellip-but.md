@@ -4,6 +4,9 @@ title:  "I still think Twitter is dead … but"
 date:   2010-04-03
 banner_image: 
 tags: []
+post_image: "/assets/images/art/tb3.webp"
+badge_color: "bg-blue"
+categories: [technology]
 ---
 
 Twitter finally hit the mainstream about 8 months ago, but I’ve been saying for a couple of years now, without a real way for the company to earn money, what’s the future fate of Twitter?

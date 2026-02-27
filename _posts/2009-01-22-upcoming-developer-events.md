@@ -4,6 +4,9 @@ title:  "Upcoming Developer Events"
 date:   2009-01-22
 banner_image: 
 tags: []
+post_image: "/assets/images/art/tb3.webp"
+badge_color: "bg-leaf"
+categories: [community, career]
 ---
 
 Jan 29 – [Holiday Party](https://www.codezone.com/UGEventView.CodezoneCom?EventID=5664) @ Fast Lanes, Lowell, Arkansas  

@@ -4,6 +4,9 @@ title:  "Getting more out of SQL Server Reporting Services Charts"
 date:   2008-03-22
 banner_image: 
 tags: []
+post_image: "/assets/images/art/tb8.webp"
+badge_color: "bg-teal"
+categories: [data, development]
 ---
 
 **Summary:** This white paper presents general information, best practices, and tips for designing charts within Microsoft SQL Server Reporting Services reports. It provides an overview of some Reporting Services features, answers common chart design and feature questions, and includes advanced examples of how to design better charts. (32 printed pages)

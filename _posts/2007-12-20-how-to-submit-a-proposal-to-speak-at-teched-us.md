@@ -4,6 +4,9 @@ title:  "How to Submit a Proposal to Speak at TechEd US 2008"
 date:   2007-12-20
 banner_image: 
 tags: []
+post_image: "/assets/images/art/tb3.webp"
+badge_color: "bg-leaf"
+categories: [community, career]
 ---
 
 With the help of [Chris Koenig](http://blogs.msdn.com/chkoenig/) blog site, I was finally able to track down the link and information on how to submit a speaking proposal to TechEd 2008.

@@ -4,6 +4,9 @@ title:  "Relationships"
 date:   2008-04-06
 banner_image: 
 tags: [Relationships]
+post_image: "/assets/images/art/tb1.webp"
+badge_color: "bg-pink"
+categories: [personal]
 ---
 
 One of the most difficult things that many tech people have, are problems with relationships and communication.  I was recently forwarded a document that outlines two types of relationships.  I found it very appropriate to every type of relationship I have had.  Parent - child, significant other, boss - employee, employer - employee, co-workers, friends.  I hope you'll read over it and evaluate yourself and the relationships you have.  If you find that your boss or employer is selfish, perhaps it's time you move on to that job that cares more about you.

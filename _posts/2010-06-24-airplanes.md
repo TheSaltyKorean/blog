@@ -4,6 +4,9 @@ title:  "Airplanes"
 date:   2010-06-24
 banner_image: 
 tags: []
+post_image: "/assets/images/art/tb1.webp"
+badge_color: "bg-pink"
+categories: [personal]
 ---
 
 As many of you know, I have a passion for music.  And after being gone 3 weeks, it’s nice to be home and discover the new music that has hit the scene over the past few weeks.  One song in particular struck a cord with me and in a matter of a few weeks while I was gone, it went from being unheard of to being ranked number 3.

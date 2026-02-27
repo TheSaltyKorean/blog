@@ -4,6 +4,9 @@ title:  "Steven Curtis Chapman & Adoption & my story"
 date:   2008-08-07
 banner_image: 
 tags: [Steven Curtis Chapman, Adoption, Randy Walker]
+post_image: "/assets/images/art/tb2.webp"
+badge_color: "bg-pink"
+categories: [personal]
 ---
 
 I'm sitting here in my hotel room, waiting for my son Ethan to wake so we might finish our 2 day drive to San Antonio.  Only a few minutes after my last posting about Steven Curtis Chapman did a CNN news alert come across my desktop concerning their adoption work.  Note that he'll also be on Larry King Live tonight.

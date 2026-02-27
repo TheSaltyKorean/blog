@@ -4,6 +4,9 @@ title:  "Selected for Trip to Korea"
 date:   2008-11-11
 banner_image: 
 tags: []
+post_image: "/assets/images/art/tb1.webp"
+badge_color: "bg-pink"
+categories: [personal]
 ---
 
 Having only told a handful of people, I applied to the OKF (Overseas Korean Foundation) for the “First Trip Home” program the week of the deadline in late October.  I found out about the program late and rushed to get my application in, which included gathering documents and writing an essay.  It’s been over 36 hours since I found out I was selected to participate, and I’m still a bit shell shocked.  Please note that this event in my life is extremely personal and something I have not fully explored.

@@ -4,6 +4,9 @@ title:  "Software Developers Beware of Sales Tax"
 date:   2007-12-20
 banner_image: 
 tags: []
+post_image: "/assets/images/art/tb12.webp"
+badge_color: "bg-orange"
+categories: [entrepreneurship, business]
 ---
 
 Of the many things developers must be careful of, you would least expect sales tax to be one of them.  One of the first things I researched when starting my company was sales tax.  **Each state is different.  Let me repeat myself, <font color="#ff0000">each state is different!</font>**  However, the following is my interpretation of how the Arkansas Sales Tax applies to developers in the state of Arkansas.

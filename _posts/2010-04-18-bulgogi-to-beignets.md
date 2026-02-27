@@ -4,6 +4,9 @@ title:  "Bulgogi to Beignets"
 date:   2010-04-18
 banner_image: 1165377504bulgogi_thumb.jpg
 tags: []
+post_image: "/assets/images/art/tb2.webp"
+badge_color: "bg-pink"
+categories: [personal]
 ---
 
 While it’s still a full month away, I’m getting super excited about my upcoming trips.

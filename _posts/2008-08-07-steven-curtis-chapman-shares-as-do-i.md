@@ -4,6 +4,9 @@ title:  "Steven Curtis Chapman shares, as do I"
 date:   2008-08-07
 banner_image: 
 tags: [Steven Curtis Chapman, faith]
+post_image: "/assets/images/art/tb1.webp"
+badge_color: "bg-pink"
+categories: [personal]
 ---
 
 It's never been an easy thing for me to share my faith, so a big thanks to someone special for sharing their intensity, their light with me.

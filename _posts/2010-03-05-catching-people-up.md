@@ -4,6 +4,9 @@ title:  "Catching people up"
 date:   2010-03-05
 banner_image: 
 tags: []
+post_image: "/assets/images/art/tb3.webp"
+badge_color: "bg-blue"
+categories: [technology]
 ---
 
 It’s been a while since I’ve blogged.  I suppose sometimes when one’s personal life gets busy, there are some things that fall by the wayside.  So what all has happened since I last blogged?

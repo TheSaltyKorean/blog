@@ -4,6 +4,9 @@ title:  "Free Partner Training - Windows Server 2008 for Developers"
 date:   2008-01-14
 banner_image: 
 tags: []
+post_image: "/assets/images/art/tb6.webp"
+badge_color: "bg-blue"
+categories: [microsoft, development]
 ---
 
 As I've mentioned countless number of times, one of the best benefits of the [Partner Program](http://partner.microsoft.com "Microsoft Partner Program") is training.  In this case it's free training.  Two days full of instructor led training for free, however right now it's only in 3 cities.

@@ -4,6 +4,9 @@ title:  "Antitrust Lawsuit versus megagiant OCLC"
 date:   2010-07-29
 banner_image: 
 tags: []
+post_image: "/assets/images/art/tb6.webp"
+badge_color: "bg-blue"
+categories: [technology]
 ---
 
 [http://www.libraryjournal.com/lj/home/886099-264/skyriver_and_innovative_interfaces_file.html.csp](http://www.libraryjournal.com/lj/home/886099-264/skyriver_and_innovative_interfaces_file.html.csp "http://www.libraryjournal.com/lj/home/886099-264/skyriver_and_innovative_interfaces_file.html.csp")

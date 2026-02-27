@@ -4,6 +4,9 @@ title:  "Wasted Opportunities?"
 date:   2008-08-26
 banner_image: 
 tags: []
+post_image: "/assets/images/art/tb2.webp"
+badge_color: "bg-pink"
+categories: [personal]
 ---
 
 Great quote.  Be careful what you ask for, but most importantly recognize the opportunities you've been presented with.

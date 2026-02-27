@@ -4,6 +4,9 @@ title:  "Korea’s Anti Abortion / Pro Life Movement"
 date:   2010-03-22
 banner_image: 
 tags: []
+post_image: "/assets/images/art/tb2.webp"
+badge_color: "bg-pink"
+categories: [personal]
 ---
 
 The South Korean government is in dire straits.  The national birth rate continues to decline and as the population grows older, there aren’t enough children being born to support the country long term.  The social issues of post Korean War are coming back to haunt the empowered nation.  Being torn apart by the Korean War (nicknamed the forgotten war in America) and with a nation facing starvation, South Korea allowed hundreds of thousands of their children to be adopted abroad.  This has created a problem of epidemic proportions, essentially devaluing life in Korea and child rearing.

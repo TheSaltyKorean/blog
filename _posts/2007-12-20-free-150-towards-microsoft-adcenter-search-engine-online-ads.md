@@ -4,6 +4,9 @@ title:  "Free $150 towards Microsoft AdCenter Search Engine online ads"
 date:   2007-12-20
 banner_image: 
 tags: []
+post_image: "/assets/images/art/tb5.webp"
+badge_color: "bg-blue"
+categories: [microsoft, development]
 ---
 
 As part of the Microsoft Windows Server 2008 Certification program, the Microsoft Partner Program is offering $150 credit to the first 5000 partners who sign up.  You can find out more here: [https://microsoft.mrmpslc.com/InnovateOnWindowsServer/KeywordAdvertising.aspx](https://microsoft.mrmpslc.com/InnovateOnWindowsServer/KeywordAdvertising.aspx "https://microsoft.mrmpslc.com/InnovateOnWindowsServer/KeywordAdvertising.aspx").

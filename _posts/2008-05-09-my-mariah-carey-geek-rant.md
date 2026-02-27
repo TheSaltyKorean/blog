@@ -4,6 +4,9 @@ title:  "My Mariah Carey Geek Rant"
 date:   2008-05-09
 banner_image: 
 tags: [Funny, Geeks]
+post_image: "/assets/images/art/tb2.webp"
+badge_color: "bg-pink"
+categories: [personal]
 ---
 
 So if Mariah Carey is going to feature us Geeks on her videos, the least she could do is get her geekspeak right!  I mean sheezh, who uses 802.11a anyway?  (mentioned at the end of the video)  The geek in the video needs to upgrade her firmware to 802.11n!  Oh wait, I think her doctor already upgraded her "firmware".

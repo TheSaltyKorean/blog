@@ -4,6 +4,9 @@ title:  "New FedEx SSL Cert is bound to cause problems"
 date:   2009-03-20
 banner_image: 
 tags: []
+post_image: "/assets/images/art/tb6.webp"
+badge_color: "bg-blue"
+categories: [technology]
 ---
 
 Having done some thorough research with code signing certifications and SSL certs, am I wrong in thinking that FedEx has royally screwed up?  I had to double and triple check that the link provided wasn’t a phishing attack of some sort, and it all looks valid.  Forcing your customers to install a cert that doesn’t have a root already installed in Windows is major trouble!  Why would VeriSign sell FedEx such a crappy product?

@@ -4,6 +4,9 @@ title:  "Join the Microsoft Game Studios Beta Program"
 date:   2008-03-22
 banner_image: 
 tags: [Microsoft, Gaming]
+post_image: "/assets/images/art/tb5.webp"
+badge_color: "bg-blue"
+categories: [microsoft, development]
 ---
 
 If you're interested in joining Microsoft's beta program for games, you'll be interested in the following email I received.

@@ -4,6 +4,9 @@ title:  "Using Jott for Child Custody records"
 date:   2008-07-10
 banner_image: logo_beta_3.gif
 tags: [Voice Recognition, Divorce]
+post_image: "/assets/images/art/tb1.webp"
+badge_color: "bg-pink"
+categories: [personal]
 ---
 
 Having recently been through a somewhat distasteful divorce (all but being called an abusive and negligent father), I came to recognize the need to establish custody records while I have my son.  The need arises because I need proof of both my own and her actions.  This way she cannot call my integrity into question again, and should the need arise, I can use the records to establish her own pattern.  The various things I need to record are pickup and dropoff times, interaction with his mother (a very very important task), and basically record everything I do with him.

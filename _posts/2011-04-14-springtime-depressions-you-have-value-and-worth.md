@@ -4,6 +4,9 @@ title:  "Springtime depressions - You have value and worth"
 date:   2011-04-14
 banner_image: 
 tags: []
+post_image: "/assets/images/art/tb1.webp"
+badge_color: "bg-pink"
+categories: [personal]
 ---
 
 For most of us, springtime is exciting.  The warm weather and the sun puts us in a better mood and makes us want to venture out into the world.  But as I am so familiar with, many people out there reach a critical mass and enter an almost depressive state during springtime.  Over the past few weeks, I’ve had many (over 5) close friends reach out about the tough times they are going through.  Each one expressing a loss of self worth and value due to a failure in a relationship.  For some it was a poor parental figure, others a failed marriage, some a significant other who treated them poorly, and even some with a lack of a significant other or enough quality relationships.

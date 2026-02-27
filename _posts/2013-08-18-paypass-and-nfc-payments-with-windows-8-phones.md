@@ -4,6 +4,9 @@ title:  "Paypass and NFC payments with Windows 8 phones"
 date:   2013-08-18
 banner_image: windows-phone-logo_thumb.jpg
 tags: [Windows 8]
+post_image: "/assets/images/art/tb3.webp"
+badge_color: "bg-blue"
+categories: [technology]
 ---
 
 

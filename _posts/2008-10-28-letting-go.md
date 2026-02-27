@@ -4,6 +4,9 @@ title:  "Letting Go"
 date:   2008-10-28
 banner_image: 
 tags: []
+post_image: "/assets/images/art/tb1.webp"
+badge_color: "bg-pink"
+categories: [personal]
 ---
 
 Being the Type A personality I am, one of the hardest things for me to do is to “Let Go”.  Why is letting go such an important thing?

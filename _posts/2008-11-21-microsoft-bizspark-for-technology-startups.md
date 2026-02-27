@@ -4,6 +4,9 @@ title:  "Microsoft BizSpark for technology startups"
 date:   2008-11-21
 banner_image: 
 tags: []
+post_image: "/assets/images/art/tb6.webp"
+badge_color: "bg-blue"
+categories: [microsoft, development]
 ---
 
 I love it when someone else writes up my blog postings for me!

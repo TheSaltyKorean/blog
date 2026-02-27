@@ -4,6 +4,9 @@ title:  "Fort Smith .Net User Group forming"
 date:   2008-01-28
 banner_image: 
 tags: [Fort Smith, .Net]
+post_image: "/assets/images/art/tb3.webp"
+badge_color: "bg-leaf"
+categories: [community, career]
 ---
 
 I was able to meet last week and help the new group who is trying to form a .Net User Group in Fort Smith.  I will post more information as I find it.  If you are interested in attending, learning about, or helping form the new FSDNUG, please contact one of the following people:

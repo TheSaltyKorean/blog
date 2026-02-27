@@ -4,6 +4,9 @@ title:  "Microsoft Certification Exam Voucher Giveaway"
 date:   2008-06-17
 banner_image: 
 tags: [Microsoft Certification]
+post_image: "/assets/images/art/tb6.webp"
+badge_color: "bg-blue"
+categories: [microsoft, development]
 ---
 
 I've recently come into several Certification Exam Vouchers and have decided to host a giveaway.  Just post a comment to the blog, and I'll randomly select a winner.  All entries must be in by June 30th, 2008.

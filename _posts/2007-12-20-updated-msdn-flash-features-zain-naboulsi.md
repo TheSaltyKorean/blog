@@ -4,6 +4,9 @@ title:  "Updated MSDN Flash features Zain Naboulsi"
 date:   2007-12-20
 banner_image:
 tags: []
+post_image: "/assets/images/art/tb5.webp"
+badge_color: "bg-blue"
+categories: [microsoft, development]
 ---
 
 The MSDN Flash e-Newsletter has been updated with a reorganization of the way it is laid out.  One of the most surprising things was a familiar mug at the top of the page featuring Zain Naboulsi, our MSDN and X-Box Evangelist for our area.  Congratz on the feature Zain!

@@ -4,6 +4,9 @@ title:  "Microsoft MVP Award"
 date:   2013-04-06
 banner_image: MVP_Horizontal_FullColor_small_thumb.png
 tags: []
+post_image: "/assets/images/art/tb6.webp"
+badge_color: "bg-blue"
+categories: [microsoft, development]
 ---
 
 Normally April 1st is filled full of practical jokes and funny stuff with Google being the most notorious about the scams they try to pull.  This year Google tried to trick us into believing a new product called [Google Nose](http://www.youtube.com/watch?v=VFbYadm_mrw&hl=en).  I love when they say “Our mobile aroma indexing program.” It makes it sound all official like.

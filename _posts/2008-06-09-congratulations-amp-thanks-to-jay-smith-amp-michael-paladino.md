@@ -4,6 +4,9 @@ title:  "Congratulations & Thanks to Jay Smith & Michael Paladino"
 date:   2008-06-09
 banner_image: 
 tags: []
+post_image: "/assets/images/art/tb6.webp"
+badge_color: "bg-blue"
+categories: [technology]
 ---
 
 [![jay-smith_80x80](http://gwb.blob.core.windows.net/rwalker/WindowsLiveWriter/CongratulationsThankstoJaySmithMichaelPa_10419/jay-smith_80x80_5.png) ![MichaelHeadshotSquare](http://gwb.blob.core.windows.net/rwalker/WindowsLiveWriter/CongratulationsThankstoJaySmithMichaelPa_10419/MichaelHeadshotSquare_thumb.jpg)](http://jaysmith.us/)

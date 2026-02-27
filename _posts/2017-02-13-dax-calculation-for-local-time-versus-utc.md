@@ -4,6 +4,9 @@ title:  "DAX calculation for local time versus UTC"
 date:   2017-02-13
 banner_image: 
 tags: []
+post_image: "/assets/images/art/tb7.webp"
+badge_color: "bg-teal"
+categories: [data, development]
 ---
 
 

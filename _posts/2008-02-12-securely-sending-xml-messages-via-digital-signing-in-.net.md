@@ -4,6 +4,9 @@ title:  "Securely Sending XML Messages via Digital Signing in .Net"
 date:   2008-02-12
 banner_image: 
 tags: []
+post_image: "/assets/images/art/tb12.webp"
+badge_color: "bg-dark"
+categories: [development]
 ---
 
 Great video by Will DePalo on how to securely communicate by digitally signing xml messages.

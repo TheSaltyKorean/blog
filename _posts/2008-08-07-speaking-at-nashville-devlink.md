@@ -4,6 +4,9 @@ title:  "Speaking at Nashville devLink"
 date:   2008-08-07
 banner_image: 
 tags: [Nashville, devLink, Business Help]
+post_image: "/assets/images/art/tb2.webp"
+badge_color: "bg-leaf"
+categories: [community, career]
 ---
 
 It's always an honor to be asked to speak at an event.  Fortunately John Kellar who chairs the Nashville devLink event hasn't heard about my reputation, lol.

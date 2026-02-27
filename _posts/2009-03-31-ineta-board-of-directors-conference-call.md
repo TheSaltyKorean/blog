@@ -4,6 +4,9 @@ title:  "INETA Board of Directors Conference Call"
 date:   2009-03-31
 banner_image: 
 tags: [INETA]
+post_image: "/assets/images/art/tb2.webp"
+badge_color: "bg-leaf"
+categories: [community, career]
 ---
 
 I’m currently on my first INETA Board of Directors Conference Call and I thought I’d keep people updated on what’s going on, as there’s some really good stuff being discussed.  I know one of the perception problems, is that INETA is a black hole, which is on the top of my list to help change, and hopefully by doing this, that perception will change.

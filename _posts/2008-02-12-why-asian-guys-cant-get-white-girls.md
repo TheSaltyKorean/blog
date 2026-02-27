@@ -4,6 +4,9 @@ title:  "Why Asian Guys can't get White Girls"
 date:   2008-02-12
 banner_image: 
 tags: []
+post_image: "/assets/images/art/tb1.webp"
+badge_color: "bg-pink"
+categories: [personal]
 ---
 
 A bit long, but extremely funny.  At least I'm not Indian!

@@ -4,6 +4,9 @@ title:  "MSN released I.T. Top Jobs - Software Application Developers ranked 2nd
 date:   2008-02-25
 banner_image: 
 tags: []
+post_image: "/assets/images/art/tb5.webp"
+badge_color: "bg-blue"
+categories: [technology]
 ---
 
 [![msft](http://gwb.blob.core.windows.net/rwalker/WindowsLiveWriter/MSN.TopJobsSoftwareApplicationDevelopers_14928/msft_thumb.gif)](http://gwb.blob.core.windows.net/rwalker/WindowsLiveWriter/MSN.TopJobsSoftwareApplicationDevelopers_14928/msft_2.gif)

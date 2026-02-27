@@ -4,6 +4,9 @@ title:  "SQL Server Management Pack"
 date:   2008-03-05
 banner_image: 
 tags: [SQL Server, SQL Server Utilities]
+post_image: "/assets/images/art/tb8.webp"
+badge_color: "bg-teal"
+categories: [data, development]
 ---
 
 I found this nugget of a tool today.  I haven't tried it out yet, but it sounds like one terrific tool.

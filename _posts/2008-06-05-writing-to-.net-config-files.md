@@ -4,6 +4,9 @@ title:  "Writing to .Net Config Files"
 date:   2008-06-05
 banner_image: 
 tags: []
+post_image: "/assets/images/art/tb11.webp"
+badge_color: "bg-dark"
+categories: [development]
 ---
 
 I've been working with config files for quite some time.  I was recently reminded that I needed to finish my original article and share my final findings on my personal best practices for working with config files.

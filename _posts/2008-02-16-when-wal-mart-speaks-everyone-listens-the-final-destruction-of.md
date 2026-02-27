@@ -4,6 +4,9 @@ title:  "When Wal-Mart speaks, everyone listens - the final destruction of HD-DV
 date:   2008-02-16
 banner_image: 
 tags: []
+post_image: "/assets/images/art/tb5.webp"
+badge_color: "bg-blue"
+categories: [technology]
 ---
 
 I live just miles from the Wal-Mart headquarters.  Half the people I know live and breathe Wal-Mart.  I sell software to the vendors that hawk their wares at Wally World.  So it's not a surprise to me that Wal-Mart dealt the final destructive blow to HD-DVD and Toshiba.  Today Toshiba announced the disbandment of HD-DVD, marking a close to the format wars.

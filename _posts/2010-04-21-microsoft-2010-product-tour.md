@@ -4,6 +4,9 @@ title:  "Microsoft 2010 Product Tour"
 date:   2010-04-21
 banner_image: Walker_MSProductTour_thumb.jpg
 tags: []
+post_image: "/assets/images/art/tb5.webp"
+badge_color: "bg-blue"
+categories: [microsoft, development]
 ---
 
 I’m proud to announce that two Microsoft employees, Sarika Calla and Kevin Halverson, who works on the Visual Studio Product Team will be visiting various User Groups and Companies in Arkansas and Texas!
