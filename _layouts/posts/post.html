@@ -1,0 +1,166 @@
+---
+layout: default
+---
+
+{% include layouts/nav/nav-10.html default_logo="black" drop_search=true alignment_class="ms-auto" %}
+
+<div class="wrapper light-wrapper">
+  <div class="container inner pt-80">
+    <div class="row">
+      <div class="col-lg-10 mx-auto">
+        <div class="blog classic-view">
+          <div class="post mb-0">
+            {% if page.post_format == "carousel" %}
+            <div class="post-slider">
+              <div class="basic-slider owl-carousel" data-margin="5">
+                {% for gallery in page.gallery %}
+                <div class="item"><img src="{{gallery.img}}" alt="{{gallery.img}}" /></div>
+                {% endfor %}
+              </div>
+            </div>
+            {% elsif page.post_format == "gallery" %}
+            <div class="post-gallery light-gallery-wrapper">
+              <div class="tiles tiles-s">
+                <div class="items row">
+                  {% for photos in page.gallery %}
+                  {% if forloop.index < 3%} <div class="item col-md-6">
+                    <figure class="overlay overlay1 rounded"><a href="{{photos.img}}" class="lightbox">
+                        <img src="{{photos.img}}" alt="{{photos.img}}"></a>
+                      <figcaption>
+                        <h5 class="from-top mb-0">View Larger</h5>
+                      </figcaption>
+                    </figure>
+                </div>
+                {% else %}
+                <div class="item col-md-4">
+                  <figure class="overlay overlay1 rounded"><a href="{{photos.img}}" class="lightbox">
+                      <img src="{{photos.img}}" alt="{{photos.img}}"></a>
+                    <figcaption>
+                      <h5 class="from-top mb-0">View Larger</h5>
+                    </figcaption>
+                  </figure>
+                </div>
+                {% endif %}
+                {% endfor %}
+                <!--/.item -->
+              </div>
+              <!--/.items -->
+            </div>
+            <!--/.tiles -->
+          </div>
+          <!--/.post-gallery -->
+          {% elsif page.post_format == "video" %}
+          {% if page.header_video %}
+          <div class="player-wrapper">
+            <div class="player" data-plyr-provider="{{page.header_video.provider}}" data-plyr-embed-id="{{page.header_video.id}}"></div>
+          </div>
+          {% endif %}
+          {% else %}
+          {% if page.post_image %}
+          <figure class="rounded text-center">
+            <img src="{{page.post_image}}" alt="{{page.title}}" />
+          </figure>
+          {% endif %}
+          {% endif %}
+          <div class="space60"></div> 
+          <div class="post-content">
+            {% if page.categories %}
+            <div class="category text-center">
+              {% for category in page.categories %}
+              <a href="/category/{{ category | downcase }}" class="badge rounded-pill {{page.badge_color}}">{{ category }}</a>
+              {% endfor %}
+            </div>
+            {% endif %}
+            <h2 class="post-title text-center">{{page.title}}</h2>
+            <div class="meta text-center">
+              {% if page.date %}
+              <span class="date"><i class="jam jam-clock"></i>{{page.date | date_to_string}}</span>
+              {% endif %}
+              {% if page.author %}
+              <span class="author"><i class="jam jam-user"></i><a href="/authors/{{page.author | slugify}}">By
+                  {{page.author}}</a></span>
+              {% endif %}
+            </div>
+            {{page.content}}
+            {% if page.post_format == "gallery" %}
+            <div class="space20"></div>
+            <div class="post-gallery light-gallery-wrapper">
+              <div class="tiles tiles-s">
+                <div class="items row">
+                  {% for gallery in page.gallery %}
+                  <div class="item {% if forloop.index < 3 %} col-md-6 {% else %} col-md-4 {% endif %}">
+                    <figure class="overlay overlay1 rounded">
+                      <a href="{{gallery.img}}" class="lightbox">
+                        <img src="{{gallery.img}}" alt="{{gallery.img}}"></a>
+                      <figcaption>
+                        <h5 class="from-top mb-0">View Larger</h5>
+                      </figcaption>
+                    </figure>
+                  </div>
+                  <!--/.item -->
+                  {% endfor %}
+                </div>
+                <!--/.items -->
+              </div>
+              <!--/.tiles -->
+            </div>
+            <!--/.post-gallery -->
+            {% endif %}
+            <div class="clearfix"></div>
+            <div class="space40"></div>
+            <div class="space10"></div>
+            <div class="d-lg-flex justify-content-between align-items-center meta-footer">
+              <ul class="list-unstyled tag-list">
+                {% capture tags %}
+                {% for tag in page.tags %}
+                <li data-sort="{{ site.posts.size | minus: tag[1].size | prepend: '0000' | slice: -4, 4 }}">
+                  <a class="btn btn-s" href="/tag/{{tag |slugify}}">{{ tag }}</a>
+                </li>
+                {% endfor %}
+                {% endcapture %}
+                {{ tags | split:'</li>' | sort | join:'</li>' }}
+              </ul>
+              <div class="space20 d-lg-none"></div>
+              <div class="d-flex align-items-center">
+                {% include utilities/social-share.html %}
+              </div>
+            </div>
+          </div>
+          <!-- /.post-content -->
+        </div>
+        <!-- /.post -->
+        {% if page.author %}
+        {% include posts/author.html simple_post= true %}
+        {% endif %}
+      </div>
+      <!-- /.blog -->
+    </div>
+    <!-- /column -->
+  </div>
+  <!-- /.row -->
+</div>
+<!-- /.container -->
+</div>
+<!-- /.wrapper -->
+{% if page.slider_post %}
+{% include posts/slider-posts.html slider_post_title="Slider Posts" %}
+{% elsif page.trending %}
+{% include posts/trending-posts.html trending_post_title="Trending Posts" %}
+{% endif %}
+
+<div class="wrapper gray-wrapper">
+  <div class="container inner">
+    <div class="row">
+      <div class="col-lg-10 mx-auto">
+        {% include utilities/disqus-comments.html %}
+      </div>
+      <!-- /column -->
+    </div>
+    <!-- /.row -->
+  </div>
+  <!-- /.container -->
+</div>
+<!-- /.wrapper -->
+</div>
+<!--shail main blog-->
+{% include layouts/footer/footer-1.html %}

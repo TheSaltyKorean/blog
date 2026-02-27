@@ -1,0 +1,58 @@
+---
+layout: default
+title: "Theme Features Overview"
+sub_title: "Explore the Versatile Components of Our Jekyll Theme"
+header_image: "/assets/images/art/bg-features.webp"
+
+additional_features:
+  - icon: "jam jam-layout"
+    icon_bg: "icon-bg-purple color-purple"
+    title: "9 Headers & 7 Footers"
+    description: "Various header and footer styles to serve you best for your needs."
+
+  - icon: "jam jam-water-drop"
+    icon_bg: "icon-bg-yellow color-yellow"
+    title: "17 Colors & 5 Fonts"
+    description: "Choose from included options or use custom colors or fonts."
+
+  - icon: "jam jam-umbrella"
+    icon_bg: "icon-bg-leaf color-leaf"
+    title: "4 Icon Sets"
+    description: "Stunning look on all devices with HQ icon sets featuring 2300+ icons."
+---
+
+{% include layouts/nav/nav-1.html drop_search=true alignment_class="ms-auto" %}
+{% include layouts/header/page-title.html %}
+
+<div class="wrapper light-wrapper">
+  <div class="container inner">
+    <div class="row">
+      <div class="col-lg-12">
+        <h2 class="section-title text-center mb-4">Theme Features Catalog</h2>
+        <p class="text-center mb-5">Explore the comprehensive variations available in our Jekyll theme.</p>
+      </div>
+    </div>
+    
+    <div class="row justify-content-center">
+      <div class="col-lg-10">
+        <div class="row">
+          {% for feature in page.additional_features %}
+            <div class="col-md-4 mb-4">
+              <div class="d-flex flex-column align-items-center text-center">
+                <div class="icon icon-bg {{ feature.icon_bg }} mb-3">
+                  <i class="{{ feature.icon }}"></i>
+                </div>
+                <div>
+                  <h4 class="mb-2">{{ feature.title }}</h4>
+                  <p class="small">{{ feature.description }}</p>
+                </div>
+              </div>
+            </div>
+          {% endfor %}
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+{% include layouts/footer/footer-1.html %}

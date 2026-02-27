@@ -1,0 +1,426 @@
+main_menu:
+
+  - text: "Home"
+    url: "/"
+    menu_type: "megamenu"
+    submenu:
+      - text: "Digital Startup"
+        url: "/"
+      - text: "Saas Landing"
+        url: "/home-pages/index-2"
+      - text: "SEO Agency"
+        url: "/home-pages/index-3"
+      - text: "Modern Business"
+        url: "/home-pages/index-4"
+      - text: "Design Agency"
+        url: "/home-pages/index-5"
+      - text: "App Presentation"
+        url: "/home-pages/index-6"
+      - text: "Creative Landing"
+        url: "/home-pages/index-7"
+      - text: "Marketing Startup"
+        url: "/home-pages/index-8"
+      - text: "Digital Agency"
+        url: "/home-pages/index-9"
+      - text: "Creative Business"
+        url: "/home-pages/index-10"
+      - text: "Software Landing"
+        url: "/home-pages/index-11"
+      - text: "App Landing"
+        url: "/home-pages/index-12"
+      - text: "Creative Agency"
+        url: "/home-pages/index-13"
+      - text: "Wedding Photography"
+        url: "/home-pages/index-14"
+      - text: "Food Photography"
+        url: "/home-pages/index-15"
+      - text: "Creative Onepage"
+        url: "/home-pages/index-16"
+      - text: "Marketing Company"
+        url: "/home-pages/index-17"
+      - text: "Startup Business"
+        url: "/home-pages/index-18"
+      - text: "Creative Resume"
+        url: "/home-pages/index-19"
+      - text: "Digital Studio"
+        url: "/home-pages/index-20"
+      - text: "Travel Blog"
+        url: "/home-pages/index-21"
+      - text: "Minimal Shop"
+        url: "/home-pages/index-22"
+      - text: "Minimal Portfolio"
+        url: "/home-pages/index-23"
+      - text: "Coming Soon"
+        url: "/home-pages/index-24"
+      - text: "Personal Creative"
+        url: "/home-pages/index-25"
+      - text: "Minimal Photography"
+        url: "/home-pages/index-26"
+      - text: "Maintenance"
+        url: "/home-pages/index-27"
+  - text: "Features"
+    url: "#"
+    menu_type: "dropdown"
+    level_two:
+      - sub_menu_text: "Navigation"
+        sub_menu:
+          - text: "Classic Navigation"
+            url: "/features/navigation1"
+          - text: "Classic Light Navigation"
+            url: "/features/navigation2"
+          - text: "Classic Dark Navigation"
+            url: "/features/navigation3"
+          - text: "Topbar Navigation"
+            url: "/features/navigation4"
+          - text: "Wide Navigation"
+            url: "/features/navigation5"
+          - text: "Extended Navigation"
+            url: "/features/navigation6"
+          - text: "Fancy Light Navigation"
+            url: "/features/navigation7"
+          - text: "Fancy Dark Navigation"
+            url: "/features/navigation8"
+          - text: "Centered Navigation"
+            url: "/features/navigation9"
+          - text: "Shop Navigation"
+            url: "/features/navigation10"
+          - text: "Classic Navigation for Light Background"
+            url: "/features/navigation11"
+      - sub_menu_text: "Page Header"
+        sub_menu:
+          - text: "Header with Image"
+            url: "/features/header1"
+          - text: "Header with Breadcrumb"
+            url: "/features/header2"
+          - text: "Header with no Image"
+            url: "/features/header3"
+          - text: "Header with Gray Wrapper"
+            url: "/features/header4"
+          - text: "Header with Dark Wrapper"
+            url: "/features/header5"
+          - text: "Header with Colored Background"
+            url: "/features/header6"
+          - text: "Header with Gradient"
+            url: "/features/header7"
+          - text: "Header with Video Wrapper"
+            url: "/features/header8"
+          - text: "Header with Section Wrapper"
+            url: "/features/header9"
+          - text: "Header with Page Title"
+            url: "/features/header10"
+      - sub_menu_text: "Footer"
+        sub_menu:
+          - text: "Multi Column Footer V1"
+            url: "/features/footer1"
+          - text: "Centered Footer"
+            url: "/features/footer2"
+          - text: "Minimal Footer"
+            url: "/features/footer3"
+          - text: "Blog Footer"
+            url: "/features/footer4"
+          - text: "Multi Column Footer V2"
+            url: "/features/footer5"
+          - text: "Footer with Overflow"
+            url: "/features/footer6"
+          - text: "Footer with Background Image"
+            url: "/features/footer7"
+          - text: "Blog Footer with Background"
+            url: "/features/footer8"
+    level_one:
+      - text: "Modal"
+        url: "/features/modal"  
+      - text: "FAQ"
+        url: "/features/faq"
+      - text: "Page Loading "
+        url: "/features/loading"
+      - text: "Page Scrolling"
+        url: "/features/scroll"
+        
+  - text: "Pages"
+    url: "#"
+    menu_type: "dropdown"
+    level_two:
+      - sub_menu_text: "Services"
+        sub_menu:
+          - text: "Service 01"
+            url: "/services/index"
+
+          - text: "Service 02"
+            url: "/services/index-2"
+
+          - text: "Service 03"
+            url: "/services/index-3"
+
+          - text: "Service 04"
+            url: "/services/index-4"
+
+          - text: "Service 05"
+            url: "/services/index-5"
+
+      - sub_menu_text: "About Us"
+        sub_menu:
+          - text: "About 01"
+            url: "/about/about"
+
+          - text: "About 02"
+            url: "/about/about-2"
+
+          - text: "About 03"
+            url: "/about/about-3"
+
+          - text: "About 04"
+            url: "/about/about-4"
+
+      - sub_menu_text: "Shop"
+        sub_menu:
+          - text: "Shop 01"
+            url: "/shop/index"
+
+          - text: "Shop 02"
+            url: "/shop/index-2"
+
+          - text: "Product Page" 
+            url: "/shop/brand-box"
+
+          - text: "Featurd Product Page"
+            url: "/shop/featured/featured_product1"
+
+          - text: "Cart Page"
+            url: "/shop/cart"
+          
+          - text: "Checkout Page"
+            url: "/shop/checkout"
+
+      - sub_menu_text: "Contact"
+        sub_menu:
+          - text: "Contact 01"
+            url: "/contact/contact-1"
+
+          - text: "Contact 02"
+            url: "/contact/contact-2"
+
+          - text: "Contact 03"
+            url: "/contact/contact-3"
+
+          - text: "Contact 04"
+            url: "/contact/contact-4"
+
+   
+
+  - text: "Elements"
+    url: "#"
+    menu_type: "megamenu"
+    submenu:
+
+      - text: "Accordion"
+        url: "/elements/accordion"
+
+      - text: "Dividers"
+        url: "/elements/dividers"
+
+      - text: "Lightbox"
+        url: "/elements/lightbox"
+
+      - text: "Tabs"
+        url: "/elements/tabs"
+
+      - text: "Alerts"
+        url: "/elements/alerts"
+
+      - text: "Dropcap"
+        url: "/elements/dropcap"
+
+      - text: "Lists"
+        url: "/elements/lists"
+
+      - text: "Team"
+        url: "/elements/team"
+
+      - text: "Animated Text"
+        url: "/elements/animated_text"
+
+      - text: "Forms"
+        url: "/elements/forms"
+
+      - text: "Media Player"
+        url: "/elements/media_player"
+
+      - text: "Testimonials"
+        url: "/elements/testimonials"
+
+      - text: "Blockquote"
+        url: "/elements/blockquote"
+
+      - text: "Buttons & Badges"
+        url: "/elements/buttons_badges"
+
+      - text: "Call to Action"
+        url: "/elements/call_to_action"
+
+      - text: "Carousel"
+        url: "/elements/carousel"
+
+      - text: "Clients"
+        url: "/elements/clients"
+
+      - text: "Countdown"
+        url: "/elements/countdown"
+
+      - text: "Counter"
+        url: "/elements/counter"
+
+      - text: "Icons - Concept"
+        url: "/elements/icons_concept"
+
+      - text: "Icons - Jam"
+        url: "/elements/icons_jam"
+
+      - text: "Icons - Icofont"
+        url: "/elements/icons_icofont"
+
+      - text: "Icons - Lineal"
+        url: "/elements/icons_lineal"
+
+      - text: "Icon Box"
+        url: "/elements/icon_box"
+
+      - text: "Image Hover"
+        url: "/elements/image_hover"
+
+      - text: "Image Mask"
+        url: "/elements/icons_image_mask"
+
+      - text: "Modal"
+        url: "/elements/modal"
+
+      - text: "Pricing Tables"
+        url: "/elements/pricing"
+
+      - text: "Process Steps"
+        url: "/elements/process_steps"
+
+      - text: "Progress Bar"
+        url: "/elements/progress_bar"
+
+      - text: "Scroll Animations"
+        url: "/elements/scroll_animations"
+
+      - text: "Social Icons"
+        url: "/elements/social_icons"
+
+      - text: "Tables"
+        url: "/elements/tables"
+
+      - text: "Titles"
+        url: "/elements/titles"
+
+      - text: "Toggle"
+        url: "/elements/toggle"
+
+      - text: "Tooltip & Popover"
+        url: "/elements/tooltip_popover"
+
+      - text: "Typography"
+        url: "/elements/typography"
+
+      - text: "Video Popup"
+        url: "/elements/video_popup"
+
+      - text: "Waves"
+        url: "/elements/waves"
+
+      - text: "Wrappers"
+        url: "/elements/wrappers"
+
+  - text: "Portfolio"
+    url: "#"
+    level_one:
+      - text: "Grid Portfolio"
+        url: "/portfolios/grid-portfolio"
+
+      - text: "Grid Portfolio With Details"
+        url: "/portfolios/grid-portfolio-details"
+
+      - text: "Masonry Portfolio"
+        url: "/portfolios/masonry-portfolio"
+
+      - text: "Masonry Portfolio With Details"
+        url: "/portfolios/masonry-portfolio-details"
+
+      - text: "Mosaic Portfolio"
+        url: "/portfolios/mosaic-portfolio"
+
+      - text: "Full Screen Grid Portfolio"
+        url: "/portfolios/fullscreen-grid"
+
+      - text: "Portfolio With Item Details"
+        url: "/portfolios/portfolio-item-details"
+
+      - text: "Box Portfolio With Item Details"
+        url: "/portfolios/box-item-details"
+    level_two:
+      - sub_menu_text: "Portfolio Posts"
+        sub_menu:
+          - text: "Post with multiple images"
+            url: "/portfolio/portfolio-post-multi-images"
+          - text: "Post with slider"
+            url: "/portfolio/portfolio-post-slider"
+          - text: "Post with masonry gallery"
+            url: "/portfolio/portfolio-post-masonry"
+          - text: "Post with carousel"
+            url: "/portfolio/portfolio-post-carousel"
+          - text: "Post with columns"
+            url: "/portfolio/portfolio-post-columns"
+          - text: "Post with video"
+            url: "/portfolio/portfolio-post-video"
+
+  - text: "Blog"
+    url: "#"
+    menu_type: "dropdown"
+    level_one:
+      - text: "Classic Grid"
+        url: "/blogs/classic-grid"
+
+      - text: "Classic Grid With Sidebar"
+        url: "/blogs/classic-grid-sidebar"
+
+      - text: "Box Grid Blog"
+        url: "/blogs/boxed-grid"
+
+      - text: "Box Grid Blog With Sidebar"
+        url: "/blogs/boxed-grid-sidebar"
+
+      - text: "Classic Blog"
+        url: "/blogs/classic"
+
+      - text: "Classic Blog with Sidebar"
+        url: "/blogs/classic-sidebar"
+
+      - text: "Boxed Classic Blog"
+        url: "/blogs/boxed-classic"
+
+      - text: "Boxed Classic Blog With Sidebar"
+        url: "/blogs/boxed-classic-sidebar"
+    level_two:
+      - sub_menu_text: "Blog Posts"
+        sub_menu:
+          - text: "Post with sidebar"
+            url: "/posts/simple-post-with-sidebar"
+          - text: "Post with no sidebar"
+            url: "/posts/simple-post-with-no-sidebar"
+          - text: "Box Post with no sidebar"
+            url: "/posts/post-boxed"
+          - text: "Box Post with sidebar"
+            url: "/posts/post-boxed-sidebar"
+          - text: "Post with code highlight"
+            url: "/posts/post-with-code-highlight"
+          - text: "Post with video"
+            url: "/posts/post-with-video"
+          - text: "Post with image"
+            url: "/posts/post-with-image"
+          - text: "Post with carousel"
+            url: "/posts/post-with-carousel"
+          - text: "Post with Multiple Carousel"
+            url: "/posts/multi-carousel-post"
+          - text: "Post with gallery"
+            url: "/posts/post-with-gallery"

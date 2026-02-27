@@ -1,0 +1,27 @@
+{% comment %} Grid Portfolio Loop {% endcomment %}
+
+{% assign layout_class = include.layout_class | default: 'col-md-6 col-lg-4' %}
+{% assign is_boxed = include.is_boxed | default: false %}
+{% assign text_alignment = include.text_alignment | default: '' %}
+{% assign hide_content = include.hide_content | default: false %}
+{% assign items = site.portfolio | where:"grouped_by","grid" %}
+
+{% for post in items %}
+<div class="item item-detailed grid-sizer {{ layout_class }} {% for filter in post.filters %} {{filter}} {% endfor %}">
+  {% if is_boxed %}
+  <div class="box bg-white shadow p-30">
+    {% endif %}
+    <figure class="main overlay overlay2 rounded mb-30">
+      <a href="{{post.big_image}}" class="lightbox"> <img src="{{post.thumbnail}}" alt="" /></a>
+    </figure>
+    {% unless hide_content %}
+    <div class="post-content">
+      <h2 class="post-title mb-10"><a href="{{post.url}}">{{post.title}}</a></h2>
+      <div class="meta mb-0">{{post.filters | join: ", "}}</div>
+    </div>
+    {% endunless %}
+    {% if is_boxed %}
+  </div>
+  {% endif %}
+</div>
+  {% endfor %}

@@ -1,0 +1,37 @@
+{% comment %} Flexible Portfolio Loop Template {% endcomment %}
+
+{% assign layout_class = include.layout_class | default: 'col-md-6 col-lg-4' %}
+{% assign is_boxed = include.is_boxed | default: false %}
+{% assign is_grid = include.is_grid | default: false %}
+{% assign text_alignment = include.text_alignment | default: '' %}
+
+{% assign product_items = site.portfolio | where:"grouped_by","product_items" %}
+{% for post in product_items %}
+  {% if is_grid %}
+  <div class="item item-detailed grid-sizer {{ layout_class }} {% for filter in post.filters %} {{filter}} {% endfor %}">
+  {% else %}
+  <div class="item item-detailed {% for filter in post.filters %} {{filter}} {% endfor %}">
+  {% endif %}
+
+    {% if is_boxed %}
+    <div class="box bg-white shadow p-30">
+    {% endif %}
+
+      <figure class="main rounded mb-30">
+        <div class="item-detailed-image">
+          <img src="{{post.sm_img}}" alt="{{post.title}}"/>
+          <img src="{{post.big_img}}" alt="{{post.title}}"/> 
+        </div>
+        <a href="{{post.sm_img}}" class="hover-icon-first lightbox" data-tip="Enlarge image"><i class="jam jam-qr-code"></i></a>
+        <a href="{{post.url}}" class="hover-icon-second" data-tip="See details"><i class="jam jam-link"></i></a>
+      </figure>
+      <div class="item-content {{ text_alignment }}">
+        <h2 class="post-title mb-10"><a href="{{post.url}}">{{post.title}}</a></h2>
+        <div class="meta mb-0">{{post.sub_title}}</div>
+      </div>
+
+    {% if is_boxed %}
+    </div>
+    {% endif %}
+  </div>
+{% endfor %}

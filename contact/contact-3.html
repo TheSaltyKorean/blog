@@ -1,0 +1,80 @@
+---
+layout: default
+title: "Contact 3"
+sub_title: "How can we help?"
+header_image: "/assets/images/art/bg9.webp"
+
+contact_info:
+  enable: true
+  contact_data:
+    - icon: "/assets/images/icon/ui-gps.webp"
+      info: "Moon Street Light Avenue<br> 14/05 Jupiter, JP 80630"
+
+    - icon: "/assets/images/icon/co-telephone.webp"
+      info: "00 (123) 456 78 90<br/> 00 (987) 654 32 10"
+
+    - icon: "/assets/images/icon/co-email-5.webp"
+      info:
+      - "manager@email.com <br/>"
+      - "asistant@email.com"
+
+contact_form:
+  enable: true
+  title: "Get in Touch"
+  sub_title: "Have any questions? Reach out to us from our contact form and we will get back to you shortly."
+  action_email: "tortoizthemes@gmail.com"
+  lists:
+    - title: Address
+      info_01: "Moonshine St. 14/05 Light City,"
+      info_02: "London, United Kingdom"
+      icon: "icofont-location-pin"
+
+    - title: E-mail
+      info_01: "tortoizthemes@gmail.com"
+      info_02: "support@tortoizthemes.com"
+      icon: "icofont-mail-box"
+
+    - title: Phone
+      info_01: "+00 (123) 456 78 90"
+      info_02: "+00 (123) 456 78 90"
+      icon: "icofont-telephone"
+
+  forms_data:
+
+    - field_type: "input"
+      field_name: "first_name"
+      placeholder: "First Name"
+      error_message: "First Name Is required"
+
+    - field_type: "input"
+      field_name: "last_name"
+      placeholder: "Laast Name"
+      error_message: "Last Name Is required"
+
+    - field_type: "input"
+      field_name: "user_email"
+      placeholder: "Email"
+      error_message: "Email Is required"
+
+    - field_type: "input"
+      field_name: "user_phone"
+      placeholder: "Phone Number"
+      error_message: "Phone Number Is required"
+
+    - field_type: "textarea"
+      field_name: "user_message"
+      placeholder: "Message"
+      error_message: "Message Is required"
+
+google_maps:
+  enable: true
+
+---
+
+{% include layouts/nav/nav-1.html  drop_search=true alignment_class="ms-auto" %}
+{% include layouts/header/page-title.html %}
+<!--contact form-->
+{% include components/contact/contact-info.html %}
+{% include components/contact/contact-3.html %}
+<!--/.contact form-->
+{% include layouts/footer/footer-1.html %}

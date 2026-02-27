@@ -1,0 +1,54 @@
+<div class="wrapper gray-wrapper">
+    <div class="container inner">
+        <div class="row">
+            <div class="col-lg-10 offset-lg-1">
+                <h3 class="mb-30">
+                    {% if include.trending_post_title %}
+                    {{include.trending_post_title}}
+                    {% endif %}</h3>
+                <div class="grid-view">
+                    <div class="carousel owl-carousel" data-margin="30" data-dots="true" data-autoplay="false"
+                        data-autoplay-timeout="5000"
+                        data-responsive='{"0":{"items": "1"}, "768":{"items": "2"}, "992":{"items": "3"}}'>
+                        {% for post in site.posts limit: 6 | where: "trending", true %}
+                        <div class="item">
+                            {% if post.post_image %}
+                            <figure class="overlay overlay1 rounded mb-30">
+                                <a href="{{post.url}}">
+                                    <img class="post-thumb" src="{{post.post_image}}" alt="{{post.title}}" />
+                                </a>
+                                <figcaption>
+                                    <h5 class="from-top mb-0">Read More</h5>
+                                </figcaption>
+                            </figure>
+                            {% endif %}
+                            {% if post.categories %}
+                            <div class="category">
+                                {% for category in post.categories %}
+                                <a href="/category/{{ category | slugify}}"
+                                    class="badge rounded-pill {{post.badge_color}}">{{category}}</a>
+                                {% endfor %}
+                            </div>
+                            {% endif %}
+                            <h2 class="post-title"><a href="{{post.url}}">{{post.title}}</a></h2>
+                            <div class="meta mb-0">
+                                {% if post.date %}
+                                <span class="date"><i class="jam jam-clock"></i>{{post.date |
+                                    date_to_long_string}}</span>
+                                {% endif %}
+                            </div>
+                        </div>
+                        <!-- /.item -->
+                        {% endfor %}
+                    </div>
+                    <!-- /.owl-carousel -->
+                </div>
+                <!-- /.grid-view -->
+            </div>
+            <!-- /column -->
+        </div>
+        <!-- /.row -->
+    </div>
+    <!-- /.container -->
+</div>
+<!-- /.wrapper -->

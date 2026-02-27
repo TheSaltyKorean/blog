@@ -1,0 +1,46 @@
+{% if include.images and include.images.size > 0 %}
+<div class="post-gallery light-gallery-wrapper">
+  <div class="tiles tiles-s">
+    <div class="items row">
+      {% assign image_count = include.images | size %}
+      {% for gallery in include.images %}
+        {% if image_count <= 2 %}
+          <div class="item col-md-6">
+        {% elsif image_count == 3 %}
+          <div class="item col-md-4">
+        {% elsif image_count == 4 %}
+          {% if forloop.index <= 2 %}
+            <div class="item col-md-6">
+          {% else %}
+            <div class="item col-md-4">
+          {% endif %}
+        {% elsif image_count == 5 %}
+          {% if forloop.index <= 2 %}
+            <div class="item col-md-6">
+          {% else %}
+            <div class="item col-md-4">
+          {% endif %}
+        {% else %}
+          {% if forloop.index <= 2 %}
+            <div class="item col-md-6">
+          {% else %}
+            <div class="item col-md-4">
+          {% endif %}
+        {% endif %}
+            <figure class="overlay overlay1 rounded">
+              <a href="{{ gallery.full_src }}" class="lightbox">
+                <span class="bg"></span>
+                <img src="{{ gallery.img }}" alt="{{ gallery.alt | default: 'Gallery Image' }}">
+              </a>
+              {% if gallery.caption %}
+              <figcaption>
+                <h5 class="from-top mb-0">{{ gallery.caption }}</h5>
+              </figcaption>
+              {% endif %}
+            </figure>
+          </div>
+      {% endfor %}
+    </div>
+  </div>
+</div>
+{% endif %}

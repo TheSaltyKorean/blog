@@ -1,0 +1,57 @@
+---
+layout: default
+
+---
+
+{% include layouts/nav/nav-10.html default_logo="black" shop_header=true drop_search=true alignment_class="mx-auto" %}
+
+{% if page.products_slider.enable %}
+  {% include components/shop/products_slider.html %}
+{% endif %}
+
+{% if page.product_heading.enable %}
+{% include layouts/header/page-title.html %}
+{% endif %}
+
+<div class="wrapper light-wrapper">
+  <div class="container inner">
+    <div class="grid grid-view boxed">
+      <div class="tiles">
+        <div class="row isotope">
+          {% include components/shop/shop-items-list.html %}
+        </div>
+        <!-- /.row -->
+      </div>
+      <!-- /.tiles -->
+    </div>
+    <!-- /.grid -->
+    <div class="space30"></div>
+    
+    {% if paginator.total_pages > 1 %}
+    <div class="pagination text-center">
+      <ul>
+        {% if paginator.previous_page %}
+        <li><a href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}" class="pl-0"><i class="jam jam-arrow-left"></i></a></li>
+        {% endif %}
+        
+        {% if paginator.page_trail %}
+        {% for trail in paginator.page_trail %}
+          <li {% if page.url == trail.path %}class="active"{% endif %}>
+              <a href="{{ trail.path | prepend: site.baseurl | replace: '//', '/' }}" title="{{trail.title}}"><span>{{ trail.num }}</span></a>
+          </li>
+        {% endfor %}
+      {% endif %}
+
+        {% if paginator.next_page %}
+        <li><a href="{{ paginator.next_page_path | prepend: site.baseurl | replace: '//', '/' }}" class="pr-0"><i class="jam jam-arrow-right"></i></a></li>
+        {% endif %}
+      </ul>
+    </div>
+    {% endif %}  
+    
+    <!-- /.pagination -->
+  </div>
+  <!-- /.container -->
+</div>
+
+{% include layouts/footer/footer-2.html %}

@@ -1,0 +1,34 @@
+---
+layout: default
+---
+
+{% include layouts/nav/nav-1.html drop_search=true alignment_class="ms-auto" %}
+{% include layouts/header/page-title.html %}
+
+<div class="wrapper light-wrapper">
+  <div class="container inner">
+    <div class="row">
+      <div class="col-lg-10 offset-lg-1">
+        <div class="blog classic-view">
+          {% for post in paginator.posts %}
+          {% include posts/loops/post-loop.html 
+            title_length=27
+            excerpt_length=40
+            text_alignment='text-center'
+            is_boxed=false
+            is_grid=false
+          %}
+          {% endfor %}
+        </div>
+        <!-- /.blog -->
+        {% include utilities/pagination.html %}
+      </div>
+      <!-- /column -->
+    </div>
+    <!-- /.row -->
+  </div>
+  <!-- /.container -->
+</div>
+<!-- /.wrapper -->
+
+{% include layouts/footer/footer-1.html %}

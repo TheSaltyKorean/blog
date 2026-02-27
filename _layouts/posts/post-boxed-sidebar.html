@@ -1,0 +1,104 @@
+---
+layout: default
+---
+
+{% include layouts/nav/nav-10.html default_logo="black" drop_search=true alignment_class="ms-auto" %}
+
+<div class="wrapper light-wrapper">
+  <div class="container inner pt-80">
+    <div class="row">
+      <div class="col-lg-8">
+        <div class="blog classic-view boxed">
+          <div class="post mb-0">
+            <div class="box bg-white shadow">
+              {% if page.post_image %}
+              <figure class="rounded text-center">
+                <img src="{{page.post_image}}" alt="{{page.title}}" />
+              </figure>
+              {% endif %}
+              <div class="space40"></div>
+              <div class="post-content">
+                {% if page.categories %}
+                <div class="category text-center">
+                  {% for category in page.categories %}
+                  <a href="/category/{{ category | downcase }}" class="badge rounded-pill {{page.badge_color}}">{{
+                    category }}</a>
+                  {% endfor %}
+                </div>
+                {% endif %}
+                <h2 class="post-title text-center">{{page.title}}</h2>
+                <div class="meta text-center">
+                  {% if page.date %}
+                  <span class="date"><i class="jam jam-clock"></i>{{page.date | date_to_string}}</span>
+                  {% endif %}
+                  {% if page.author %}
+                  <span class="author"><i class="jam jam-user"></i><a href="/authors/{{page.author | slugify}}">By
+                      {{page.author}}</a></span>
+                  {% endif %}
+                </div>
+                {{page.content}}
+                <div class="clearfix"></div>
+                <div class="space40"></div>
+                <div class="space10"></div>
+                <div class="d-lg-flex justify-content-between align-items-center meta-footer">
+                  <ul class="list-unstyled tag-list">
+                    {% capture tags %}
+                    {% for tag in page.tags %}
+                    <li data-sort="{{ site.posts.size | minus: tag[1].size | prepend: '0000' | slice: -4, 4 }}">
+                      <a class="btn btn-s" href="/tag/{{tag |slugify}}">{{ tag }}</a>
+                    </li>
+                    {% endfor %}
+                    {% endcapture %}
+                    {{ tags | split:'</li>' | sort | join:'</li>' }}
+                  </ul>
+                  <div class="space20 d-lg-none"></div>
+                  <div class="d-flex align-items-center">
+                    {% include utilities/social-share.html %}
+                  </div>
+                </div>
+              </div>
+              <!-- /.post-content -->
+            </div>
+            <!-- /.box -->
+          </div>
+          <!-- /.post -->
+          {% if page.author %}
+          {% include posts/author.html boxed= true %}
+          {% endif %}
+        </div>
+        <!-- /.blog -->
+      </div>
+      <!-- /column -->
+      <div class="space30 d-none d-md-block d-lg-none"></div>
+      <aside class="col-lg-4 sidebar">
+        {% include layouts/sidebar/sidebar.html %}
+      </aside>
+      <!-- /column .sidebar -->
+    </div>
+    <!-- /.row -->
+  </div>
+  <!-- /.container -->
+</div>
+<!-- /.wrapper -->
+
+{% if page.slider_post %}
+{% include posts/slider-posts.html slider_post_title="Other Posts You Might Like" container_class="container" %}
+{% elsif page.trending %}
+{% include posts/trending-posts.html trending_post_title="Trending Posts" %}
+{% endif %}
+
+<div class="wrapper gray-wrapper">
+  <div class="container inner">
+    <div class="row"> 
+      <div class="col-lg-10 mx-auto">
+        {% include utilities/disqus-comments.html %}
+      </div>
+      <!-- /column -->
+    </div>
+    <!-- /.row -->
+  </div>
+  <!-- /.container -->
+</div>
+<!-- /.wrapper -->
+</div>
+{% include layouts/footer/footer-1.html %}

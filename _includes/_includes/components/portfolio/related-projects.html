@@ -1,0 +1,37 @@
+<!-- Other Projects Section -->
+<div class="wrapper gray-wrapper">
+    <div class="container inner">
+      <h2 class="section-title text-center">Other Projects</h2>
+      <div class="grid-view boxed light-gallery-wrapper text-center">
+        <div class="carousel owl-carousel gap-small" data-margin="0" data-dots="true" data-autoplay="false" data-autoplay-timeout="5000" data-responsive='{"0":{"items": "1"}, "768":{"items": "2"}, "992":{"items": "3"}}'>
+          {% assign grid_portfolio = site.portfolio | where:"grouped_by","grid" %}
+          {% for post in grid_portfolio %}
+            <div class="item">
+              <div class="item-inner">
+                <div class="box bg-white shadow p-30">
+                  <figure class="main overlay overlay2 rounded mb-30">
+                    <a href="{{ post.thumbnail }}" class="lightbox">
+                      <img src="{{ post.thumbnail }}" alt="{{ post.title }}" />
+                    </a>
+                  </figure>
+                  <div class="post-content">
+                    <h2 class="post-title mb-10">
+                      <a href="{{ post.url }}">{{ post.title }}</a>
+                    </h2>
+                    <div class="meta mb-0">{{ post.filters | join: ", " }}</div>
+                  </div>
+                  <!-- /.post-content -->
+                </div>
+                <!--/.item-inner -->
+              </div>
+              <!-- /.box -->
+            </div>
+          {% endfor %}
+          <!-- /.item -->
+        </div>
+        <!-- /.owl-carousel -->
+      </div>
+      <!-- /.grid-view -->
+    </div>
+    <!-- /.container -->
+  </div>

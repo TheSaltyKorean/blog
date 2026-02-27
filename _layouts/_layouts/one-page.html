@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Meta Tags-->
+  {% include core/head/meta-seo-tags.html %}
+  {% include core/head/meta-og-tags.html %}
+  <!-- Stylesheets-->
+  {% include core/styles/styles.html %}
+  <!-- Google Analytics-->
+  {% include utilities/analytics.html %}
+</head>
+<body class="onepage" data-spy="scroll" data-target=".navbar">
+  <div class="content-wrapper">
+    {{ content }}
+  </div>
+  <!-- Site Scripts-->
+  {% include core/scripts/scripts.html %}
+</body>
+
+</html>

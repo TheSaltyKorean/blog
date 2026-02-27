@@ -1,0 +1,30 @@
+<link rel="shortcut icon" href="{{site.data.general_settings.favicon | relative_url}}" />
+<link rel="stylesheet" type="text/css" href="{{relative_url}}/assets/css/bootstrap.min.css" />
+<link rel="stylesheet" type="text/css" href="{{relative_url}}/assets/css/plugins.css" />
+<link rel="stylesheet" type="text/css" href="{{relative_url}}/assets/revolution/css/settings.css" />
+<link rel="stylesheet" type="text/css" href="{{relative_url}}/assets/revolution/css/layers.css" />
+<link rel="stylesheet" type="text/css" href="{{relative_url}}/assets/revolution/css/navigation.css" />
+<link rel="stylesheet" type="text/css" href="{{relative_url}}/assets/type/type.css" />
+<link rel="stylesheet" type="text/css" href="{{relative_url}}/assets/css/style.css" />
+<!-- Global Color Scheme for all Pages-->
+{% if site.data.general_settings.color_scheme %}
+{% for stylesheet in site.data.general_settings.color_scheme %}
+<link rel="stylesheet" type="text/css" href="{{ site.baseurl }}/assets/css/color/{{ stylesheet }}.css">
+{% endfor %}
+{% elsif page.custom_color %}
+{% for stylesheet in page.custom_color %}
+<!-- custom color page wise-->
+<link rel="stylesheet" type="text/css" href="{{ site.baseurl }}/assets/css/color/{{ stylesheet }}.css">
+{% endfor %}
+{% endif %}
+<!-- Global Font Scheme font-->
+{% if site.data.general_settings.font_scheme %}
+{% for stylesheet in site.data.general_settings.font_scheme %}
+<link rel="stylesheet" type="text/css" href="{{ site.baseurl }}/assets/css/font/{{ stylesheet }}.css">
+{% endfor %}
+{% elsif page.custom_font %}
+{% for stylesheet in page.custom_font %}
+<!-- Custom Font Scheme Page Wise-->
+<link rel="stylesheet" type="text/css" href="{{ site.baseurl }}/assets/css/font/{{ stylesheet }}.css">
+{% endfor %}
+{% endif %}
