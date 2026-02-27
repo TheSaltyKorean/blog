@@ -1,0 +1,125 @@
+<!--  Nav Name :Classic Header -->
+<nav
+  class="navbar absolute transparent inverse-text navbar-hover-opacity nav-uppercase navbar-expand-lg">
+  <div class="container ">
+    
+    <div class="navbar-brand" data-default-logo="{{ include.default_logo | default: 'white' }}">
+      <!-- White Logo -->
+      <a href="{{site.url}}"><img 
+        src="{{site.data.general_settings.light_logo_1x}}" 
+        srcset="{{site.data.general_settings.light_logo_1x}} 1x, {{site.data.general_settings.light_logo_2x}} 2x"
+        class="logo-light {% if include.default_logo == 'black' %}d-none{% endif %}" 
+        alt="{{site.data.general_settings.title}}" /></a>
+  
+      <!-- Black Logo -->
+      <a href="{{site.url}}"><img 
+        src="{{site.data.general_settings.black_logo_1x}}" 
+        srcset="{{site.data.general_settings.black_logo_1x}} 1x, {{site.data.general_settings.black_logo_2x}} 2x"
+        class="logo-dark {% unless include.default_logo == 'black' %}d-none{% endunless %}" 
+        alt="{{site.data.general_settings.title}}" /></a>
+    </div>
+    
+    <div class="navbar-other ms-auto order-lg-3">
+      <ul class="navbar-nav flex-row align-items-center" data-sm-skip="true">
+        {% include layouts/nav/_hamburger.html %}
+
+        {% if include.btn_header %}
+        {% include layouts/nav/_btn-header.html %}
+        {% endif %}
+        
+        {% if include.drop_search %}
+        {% include layouts/nav/_drop-search.html %}
+        {% endif %}
+      </ul>
+      <!-- /.navbar-nav -->
+    </div>
+    <!-- /.navbar-other -->
+    <div class="navbar-collapse offcanvas-nav">
+      <div class="offcanvas-header d-lg-none d-xl-none">
+        <a href="{{site.url}}">
+          <img src="{{site.data.general_settings.light_logo_1x}}"
+            srcset="{{site.data.general_settings.light_logo_1x}} 1x, {{site.data.general_settings.light_logo_2x}} 2x"
+            alt="{{site.data.general_settings.title}}" /></a>
+        <button class="plain offcanvas-close offcanvas-nav-close"><i class="jam jam-close"></i></button>
+      </div>
+      <ul
+        class="navbar-nav {% if include.alignment_class %} {{include.alignment_class}} {% else %} mx-auto {% endif %} " data-sm-skip-collapsible-behavior="true">
+        {% for menu in site.data.navigation.main_menu %}
+        {% assign check_menu = menu.menu_type %}
+        {% case check_menu %}
+        {% when "simple" %}
+          <li class="nav-item">
+          <a class="nav-link" href="{{menu.url}}">{{menu.text}}</a>
+        </li>
+        {% when "megamenu" %}
+        <li class="nav-item">
+          <a class="nav-link" href="{{menu.url}}">{{menu.text}}</a>
+          <ul class="dropdown-menu mega-menu boxed list-view text-left">
+            <li class="mega-menu-content">
+              <div class="row">
+                {% for column in menu.submenu cols: 4 %}
+                <div class="col-lg-3">
+                  <ul class="list-unstyled">
+                    <li><a class="dropdown-item" href="{{column.url}}">{{column.text}}</a></li>
+                  </ul>
+                </div>
+                <!--/column -->
+                {% endfor %}
+              </div>
+              <!--/.row -->
+            </li>
+            <!--/.mega-menu-content-->
+          </ul>
+          <!--/.dropdown-menu -->
+        </li>
+        {% when "dropdown" %}
+        <li class="nav-item dropdown"><a class="nav-link dropdown-toggle" href="{{menu.url}}">{{menu.text}}</a>
+          <ul class="dropdown-menu">
+            {% for level_two in menu.level_two %}
+            <li class="dropdown"><a class="dropdown-item dropdown-toggle" href="#">{{level_two.sub_menu_text}}</a>
+              <ul class="dropdown-menu">
+                {% for sub_menu in level_two.sub_menu %}
+                <li class="nav-item"><a class="dropdown-item" href="{{sub_menu.url}}">{{sub_menu.text}}</a></li>
+                {% endfor %}
+              </ul>
+            </li>
+            {% endfor %}
+            {% if menu.level_one %}
+            {% for level_one in menu.level_one %}
+            <li><a class="dropdown-item" href="{{level_one.url}}">{{level_one.text}}</a></li>
+            {% endfor %}
+            {% endif %}
+          </ul>
+        </li>
+        {% else %}
+        <li class="nav-item dropdown"><a class="nav-link dropdown-toggle" href="{{menu.url}}">{{menu.text}}</a>
+          <ul class="dropdown-menu">
+            {% if menu.level_two %}
+            {% for level_two in menu.level_two %}
+            <li class="dropdown"><a class="dropdown-item dropdown-toggle" href="#">{{level_two.sub_menu_text}}</a>
+              <ul class="dropdown-menu">
+                {% for sub_menu in level_two.sub_menu %}
+                <li class="nav-item"><a class="dropdown-item" href="{{sub_menu.url}}">{{sub_menu.text}}</a></li>
+                {% endfor %}
+              </ul>
+            </li>
+            {% endfor %}
+            {% endif %}
+            {% if menu.level_one %}
+            {% for level_one in menu.level_one %}
+            <li><a class="dropdown-item" href="{{level_one.url}}">{{level_one.text}}</a></li>
+            {% endfor %}
+            {% endif %}
+          </ul>
+        </li>
+        {% endcase %}
+        {% endfor %}
+      </ul>
+      <!-- /.navbar-nav -->
+    </div>
+    <!-- /.navbar-collapse -->
+  </div>
+  <!-- /.container-fluid -->
+</nav>
+<!-- /.navbar -->
+{% include layouts/nav/_offcanvas-info.html %}

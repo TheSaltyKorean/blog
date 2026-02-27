@@ -1,0 +1,68 @@
+---
+layout: default
+---
+
+{% include layouts/nav/nav-10.html default_logo="black" drop_search=true alignment_class="ms-auto" %}
+
+<div class="wrapper light-wrapper">
+  <div class="container inner pt-80">
+    <div class="row">
+      <div class="col-lg-10 mx-auto">
+        <div class="blog classic-view">
+          <div class="post mb-0">
+            {% if page.post_image %}
+            <figure class="rounded text-center">
+              <img src="{{page.post_image}}" alt="{{page.title}}" />
+            </figure>
+            {% elsif page.banner_image and page.banner_image != "" %}
+            <figure class="rounded text-center">
+              <img src="{{page.banner_image}}" alt="{{page.title}}" />
+            </figure>
+            {% endif %}
+            <div class="space40"></div>
+            <div class="post-content">
+              {% if page.categories %}
+              <div class="category text-center">
+                {% for category in page.categories %}
+                <a href="/category/{{ category | downcase }}" class="badge rounded-pill bg-dark">{{ category }}</a>
+                {% endfor %}
+              </div>
+              {% endif %}
+              <h2 class="post-title text-center">{{page.title}}</h2>
+              <div class="meta text-center">
+                {% if page.date %}
+                <span class="date"><i class="jam jam-clock"></i>{{page.date | date_to_string}}</span>
+                {% endif %}
+                {% if page.author %}
+                <span class="author"><i class="jam jam-user"></i><a href="/authors/{{page.author | slugify}}">By {{page.author}}</a></span>
+                {% endif %}
+              </div>
+              <div class="space20"></div>
+              {{content}}
+              <div class="clearfix"></div>
+              <div class="space40"></div>
+              {% if page.tags and page.tags.size > 0 %}
+              <div class="d-lg-flex justify-content-between align-items-center meta-footer">
+                <ul class="list-unstyled tag-list">
+                  {% for tag in page.tags %}
+                  <li><a class="btn btn-s" href="/tag/{{tag | slugify}}">{{ tag }}</a></li>
+                  {% endfor %}
+                </ul>
+              </div>
+              {% endif %}
+            </div>
+            <!-- /.post-content -->
+          </div>
+          <!-- /.post -->
+        </div>
+        <!-- /.blog -->
+      </div>
+      <!-- /column -->
+    </div>
+    <!-- /.row -->
+  </div>
+  <!-- /.container -->
+</div>
+<!-- /.wrapper -->
+
+{% include layouts/footer/footer-1.html %}
