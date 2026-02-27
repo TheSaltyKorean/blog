@@ -4,6 +4,9 @@ title:  "First Fort Smith .Net User Group Meeting"
 date:   2008-03-04
 banner_image: 
 tags: [Fort Smith, .Net, Northwest Arkansas]
+post_image: "/assets/images/art/tb2.webp"
+badge_color: "bg-leaf"
+categories: [community, career]
 ---
 
 Last night was the first meeting for the Fort Smith .Net User Group.  It was a great turnout of 38 people and featured [Raymond Lewellan](http://codebetter.com/blogs/raymond.lewallen/) talking about Behavior Driven Development.

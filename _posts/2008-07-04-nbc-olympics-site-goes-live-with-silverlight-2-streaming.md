@@ -4,6 +4,9 @@ title:  "NBC Olympics site goes live with Silverlight 2 streaming"
 date:   2008-07-04
 banner_image: nbc_1.png
 tags: [2008 Olympics, Microsoft, Silverlight, NBC]
+post_image: "/assets/images/art/tb6.webp"
+badge_color: "bg-blue"
+categories: [microsoft, development]
 ---
 
 Over the past year, Microsoft has broadly touted their partnership with NBC and the video feeds they will provide for the Olympics.  So on July 4th, I sat back and while watching their TV broadcast and went over to their website [http://www.nbcolympics.com](http://www.nbcolympics.com).  The first thing you may notice upon visiting the website, is that their homepage is lackluster and that they are using the same drab Adobe Flash photo view.  So where's the cool new Microsoft Silverlight technology?  Hopefully the following will be a primer of the site for you.

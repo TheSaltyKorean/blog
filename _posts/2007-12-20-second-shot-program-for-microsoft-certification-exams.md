@@ -4,6 +4,9 @@ title:  "Second Shot Program for Microsoft Certification exams"
 date:   2007-12-20
 banner_image: 
 tags: []
+post_image: "/assets/images/art/tb6.webp"
+badge_color: "bg-blue"
+categories: [microsoft, development]
 ---
 
 Microsoft has again offered their Second Shot program.  They do it pretty often so keep an eye out.

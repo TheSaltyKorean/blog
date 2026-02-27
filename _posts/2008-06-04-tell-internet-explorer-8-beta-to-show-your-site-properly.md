@@ -4,6 +4,9 @@ title:  "Tell Internet Explorer 8 Beta to show your site properly using IE7"
 date:   2008-06-04
 banner_image: clip_image002_thumb.jpg
 tags: [Internet Explorer, IE8, IE7]
+post_image: "/assets/images/art/tb6.webp"
+badge_color: "bg-blue"
+categories: [microsoft, development]
 ---
 
 For those that want your website to render correctly on IE8, the recent newsletter gave a great example for enforcing IE7 compatibility via a Meta tag.  (You can see the new IE logo above)

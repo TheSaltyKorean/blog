@@ -4,6 +4,9 @@ title:  "Steve Ballmer’s recent CEO letter – Do More with Less"
 date:   2009-09-29
 banner_image: 
 tags: []
+post_image: "/assets/images/art/tb6.webp"
+badge_color: "bg-blue"
+categories: [technology]
 ---
 
 The following is Steve Ballmer’s recent letter to CEOs titled ‘The New Efficiency’.

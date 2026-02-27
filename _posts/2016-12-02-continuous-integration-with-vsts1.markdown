@@ -2,7 +2,9 @@
 layout: post
 title:  "Continuous Integration with VSTS – Tips #1"
 date:   2016-12-02 01:00:00 -0600
-categories: vsts, vso, devops
+categories: [devops, development]
+post_image: "/assets/images/art/tb10.webp"
+badge_color: "bg-dark"
 ---
 Now that the blog is officially announced and released, I thought I'd show you a quick tip in how we were able to update our main website through continuous integration and continuous deployment.  Since this particular website is used just for our marketing purposes, we currently aren't using deployment slots, so this helps us out a great deal.
 

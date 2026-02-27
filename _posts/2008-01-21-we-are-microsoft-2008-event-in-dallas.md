@@ -4,6 +4,9 @@ title:  "We Are Microsoft 2008 Event in Dallas"
 date:   2008-01-21
 banner_image: DSC00334_thumb.jpg
 tags: [We Are Microsoft, Charity, .Net]
+post_image: "/assets/images/art/tb6.webp"
+badge_color: "bg-blue"
+categories: [microsoft, development]
 ---
 
 This past weekend seems like a dream.  That's probably because it was a sleep deprived coding marathon of epic proportions.  Some getting more sleep than others.  Of course it didn't help that I didn't get much sleep the night before we left.

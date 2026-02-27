@@ -4,6 +4,9 @@ title:  "SQL Injection article"
 date:   2008-03-22
 banner_image: 
 tags: []
+post_image: "/assets/images/art/tb8.webp"
+badge_color: "bg-teal"
+categories: [data, development]
 ---
 
 It's hard to believe that SQL injection is still an issue.  My friend Zain Naboulsi gave us a great overview of basic security hacks and how to defend against them at our last MSDN Express event.  I recall learning about SQL Injection issues over 12 years ago in my first job.

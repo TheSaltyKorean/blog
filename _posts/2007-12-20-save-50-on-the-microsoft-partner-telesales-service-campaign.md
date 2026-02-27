@@ -4,6 +4,9 @@ title:  "Save 50% on the Microsoft Partner Telesales Service Campaign"
 date:   2007-12-20
 banner_image: 
 tags: []
+post_image: "/assets/images/art/tb5.webp"
+badge_color: "bg-blue"
+categories: [microsoft, development]
 ---
 
 I received this in the Microsoft Partner e-Newsletter:

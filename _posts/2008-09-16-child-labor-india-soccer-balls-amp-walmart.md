@@ -4,6 +4,9 @@ title:  "Child Labor, India, Soccer Balls & Walmart"
 date:   2008-09-16
 banner_image: websiteotherballs_thumb.jpg
 tags: [Child Labor, India, Soccer, Walmart]
+post_image: "/assets/images/art/tb12.webp"
+badge_color: "bg-orange"
+categories: [entrepreneurship, business]
 ---
 
 As I sit here watching Real Sports with Bryant Gumbel, I'm saddened to watch Indian children making soccer balls.  I realize that the show is obviously over dramatized, but the reality is, there are children making soccer balls in India.  So, how can any retail store, like Walmart, or the manufacturer, Mitre allow this to happen?

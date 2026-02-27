@@ -4,6 +4,9 @@ title:  "Jeffrey Palermo set to speak Thursday in Northwest Arkansas"
 date:   2008-08-11
 banner_image: 
 tags: [Northwest Arkansas, Northwest Arkansas .Net User Group]
+post_image: "/assets/images/art/tb3.webp"
+badge_color: "bg-leaf"
+categories: [community, career]
 ---
 
 For those that weren't able to attend last Tuesday's Northwest Arkansas .Net User Group meeting, 8/5/2008, Zach Young (our Vice President of the group) was able to secure Jeffrey Palermo as a speaker for a special meeting this Thursday (8/14/2008).  This is a huge boon, as Jeff is one of THE most sought after speakers in North America.  Jeff is most known for the [Party with Palermo](http://www.partywithpalermo.com/) series of events before each of the major conferences.

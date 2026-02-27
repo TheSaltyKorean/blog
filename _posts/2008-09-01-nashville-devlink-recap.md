@@ -4,6 +4,9 @@ title:  "Nashville devLink Recap"
 date:   2008-09-01
 banner_image: 2008-08-21 002_thumb.jpg
 tags: [devLink]
+post_image: "/assets/images/art/tb3.webp"
+badge_color: "bg-leaf"
+categories: [community, career]
 ---
 
 One of the most interesting things about being a software developer is to see the entire undercurrent and subculture of the industry.  It really makes it more visible at the local geek gatherings, regional and national conferences.  This year I felt extremely fortunate to have been offered an opportunity to speak and help at the Nashville / Murfreesboro [devLink](http://www.devlink.net/) conference.  I honestly hadn't intended on going due to the 9 hour travel required, but when my good friend [John Kellar](http://johnkellar.blogspot.com/) reached out, how could I refuse?  So [David Mohundro](http://www.mohundro.com/blog/), [Michael Johnson](http://michaelcodes.net/) and myself made the long trek.  (David and Michael belong to the Fort Smith .Net User Group)

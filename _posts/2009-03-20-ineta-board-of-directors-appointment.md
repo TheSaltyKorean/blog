@@ -4,6 +4,9 @@ title:  "INETA Board of Directors Appointment"
 date:   2009-03-20
 banner_image: INETALogo_thumb.jpg
 tags: []
+post_image: "/assets/images/art/tb2.webp"
+badge_color: "bg-leaf"
+categories: [community, career]
 ---
 
 INETA has a great gimmick.  Give someone a award and then recruit them to do volunteer work!  While I am completely joking, I was recently appointed to INETA’s Board of Directors.  Congratulations go out to my fellow Board Members.

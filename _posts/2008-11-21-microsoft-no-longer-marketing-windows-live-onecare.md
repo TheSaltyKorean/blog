@@ -4,6 +4,9 @@ title:  "Microsoft no longer marketing Windows Live OneCare"
 date:   2008-11-21
 banner_image: 
 tags: []
+post_image: "/assets/images/art/tb5.webp"
+badge_color: "bg-blue"
+categories: [microsoft, development]
 ---
 
 Just received an e-mail that as of Nov 23, 2008 (below), Microsoft will no longer be marketing Windows Live OneCare.  It’s unknown what that means, other than them closing the affiliate program (where marketers get paid if you install it).  It is unreasonable that they will discontinue the product, since they have just launched Small Business Server 2008 and Windows Live OneCare Server.  I’m wondering if the marketing department that was contracted, was fired.

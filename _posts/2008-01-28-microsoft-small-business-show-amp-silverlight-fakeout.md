@@ -4,6 +4,9 @@ title:  "Microsoft Small Business Show & Silverlight fakeout"
 date:   2008-01-28
 banner_image: image_thumb (1).png
 tags: []
+post_image: "/assets/images/art/tb5.webp"
+badge_color: "bg-blue"
+categories: [microsoft, development]
 ---
 
 Microsoft is on their 2nd Small Business Show which features "Solutions for Entrepreneurs".  You can view the show [here](http://www.microsoft.com/smallbusiness/show/).

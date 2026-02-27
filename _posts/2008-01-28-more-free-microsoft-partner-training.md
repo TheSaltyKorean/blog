@@ -4,6 +4,9 @@ title:  "More free Microsoft Partner Training"
 date:   2008-01-28
 banner_image: partnerprogram_thumb.png
 tags: []
+post_image: "/assets/images/art/tb6.webp"
+badge_color: "bg-blue"
+categories: [microsoft, development]
 ---
 
 Here are some more FREE Partner Partner Training Labs:

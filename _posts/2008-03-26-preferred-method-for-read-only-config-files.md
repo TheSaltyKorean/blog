@@ -4,6 +4,9 @@ title:  "Preferred method for read only Config files"
 date:   2008-03-26
 banner_image: 
 tags: [.Net, Programming, config files]
+post_image: "/assets/images/art/tb11.webp"
+badge_color: "bg-dark"
+categories: [development]
 ---
 
 I had come across an article where you can use the following line to read custom section settings from your config file (where SectionName is the name of your section) in .Net.

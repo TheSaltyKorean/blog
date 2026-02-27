@@ -4,6 +4,9 @@ title:  "Winner of Certification Exam Voucher"
 date:   2008-07-08
 banner_image: GiveawayWinner_thumb.png
 tags: []
+post_image: "/assets/images/art/tb5.webp"
+badge_color: "bg-blue"
+categories: [technology]
 ---
 
 Surprisingly enough, [Chris Love](http://professionalaspnet.com/) wins the Microsoft Certification Exam Voucher.

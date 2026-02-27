@@ -4,6 +4,9 @@ title:  "Letter from Steve Ballmer, CEO Microsoft"
 date:   2008-10-28
 banner_image: 
 tags: [Microsoft, Azure]
+post_image: "/assets/images/art/tb6.webp"
+badge_color: "bg-blue"
+categories: [microsoft, development]
 ---
 
 I occasionally receive letters sent out to the Industry Executives from the top dogs at Microsoft.  Here’s the one I just received outlining their newest initiative called Windows Azure, which was just announced at the Microsoft Professional Developers Conference.

@@ -4,6 +4,9 @@ title:  "Winner of 6th place at Community-Credit.com"
 date:   2008-01-02
 banner_image: MyEntireLife.jpg
 tags: []
+post_image: "/assets/images/art/tb2.webp"
+badge_color: "bg-leaf"
+categories: [community, career]
 ---
 
 I wanted to thank David Silverlight for doing a wonderful service to the programming community.

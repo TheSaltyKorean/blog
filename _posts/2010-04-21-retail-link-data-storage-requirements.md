@@ -4,6 +4,9 @@ title:  "Retail Link data storage requirements"
 date:   2010-04-21
 banner_image: 
 tags: []
+post_image: "/assets/images/art/tb8.webp"
+badge_color: "bg-teal"
+categories: [data, development]
 ---
 
 I was asked today about how much data an average Retail Link analyst (Walmart vendor) would consume.  I thought I would write this small post for future reference.

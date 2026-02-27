@@ -4,6 +4,9 @@ title:  "State Government kudos"
 date:   2008-03-11
 banner_image: 
 tags: []
+post_image: "/assets/images/art/tb5.webp"
+badge_color: "bg-blue"
+categories: [technology]
 ---
 
 This is not a tech related blog posting.

@@ -4,6 +4,9 @@ title:  "Free CodeSmith License!"
 date:   2010-03-26
 banner_image: logo_header_3.gif
 tags: []
+post_image: "/assets/images/art/tb12.webp"
+badge_color: "bg-dark"
+categories: [development]
 ---
 
 The catch?  Attend the [Ozarks .Net User Group](http://www.odnug.org/) meeting on April 1st.

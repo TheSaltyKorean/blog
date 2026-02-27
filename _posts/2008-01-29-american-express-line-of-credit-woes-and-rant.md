@@ -4,6 +4,9 @@ title:  "American Express Line of Credit woes and rant"
 date:   2008-01-29
 banner_image: americanexpress_thumb.gif
 tags: [American Express]
+post_image: "/assets/images/art/tb12.webp"
+badge_color: "bg-orange"
+categories: [entrepreneurship, business]
 ---
 
 I am extremely particular about my credit.  During my youth I ran up a bunch of debt and poorly managed my money, ruining my credit score for years.  With a lot of hard work, years in the making, my credit score is near perfect.

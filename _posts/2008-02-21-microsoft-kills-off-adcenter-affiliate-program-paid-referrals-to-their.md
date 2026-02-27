@@ -4,6 +4,9 @@ title:  "Microsoft kills off adCenter Affiliate program (paid referrals to their
 date:   2008-02-21
 banner_image: 
 tags: []
+post_image: "/assets/images/art/tb6.webp"
+badge_color: "bg-blue"
+categories: [microsoft, development]
 ---
 
 I received an e-mail (copied below) about Microsoft ending the paid referrals to new subscribers of adCenter.  I find this extremely perplexing because of Google's dominance in this area, plus Microsoft's bid for Yahoo!.  The number one reason for Microsoft to buy Yahoo! is so it can merge the two online advertising programs.

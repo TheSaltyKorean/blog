@@ -4,6 +4,9 @@ title:  "cloudxplorer-discount"
 date:   2018-02-16
 banner_image: cloudxplorer.jpg
 tags: [harvest,azure]
+post_image: "/assets/images/art/tb4.webp"
+badge_color: "bg-blue"
+categories: [technology]
 ---
 
 For years working with blobs in Azure storage, my go to favorite tool has been [Clumsyleaf's CloudXplorer](http://clumsyleaf.com/products/cloudxplorer).

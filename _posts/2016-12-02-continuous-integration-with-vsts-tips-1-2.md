@@ -4,6 +4,9 @@ title:  "Continuous Integration with VSTS – Tips #1"
 date:   2016-12-02
 banner_image: 1210.sdt-vspricing.png
 tags: []
+post_image: "/assets/images/art/tb9.webp"
+badge_color: "bg-dark"
+categories: [devops, development]
 ---
 
 

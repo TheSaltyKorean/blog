@@ -4,6 +4,9 @@ title:  "Nashville devLink conference sold out!"
 date:   2008-07-30
 banner_image: devLink_3.gif
 tags: [devLink, .Net, Microsoft]
+post_image: "/assets/images/art/tb2.webp"
+badge_color: "bg-leaf"
+categories: [community, career]
 ---
 
 August 22-23

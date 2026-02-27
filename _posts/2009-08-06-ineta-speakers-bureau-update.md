@@ -4,6 +4,9 @@ title:  "INETA Speakers Bureau Update"
 date:   2009-08-06
 banner_image: 
 tags: []
+post_image: "/assets/images/art/tb2.webp"
+badge_color: "bg-leaf"
+categories: [community, career]
 ---
 
 As most of you know, I serve on the INETA (International .Net Association) Board of Directors, being in charge of the Speakers Bureau and other Speaker programs.  There have been several rumors floating around with a lot of misconceptions and I wanted to clarify a few things.

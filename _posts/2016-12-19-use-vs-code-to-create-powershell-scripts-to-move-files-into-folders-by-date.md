@@ -4,6 +4,9 @@ title:  "Use VS Code to create PowerShell scripts to move files into folders by 
 date:   2016-12-19
 banner_image: 
 tags: []
+post_image: "/assets/images/art/tb9.webp"
+badge_color: "bg-dark"
+categories: [devops, development]
 ---
 
 

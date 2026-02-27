@@ -4,6 +4,9 @@ title:  "INETA Community Champion Awardee"
 date:   2009-02-03
 banner_image: ChampionWinner_thumb.jpg
 tags: []
+post_image: "/assets/images/art/tb2.webp"
+badge_color: "bg-leaf"
+categories: [community, career]
 ---
 
 I was a bit shocked when I received the email announcing that I am one of ten Community Champions awarded.  A huge thank you to those that nominated me.  It’s always a good feeling of accomplishment when you’re recognized for your efforts.

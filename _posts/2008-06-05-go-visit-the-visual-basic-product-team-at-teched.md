@@ -4,6 +4,9 @@ title:  "Go visit the Visual Basic Product Team at TechEd!"
 date:   2008-06-05
 banner_image: 
 tags: []
+post_image: "/assets/images/art/tb2.webp"
+badge_color: "bg-leaf"
+categories: [community, career]
 ---
 
 It was this time last year at TechEd that Cory Smith introduced me to the Visual Basic product team.  He first introduced me to Ed Hickey, who is the VB MVP Lead at Microsoft.  The funny story about Ed is, less than a week after Ed awarded me the MVP status, he transfers out.  I knew I was hard to work with, but didn't realize I was .... that .... difficult.

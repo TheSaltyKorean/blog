@@ -4,6 +4,9 @@ title:  "Microsoft LightSwitch"
 date:   2010-08-03
 banner_image: vs_lightswitch_beta_logo_3.png
 tags: []
+post_image: "/assets/images/art/tb5.webp"
+badge_color: "bg-blue"
+categories: [microsoft, development]
 ---
 
 [http://www.microsoft.com/visualstudio/en-us/lightswitch](http://www.microsoft.com/visualstudio/en-us/lightswitch "http://www.microsoft.com/visualstudio/en-us/lightswitch") 

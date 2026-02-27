@@ -4,6 +4,9 @@ title:  "Microsoft congregates it's ads under one flag Microsoft Advertising"
 date:   2008-07-21
 banner_image: 
 tags: [Microsoft, Advertising, adCenter]
+post_image: "/assets/images/art/tb6.webp"
+badge_color: "bg-blue"
+categories: [microsoft, development]
 ---
 
 Exactly two months ago Microsoft sent me an email introducing it's new branding called "[Microsoft Advertising](http://advertising.microsoft.com/)" (note that the page is presently erroring out).  Personally I think the new branding is a step forward, as I never cared for "AdCenter".  But the really interesting parts of the e-mail was the brief mention to a host of products I've never heard about.  As with their ongoing issues, let us see if Microsoft can get the execution right.

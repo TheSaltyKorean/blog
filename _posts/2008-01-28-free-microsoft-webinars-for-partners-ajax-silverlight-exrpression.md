@@ -4,6 +4,9 @@ title:  "Free Microsoft Webinars for Partners - Ajax, Silverlight, Exrpression"
 date:   2008-01-28
 banner_image: 
 tags: []
+post_image: "/assets/images/art/tb5.webp"
+badge_color: "bg-blue"
+categories: [microsoft, development]
 ---
 
 Microsoft is offering the following free webinars for Microsoft Partners:

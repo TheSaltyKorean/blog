@@ -4,6 +4,9 @@ title:  "Upcoming March speaking events - SQL Server Reporting Services"
 date:   2008-02-27
 banner_image: 
 tags: []
+post_image: "/assets/images/art/tb8.webp"
+badge_color: "bg-teal"
+categories: [data, development]
 ---
 
 For those interested in hearing me speak (or avoiding me altogether ;) I will be speaking at the Tulsa SQL Server Group on March 17th, 2008 and at the Little Rock TechExpo on March 27th, 2008\.

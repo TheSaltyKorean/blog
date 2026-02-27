@@ -4,6 +4,9 @@ title:  "RegEx tools for Visual Studio & the Social Web"
 date:   2008-06-19
 banner_image: 
 tags: [RegEx, Visual Studio 2008]
+post_image: "/assets/images/art/tb11.webp"
+badge_color: "bg-dark"
+categories: [development]
 ---
 
 You might want to skip this first paragraph if you are just looking for the RegEx Tools portion.

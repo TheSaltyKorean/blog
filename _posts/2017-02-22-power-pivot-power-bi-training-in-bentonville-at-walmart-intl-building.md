@@ -4,6 +4,9 @@ title:  "Power Pivot & Power BI training in Bentonville at Walmart Intl Building
 date:   2017-02-22
 banner_image: pplogo.png
 tags: []
+post_image: "/assets/images/art/tb8.webp"
+badge_color: "bg-teal"
+categories: [data, development]
 ---
 
 

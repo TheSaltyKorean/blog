@@ -4,6 +4,9 @@ title:  "Northwest Arkansas SQL Server User Group 1st Meeting"
 date:   2008-05-09
 banner_image: 
 tags: [Northwest Arkansas, SQL Server]
+post_image: "/assets/images/art/tb7.webp"
+badge_color: "bg-teal"
+categories: [data, development]
 ---
 
 I have vastly been neglecting my blogging.  So as not to be outdone by [Chris Koenig](http://blogs.msdn.com/chkoenig) ....

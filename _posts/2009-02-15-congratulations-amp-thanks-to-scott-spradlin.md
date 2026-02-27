@@ -4,6 +4,9 @@ title:  "Congratulations & Thanks to Scott Spradlin"
 date:   2009-02-15
 banner_image: 
 tags: []
+post_image: "/assets/images/art/tb6.webp"
+badge_color: "bg-blue"
+categories: [technology]
 ---
 
 [![ScottSpradlin](http://gwb.blob.core.windows.net/rwalker/WindowsLiveWriter/CongratulationsThankstoScottSpradlin_202/ScottSpradlin_thumb.jpg "ScottSpradlin")](http://gwb.blob.core.windows.net/rwalker/WindowsLiveWriter/CongratulationsThankstoScottSpradlin_202/ScottSpradlin_2.jpg) 

@@ -4,6 +4,9 @@ title:  "Microsoft adCenter needs a workshop?"
 date:   2008-05-19
 banner_image: 
 tags: [Microsoft, AdCenter]
+post_image: "/assets/images/art/tb5.webp"
+badge_color: "bg-blue"
+categories: [microsoft, development]
 ---
 
 While I love Microsoft's developer products, adCenter (Microsoft's search advertising / pay per click) makes me want to hide in shame.  See the email I received below.
