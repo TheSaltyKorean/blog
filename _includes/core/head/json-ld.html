@@ -1,0 +1,53 @@
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Person",
+  "name": "Randy Walker",
+  "url": "{{ site.url }}",
+  "sameAs": [
+    "https://twitter.com/{{ site.twitter_username }}",
+    "https://github.com/{{ site.github_username }}",
+    "https://instagram.com/{{ site.instagram_username }}",
+    "https://www.linkedin.com/in/{{ site.linkedin_username }}/"
+  ],
+  "description": "{{ site.description }}",
+  "image": "{{ site.author_image | prepend: site.url }}"
+}
+</script>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  "name": "{{ site.title }}",
+  "url": "{{ site.url }}",
+  "description": "{{ site.description }}"
+}
+</script>
+
+{% if page.layout contains "post" %}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "headline": "{% if page.meta_title %}{{ page.meta_title }}{% else %}{{ page.title }}{% endif %}",
+  "description": "{% if page.meta_description %}{{ page.meta_description }}{% else %}{{ page.description }}{% endif %}",
+  "datePublished": "{{ page.date | date_to_xmlschema }}",
+  {% if page.date_modified %}
+  "dateModified": "{{ page.date_modified | date_to_xmlschema }}",
+  {% endif %}
+  "author": {
+    "@type": "Person",
+    "name": "{{ page.author | default: site.author_name }}",
+    "url": "{{ site.url }}"
+  },
+  {% if page.image %}
+  "image": "{{ page.image | prepend: site.url }}",
+  {% endif %}
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "{{ site.url }}{{ page.url }}"
+  }
+}
+</script>
+{% endif %}
