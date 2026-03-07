@@ -1,5 +1,5 @@
 <!-- footer with details v1 -->
-<footer class="{% if include.extra_class %} {{include.extra_class}} {% else %} dark-wrapper inverse-text {% endif %}">
+<footer role="contentinfo" aria-label="Site footer" class="{% if include.extra_class %} {{include.extra_class}} {% else %} dark-wrapper inverse-text {% endif %}">
   <div class="container inner">
     <div class="row">
       <div class="col-md-12 col-lg-3 text-center text-lg-start">
@@ -86,7 +86,7 @@
     <p class="mb-0 mr-auto">{{site.data.general_settings.copyright_text}}</p>
     <ul class="social social-mute social-s ms-auto">
       {% for social_links in site.data.general_settings.social_accounts.links %}
-       <li><a href="{{social_links.url}}"><i class="{{social_links.icon}}"></i></a></li>
+       <li><a href="{{social_links.url}}" aria-label="{{social_links.text}}"><i class="{{social_links.icon}}"></i></a></li>
       {% endfor %}
     </ul>
   </div>
