@@ -18,14 +18,14 @@
               {% if contact_data.field_type == "input" %}
               <div class="col-md-6">
                 <div class="form-group">
-                  <input id="{{contact_data.field_name}}" type="text" name="{{contact_data.field_name}}" class="form-control" placeholder="{{contact_data.placeholder}} *" required="required" data-error="{{contact_data.error_message}}">
+                  <input id="{{contact_data.field_name}}" type="text" name="{{contact_data.field_name}}" class="form-control" placeholder="{{contact_data.placeholder}} *" aria-label="{{contact_data.placeholder}}" required="required" data-error="{{contact_data.error_message}}">
                   <div class="help-block with-errors"></div>
                 </div>
               </div>
               {% else if contact_data.field_type == "textarea"  %}
               <div class="col-md-12">
                 <div class="form-group">
-                  <textarea id="{{contact_data.field_name}}" name="{{contact_data.field_name}}" class="form-control" placeholder="{{contact_data.placeholder}} *" rows="4" required="required" data-error="{{contact_data.error_message}}"></textarea>
+                  <textarea id="{{contact_data.field_name}}" name="{{contact_data.field_name}}" class="form-control" placeholder="{{contact_data.placeholder}} *" rows="4" aria-label="{{contact_data.placeholder}}" required="required" data-error="{{contact_data.error_message}}"></textarea>
                   <div class="help-block with-errors"></div>
                 </div>
               </div>
@@ -34,7 +34,7 @@
             </div>
             <div class="form-row">
               <div class="col-md-12 text-center">
-                <input type="submit" class="btn btn-send" value="Send message">
+                <input type="submit" class="btn btn-send" value="Send message" aria-label="Send message">
               </div>
             </div>
           </div>

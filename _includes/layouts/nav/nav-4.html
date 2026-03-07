@@ -1,5 +1,5 @@
 <!--  Nav Name : Header with TopBar-->
-<nav
+<nav aria-label="Main navigation"
   class="navbar bg-white shadow navbar-expand-lg flex-column ">
   <div class="topbar dark-wrapper inverse-text w-100 d-none d-lg-block">
     <div class="container d-flex justify-content-between align-items-center">
@@ -15,7 +15,7 @@
       <div class="ms-auto">
         <ul class="social social-mute social-s ms-auto text-right">
           {% for social_links in site.data.general_settings.social_accounts.links %}
-          <li><a href="{{social_links.url}}"><i class="{{social_links.icon}}"></i></a></li>
+          <li><a href="{{social_links.url}}" aria-label="{{social_links.text}}"><i class="{{social_links.icon}}"></i></a></li>
           {% endfor %}
         </ul>
       </div>
@@ -60,7 +60,7 @@
           <img src="{{site.data.general_settings.light_logo_1x}}"
             srcset="{{site.data.general_settings.light_logo_1x}} 1x, {{site.data.general_settings.light_logo_2x}} 2x"
             alt="{{site.data.general_settings.title}}" /></a>
-        <button class="plain offcanvas-close offcanvas-nav-close"><i class="jam jam-close"></i></button>
+        <button class="plain offcanvas-close offcanvas-nav-close" aria-label="Close navigation menu"><i class="jam jam-close"></i></button>
       </div>
       <ul
         class="navbar-nav {% if include.alignment_class %} {{include.alignment_class}} {% else %} ms-auto {% endif %}">
@@ -93,10 +93,10 @@
           <!--/.dropdown-menu -->
         </li>
         {% when "dropdown" %}
-        <li class="nav-item dropdown"><a class="nav-link dropdown-toggle" href="{{menu.url}}">{{menu.text}}</a>
+        <li class="nav-item dropdown"><a class="nav-link dropdown-toggle" href="{{menu.url}}" aria-haspopup="true">{{menu.text}}</a>
           <ul class="dropdown-menu">
             {% for level_two in menu.level_two %}
-            <li class="dropdown"><a class="dropdown-item dropdown-toggle" href="#">{{level_two.sub_menu_text}}</a>
+            <li class="dropdown"><a class="dropdown-item dropdown-toggle" href="#" aria-haspopup="true">{{level_two.sub_menu_text}}</a>
               <ul class="dropdown-menu">
                 {% for sub_menu in level_two.sub_menu %}
                 <li class="nav-item"><a class="dropdown-item" href="{{sub_menu.url}}">{{sub_menu.text}}</a></li>
@@ -112,11 +112,11 @@
           </ul>
         </li>
         {% else %}
-        <li class="nav-item dropdown"><a class="nav-link dropdown-toggle" href="{{menu.url}}">{{menu.text}}</a>
+        <li class="nav-item dropdown"><a class="nav-link dropdown-toggle" href="{{menu.url}}" aria-haspopup="true">{{menu.text}}</a>
           <ul class="dropdown-menu">
             {% if menu.level_two %}
             {% for level_two in menu.level_two %}
-            <li class="dropdown"><a class="dropdown-item dropdown-toggle" href="#">{{level_two.sub_menu_text}}</a>
+            <li class="dropdown"><a class="dropdown-item dropdown-toggle" href="#" aria-haspopup="true">{{level_two.sub_menu_text}}</a>
               <ul class="dropdown-menu">
                 {% for sub_menu in level_two.sub_menu %}
                 <li class="nav-item"><a class="dropdown-item" href="{{sub_menu.url}}">{{sub_menu.text}}</a></li>

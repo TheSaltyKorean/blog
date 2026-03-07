@@ -1,5 +1,5 @@
 <!--  Nav Name :Classic Light Header -->
-<nav
+<nav aria-label="Main navigation"
   class="navbar bg-white shadow navbar-expand-lg ">
   <div class="container ">
     <div class="navbar-brand" data-default-logo="{{ include.default_logo | default: 'white' }}">
@@ -74,10 +74,10 @@
           <!--/.dropdown-menu -->
         </li>
         {% when "dropdown" %}
-        <li class="nav-item dropdown"><a class="nav-link dropdown-toggle" href="{{menu.url}}">{{menu.text}}</a>
+        <li class="nav-item dropdown"><a class="nav-link dropdown-toggle" href="{{menu.url}}" aria-haspopup="true">{{menu.text}}</a>
           <ul class="dropdown-menu">
             {% for level_two in menu.level_two %}
-            <li class="dropdown"><a class="dropdown-item dropdown-toggle" href="#">{{level_two.sub_menu_text}}</a>
+            <li class="dropdown"><a class="dropdown-item dropdown-toggle" href="#" aria-haspopup="true">{{level_two.sub_menu_text}}</a>
               <ul class="dropdown-menu">
                 {% for sub_menu in level_two.sub_menu %}
                 <li class="nav-item"><a class="dropdown-item" href="{{sub_menu.url}}">{{sub_menu.text}}</a></li>
@@ -93,11 +93,11 @@
           </ul>
         </li>
         {% else %}
-        <li class="nav-item dropdown"><a class="nav-link dropdown-toggle" href="{{menu.url}}">{{menu.text}}</a>
+        <li class="nav-item dropdown"><a class="nav-link dropdown-toggle" href="{{menu.url}}" aria-haspopup="true">{{menu.text}}</a>
           <ul class="dropdown-menu">
             {% if menu.level_two %}
             {% for level_two in menu.level_two %}
-            <li class="dropdown"><a class="dropdown-item dropdown-toggle" href="#">{{level_two.sub_menu_text}}</a>
+            <li class="dropdown"><a class="dropdown-item dropdown-toggle" href="#" aria-haspopup="true">{{level_two.sub_menu_text}}</a>
               <ul class="dropdown-menu">
                 {% for sub_menu in level_two.sub_menu %}
                 <li class="nav-item"><a class="dropdown-item" href="{{sub_menu.url}}">{{sub_menu.text}}</a></li>

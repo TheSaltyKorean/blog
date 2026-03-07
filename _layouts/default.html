@@ -15,8 +15,11 @@ user can't scroll away from the modal. {% endcomment %}
   {% include utilities/analytics.html %}
 </head>
 <body {% if page.overflow %} class="overflow-hidden" {% endif %}>
+  <a href="#main-content" class="sr-only sr-only-focusable">Skip to main content</a>
   <div class="content-wrapper">
-    {{ content }}
+    <main id="main-content" role="main">
+      {{ content }}
+    </main>
   </div>
   <!-- Site Scripts-->
   {% include core/scripts/scripts.html %}

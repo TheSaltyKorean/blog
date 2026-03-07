@@ -1,5 +1,5 @@
 <div class="offcanvas-info inverse-text">
-    <button class="plain offcanvas-close offcanvas-info-close"><i class="jam jam-close"></i></button>
+    <button class="plain offcanvas-close offcanvas-info-close" aria-label="Close navigation menu"><i class="jam jam-close"></i></button>
     <a href="{{site.url}}">
       <img src="{{site.data.general_settings.light_logo_1x}}"
         srcset="{{site.data.general_settings.light_logo_1x}} 1x, {{site.data.general_settings.light_logo_2x}} 2x"
@@ -34,7 +34,7 @@
       {% endif %}
       <ul class="social social-mute social-s ms-auto">
         {% for social_info in site.data.general_settings.social_accounts.links %}
-        <li><a href="{{social_info.url}}"><i class="{{social_info.icon}}"></i></a></li>
+        <li><a href="{{social_info.url}}" aria-label="{{social_info.text}}"><i class="{{social_info.icon}}"></i></a></li>
         {% endfor %}
       </ul>
     </div>

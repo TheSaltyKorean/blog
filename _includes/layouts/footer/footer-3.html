@@ -1,5 +1,5 @@
 <!-- Simple Footer v3-->
-<footer class="{% if include.extra_class %} {{include.extra_class}} {% else %} dark-wrapper inverse-text text-center {% endif %}">
+<footer role="contentinfo" aria-label="Site footer" class="{% if include.extra_class %} {{include.extra_class}} {% else %} dark-wrapper inverse-text text-center {% endif %}">
     <div class="container inner pt-80 pb-80">
       <div class="widget"> 
         <a href="{{site.url}}">
@@ -15,7 +15,7 @@
         <div class="space10"></div>
         <ul class="social social-mute social-s ms-auto">
             {% for social_links in site.data.general_settings.social_accounts.links %}
-            <li><a href="{{social_links.url}}"><i class="{{social_links.icon}}"></i></a></li>
+            <li><a href="{{social_links.url}}" aria-label="{{social_links.text}}"><i class="{{social_links.icon}}"></i></a></li>
            {% endfor %}
         </ul>
       </div>
