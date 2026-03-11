@@ -30,13 +30,11 @@ plugins:
 
 collections:
   authors:
-    output: true
+    output: false
   shop_items:
-    output: true
-    permalink: /shop/:name
+    output: false
   portfolio:
-      output: true
-      permalink: /portfolio/:name
+    output: false
       
 
 ############################################################
@@ -49,7 +47,7 @@ pagination:
   enabled: true
 
   # Set to 'true' to enable pagination debugging. This can be enabled in the site config or only for individual pagination pages
-  debug: true
+  debug: false
 
   # The default document collection to paginate if nothing is specified ('posts' is default)
   collection: 'posts'
@@ -107,10 +105,9 @@ pagination:
 ############################################################
 
 # Jekyll Archives Configuration
+# Disabled tags and categories to prevent thin content pages
 jekyll-archives:
-  enabled:
-    - tags
-    - categories
+  enabled: []
   layouts:
     tag: tag
     category: category

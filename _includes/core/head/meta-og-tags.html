@@ -5,9 +5,9 @@
 <meta property="og:description" content="{% if page.meta_description %} {{ page.meta_description }} {% elsif page.description %} {{ page.description}} {% else %}
     {{ site.data.general_settings.description }}{% endif %}">
 {% if page.image %}
-<meta property="og:image" content="{{ page.image | relative_url }}" />
+<meta property="og:image" content="{{ site.url }}{{ page.image | relative_url }}" />
 {% elsif site.data.general_settings.meta_og_image %}
-<meta property="og:image" content="{{ site.data.general_settings.meta_og_image | relative_url }}" />
+<meta property="og:image" content="{{ site.url }}{{ site.data.general_settings.meta_og_image | relative_url }}" />
 {% endif %}
 <!-- Twitter -->
 <meta property="twitter:card" content="summary_large_image">
@@ -16,8 +16,8 @@
 <meta property="twitter:description" content="{% if page.meta_description %} {{ page.meta_description }} {% elsif page.description %} {{ page.description}} {% else %}
     {{ site.data.general_settings.description }}{% endif %}">
 {% if page.image %}
-<meta property="twitter:image" content="{{ page.image | relative_url }}" />
+<meta property="twitter:image" content="{{ site.url }}{{ page.image | relative_url }}" />
 {% elsif site.data.general_settings.meta_twitter_image %}
-<meta property="twitter:image" content="{{ site.data.general_settings.meta_twitter_image | relative_url }}" />
+<meta property="twitter:image" content="{{ site.url }}{{ site.data.general_settings.meta_twitter_image | relative_url }}" />
 {% endif %}
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
