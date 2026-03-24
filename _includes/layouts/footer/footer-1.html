@@ -36,23 +36,14 @@
         <!-- /.widget -->
       </div>
       <!-- /column -->
-      <div class="col-6 col-md-4 col-lg-2">
+      <div class="col-6 col-md-4 col-lg-3">
         <div class="widget">
           <h5 class="widget-title">Connect</h5>
           <ul class="list-unstyled mb-0">
             {% for social_links in site.data.general_settings.social_accounts.links %}
-            <li><a href="{{social_links.url}}"><i class="{{social_links.icon}} me-5"></i> {{social_links.url | split: '.com/' | last | remove: '/' }}</a></li>
+            <li><a href="{{social_links.url}}" style="white-space: nowrap;"><i class="{{social_links.icon}} me-5"></i> {{social_links.url | split: '.com/' | last | remove: '/' }}</a></li>
             {% endfor %}
           </ul>
-        </div>
-        <!-- /.widget -->
-      </div>
-      <!-- /column -->
-      <div class="col-6 col-md-4 col-lg-2">
-        <div class="widget">
-          <h5 class="widget-title">Contact</h5>
-          <p>Austin, Texas</p>
-          <a href="/contact" class="btn btn-sm btn-default btn-rounded mt-10">Get in Touch</a>
         </div>
         <!-- /.widget -->
       </div>
