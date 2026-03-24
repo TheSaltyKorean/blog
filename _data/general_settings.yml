@@ -1,7 +1,7 @@
 # General Settings
 title: "Randy Walker"
 email: ""
-phone_number: "479.871.2172"
+phone_number: ""
 description: >-
   Randy Walker's thoughts on technology leadership, cloud transformation, entrepreneurship, and the business of innovation.
 favicon: "/assets/images/favicon.webp"
@@ -57,6 +57,8 @@ external_links:
       text: "Blog"
     - url: "/about"
       text: "About"
+    - url: "/contact"
+      text: "Contact"
 
 external_links_02:
   title: ""

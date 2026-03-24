@@ -120,6 +120,9 @@ feed:
     posts:
       path: "/index.xml"
 
+include:
+  - robots.txt
+
 highlighter: rouge
 
 # Default layouts
