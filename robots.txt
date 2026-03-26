@@ -10,6 +10,12 @@ Disallow: /portfolios/
 Disallow: /portfolio/
 Disallow: /services/
 Disallow: /shop/
+Disallow: /blog-post.html
+Disallow: /contact/contact-
+Disallow: /tags/
+
+# Block old /blog/ path (blog is at root /)
+Disallow: /blog/
 
 # Block disabled archives
 Disallow: /tag/
@@ -17,6 +23,7 @@ Disallow: /category/
 Disallow: /authors/
 
 # Block old WordPress-style date URLs
+Disallow: /2007/
 Disallow: /2008/
 Disallow: /2009/
 Disallow: /2010/
