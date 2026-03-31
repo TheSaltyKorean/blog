@@ -133,3 +133,4 @@ defaults:
     values:
       layout: "posts/post-sidebar"
       author: "Randy Walker"
+      comments: true

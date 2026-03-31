@@ -87,9 +87,10 @@ layout: default
 {% include posts/trending-posts.html trending_post_title="Trending Posts" %}
 {% endif %}
 
+{% if page.comments %}
 <div class="wrapper gray-wrapper">
   <div class="container inner">
-    <div class="row"> 
+    <div class="row">
       <div class="col-lg-10 mx-auto">
         {% include utilities/disqus-comments.html %}
       </div>
@@ -100,5 +101,6 @@ layout: default
   <!-- /.container -->
 </div>
 <!-- /.wrapper -->
+{% endif %}
 </div>
 {% include layouts/footer/footer-1.html %}
