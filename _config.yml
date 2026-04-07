@@ -120,8 +120,12 @@ feed:
     posts:
       path: "/index.xml"
 
+future: false
+
 include:
   - robots.txt
+  - llms.txt
+  - CNAME
 
 highlighter: rouge
 
