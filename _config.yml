@@ -1,6 +1,24 @@
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "https://snowlake-jekyll-v2.pages.dev" # the base hostname & protocol for your site, e.g. http://example.com
+url: "https://thesaltykorean.com" # the base hostname & protocol for your site
 permalink: "/:title"
+
+# Site identity
+title: "Randy Walker"
+description: "Randy Walker's thoughts, stories and ideas. President of Harvest Data Corp, Microsoft MVP award winner, ASP Insider and tech enthusiast."
+tagline: "Technology leadership, career insights, and the business of innovation."
+
+# Author
+author_name: "Randy Walker"
+author_bio: "Owner of SK Meridian LLC, former President of Harvest Data Corp, and former Microsoft MVP."
+author_url: "https://thesaltykorean.com"
+author_location: "Bentonville, Arkansas"
+author_image: "/assets/images/authors/randy-walker.jpg"
+
+# Social links
+twitter_username: "TheSaltyKorean"
+github_username: "TheSaltyKorean"
+instagram_username: "thesaltykorean"
+linkedin_username: "RandyWalker1"
 
 # Build settings
 #theme: minima
@@ -8,16 +26,15 @@ plugins:
   - jekyll-feed
   - jekyll-paginate-v2
   - jekyll-archives
+  - jekyll-sitemap
 
 collections:
   authors:
-    output: true
+    output: false
   shop_items:
-    output: true
-    permalink: /shop/:name
+    output: false
   portfolio:
-      output: true
-      permalink: /portfolio/:name
+    output: false
       
 
 ############################################################
@@ -30,7 +47,7 @@ pagination:
   enabled: true
 
   # Set to 'true' to enable pagination debugging. This can be enabled in the site config or only for individual pagination pages
-  debug: true
+  debug: false
 
   # The default document collection to paginate if nothing is specified ('posts' is default)
   collection: 'posts'
@@ -88,10 +105,9 @@ pagination:
 ############################################################
 
 # Jekyll Archives Configuration
+# Disabled tags and categories to prevent thin content pages
 jekyll-archives:
-  enabled:
-    - tags
-    - categories
+  enabled: []
   layouts:
     tag: tag
     category: category
@@ -104,11 +120,17 @@ feed:
     posts:
       path: "/index.xml"
 
-future: false
-highlighter: rouge
-
-# Ensure these files are included in the build output
 include:
   - robots.txt
-  - llms.txt
-  - CNAME
+
+highlighter: rouge
+
+# Default layouts
+defaults:
+  - scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: "posts/post-sidebar"
+      author: "Randy Walker"
+      comments: true

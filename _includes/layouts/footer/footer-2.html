@@ -1,5 +1,5 @@
 <!-- Centered Footer v2 -->
-<footer class="{% if include.extra_class %} {{include.extra_class}} {% else %} dark-wrapper inverse-text {% endif %}">
+<footer role="contentinfo" aria-label="Site footer" class="{% if include.extra_class %} {{include.extra_class}} {% else %} dark-wrapper inverse-text {% endif %}">
   <div class="container inner pt-80 pb-50 text-center">
     <div class="row">
       <div class="col-md-10 offset-md-1">
@@ -19,7 +19,7 @@
               <h3 class="widget-title">Follow</h3>
               <ul class="social social-mute social-s">
                 {% for social_info in site.data.general_settings.social_accounts.links %}
-                <li><a href="{{social_info.url}}"><i class="{{social_info.icon}}"></i></a></li>
+                <li><a href="{{social_info.url}}" aria-label="{{social_info.text}}"><i class="{{social_info.icon}}"></i></a></li>
                 {% endfor %}
               </ul>
             </div>

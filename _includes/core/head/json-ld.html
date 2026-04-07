@@ -1,73 +1,53 @@
-<!-- JSON-LD Structured Data -->
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
-  "@graph": [
-    {
-      "@type": "Person",
-      "@id": "{{ site.url }}#person",
-      "name": "Randy Walker",
-      "url": "{{ site.url }}",
-      "description": "Korean-American founder, software engineer, and poker enthusiast based in Austin, Texas. Founder of SK Meridian LLC and creator of Salty Poker Network.",
-      "jobTitle": "Founder & CEO",
-      "worksFor": {
-        "@type": "Organization",
-        "name": "SK Meridian LLC",
-        "url": "https://skmeridian.com"
-      },
-      "knowsAbout": [
-        "Software Engineering",
-        "Platform Engineering",
-        "Online Poker",
-        "Startup Building",
-        "Cloud Infrastructure",
-        "AI-Assisted Development",
-        "Korean-American Culture"
-      ],
-      "sameAs": [
-        "https://salty.poker",
-        "https://skmeridian.com",
-        "https://twitter.com/saltypokernet"
-      ]
-    },
-    {
-      "@type": "WebSite",
-      "@id": "{{ site.url }}#website",
-      "url": "{{ site.url }}",
-      "name": "The Salty Korean",
-      "description": "Personal blog and tech journal by Randy Walker — startup building, software engineering, Korean-American identity, and poker culture.",
-      "publisher": {"@id": "{{ site.url }}#person"}
-    },
-    {
-      "@type": "Blog",
-      "@id": "{{ site.url }}/blogs/#blog",
-      "url": "{{ site.url }}/blogs/",
-      "name": "The Salty Korean Blog",
-      "description": "Technical deep dives, founder stories, and cultural essays by Randy Walker.",
-      "author": {"@id": "{{ site.url }}#person"},
-      "isPartOf": {"@id": "{{ site.url }}#website"}
-    }
-    {% if page.layout contains "post" %}
-    ,{
-      "@type": "BlogPosting",
-      "@id": "{{ site.url }}{{ page.url }}#blogposting",
-      "headline": "{{ page.title }}",
-      "description": "{% if page.meta_description %}{{ page.meta_description | strip_html | strip_newlines | strip }}{% elsif page.description %}{{ page.description | strip_html | strip_newlines | strip }}{% else %}{{ page.excerpt | strip_html | strip_newlines | strip }}{% endif %}",
-      "datePublished": "{{ page.date | date_to_xmlschema }}",
-      "author": {"@id": "{{ site.url }}#person"},
-      {% if page.post_image %}
-      "image": "{{ site.url }}{{ page.post_image }}",
-      {% elsif page.image %}
-      "image": "{{ site.url }}{{ page.image }}",
-      {% endif %}
-      "mainEntityOfPage": {
-        "@type": "WebPage",
-        "@id": "{{ site.url }}{{ page.url }}"
-      },
-      "publisher": {"@id": "{{ site.url }}#person"},
-      "isPartOf": {"@id": "{{ site.url }}/blogs/#blog"}
-    }
-    {% endif %}
-  ]
+  "@type": "Person",
+  "name": "Randy Walker",
+  "url": "{{ site.url }}",
+  "sameAs": [
+    "https://twitter.com/{{ site.twitter_username }}",
+    "https://github.com/{{ site.github_username }}",
+    "https://instagram.com/{{ site.instagram_username }}",
+    "https://www.linkedin.com/in/{{ site.linkedin_username }}/"
+  ],
+  "description": "{{ site.description }}",
+  "image": "{{ site.author_image | prepend: site.url }}"
 }
 </script>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  "name": "{{ site.title }}",
+  "url": "{{ site.url }}",
+  "description": "{{ site.description }}"
+}
+</script>
+
+{% if page.layout contains "post" %}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "headline": "{% if page.meta_title %}{{ page.meta_title }}{% else %}{{ page.title }}{% endif %}",
+  "description": "{% if page.meta_description %}{{ page.meta_description }}{% else %}{{ page.description }}{% endif %}",
+  "datePublished": "{{ page.date | date_to_xmlschema }}",
+  {% if page.date_modified %}
+  "dateModified": "{{ page.date_modified | date_to_xmlschema }}",
+  {% endif %}
+  "author": {
+    "@type": "Person",
+    "name": "{{ page.author | default: site.author_name }}",
+    "url": "{{ site.url }}"
+  },
+  {% if page.image %}
+  "image": "{{ page.image | prepend: site.url }}",
+  {% endif %}
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "{{ site.url }}{{ page.url }}"
+  }
+}
+</script>
+{% endif %}

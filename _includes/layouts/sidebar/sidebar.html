@@ -13,7 +13,7 @@
   {% if author_info.social_accounts %}
   <ul class="social social-color social-s">
     {% for account in author_info.social_accounts %}
-     <li><a href="{{account.url}}"><i class="{{account.icon}}"></i></a></li>
+     <li><a href="{{account.url}}" aria-label="{{account.text}}"><i class="{{account.icon}}"></i></a></li>
     {% endfor %}
   </ul>
   {% endif %}

@@ -18,6 +18,7 @@ group :jekyll_plugins do
   gem "jekyll-feed"
   gem "jekyll-paginate-v2"
   gem 'jekyll-archives'
+  gem 'jekyll-sitemap'
 end
 
 # Windows and JRuby does not include zoneinfo files, so bundle the tzinfo-data gem
@@ -39,4 +40,4 @@ gem "kramdown-parser-gfm", "~> 1.1"
 
 gem "rouge"
 
-gem 'eventmachine', '1.2.7', git: 'https://github.com/eventmachine/eventmachine.git', tag: 'v1.2.7'
+gem 'eventmachine', '~> 1.2.7'
