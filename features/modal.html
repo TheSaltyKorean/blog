@@ -1,0 +1,121 @@
+---
+layout: default
+title: "Modal"
+sub_title: "Click the buttons to see the modal examples"
+background_image: "/assets/images/art/bg1.webp"
+
+### Modal Subscription
+
+
+subscription_modal:
+  title: "Join our Mailing List"
+  sub_title: "Subscribe to our newsletter to get our latest news delivered right to your inbox!"
+  form_action: "your_email@example.com"
+  button_text: "Join"
+  form_sub_text: "We hate spam and respect your privacy."
+  image: "/assets/images/art/bg21.webp"
+
+### Modal Subscription Alternative
+
+
+subscription_alternative_modal:
+  title: "Join the mailing list and get %10 off"
+  content: "Nullam quis risus eget urna mollis ornare vel eu leo. Donec ullamcorper nulla non metus auctor fringilla."
+  form_action: "your_email@example.com"
+  button_text: "Join"
+  image: "/assets/images/concept/concept19.webp"
+  image_1: "/assets/images/concept/concept19@2x.webp" 
+### Modal Sign Up
+
+signup_modal:
+  title: "Sign Up"
+  form_action: "your_email@example.com"
+  button_text: "Sign Up"
+  image: "/assets/images/art/bg22.webp"
+
+### Modal Contact
+
+contact_modal:
+  title: "Get in Touch"
+  form_action: "your_email@example.com"
+  button_text: "Send Message"
+  image: "/assets/images/art/bg23.webp"
+
+### Modal Cookie
+
+cookie_modal:
+  title: "Cookie Policy"
+  content: "We use cookies to personalize content and ads to make our site easier for you to use."
+  button_text: "i understand"
+  image: "/assets/images/art/bg24.webp"
+
+### Modal Sale
+
+sale_modal:
+  title: "Get All Products 50% Off"
+  content: "Lorem ipsum dolor sit amet, consectetur adipis consequuntur exercitationem, harum odit vero! Esse
+                    ipsam perspiciatis."
+  image: "/assets/images/art/bg24.webp"
+  button_text: "Shop Now"
+
+
+---
+<div class="content-wrapper">
+  {% include layouts/nav/nav-1.html drop_search=true %} 
+  {% include layouts/header/page-title.html %}
+  
+  <!-- Other content -->
+  <!-- /.wrapper -->
+  <div class="wrapper light-wrapper">
+    <div class="container inner">
+      <h2 class="section-title mb-40 text-center">Subscription</h2>
+      <div class="text-center"><a href="#" class="btn" data-bs-toggle="modal" data-bs-target="#modal-01">Open Modal</a></div>
+    </div>
+    {% include components/modals/_modal-subscription.html %}
+  </div>
+
+  <div class="wrapper light-wrapper">
+    <div class="container inner">
+      <h2 class="section-title mb-40 text-center">Subscription Alternative</h2>
+      <div class="text-center"><a href="#" class="btn" data-bs-toggle="modal" data-bs-target="#modal-02">Open Modal</a></div>
+    </div>
+    {% include components/modals/_modal-subscription-alternative.html %}
+  </div>
+
+  <div class="wrapper light-wrapper">
+    <div class="container inner">
+      <h2 class="section-title mb-40 text-center">Sign Up</h2>
+      <div class="text-center"><a href="#" class="btn" data-bs-toggle="modal" data-bs-target="#modal-02">Open Modal</a></div>
+    </div>
+    {% include components/modals/_modal-signup.html %}
+  </div>
+
+  <div class="wrapper light-wrapper">
+    <div class="container inner">
+      <h2 class="section-title mb-40 text-center">Contact</h2>
+      <div class="text-center"><a href="#" class="btn" data-bs-toggle="modal" data-bs-target="#modal-03">Open Modal</a></div>
+    </div>
+    {% include components/modals/_modal-contact.html %}
+  </div>
+
+  <div class="wrapper light-wrapper">
+    <div class="container inner">
+      <h2 class="section-title mb-40 text-center">Cookie Policy</h2>
+      <div class="text-center"><a href="#" class="btn" data-bs-toggle="modal" data-bs-target="#modal-04">Open Modal</a></div>
+    </div>
+    {% include components/modals/_modal-cookie.html %}
+  </div>
+
+  <div class="wrapper light-wrapper">
+    <div class="container inner">
+      <h2 class="section-title mb-40 text-center">Sale</h2>
+      <div class="text-center"><a href="#" class="btn" data-bs-toggle="modal" data-bs-target="#modal-05">Open Modal</a></div>
+    </div>
+    {% include components/modals/_modal-sale.html %}
+  </div>
+  
+</div>
+
+{% include layouts/footer/footer-1.html %}
+    
+    

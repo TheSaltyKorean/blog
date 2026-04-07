@@ -1,41 +1,32 @@
 User-agent: *
 Allow: /
 
-# Block deleted theme demo pages
-Disallow: /blogs/
-Disallow: /elements/
-Disallow: /features/
-Disallow: /home-pages/
-Disallow: /portfolios/
-Disallow: /portfolio/
-Disallow: /services/
-Disallow: /shop/
-Disallow: /blog-post.html
-Disallow: /contact/contact-
-Disallow: /tags/
+# AI Crawlers — Welcome
+User-agent: GPTBot
+Allow: /
 
-# Block old /blog/ path (blog is at root /)
-Disallow: /blog/
+User-agent: ChatGPT-User
+Allow: /
 
-# Block disabled archives
-Disallow: /tag/
-Disallow: /category/
-Disallow: /authors/
+User-agent: Google-Extended
+Allow: /
 
-# Block old WordPress-style date URLs
-Disallow: /2007/
-Disallow: /2008/
-Disallow: /2009/
-Disallow: /2010/
-Disallow: /2011/
-Disallow: /2012/
-Disallow: /2013/
-Disallow: /2014/
-Disallow: /2015/
-Disallow: /2016/
-Disallow: /2017/
-Disallow: /2018/
-Disallow: /2019/
-Disallow: /2020/
+User-agent: Anthropic-ai
+Allow: /
+
+User-agent: ClaudeBot
+Allow: /
+
+User-agent: Cohere-ai
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: Applebot-Extended
+Allow: /
+
+User-agent: Meta-ExternalAgent
+Allow: /
 
 Sitemap: https://thesaltykorean.com/sitemap.xml

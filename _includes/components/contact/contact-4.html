@@ -54,7 +54,7 @@
                 <div class="space40"></div>
                 
                         <form id="contact-form" class="fields-white" method="post"
-                            action="https://formsubmit.co/{{page.contact_form.action_email}}">
+                            action="https://formsubmit.io/send/{{page.contact_form.action_email}}">
                             <div class="messages"></div>
                             <div class="controls">
                                 <div class="row g-3">
@@ -64,7 +64,7 @@
                                         <div class="form-group">
                                             <input id="{{forms_data.field_name}}" type="text"
                                                 name="{{forms_data.field_name}}" class="form-control"
-                                                placeholder="{{forms_data.placeholder}}  *" aria-label="{{forms_data.placeholder}}" required="required"
+                                                placeholder="{{forms_data.placeholder}}  *" required="required"
                                                 data-error="{{forms_data.error_message}}">
                                             <div class="help-block with-errors"></div>
                                         </div>
@@ -74,7 +74,7 @@
                                         <div class="form-group">
                                             <textarea id="{{forms_data.field_name}}" name="{{forms_data.field_name}}"
                                                 class="form-control" placeholder="{{forms_data.placeholder}} *" rows="4"
-                                                aria-label="{{forms_data.placeholder}}" required="required"
+                                                required="required"
                                                 data-error="{{forms_data.error_message}}"></textarea>
                                             <div class="help-block with-errors"></div>
                                         </div>
@@ -84,7 +84,7 @@
                                 </div>
                                 <div class="form-row">
                                     <div class="col-md-12">
-                                        <input type="submit" class="btn btn-send" value="Send message" aria-label="Send message">
+                                        <input type="submit" class="btn btn-send" value="Send message">
                                     </div>
                                 </div>
                                 <div class="form-row">

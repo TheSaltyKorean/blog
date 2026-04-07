@@ -7,7 +7,6 @@ user can't scroll away from the modal. {% endcomment %}
   <!-- Meta Tags-->
   {% include core/head/meta-seo-tags.html %}
   {% include core/head/meta-og-tags.html %}
-  <!-- Structured Data -->
   {% include core/head/json-ld.html %}
   <!-- Stylesheets-->
   {% include core/styles/styles.html %}
@@ -15,11 +14,8 @@ user can't scroll away from the modal. {% endcomment %}
   {% include utilities/analytics.html %}
 </head>
 <body {% if page.overflow %} class="overflow-hidden" {% endif %}>
-  <a href="#main-content" class="sr-only sr-only-focusable">Skip to main content</a>
   <div class="content-wrapper">
-    <main id="main-content" role="main">
-      {{ content }}
-    </main>
+    {{ content }}
   </div>
   <!-- Site Scripts-->
   {% include core/scripts/scripts.html %}
