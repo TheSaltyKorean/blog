@@ -1,13 +1,24 @@
 ---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import { siteConfig } from '../data/siteConfig';
 ---
-<!doctype html>
-<html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>TSK Astro scaffold</title>
-  </head>
-  <body>
-    <h1>TSK Astro scaffold</h1>
-  </body>
-</html>
+<BaseLayout>
+  <section class="max-w-4xl mx-auto px-4 sm:px-6 pt-16 pb-12">
+    <h1 class="text-4xl sm:text-5xl font-bold tracking-tight">{siteConfig.title}</h1>
+    <p class="mt-4 text-lg text-[var(--color-ink-soft)] max-w-2xl">
+      {siteConfig.tagline}
+    </p>
+    <p class="mt-6 text-[var(--color-muted)] max-w-2xl">
+      {siteConfig.author.bio}
+    </p>
+  </section>
+
+  <section class="max-w-4xl mx-auto px-4 sm:px-6 pb-16">
+    <div class="border border-dashed border-[var(--color-rule)] rounded-lg p-6 bg-[var(--color-surface-soft)]">
+      <h2 class="text-xl font-semibold">Coming soon: blog archive</h2>
+      <p class="mt-2 text-sm text-[var(--color-muted)]">
+        The full post archive is being migrated from Jekyll to Astro. Check back soon.
+      </p>
+    </div>
+  </section>
+</BaseLayout>

@@ -1,0 +1,38 @@
+---
+import '../styles/global.css';
+import SEOHead from '../components/SEOHead.astro';
+import JsonLd from '../components/JsonLd.astro';
+import Nav from '../components/Nav.astro';
+import Footer from '../components/Footer.astro';
+
+interface Props {
+  title?: string;
+  description?: string;
+  canonical?: string;
+  ogImage?: string;
+  noindex?: boolean;
+}
+
+const { title, description, canonical, ogImage, noindex } = Astro.props;
+---
+<!doctype html>
+<html lang="en">
+  <head>
+    <SEOHead
+      title={title}
+      description={description}
+      canonical={canonical}
+      ogImage={ogImage}
+      noindex={noindex}
+    />
+    <JsonLd />
+  </head>
+  <body class="min-h-screen flex flex-col">
+    <a href="#main-content" class="sr-only sr-only-focusable">Skip to main content</a>
+    <slot name="nav"><Nav mode="light" /></slot>
+    <main id="main-content" role="main" class="flex-1">
+      <slot />
+    </main>
+    <slot name="footer"><Footer /></slot>
+  </body>
+</html>

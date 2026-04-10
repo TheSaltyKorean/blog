@@ -1,0 +1,86 @@
+---
+import { mainMenu } from '../data/navigation';
+import { siteConfig } from '../data/siteConfig';
+
+interface Props {
+  mode?: 'dark' | 'light';
+}
+
+const { mode = 'light' } = Astro.props;
+const isDark = mode === 'dark';
+---
+<nav
+  class:list={[
+    'w-full border-b',
+    isDark ? 'bg-transparent border-white/10' : 'bg-white border-[var(--color-rule)]',
+  ]}
+  aria-label="Main navigation"
+>
+  <div class="max-w-4xl mx-auto px-4 sm:px-6">
+    <div class="flex items-center justify-between h-16">
+      <a
+        href="/"
+        class:list={[
+          'text-lg font-bold no-underline tracking-tight',
+          isDark ? 'text-white' : 'text-[var(--color-ink)]',
+        ]}
+      >
+        {siteConfig.title}
+      </a>
+
+      <ul class="hidden sm:flex items-center gap-6">
+        {mainMenu.map((item) => (
+          <li>
+            <a
+              href={item.url}
+              class:list={[
+                'text-sm font-medium no-underline hover:opacity-80',
+                isDark ? 'text-white' : 'text-[var(--color-ink-soft)]',
+              ]}
+            >
+              {item.text}
+            </a>
+          </li>
+        ))}
+      </ul>
+
+      <button
+        class="sm:hidden p-2 rounded-md"
+        id="mobile-menu-btn"
+        aria-label="Toggle navigation menu"
+        aria-expanded="false"
+      >
+        <svg class:list={['w-6 h-6', isDark ? 'text-white' : 'text-[var(--color-ink)]']} fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path class="hamburger-open" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+          <path class="hamburger-close hidden" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+        </svg>
+      </button>
+    </div>
+  </div>
+
+  <div id="mobile-menu" class="sm:hidden hidden border-t border-[var(--color-rule)] bg-white">
+    <ul class="px-4 py-3 space-y-1">
+      {mainMenu.map((item) => (
+        <li>
+          <a href={item.url} class="block px-3 py-2 text-sm text-[var(--color-ink-soft)] no-underline hover:bg-[var(--color-surface-soft)] rounded">
+            {item.text}
+          </a>
+        </li>
+      ))}
+    </ul>
+  </div>
+</nav>
+
+<script>
+  const btn = document.getElementById('mobile-menu-btn');
+  const menu = document.getElementById('mobile-menu');
+  const openIcon = btn?.querySelector('.hamburger-open');
+  const closeIcon = btn?.querySelector('.hamburger-close');
+
+  btn?.addEventListener('click', () => {
+    const isOpen = menu?.classList.toggle('hidden') === false;
+    btn.setAttribute('aria-expanded', String(isOpen));
+    openIcon?.classList.toggle('hidden', isOpen);
+    closeIcon?.classList.toggle('hidden', !isOpen);
+  });
+</script>

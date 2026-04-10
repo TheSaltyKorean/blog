@@ -1,0 +1,32 @@
+---
+import { siteConfig } from '../data/siteConfig';
+
+const personSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'Person',
+  '@id': `${siteConfig.url}#person`,
+  name: siteConfig.author.name,
+  url: siteConfig.url,
+  image: new URL(siteConfig.author.image, siteConfig.url).href,
+  jobTitle: siteConfig.author.jobTitle,
+  worksFor: {
+    '@type': 'Organization',
+    name: siteConfig.author.worksFor,
+  },
+  address: {
+    '@type': 'PostalAddress',
+    addressLocality: 'Bentonville',
+    addressRegion: 'AR',
+    addressCountry: 'US',
+  },
+  description: siteConfig.author.bio,
+  sameAs: [
+    siteConfig.socialUrls.twitter,
+    siteConfig.socialUrls.github,
+    siteConfig.socialUrls.instagram,
+    siteConfig.socialUrls.linkedin,
+    siteConfig.socialUrls.facebook,
+  ],
+};
+---
+<script type="application/ld+json" set:html={JSON.stringify(personSchema)} />

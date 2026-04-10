@@ -1,0 +1,46 @@
+---
+import { siteConfig } from '../data/siteConfig';
+
+interface Props {
+  title?: string;
+  description?: string;
+  canonical?: string;
+  ogImage?: string;
+  noindex?: boolean;
+}
+
+const {
+  title = siteConfig.title,
+  description = siteConfig.description,
+  canonical,
+  ogImage = siteConfig.ogImage,
+  noindex = false,
+} = Astro.props;
+
+const canonicalUrl = canonical
+  ? new URL(canonical, siteConfig.url).href
+  : new URL(Astro.url.pathname, siteConfig.url).href;
+const resolvedOgImage = new URL(ogImage, siteConfig.url).href;
+---
+<title>{title}</title>
+<meta name="title" content={title} />
+<meta name="description" content={description} />
+<link rel="canonical" href={canonicalUrl} />
+<link rel="icon" type="image/webp" href={siteConfig.favicon} />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+{noindex && <meta name="robots" content="noindex, nofollow" />}
+
+<meta property="og:type" content="website" />
+<meta property="og:url" content={canonicalUrl} />
+<meta property="og:title" content={title} />
+<meta property="og:description" content={description} />
+<meta property="og:image" content={resolvedOgImage} />
+<meta property="og:site_name" content={siteConfig.title} />
+
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:site" content={`@${siteConfig.social.twitter}`} />
+<meta name="twitter:creator" content={`@${siteConfig.social.twitter}`} />
+<meta name="twitter:url" content={canonicalUrl} />
+<meta name="twitter:title" content={title} />
+<meta name="twitter:description" content={description} />
+<meta name="twitter:image" content={resolvedOgImage} />
