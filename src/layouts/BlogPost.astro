@@ -1,0 +1,81 @@
+---
+import BaseLayout from './BaseLayout.astro';
+
+interface Props {
+  frontmatter: {
+    title: string;
+    date: Date;
+    author: string;
+    categories: string[];
+    tags: string[];
+    permalink: string;
+    meta_title?: string;
+    meta_description?: string;
+    post_image?: string;
+  };
+}
+
+const { frontmatter } = Astro.props;
+const formattedDate = new Date(frontmatter.date).toLocaleDateString('en-US', {
+  year: 'numeric',
+  month: 'long',
+  day: 'numeric',
+});
+---
+<BaseLayout
+  title={frontmatter.meta_title || frontmatter.title}
+  description={frontmatter.meta_description}
+  canonical={frontmatter.permalink}
+  ogImage={frontmatter.post_image}
+>
+  <article class="max-w-3xl mx-auto px-4 sm:px-6 py-12">
+    <header class="mb-8">
+      <h1 class="text-3xl sm:text-4xl font-bold tracking-tight">{frontmatter.title}</h1>
+      <p class="mt-3 text-sm text-[var(--color-muted)]">
+        <time datetime={new Date(frontmatter.date).toISOString()}>{formattedDate}</time>
+        <span class="mx-2">·</span>
+        <span>{frontmatter.author}</span>
+      </p>
+      {frontmatter.categories.length > 0 && (
+        <ul class="mt-4 flex flex-wrap gap-2" aria-label="Categories">
+          {frontmatter.categories.map((cat) => (
+            <li>
+              <a
+                href={`/category/${cat}/`}
+                class="inline-block px-2.5 py-1 text-xs font-medium rounded-full bg-[var(--color-surface-soft)] text-[var(--color-ink-soft)] no-underline hover:bg-[var(--color-rule)]"
+              >
+                {cat}
+              </a>
+            </li>
+          ))}
+        </ul>
+      )}
+    </header>
+
+    <div class="prose-content">
+      <slot />
+    </div>
+
+    {frontmatter.tags.length > 0 && (
+      <footer class="mt-10 pt-6 border-t border-[var(--color-rule)]">
+        <h2 class="text-xs uppercase tracking-wider text-[var(--color-muted)] mb-3">Tags</h2>
+        <ul class="flex flex-wrap gap-2" aria-label="Tags">
+          {frontmatter.tags.map((tag) => (
+            <li>
+              <a
+                href={`/tag/${tag}/`}
+                class="inline-block px-2.5 py-1 text-xs rounded-full border border-[var(--color-rule)] text-[var(--color-ink-soft)] no-underline hover:bg-[var(--color-surface-soft)]"
+              >
+                {tag}
+              </a>
+            </li>
+          ))}
+        </ul>
+      </footer>
+    )}
+
+    <nav class="mt-10">
+      <a href="/" class="text-sm no-underline hover:underline">← Back to all posts</a>
+    </nav>
+  </article>
+</BaseLayout>
