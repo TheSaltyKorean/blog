@@ -1,0 +1,69 @@
+---
+interface Props {
+  post: {
+    data: {
+      title: string;
+      date: Date;
+      author: string;
+      permalink: string;
+      categories: string[];
+      tags: string[];
+      post_image?: string;
+      meta_description?: string;
+    };
+    body?: string;
+  };
+}
+
+const { post } = Astro.props;
+const date = new Date(post.data.date).toLocaleDateString('en-US', {
+  year: 'numeric',
+  month: 'long',
+  day: 'numeric',
+});
+
+const rawExcerpt = post.data.meta_description
+  || (post.body ? post.body.replace(/[#*_`>\-]/g, '').replace(/\s+/g, ' ').trim().slice(0, 200) : '');
+const excerpt = rawExcerpt.length === 200 ? rawExcerpt + '…' : rawExcerpt;
+---
+<article class="flex flex-col bg-white border border-[var(--color-rule)] rounded-lg overflow-hidden hover:shadow-md transition-shadow">
+  {post.data.post_image && (
+    <a href={post.data.permalink} class="block">
+      <img
+        src={post.data.post_image}
+        alt={post.data.title}
+        class="w-full h-40 object-cover"
+        loading="lazy"
+      />
+    </a>
+  )}
+  <div class="flex-1 flex flex-col p-5">
+    {post.data.categories.length > 0 && (
+      <ul class="flex flex-wrap gap-1.5 mb-3" aria-label="Categories">
+        {post.data.categories.slice(0, 3).map((cat) => (
+          <li>
+            <a
+              href={`/category/${cat.toLowerCase().trim()}/`}
+              class="inline-block px-2 py-0.5 text-[10px] font-semibold uppercase tracking-wide rounded-full bg-[var(--color-surface-soft)] text-[var(--color-ink-soft)] no-underline hover:bg-[var(--color-rule)]"
+            >
+              {cat}
+            </a>
+          </li>
+        ))}
+      </ul>
+    )}
+    <h2 class="text-lg font-bold leading-snug">
+      <a href={post.data.permalink} class="no-underline text-[var(--color-ink)] hover:text-[var(--color-accent)]">
+        {post.data.title}
+      </a>
+    </h2>
+    {excerpt && (
+      <p class="mt-2 text-sm text-[var(--color-muted)] line-clamp-3">{excerpt}</p>
+    )}
+    <div class="mt-4 pt-3 border-t border-[var(--color-rule)] text-xs text-[var(--color-muted)]">
+      <time datetime={new Date(post.data.date).toISOString()}>{date}</time>
+      <span class="mx-1.5">·</span>
+      <span>{post.data.author}</span>
+    </div>
+  </div>
+</article>
