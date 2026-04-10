@@ -1,7 +1,7 @@
 ---
 title: 100 Pushup Challenge? Hardly
 date: '2008-08-28'
-permalink: /100-pushup-challenge--hardly/
+permalink: /100-pushup-challenge-hardly/
 author: Randy Walker
 categories:
   - personal
