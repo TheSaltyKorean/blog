@@ -1,0 +1,16 @@
+Jekyll → Astro migration report
+Scanned: 152
+Skipped (draft): 0
+Written: 151
+Skipped (Phase 3 test post unchanged): 0
+Skipped (Phase 3 test post diverged — review): 1
+  - teaching-the-ai-how-i-write
+Final file count in src/content/blog/: 152
+
+Parse errors: 0
+
+Date mismatches (filename vs frontmatter): 2
+  2019-02-15-blogging-again.md  filename=2019-02-15  fm=2018-02-15
+  2020-02-16-cloudxplorer-discount.md  filename=2020-02-16  fm=2018-02-16
+
+Liquid-tag warnings: 0

@@ -1,0 +1,16 @@
+---
+title: Free Source Code Outliner PowerToy for Visual Studio 2008
+date: '2008-02-03'
+permalink: /free-source-code-outliner-powertoy-for-visual-studio-2008/
+author: Randy Walker
+categories:
+  - development
+tags:
+  - .Net
+  - Visual Studio 2008
+post_image: /assets/images/art/thumb/bg8.webp
+---
+
+**[Source Code Outliner PowerToy for Visual Studio 2008](http://go.microsoft.com/?linkid=8215433)**
+
+Microsoft released a free PowerToy for VS2008.  The Source Outliner PowerToy is a Visual Studio 2008 extension that provides a tree view of your source code's types and members and lets you quickly navigate to them with filtering inside the editor.
