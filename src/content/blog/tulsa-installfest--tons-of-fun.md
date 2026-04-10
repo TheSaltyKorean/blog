@@ -1,7 +1,7 @@
 ---
 title: Tulsa InstallFest = Tons of fun
 date: '2007-12-20'
-permalink: /tulsa-installfest--tons-of-fun/
+permalink: /tulsa-installfest-tons-of-fun/
 author: Randy Walker
 categories:
   - community

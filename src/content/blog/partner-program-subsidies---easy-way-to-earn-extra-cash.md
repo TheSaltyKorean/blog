@@ -1,7 +1,7 @@
 ---
 title: Partner Program Subsidies - Easy way to earn extra cash
 date: '2008-01-28'
-permalink: /partner-program-subsidies---easy-way-to-earn-extra-cash/
+permalink: /partner-program-subsidies-easy-way-to-earn-extra-cash/
 author: Randy Walker
 categories:
   - entrepreneurship
