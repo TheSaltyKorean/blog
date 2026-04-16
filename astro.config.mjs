@@ -13,6 +13,7 @@ export default defineConfig({
       filter: (page) => {
         const pathname = new URL(page).pathname;
         if (pathname === '/thank-you/' || pathname === '/404' || pathname === '/404/') return false;
+        if (/^\/(elements|home-pages|portfolio|blogs|contact\/contact-)/.test(pathname)) return false;
         return !redirectPaths.has(pathname);
       },
     }),
