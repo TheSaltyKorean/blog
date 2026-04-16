@@ -23,6 +23,12 @@ Allow: /
 
 # Block deleted Jekyll theme demo pages
 Disallow: /blog-post.html
+Disallow: /elements/
+Disallow: /home-pages/
+Disallow: /portfolio/
+Disallow: /contact/contact-1/
+Disallow: /contact/contact-3/
+Disallow: /blogs/
 
 # Block old /blog/ path (blog is at root /)
 Disallow: /blog/
@@ -30,14 +36,17 @@ Disallow: /blog/
 # Block old author archive
 Disallow: /authors/
 
-# Block old WordPress-style date URLs
+# Block ALL old WordPress-style date URLs
 Disallow: /2007/
+Disallow: /2008/
 Disallow: /2011/
 Disallow: /2012/
 Disallow: /2013/
 Disallow: /2014/
 Disallow: /2015/
 Disallow: /2016/
+Disallow: /2017/
+Disallow: /2018/
 Disallow: /2019/
 Disallow: /2020/
 
