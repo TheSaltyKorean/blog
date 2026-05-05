@@ -1,6 +1,7 @@
 ---
 title: '13 Deployments, One Day, and a Grudging Respect for the Process'
 date: '2026-03-06'
+post_image: /assets/images/blog/13-deployments-one-day-azure-migration.webp
 permalink: /13-deployments-one-day-azure-migration/
 author: Randy Walker
 categories:

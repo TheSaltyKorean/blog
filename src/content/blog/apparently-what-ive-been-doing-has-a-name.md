@@ -12,7 +12,7 @@ tags:
   - agentic-ai
   - startup
   - claude
-post_image: /assets/images/art/thumb/bg13.webp
+post_image: /assets/images/blog/apparently-what-ive-been-doing-has-a-name.webp
 ---
 
 Spec-driven development. Who knew that was a thing?

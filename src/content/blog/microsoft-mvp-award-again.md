@@ -7,7 +7,7 @@ categories:
   - microsoft
   - development
 tags: []
-post_image: /assets/images/art/thumb/bg22.webp
+post_image: /assets/images/blog/microsoft-mvp-award-again.webp
 ---
 
 Normally April 1st is filled full of practical jokes and funny stuff with Google being the most notorious about the scams they try to pull.  This year Google tried to trick us into believing a new product called [Google Nose](http://www.youtube.com/watch?v=VFbYadm_mrw&hl=en).  I love when they say “Our mobile aroma indexing program.” It makes it sound all official like.

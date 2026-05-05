@@ -7,7 +7,7 @@ categories:
   - devops
   - development
 tags: []
-post_image: /assets/images/art/tb10.webp
+post_image: /assets/images/blog/continuous-integration-with-vsts1.webp
 ---
 Now that the blog is officially announced and released, I thought I'd show you a quick tip in how we were able to update our main website through continuous integration and continuous deployment.  Since this particular website is used just for our marketing purposes, we currently aren't using deployment slots, so this helps us out a great deal.
 

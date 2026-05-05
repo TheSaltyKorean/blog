@@ -1,6 +1,7 @@
 ---
 title: I Spent Two Hours Herding AI. I Could Have Just Done It Myself.
 date: '2026-03-11'
+post_image: /assets/images/blog/i-spent-two-hours-herding-ai.webp
 permalink: /i-spent-two-hours-herding-ai/
 author: Randy Walker
 categories:

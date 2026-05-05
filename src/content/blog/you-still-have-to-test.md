@@ -1,6 +1,7 @@
 ---
 title: "You Still Have to Test. Especially When AI Wrote It."
 date: 2026-04-19
+post_image: /assets/images/blog/you-still-have-to-test.webp
 permalink: /you-still-have-to-test/
 author: "Randy Walker"
 categories: [building, ai]

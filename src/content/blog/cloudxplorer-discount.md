@@ -8,7 +8,7 @@ categories:
 tags:
   - harvest
   - azure
-post_image: /assets/images/art/thumb/bg29.webp
+post_image: /assets/images/blog/cloudxplorer-discount.webp
 ---
 
 For years working with blobs in Azure storage, my go to favorite tool has been [Clumsyleaf's CloudXplorer](http://clumsyleaf.com/products/cloudxplorer).

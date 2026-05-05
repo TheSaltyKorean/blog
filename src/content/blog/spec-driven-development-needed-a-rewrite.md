@@ -13,7 +13,7 @@ tags:
   - startup
   - claude
   - governance
-post_image: /assets/images/art/thumb/bg14.webp
+post_image: /assets/images/blog/spec-driven-development-needed-a-rewrite.webp
 ---
 
 Last post I talked about finding out that [what I've been doing has a name](https://thesaltykorean.com/building/ai/development/2026/03/03/spec-driven-development.html). Spec-driven development. Heeki Park's article, Birgitta Böckeler's taxonomy, the whole thing. It was validating. It was exciting. It was also, after about forty-eight hours of actually thinking about it, incomplete.

@@ -6,7 +6,7 @@ author: Randy Walker
 categories:
   - technology
 tags: []
-post_image: /assets/images/art/thumb/bg29.webp
+post_image: /assets/images/blog/spam-domains.webp
 ---
 
 

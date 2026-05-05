@@ -10,7 +10,7 @@ tags:
   - hiring
   - leadership
   - career
-post_image: /assets/images/art/thumb/tb1.webp
+post_image: /assets/images/blog/when-the-recruiter-becomes-the-bottleneck.webp
 meta_title: When the Recruiter Becomes the Bottleneck
 meta_description: >
   A technology leader shares his experience navigating a broken hiring process —

@@ -7,7 +7,7 @@ categories:
   - devops
   - development
 tags: []
-post_image: /assets/images/art/thumb/bg14.webp
+post_image: /assets/images/blog/continuous-integration-with-vsts-tips-1-2.webp
 ---
 
 

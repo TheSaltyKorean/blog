@@ -7,7 +7,7 @@ categories:
   - community
   - career
 tags: []
-post_image: /assets/images/art/thumb/bg18.webp
+post_image: /assets/images/blog/mvp-summit-here-we-come.webp
 ---
 
 It’s always my favorite time of the year!

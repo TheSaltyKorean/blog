@@ -7,7 +7,7 @@ categories:
   - devops
   - development
 tags: []
-post_image: /assets/images/art/thumb/bg14.webp
+post_image: /assets/images/blog/vsts-with-code-signed-pfx-certificates.webp
 ---
 
 

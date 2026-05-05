@@ -7,7 +7,7 @@ categories:
   - devops
   - development
 tags: []
-post_image: /assets/images/art/thumb/bg12.webp
+post_image: /assets/images/blog/use-vs-code-to-create-powershell-scripts-to-move-files-into-folders-by-date.webp
 ---
 
 

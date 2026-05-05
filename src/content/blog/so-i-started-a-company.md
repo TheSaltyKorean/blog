@@ -13,7 +13,7 @@ tags:
   - development
   - gaming
   - azure
-post_image: /assets/images/art/thumb/bg2.webp
+post_image: /assets/images/blog/so-i-started-a-company.webp
 ---
 
 Here we go. Again.

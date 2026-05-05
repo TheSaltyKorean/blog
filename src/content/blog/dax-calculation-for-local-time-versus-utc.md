@@ -7,7 +7,7 @@ categories:
   - data
   - development
 tags: []
-post_image: /assets/images/art/thumb/bg11.webp
+post_image: /assets/images/blog/dax-calculation-for-local-time-versus-utc.webp
 ---
 
 
