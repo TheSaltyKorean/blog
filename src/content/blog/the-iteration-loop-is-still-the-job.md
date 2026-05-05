@@ -1,6 +1,7 @@
 ---
 title: "The Iteration Loop Is Still the Job"
 date: 2026-04-17
+post_image: /assets/images/blog/the-iteration-loop-is-still-the-job.webp
 permalink: /the-iteration-loop-is-still-the-job/
 author: "Randy Walker"
 categories: [building, ai]

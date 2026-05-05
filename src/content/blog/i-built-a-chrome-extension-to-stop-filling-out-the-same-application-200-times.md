@@ -1,6 +1,7 @@
 ---
 title: I Built a Chrome Extension to Stop Filling Out the Same Application 200 Times
 date: '2026-03-30'
+post_image: /assets/images/blog/i-built-a-chrome-extension-to-stop-filling-out-the-same-application-200-times.webp
 permalink: >-
   /i-built-a-chrome-extension-to-stop-filling-out-the-same-application-200-times/
 author: Randy Walker

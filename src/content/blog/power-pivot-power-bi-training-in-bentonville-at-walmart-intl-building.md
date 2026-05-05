@@ -7,7 +7,7 @@ categories:
   - data
   - development
 tags: []
-post_image: /assets/images/art/thumb/bg9.webp
+post_image: /assets/images/blog/power-pivot-power-bi-training-in-bentonville-at-walmart-intl-building.webp
 ---
 
 

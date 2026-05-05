@@ -1,6 +1,7 @@
 ---
 title: "I Let AI Write My Code for a Week. Here's My Honest Report."
 date: '2026-04-13'
+post_image: /assets/images/blog/i-let-ai-write-my-code-for-a-week.webp
 permalink: /i-let-ai-write-my-code-for-a-week/
 author: Randy Walker
 categories:

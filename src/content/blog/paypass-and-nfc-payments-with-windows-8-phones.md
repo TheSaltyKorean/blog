@@ -7,7 +7,7 @@ categories:
   - technology
 tags:
   - Windows 8
-post_image: /assets/images/art/thumb/bg5.webp
+post_image: /assets/images/blog/paypass-and-nfc-payments-with-windows-8-phones.webp
 ---
 
 

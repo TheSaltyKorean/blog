@@ -1,6 +1,7 @@
 ---
 title: "Teaching the AI How I Write"
 date: 2026-03-30
+post_image: /assets/images/blog/teaching-the-ai-how-i-write.webp
 permalink: /teaching-the-ai-how-i-write/
 author: "Randy Walker"
 categories: [building, ai, meta]

@@ -1,6 +1,7 @@
-﻿---
+---
 title: "Read the Contract"
 date: '2026-04-20'
+post_image: /assets/images/blog/read-the-contract.webp
 permalink: /read-the-contract/
 author: Randy Walker
 categories:

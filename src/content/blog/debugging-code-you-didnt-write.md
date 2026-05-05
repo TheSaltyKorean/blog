@@ -1,6 +1,7 @@
 ---
 title: "Debugging Code You Didn't Write (But You're Still Responsible For)"
 date: '2026-04-15'
+post_image: /assets/images/blog/debugging-code-you-didnt-write.webp
 permalink: /debugging-code-you-didnt-write/
 author: Randy Walker
 categories:

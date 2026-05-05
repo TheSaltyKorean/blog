@@ -7,7 +7,7 @@ categories:
   - data
   - development
 tags: []
-post_image: /assets/images/art/thumb/bg10.webp
+post_image: /assets/images/blog/performance-tuning-in-azure-sql-data-warehouse.webp
 ---
 
 (This was originally posted on 01/09/2016 on another site and has been moved here) 

@@ -6,7 +6,7 @@ author: Randy Walker
 categories:
   - technology
 tags: []
-post_image: /assets/images/art/thumb/bg28.webp
+post_image: /assets/images/blog/blogging-again.webp
 ---
 
 Every now and then I keep promising myself I'm going to start blogging again.  So here's yet another attempt.
