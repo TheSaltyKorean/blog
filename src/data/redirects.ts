@@ -83,6 +83,14 @@ export const redirects: RedirectEntry[] = [
     "to": "/fun-amp-gamesndashmicrosoftrsquos-new-aoe-online/"
   },
   {
+    "from": "/2008/06/19/regex-tools-for-visual-studio-amp-the-social-web/",
+    "to": "/regex-tools-for-visual-studio-amp-the-social-web/"
+  },
+  {
+    "from": "/tag/RegEx/",
+    "to": "/tag/regex/"
+  },
+  {
     "from": "/2017/02/22/power-pivot-power-bi-training-in-bentonville-at-walmart-intl-building/",
     "to": "/power-pivot-power-bi-training-in-bentonville-at-walmart-intl-building/"
   },
