@@ -227,6 +227,10 @@ export const redirects: RedirectEntry[] = [
     "to": "/"
   },
   {
+    "from": "/blog/page3/",
+    "to": "/blog/"
+  },
+  {
     "from": "/contact/contact-1/",
     "to": "/"
   },
@@ -260,6 +264,10 @@ export const redirects: RedirectEntry[] = [
   },
   {
     "from": "/features/footer3/",
+    "to": "/"
+  },
+  {
+    "from": "/home-pages/index-12/",
     "to": "/"
   },
   {
