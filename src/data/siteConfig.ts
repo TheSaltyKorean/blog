@@ -36,9 +36,8 @@ export const siteConfig: SiteConfig = {
   description:
     "Randy Walker's thoughts, stories and ideas. President of Harvest Data Corp, Microsoft MVP award winner, ASP Insider and tech enthusiast.",
   url: 'https://thesaltykorean.com',
-  favicon: '/assets/images/favicon.webp',
-  // TODO: replace with real og image once /assets/images/meta-image.webp is migrated
-  ogImage: '/assets/images/logo-dark.svg',
+  favicon: '/favicon.svg',
+  ogImage: '/assets/images/og-image.png',
   author: {
     name: 'Randy Walker',
     bio: 'Owner of SK Meridian LLC, former President of Harvest Data Corp, and former Microsoft MVP.',
