@@ -25,12 +25,6 @@ I cannot imagine the grief and difficulty the Chapman parents faced.  Strugglin
 
 So my thoughts and prayers continue to go out to the Chapman family,
 
-<div class="wlWriterSmartContent" id="scid:5737277B-5D6D-4f48-ABFC-DD9C333F4C5D:b9eb7e8c-1bb6-43c9-b7aa-bb64cfd8f32c" style="padding-right: 0px; display: inline; padding-left: 0px; float: none; padding-bottom: 0px; margin: 0px; padding-top: 0px">
-
-<div id="14c3fd0f-9ad6-4428-b938-2761baeb8606" style="margin: 0px; padding: 0px; display: inline;">
-
-<div><object width="425" height="355"><param name="movie" value="http://www.youtube.com/v/wh2VFkF7NLo"><param name="wmode" value="transparent"><embed src="http://www.youtube.com/v/wh2VFkF7NLo" type="application/x-shockwave-flash" wmode="transparent" width="425" height="355"></object></div>
-
-</div>
-
+<div class="video-embed">
+  <iframe width="560" height="315" src="https://www.youtube.com/embed/wh2VFkF7NLo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 </div>
