@@ -21,5 +21,8 @@
   },
   "devDependencies": {
     "gray-matter": "^4.0.3"
+  },
+  "overrides": {
+    "esbuild": "^0.28.1"
   }
 }
