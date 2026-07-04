@@ -2,6 +2,7 @@
 title: "1,000 Miles, One Foam Pad, and Everything the Ioniq 9 Taught Us"
 date: 2026-07-04
 permalink: /1000-miles-ioniq-9/
+post_image: /assets/images/blog/1000-miles-ioniq-9.webp
 author: "Randy Walker"
 categories: [personal]
 tags: [ev, ioniq-9, road-trip, charging, austin]
