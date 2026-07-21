@@ -20,6 +20,8 @@ User-agent: Applebot-Extended
 Allow: /
 User-agent: Meta-ExternalAgent
 Allow: /
+User-agent: CCBot
+Allow: /
 
 # Block deleted Jekyll theme demo pages
 Disallow: /blog-post.html
