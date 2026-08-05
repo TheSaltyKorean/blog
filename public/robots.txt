@@ -23,33 +23,28 @@ Allow: /
 User-agent: CCBot
 Allow: /
 
-# Block deleted Jekyll theme demo pages
-Disallow: /blog-post.html
-Disallow: /elements/
-Disallow: /home-pages/
-Disallow: /portfolio/
-Disallow: /contact/contact-1/
-Disallow: /contact/contact-3/
-Disallow: /blogs/
-
-# Block old /blog/ path (blog is at root /)
-Disallow: /blog/
-
-# Block old author archive
-Disallow: /authors/
-
-# Block ALL old WordPress-style date URLs
-Disallow: /2007/
-Disallow: /2008/
-Disallow: /2011/
-Disallow: /2012/
-Disallow: /2013/
-Disallow: /2014/
-Disallow: /2015/
-Disallow: /2016/
-Disallow: /2017/
-Disallow: /2018/
-Disallow: /2019/
-Disallow: /2020/
+# NOTE: Do not add Disallow rules for retired URLs here.
+#
+# Everything we want out of the index is already handled at the page level and
+# must stay crawlable for that handling to work:
+#
+#   /blogs/, /elements/, /home-pages/, /portfolio/, /contact/contact-N/
+#     -> 404 + <meta name="robots" content="noindex">. Google has to crawl
+#        these to see the 404. A Disallow freezes them in the index instead of
+#        removing them.
+#
+#   /YYYY/MM/DD/slug/  (26 generated stubs under src/pages/2008|2009|2010|2017|2018)
+#     -> canonical + meta-refresh to the current post URL. A Disallow stops
+#        Google following them, so 15 years of legacy WordPress URLs would pass
+#        no signal to the posts that replaced them.
+#
+# A Disallow block did live here from the first commit through 2026-08, but it
+# was written after the AI-crawler groups above, so it applied to the last
+# declared user-agent rather than to *. It never affected Googlebot. Removed
+# rather than re-scoped, because re-scoping it would have caused the two
+# problems described above.
+#
+# Sitemap exclusions for redirect stubs and design-template URLs are enforced in
+# astro.config.mjs, which is the right layer for that.
 
 Sitemap: https://thesaltykorean.com/sitemap-index.xml
