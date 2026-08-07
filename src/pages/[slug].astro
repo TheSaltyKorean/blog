@@ -1,6 +1,7 @@
 ---
 import { getCollection, render } from 'astro:content';
 import BlogPost from '../layouts/BlogPost.astro';
+import { excerpt } from '../utils/excerpt';
 
 export async function getStaticPaths() {
   const entries = await getCollection('blog', ({ data }) => data.draft !== true);
@@ -12,7 +13,11 @@ export async function getStaticPaths() {
 
 const { entry } = Astro.props;
 const { Content } = await render(entry);
+
+// Falls back to the post's opening prose when front matter has no
+// meta_description, so pages stop sharing one generic site-wide blurb.
+const description = entry.data.meta_description || excerpt(entry.body);
 ---
-<BlogPost frontmatter={entry.data}>
+<BlogPost frontmatter={entry.data} description={description}>
   <Content />
 </BlogPost>

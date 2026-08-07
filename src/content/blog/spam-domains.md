@@ -1,6 +1,8 @@
 ---
 title: Spam domains
 date: '2017-02-08'
+meta_title: 'Spam Domains Blocklist — Outsourcing, Phishing and Scraper Senders'
+meta_description: 'A running blocklist of domains sending unsolicited outsourcing pitches, phishing attempts and WordPress registration spam. Updated as new senders are blocked.'
 permalink: /spam-domains/
 author: Randy Walker
 categories:

@@ -6,7 +6,8 @@ permalink: /connecting-claude-to-your-homelab-with-mcp-and-tailscale-ssh/
 author: "Randy Walker"
 categories: [building, ai]
 tags: [claude, mcp, tailscale, ssh, homelab, comfyui, image-generation]
-meta_description: "Wiring Claude to a homelab via MCP and Tailscale SSH — bash, browser automation, and unlimited local image generation. Plus the Windows SSH gotcha to know."
+meta_title: "Claude + SSH over MCP: A Homelab MCP Server with Tailscale"
+meta_description: "Give Claude SSH access to your homelab with an MCP server over Tailscale — bash, browser automation, and unlimited local ComfyUI image generation. Includes the Windows SSH gotcha that cost me an evening."
 ---
 
 One of the more useful things I've done with my homelab recently is wiring it directly into Claude via MCP. Bash execution, browser automation, image generation — all available as tools Claude can reach for mid-conversation, running on real hardware sitting on my desk.
