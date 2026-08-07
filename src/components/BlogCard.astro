@@ -1,4 +1,6 @@
 ---
+import { slugify } from '../utils/slugify';
+
 interface Props {
   post: {
     data: {
@@ -43,7 +45,7 @@ const excerpt = rawExcerpt.length === 200 ? rawExcerpt + '…' : rawExcerpt;
         {post.data.categories.slice(0, 3).map((cat) => (
           <li>
             <a
-              href={`/category/${cat.toLowerCase().trim()}/`}
+              href={`/category/${slugify(cat)}/`}
               class="inline-block px-2 py-0.5 text-[10px] font-semibold uppercase tracking-wide rounded-full bg-[var(--color-surface-soft)] text-[var(--color-ink-soft)] no-underline hover:bg-[var(--color-rule)]"
             >
               {cat}
