@@ -1,6 +1,15 @@
 ---
-// generated-redirect
-const to = "/";
+/**
+ * Client-side redirect stub, matching the markup that
+ * scripts/generate-redirects.mjs emits for legacy URLs. GitHub Pages serves
+ * static files only, so a meta-refresh plus a canonical pointing at the real
+ * URL is the available equivalent of a 301.
+ */
+interface Props {
+  to: string;
+}
+
+const { to } = Astro.props;
 ---
 <!doctype html>
 <html lang="en">

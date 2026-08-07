@@ -2,6 +2,8 @@
 import { getCollection } from 'astro:content';
 import BaseLayout from '../../layouts/BaseLayout.astro';
 import BlogCard from '../../components/BlogCard.astro';
+import RedirectStub from '../../components/RedirectStub.astro';
+import { slugify, legacySlug } from '../../utils/slugify';
 
 export async function getStaticPaths() {
   const allPosts = await getCollection('blog', ({ data }) => data.draft !== true);
@@ -9,43 +11,63 @@ export async function getStaticPaths() {
   const tagMap = new Map();
   for (const post of allPosts) {
     for (const raw of post.data.tags ?? []) {
-      const slug = String(raw).toLowerCase().trim();
+      const slug = slugify(raw);
       if (!slug) continue;
-      if (!tagMap.has(slug)) tagMap.set(slug, { display: String(raw).trim(), posts: [] });
+      if (!tagMap.has(slug)) {
+        tagMap.set(slug, { display: String(raw).trim(), legacy: legacySlug(raw), posts: [] });
+      }
       tagMap.get(slug).posts.push(post);
     }
   }
 
-  return Array.from(tagMap.entries()).map(([slug, { display, posts }]) => ({
+  const pages = Array.from(tagMap.entries()).map(([slug, { display, posts }]) => ({
     params: { tag: slug },
     props: {
-      tag: slug,
       display,
       posts: posts.sort((a, b) => b.data.date.getTime() - a.data.date.getTime()),
     },
   }));
+
+  // Legacy space-bearing URLs (/tag/business help/) are already indexed by
+  // Google. Keep them alive as redirects to the new hyphenated slug rather
+  // than letting them 404.
+  const legacyRedirects = Array.from(tagMap.entries())
+    .filter(([, { legacy }]) => legacy)
+    .map(([slug, { legacy }]) => ({
+      params: { tag: legacy },
+      props: { redirectTo: `/tag/${slug}/` },
+    }));
+
+  return [...pages, ...legacyRedirects];
 }
 
-const { display, posts } = Astro.props;
-const pageTitle = `Posts tagged "${display}" — Randy Walker`;
-const description = `All posts by Randy Walker tagged ${display}.`;
+const { display, posts, redirectTo } = Astro.props;
+
+const pageTitle = redirectTo ? '' : `Posts tagged "${display}" — Randy Walker`;
+const description = redirectTo ? '' : `All posts by Randy Walker tagged ${display}.`;
 ---
-<BaseLayout title={pageTitle} description={description}>
-  <section class="max-w-5xl mx-auto px-4 sm:px-6 pt-16 pb-16">
-    <header class="mb-8 text-center">
-      <p class="text-xs uppercase tracking-wider text-[var(--color-muted)] font-semibold">Tag</p>
-      <h1 class="mt-2 text-3xl sm:text-4xl font-bold tracking-tight">{display}</h1>
-      <p class="mt-2 text-sm text-[var(--color-muted)]">
-        {posts.length} {posts.length === 1 ? 'post' : 'posts'}
-      </p>
-    </header>
+{
+  redirectTo ? (
+    <RedirectStub to={redirectTo} />
+  ) : (
+    <BaseLayout title={pageTitle} description={description}>
+      <section class="max-w-5xl mx-auto px-4 sm:px-6 pt-16 pb-16">
+        <header class="mb-8 text-center">
+          <p class="text-xs uppercase tracking-wider text-[var(--color-muted)] font-semibold">Tag</p>
+          <h1 class="mt-2 text-3xl sm:text-4xl font-bold tracking-tight">{display}</h1>
+          <p class="mt-2 text-sm text-[var(--color-muted)]">
+            {posts.length} {posts.length === 1 ? 'post' : 'posts'}
+          </p>
+        </header>
 
-    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-      {posts.map((post) => <BlogCard post={post} />)}
-    </div>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+          {posts.map((post) => <BlogCard post={post} />)}
+        </div>
 
-    <div class="mt-12 text-center">
-      <a href="/" class="text-sm no-underline hover:underline">← Back to all posts</a>
-    </div>
-  </section>
-</BaseLayout>
+        <div class="mt-12 text-center">
+          <a href="/" class="text-sm no-underline hover:underline">← Back to all posts</a>
+        </div>
+      </section>
+    </BaseLayout>
+  )
+}

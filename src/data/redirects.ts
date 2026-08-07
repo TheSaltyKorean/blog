@@ -343,26 +343,6 @@ export const redirects: RedirectEntry[] = [
     "to": "/"
   },
   {
-    "from": "/tag/bill-gates/",
-    "to": "/"
-  },
-  {
-    "from": "/tag/internet-explorer/",
-    "to": "/"
-  },
-  {
-    "from": "/tag/microsoft-tools/",
-    "to": "/"
-  },
-  {
-    "from": "/tag/social-computing/",
-    "to": "/"
-  },
-  {
-    "from": "/tag/visual-basic/",
-    "to": "/"
-  },
-  {
     "from": "/tags/",
     "to": "/"
   }
