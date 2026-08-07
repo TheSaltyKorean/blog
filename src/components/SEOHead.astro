@@ -17,14 +17,21 @@ const {
   noindex = false,
 } = Astro.props;
 
+// YAML folded scalars (`meta_description: >`) carry a trailing newline, and
+// multi-line values keep their internal ones. Both end up inside the rendered
+// attribute, so collapse whitespace before emitting.
+const clean = (value: string) => String(value).replace(/\s+/g, ' ').trim();
+const metaTitle = clean(title);
+const metaDescription = clean(description);
+
 const canonicalUrl = canonical
   ? new URL(canonical, siteConfig.url).href
   : new URL(Astro.url.pathname, siteConfig.url).href;
 const resolvedOgImage = new URL(ogImage, siteConfig.url).href;
 ---
-<title>{title}</title>
-<meta name="title" content={title} />
-<meta name="description" content={description} />
+<title>{metaTitle}</title>
+<meta name="title" content={metaTitle} />
+<meta name="description" content={metaDescription} />
 <link rel="canonical" href={canonicalUrl} />
 <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
 <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32.png" />
@@ -37,8 +44,8 @@ const resolvedOgImage = new URL(ogImage, siteConfig.url).href;
 
 <meta property="og:type" content="website" />
 <meta property="og:url" content={canonicalUrl} />
-<meta property="og:title" content={title} />
-<meta property="og:description" content={description} />
+<meta property="og:title" content={metaTitle} />
+<meta property="og:description" content={metaDescription} />
 <meta property="og:image" content={resolvedOgImage} />
 <meta property="og:site_name" content={siteConfig.title} />
 
@@ -46,6 +53,6 @@ const resolvedOgImage = new URL(ogImage, siteConfig.url).href;
 <meta name="twitter:site" content={`@${siteConfig.social.twitter}`} />
 <meta name="twitter:creator" content={`@${siteConfig.social.twitter}`} />
 <meta name="twitter:url" content={canonicalUrl} />
-<meta name="twitter:title" content={title} />
-<meta name="twitter:description" content={description} />
+<meta name="twitter:title" content={metaTitle} />
+<meta name="twitter:description" content={metaDescription} />
 <meta name="twitter:image" content={resolvedOgImage} />

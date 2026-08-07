@@ -5,6 +5,8 @@ post_image: /assets/images/blog/i-built-a-chrome-extension-to-stop-filling-out-t
 permalink: >-
   /i-built-a-chrome-extension-to-stop-filling-out-the-same-application-200-times/
 author: Randy Walker
+meta_title: 'I Built a Chrome Extension to Autofill 200 Job Applications'
+meta_description: 'Two hundred job applications, the same fields every time. How I built a Chrome extension with Claude to autofill them — what worked, what broke, and the code.'
 categories:
   - building
   - ai
