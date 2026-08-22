@@ -56,12 +56,19 @@ const resolvedOgImage = new URL(ogImage, siteConfig.url).href;
 <meta name="title" content={metaTitle} />
 <meta name="description" content={metaDescription} />
 <link rel="canonical" href={canonicalUrl} />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link
+  rel="stylesheet"
+  href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap"
+/>
+
 <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
 <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32.png" />
 <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16.png" />
 <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
 <link rel="shortcut icon" href="/favicon.ico" />
-<meta name="theme-color" content="#1f5f74" />
+<meta name="theme-color" content="#0d0f12" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 {noindex && <meta name="robots" content="noindex, nofollow" />}
 

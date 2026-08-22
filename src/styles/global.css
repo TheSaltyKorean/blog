@@ -1,15 +1,31 @@
 @import "tailwindcss";
 
+/*
+ * Dark-first theme.
+ *
+ * The token NAMES are unchanged from the light theme on purpose: every page
+ * and component already styles through `var(--color-ink)`, `--color-rule` and
+ * friends, so redefining the values here flips the whole site rather than
+ * requiring a per-page edit. `--color-surface` is the page, not white.
+ */
 @theme {
-  --color-ink: #1a1a1a;
-  --color-ink-soft: #3a3a3a;
-  --color-muted: #6b6b6b;
-  --color-rule: #e5e5e5;
-  --color-surface: #ffffff;
-  --color-surface-soft: #f7f7f5;
-  --color-accent: #2b4a6f;
-  --color-accent-hover: #1f3753;
-  --font-sans: 'Inter', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  --color-ink: #e9edf2;
+  --color-ink-bright: #f3f6f9;
+  --color-ink-soft: #a8b2bd;
+  --color-muted: #6f7986;
+  --color-faint: #545d69;
+  --color-rule: #242b34;
+  --color-rule-soft: #1c222a;
+  --color-surface: #0d0f12;
+  --color-surface-soft: #12161c;
+  --color-surface-raised: #171c24;
+  --color-accent: #5ad7e8;
+  --color-accent-hover: #8ee6f2;
+  --color-accent-ink: #0a1216;
+
+  --font-sans: 'IBM Plex Sans', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  --font-display: 'Space Grotesk', 'Helvetica Neue', Arial, sans-serif;
+  --font-mono: 'IBM Plex Mono', ui-monospace, 'SF Mono', Menlo, monospace;
   --font-serif: Georgia, 'Times New Roman', serif;
 }
 
@@ -17,6 +33,7 @@ html {
   scroll-behavior: smooth;
   color: var(--color-ink);
   background: var(--color-surface);
+  color-scheme: dark;
 }
 
 body {
@@ -24,28 +41,40 @@ body {
   font-size: 17px;
   line-height: 1.65;
   -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
   color: var(--color-ink);
+  background: var(--color-surface);
 }
 
 h1, h2, h3, h4, h5, h6 {
-  font-weight: 700;
+  font-family: var(--font-display);
+  font-weight: 600;
   line-height: 1.2;
-  color: var(--color-ink);
+  letter-spacing: -0.02em;
+  color: var(--color-ink-bright);
 }
 
-h1 { font-size: 2.25rem; margin-bottom: 1rem; }
-h2 { font-size: 1.75rem; margin-top: 2rem; margin-bottom: 0.75rem; }
-h3 { font-size: 1.35rem; margin-top: 1.5rem; margin-bottom: 0.5rem; }
-h4 { font-size: 1.15rem; margin-top: 1.25rem; margin-bottom: 0.5rem; }
+h1 { font-size: 2.6rem; margin-bottom: 1rem; letter-spacing: -0.03em; }
+h2 { font-size: 1.7rem; margin-top: 2.5rem; margin-bottom: 0.75rem; }
+h3 { font-size: 1.3rem; margin-top: 1.75rem; margin-bottom: 0.5rem; }
+h4 { font-size: 1.1rem; margin-top: 1.25rem; margin-bottom: 0.5rem; }
 
 p { margin-bottom: 1.1em; }
 
 a {
   color: var(--color-accent);
-  text-decoration: underline;
-  text-underline-offset: 2px;
+  text-decoration: none;
 }
 a:hover { color: var(--color-accent-hover); }
+
+/* Body copy inside an article still gets underlines — they carry meaning in
+   running prose, where a bare colour change is easy to miss. */
+.prose-content a {
+  text-decoration: underline;
+  text-decoration-color: color-mix(in oklab, var(--color-accent) 45%, transparent);
+  text-underline-offset: 3px;
+}
+.prose-content a:hover { text-decoration-color: var(--color-accent-hover); }
 
 img, video {
   max-width: 100%;
@@ -53,44 +82,76 @@ img, video {
   display: block;
 }
 
-blockquote {
-  border-left: 3px solid var(--color-rule);
-  padding-left: 1rem;
-  color: var(--color-ink-soft);
-  font-style: italic;
-  margin: 1.5rem 0;
+::selection {
+  background: var(--color-accent);
+  color: var(--color-accent-ink);
 }
 
+blockquote {
+  border-left: 2px solid var(--color-accent);
+  padding-left: 1.5rem;
+  color: #cfd7e0;
+  font-size: 1.12em;
+  line-height: 1.7;
+  margin: 2.25rem 0;
+}
+blockquote p:last-child { margin-bottom: 0; }
+
 code {
-  font-family: ui-monospace, 'SF Mono', Menlo, monospace;
-  font-size: 0.92em;
-  background: var(--color-surface-soft);
-  padding: 0.15em 0.35em;
-  border-radius: 3px;
+  font-family: var(--font-mono);
+  font-size: 0.88em;
+  background: #191f27;
+  border: 1px solid var(--color-rule);
+  padding: 0.12em 0.4em;
+  border-radius: 4px;
+  color: #b9e9f2;
 }
 
 pre {
   background: var(--color-surface-soft);
-  padding: 1rem;
-  border-radius: 6px;
+  border: 1px solid var(--color-rule);
+  padding: 1.15rem 1.25rem;
+  border-radius: 10px;
   overflow-x: auto;
-  margin: 1.25rem 0;
+  margin: 2rem 0;
+  font-size: 0.86em;
+  line-height: 1.75;
 }
 
 pre code {
   background: transparent;
+  border: 0;
   padding: 0;
+  color: #c8d3de;
+  font-size: 1em;
 }
 
 ul, ol {
-  padding-left: 1.5rem;
+  padding-left: 1.4rem;
   margin-bottom: 1.1em;
 }
+li { margin-bottom: 0.4em; }
+li::marker { color: var(--color-muted); }
 
 hr {
   border: 0;
   border-top: 1px solid var(--color-rule);
-  margin: 2rem 0;
+  margin: 2.5rem 0;
+}
+
+table { width: 100%; border-collapse: collapse; margin: 2rem 0; font-size: 0.95em; }
+th, td { padding: 0.6em 0.8em; border-bottom: 1px solid var(--color-rule); text-align: left; }
+th { font-family: var(--font-mono); font-size: 0.8em; letter-spacing: 0.08em; text-transform: uppercase; color: var(--color-muted); font-weight: 500; }
+
+.prose-content { color: var(--color-ink-soft); font-size: 17px; line-height: 1.8; }
+.prose-content > p:first-of-type { font-size: 19px; line-height: 1.75; color: #c4ccd6; }
+.prose-content img { border-radius: 10px; border: 1px solid var(--color-rule); margin: 2rem 0; }
+.prose-content figcaption {
+  margin-top: 0.75rem;
+  font-family: var(--font-mono);
+  font-size: 11.5px;
+  letter-spacing: 0.04em;
+  color: var(--color-faint);
 }
 
 .sr-only {
@@ -114,10 +175,10 @@ hr {
   height: auto;
   padding: 12px 20px;
   clip: auto;
-  background: var(--color-surface);
+  background: var(--color-surface-soft);
   color: var(--color-ink);
   border: 2px solid var(--color-accent);
-  border-radius: 4px;
+  border-radius: 6px;
   text-decoration: none;
   font-weight: 600;
 }
@@ -128,7 +189,8 @@ input:focus-visible,
 textarea:focus-visible,
 [tabindex]:focus-visible {
   outline: 2px solid var(--color-accent);
-  outline-offset: 2px;
+  outline-offset: 3px;
+  border-radius: 3px;
 }
 
 @media (prefers-reduced-motion: reduce) {

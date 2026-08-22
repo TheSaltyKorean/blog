@@ -1,7 +1,7 @@
 ---
 import { getCollection } from 'astro:content';
 import BaseLayout from '../../layouts/BaseLayout.astro';
-import BlogCard from '../../components/BlogCard.astro';
+import PostRow from '../../components/PostRow.astro';
 import { slugify } from '../../utils/slugify';
 
 export async function getStaticPaths() {
@@ -33,7 +33,7 @@ const pageTitle = `Posts in ${titleCase}`;
 const description = `All posts by Randy Walker in the ${titleCase} category.`;
 ---
 <BaseLayout title={pageTitle} description={description}>
-  <section class="max-w-5xl mx-auto px-4 sm:px-6 pt-16 pb-16">
+  <section class="max-w-[1120px] mx-auto px-5 sm:px-10 pt-16 pb-16">
     <header class="mb-8 text-center">
       <p class="text-xs uppercase tracking-wider text-[var(--color-muted)] font-semibold">Category</p>
       <h1 class="mt-2 text-3xl sm:text-4xl font-bold tracking-tight">{titleCase}</h1>
@@ -42,8 +42,8 @@ const description = `All posts by Randy Walker in the ${titleCase} category.`;
       </p>
     </header>
 
-    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-      {posts.map((post) => <BlogCard post={post} />)}
+    <div class="flex flex-col">
+      {posts.map((post) => <PostRow post={post} />)}
     </div>
 
     <div class="mt-12 text-center">
