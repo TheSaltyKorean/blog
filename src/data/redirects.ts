@@ -43,10 +43,6 @@ export const redirects: RedirectEntry[] = [
     "to": "/preferred-method-for-read-only-config-files/"
   },
   {
-    "from": "/2008/05/09/my-mariah-carey-geek-rant/",
-    "to": "/my-mariah-carey-geek-rant/"
-  },
-  {
     "from": "/2008/05/09/northwest-arkansas-sql-server-user-group-1st-meeting/",
     "to": "/northwest-arkansas-sql-server-user-group-1st-meeting/"
   },
@@ -61,14 +57,6 @@ export const redirects: RedirectEntry[] = [
   {
     "from": "/2008/07/04/nbc-olympics-site-goes-live-with-silverlight-2-streaming/",
     "to": "/nbc-olympics-site-goes-live-with-silverlight-2-streaming/"
-  },
-  {
-    "from": "/2008/07/10/using-jott-for-child-custody-records/",
-    "to": "/using-jott-for-child-custody-records/"
-  },
-  {
-    "from": "/2008/08/07/steven-curtis-chapman-shares-as-do-i/",
-    "to": "/steven-curtis-chapman-shares-as-do-i/"
   },
   {
     "from": "/2009/03/31/ineta-board-of-directors-conference-call/",
