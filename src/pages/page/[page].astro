@@ -29,7 +29,7 @@ export async function getStaticPaths() {
 const { pagePosts, currentPage, lastPage } = Astro.props;
 const prevUrl = currentPage === 2 ? '/' : `/page/${currentPage - 1}/`;
 const nextUrl = currentPage < lastPage ? `/page/${currentPage + 1}/` : undefined;
-const title = `Page ${currentPage} — Randy Walker`;
+const title = `Page ${currentPage}`;
 const description = `Blog archive page ${currentPage} of ${lastPage} — posts by Randy Walker.`;
 ---
 <BaseLayout title={title} description={description}>

@@ -30,7 +30,21 @@ const {
 // multi-line values keep their internal ones. Both end up inside the rendered
 // attribute, so collapse whitespace before emitting.
 const clean = (value: string) => String(value).replace(/\s+/g, ' ').trim();
-const metaTitle = clean(title);
+
+// Bing flags "many of your page titles are too short" — 61 of them were under
+// 30 characters ("Airplanes", "Letting Go"). Suffixing the site name gives the
+// SERP entry both length and a brand signal. Guarded two ways: skipped when
+// the title already names the site (so "About Randy Walker" does not become
+// "About Randy Walker — Randy Walker"), and skipped past 60 characters so we
+// never push a good title into truncation.
+const withSiteName = (value: string) => {
+  const base = clean(value);
+  if (base.toLowerCase().includes(siteConfig.title.toLowerCase())) return base;
+  const suffixed = `${base} — ${siteConfig.title}`;
+  return suffixed.length > 60 ? base : suffixed;
+};
+
+const metaTitle = withSiteName(title);
 const metaDescription = clean(description);
 
 const canonicalUrl = canonical
