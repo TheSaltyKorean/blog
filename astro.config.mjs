@@ -1,9 +1,39 @@
 import { defineConfig } from 'astro/config';
 import sitemap from '@astrojs/sitemap';
 import tailwindcss from '@tailwindcss/vite';
+import fs from 'node:fs';
+import path from 'node:path';
 import { redirects } from './src/data/redirects';
 
 const redirectPaths = new Set(redirects.map((r) => r.from));
+
+/*
+ * permalink -> publication date, read straight off the markdown.
+ *
+ * Feeds <lastmod> into the sitemap. Without it the sitemap gives Google no
+ * freshness signal at all, which matters most for the 2007-2010 archive: those
+ * URLs have nothing else telling a crawler whether they are worth revisiting.
+ * Reading the files here rather than through the content collection because
+ * astro.config runs before the collection exists.
+ */
+function postDates() {
+  const dir = 'src/content/blog';
+  const map = new Map();
+  if (!fs.existsSync(dir)) return map;
+  for (const file of fs.readdirSync(dir).filter((f) => f.endsWith('.md'))) {
+    const src = fs.readFileSync(path.join(dir, file), 'utf8');
+    const fm = src.split('---')[1] || '';
+    const permalink = fm.match(/^permalink:\s*(.+)$/m)?.[1]?.trim().replace(/^["']|["']$/g, '');
+    const date = fm.match(/^date:\s*(.+)$/m)?.[1]?.trim().replace(/^["']|["']$/g, '');
+    if (permalink && date) {
+      const d = new Date(date);
+      if (!Number.isNaN(d.getTime())) map.set(permalink, d.toISOString());
+    }
+  }
+  return map;
+}
+
+const lastmodByPath = postDates();
 
 export default defineConfig({
   site: 'https://thesaltykorean.com',
@@ -20,6 +50,11 @@ export default defineConfig({
         // sitemap alongside the canonical /tag/business-help/.
         if (/^\/tag\/[^/]*(%20|\s)/.test(pathname)) return false;
         return !redirectPaths.has(pathname);
+      },
+      serialize(item) {
+        const pathname = new URL(item.url).pathname;
+        const lastmod = lastmodByPath.get(pathname);
+        return lastmod ? { ...item, lastmod } : item;
       },
     }),
   ],
