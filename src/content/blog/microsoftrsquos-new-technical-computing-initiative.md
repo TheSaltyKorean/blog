@@ -7,7 +7,7 @@ categories:
   - microsoft
   - development
 tags: []
-post_image: /assets/images/art/thumb/bg4.webp
+post_image: /assets/images/blog/microsoftrsquos-new-technical-computing-initiative.webp
 ---
 
 I made a mental note from earlier in the year.  Microsoft literally buys computers by the truckload.  From what I understand, it’s a typical practice amongst large software vendors.  You plug a few wires in, you test it, and you instantly have mega tera tera flops (don’t hold me to that number).  Microsoft has been trying to plug away at their cloud services (named Azure).  Which, for the layman, means Microsoft runs your software on their computers, and as demand increases you can allocate more computing power on the fly.

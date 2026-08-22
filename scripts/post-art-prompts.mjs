@@ -27,14 +27,16 @@ export const STYLE =
   'centered subject, empty negative space';
 
 export const NEGATIVE =
-  'text, words, letters, typography, watermark, signature, logo, ui, screenshot, ' +
+  'text, words, letters, typography, numbers, digits, markings, labels, signage, ' +
+  'serial number, livery, watermark, signature, logo, ui, screenshot, ' +
   'people, person, face, hands, blurry, low quality, jpeg artifacts, oversaturated, ' +
-  'cluttered, busy, collage, frame, border';
+  'cluttered, busy, collage, frame, border, bright background, white background, ' +
+  'overexposed, washed out, high key';
 
 /** Ordered: first match wins, so put specific themes above generic ones. */
 const RULES = [
-  [/airplane|aviation|flight|flying|airport|jet\b/i, 'a single small aircraft silhouetted on a dark empty apron at night, runway lights receding'],
-  [/silverlight|wpf|expression blend|animation/i, 'a single pane of translucent frosted glass standing upright on a dark desk, light refracting through its edge'],
+  [/airplane|aviation|flight|flying|airport|jet\b/i, 'a polished aluminium propeller blade standing upright on dark slate, cyan light along its edge'],
+  [/silverlight|wpf|expression blend|animation/i, 'a heavy glass paperweight on a dark desk, cyan light refracting through it'],
   [/\bsql\b|database|data warehouse|reporting services|\bdba\b|query/i, 'a dark server rack with one illuminated drive bay pulled halfway out, neat coiled cables'],
   [/resharper|refactor|visual studio|compiler|regex|powertoy|debug|intellisense|snippet|source code|\bide\b/i, 'a mechanical keyboard on a dark desk lit from one side, a faint glow spilling across the keys'],
   [/installer|installaware|setup|msi\b|deployment package/i, 'a matte metal flight case standing open on a dark floor, foam cutouts empty, lit from within'],
@@ -46,14 +48,14 @@ const RULES = [
   [/game|gaming|xbox|\baoe\b|age of empires|halo|player/i, 'a worn game controller resting on dark fabric, one thin cyan light along its edge'],
   [/browser|internet explorer|firefox|chrome|\bie\d|standards|css|html/i, 'an empty picture frame of brushed steel standing on a dark surface, cyan light passing through it'],
   [/search|seo|google|bing|index/i, 'a jeweller loupe standing upright on dark slate, a single point of cyan light through the lens'],
-  [/virtual|hyper-?v|vmware|emulator|sandbox/i, 'three identical matte cubes stacked unevenly on a dark surface, cyan light between them'],
-  [/lightswitch|framework|platform|toolkit|library|\bapi\b|component/i, 'an exploded arrangement of matte machined parts hovering in dark space, cyan rim light'],
-  [/windows|vista|operating system|server 2008|\bos\b/i, 'four translucent glass panels suspended in darkness in a loose grid, faint cyan underlight'],
+  [/virtual|hyper-?v|vmware|emulator|sandbox/i, 'three polished steel ball bearings resting on dark slate, one cyan highlight on each'],
+  [/lightswitch|framework|platform|toolkit|library|\bapi\b|component/i, 'a precision brass gear assembly resting on dark slate, teeth catching a cyan edge light'],
+  [/windows|vista|operating system|server 2008|\bos\b/i, 'a clear glass prism standing on dark slate, cyan light splitting through it'],
   [/check|invoice|accounting|finance|money|pricing|cost|budget|tax/i, 'a fountain pen resting on a blank ledger page on a dark desk, one warm lamp'],
   [/partner|program|business|sponsor|company|startup|licensing|enterprise|consulting/i, 'a long dark boardroom table with two empty chairs under a single overhead lamp'],
   [/arkansas|fort smith|northwest|tulsa|dallas|local|regional|community|chapter/i, 'an empty meeting room at night, city lights blurred through a rain-flecked window'],
   [/security|spam|phish|virus|patch|vulnerab|firewall|password|encrypt/i, 'a heavy steel padlock on a dark steel surface, one cyan light raking across it'],
-  [/azure|cloud|hosting|deploy|scale|server farm/i, 'layered translucent slabs floating above one another in darkness, cyan light between the layers'],
+  [/azure|cloud|hosting|deploy|scale|server farm/i, 'a clear glass sphere resting on dark slate, a cyan glow held inside it'],
   [/network|router|wifi|bandwidth|\bisp\b|ethernet|dns/i, 'a bundle of patch cables converging into a dark switch, port LEDs glowing faintly'],
   [/phone|mobile|device|zune|ipod|hardware|gadget|laptop|tablet/i, 'a single unbranded handheld device face-down on dark felt, screen edge glowing'],
   [/blog|writing|post|\brss\b|social|twitter|feed|comment/i, 'an open blank notebook on a dark desk beside a fountain pen, one lamp lighting the page'],
@@ -88,7 +90,7 @@ const VIEWS = [
   'overhead flat lay', 'tight close-up', 'wide establishing framing',
 ];
 const LIGHTS = [
-  'light from hard left', 'light from hard right', 'backlit with rim glow',
+  'light from hard left', 'light from hard right', 'a thin rim light along one edge',
   'soft top light', 'low raking light', 'single practical light in frame',
 ];
 const MOODS = [
@@ -106,7 +108,7 @@ export function variationFor(slug) {
   return [VIEWS[h % VIEWS.length], LIGHTS[(h >>> 3) % LIGHTS.length], MOODS[(h >>> 7) % MOODS.length]].join(', ');
 }
 
-const FALLBACK = 'an abstract arrangement of matte geometric slabs and coiled cable on a dark surface, one cyan rim light';
+const FALLBACK = 'a closed brass pocket watch lying on dark slate, one cyan light across its case';
 
 export function subjectFor(title, tags = '') {
   const hay = `${title} ${tags}`;

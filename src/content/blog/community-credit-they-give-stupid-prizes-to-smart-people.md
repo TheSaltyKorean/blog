@@ -8,6 +8,7 @@ categories:
   - career
 tags: []
 post_image: /assets/images/art/thumb/bg2.webp
+noindex: true
 ---
 
 In my last post about joining the geekswithblogs community, I mentioned the [Community Credit](http://www.community-credit.com/) folks.  The wonderful thing about the GeeksWithBlogs is that it automatically submits blog postings for community credit.  I had originally thought I wasn't going to bother with it, after all who wants to enter in everything you do into their webform.  But since I only have to add manual things like organizing events and attending user groups, it makes it much easier.

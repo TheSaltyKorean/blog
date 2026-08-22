@@ -10,6 +10,7 @@ tags:
   - Northwest Arkansas
   - SQL Server
 post_image: /assets/images/art/thumb/bg10.webp
+noindex: true
 ---
 
 I have vastly been neglecting my blogging.  So as not to be outdone by [Chris Koenig](http://blogs.msdn.com/chkoenig) ....

@@ -19,11 +19,13 @@ interface Props {
   description?: string;
   /** Whole minutes, computed from the body by the page that has it. */
   readingTime?: number;
+  /** Live but excluded from search indexes; also dropped from the sitemap. */
+  noindex?: boolean;
   /** Posts sharing tags/categories — internal links for crawlers and readers. */
   related?: Array<{ data: { title: string; date: Date; permalink: string; categories: string[] } }>;
 }
 
-const { frontmatter, description, readingTime, related = [] } = Astro.props;
+const { frontmatter, description, readingTime, related = [], noindex = false } = Astro.props;
 
 const published = new Date(frontmatter.date);
 const primaryCategory = frontmatter.categories[0];
@@ -65,6 +67,7 @@ const formattedDate = new Date(frontmatter.date).toLocaleDateString('en-US', {
   ogImage={frontmatter.post_image}
   article={article}
   breadcrumbs={breadcrumbs}
+  noindex={noindex}
 >
   <div id="reading-progress-track" class="sticky top-[68px] z-40 h-0.5 bg-[var(--color-rule-soft)]">
     <div id="reading-progress" class="h-0.5 w-0 bg-gradient-to-r from-[var(--color-accent)] to-[#7ee3f0]"></div>

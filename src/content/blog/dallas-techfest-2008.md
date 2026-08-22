@@ -8,6 +8,7 @@ categories:
   - career
 tags: []
 post_image: /assets/images/art/thumb/bg18.webp
+noindex: true
 ---
 
 The date & location is set!  May 3rd at the Addison Conference Center in Addison (Dallas suburb) Texas.  This event used to be known as the Dallas Code Camp.  I'm actually really excited by this event, since befitting the DFW area's size, it will finally have a free technology event just as big.

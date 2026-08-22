@@ -8,6 +8,7 @@ categories:
 tags:
   - .Net
 post_image: /assets/images/art/thumb/bg5.webp
+noindex: true
 ---
 
 I ran across an ad today that linked me to where DevExpress is giving away over 40 controls for free.  I'm a big fan of two of their products (which unfortunately aren't free), CodeRush and their Excel like grid control.  Their grid control is a huge hit amongst the Excel heavy business users I typically deal with.

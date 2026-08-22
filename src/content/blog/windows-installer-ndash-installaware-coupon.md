@@ -6,7 +6,8 @@ author: Randy Walker
 categories:
   - development
 tags: []
-post_image: /assets/images/art/thumb/bg7.webp
+post_image: /assets/images/blog/windows-installer-ndash-installaware-coupon.webp
+noindex: true
 ---
 
 Here’s another one of my tools in my toolset for deploying software.  I’ve used their product for several years with great success.  They make use of a PlugIn and web model.  So if your software requires the .Net framework 3.5, the installer will check for all of the required runtimes, and then only download the files needed from your website.  They also support patching your application.

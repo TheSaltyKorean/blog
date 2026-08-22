@@ -8,6 +8,7 @@ categories:
   - development
 tags: []
 post_image: /assets/images/art/thumb/bg2.webp
+noindex: true
 ---
 
 Microsoft has again offered their Second Shot program.  They do it pretty often so keep an eye out.

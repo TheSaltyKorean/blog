@@ -11,6 +11,7 @@ tags:
   - .Net
   - Northwest Arkansas
 post_image: /assets/images/art/thumb/bg7.webp
+noindex: true
 ---
 
 Last night was the first meeting for the Fort Smith .Net User Group.  It was a great turnout of 38 people and featured [Raymond Lewellan](http://codebetter.com/blogs/raymond.lewallen/) talking about Behavior Driven Development.

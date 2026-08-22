@@ -8,6 +8,7 @@ categories:
   - career
 tags: []
 post_image: /assets/images/art/thumb/bg1.webp
+noindex: true
 ---
 
 I wanted to thank David Silverlight for doing a wonderful service to the programming community.

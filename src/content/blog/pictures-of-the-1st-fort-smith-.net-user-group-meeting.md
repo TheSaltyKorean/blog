@@ -8,6 +8,7 @@ categories:
   - career
 tags: []
 post_image: /assets/images/art/thumb/bg6.webp
+noindex: true
 ---
 
 A bit thank you goes out to Anthony Potts for sharing these pictures.

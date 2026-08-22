@@ -8,6 +8,7 @@ categories:
   - development
 tags: []
 post_image: /assets/images/art/thumb/bg10.webp
+noindex: true
 ---
 
 For those interested in hearing me speak (or avoiding me altogether ;) I will be speaking at the Tulsa SQL Server Group on March 17th, 2008 and at the Little Rock TechExpo on March 27th, 2008\.
