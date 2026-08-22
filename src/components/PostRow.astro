@@ -1,0 +1,70 @@
+---
+import { slugify } from '../utils/slugify';
+import { bespokeImage } from '../utils/postImage';
+
+interface Props {
+  post: {
+    data: {
+      title: string;
+      date: Date;
+      permalink: string;
+      categories: string[];
+      post_image?: string;
+      meta_description?: string;
+    };
+    body?: string;
+  };
+}
+
+const { post } = Astro.props;
+const d = new Date(post.data.date);
+const stamp = `${d.getFullYear()}.${String(d.getMonth() + 1).padStart(2, '0')}.${String(d.getDate()).padStart(2, '0')}`;
+
+const image = bespokeImage(post.data.post_image);
+const category = post.data.categories[0];
+
+const raw = post.data.meta_description
+  || (post.body ? post.body.replace(/[#*_`>\-]/g, '').replace(/\s+/g, ' ').trim().slice(0, 150) : '');
+const excerpt = raw.length === 150 ? raw + '…' : raw;
+---
+<a
+  href={post.data.permalink}
+  class="group grid grid-cols-[92px_minmax(0,1fr)] sm:grid-cols-[148px_minmax(0,1fr)_116px] gap-4 sm:gap-7 items-center py-6 border-b border-[var(--color-rule-soft)] no-underline"
+>
+  {image ? (
+    <img
+      src={image}
+      alt=""
+      loading="lazy"
+      width="148"
+      height="83"
+      class="w-[92px] h-[52px] sm:w-[148px] sm:h-[83px] object-cover rounded-md border border-[var(--color-rule)]"
+    />
+  ) : (
+    <span
+      aria-hidden="true"
+      class="flex items-center justify-center w-[92px] h-[52px] sm:w-[148px] sm:h-[83px] rounded-md border border-[var(--color-rule-soft)] bg-[#101419] font-[family-name:var(--font-mono)] text-[13px] sm:text-[15px] tracking-widest text-[#3f4854]"
+    >
+      {d.getFullYear()}
+    </span>
+  )}
+
+  <div>
+    <div class="font-[family-name:var(--font-mono)] text-[11px] sm:text-xs tracking-wide text-[var(--color-muted)] mb-2">
+      {stamp}
+      {category && <span class="sm:hidden"> · {category}</span>}
+    </div>
+    <h3 class="!mt-0 !mb-0 text-[17px] sm:text-[21px] font-semibold leading-snug text-[var(--color-ink)] group-hover:text-[var(--color-accent)] transition-colors">
+      {post.data.title}
+    </h3>
+    {excerpt && (
+      <p class="hidden sm:block mt-2 mb-0 max-w-[620px] text-[15px] leading-relaxed text-[#8d97a4]">{excerpt}</p>
+    )}
+  </div>
+
+  {category && (
+    <span class="hidden sm:block justify-self-end font-[family-name:var(--font-mono)] text-[11px] tracking-[0.1em] uppercase text-[#5b6470] border border-[var(--color-rule)] rounded px-2.5 py-1">
+      {category}
+    </span>
+  )}
+</a>

@@ -1,72 +1,70 @@
 ---
 import { mainMenu } from '../data/navigation';
-import { siteConfig } from '../data/siteConfig';
 
 interface Props {
+  /** Kept for call-site compatibility; the theme is dark everywhere now. */
   mode?: 'dark' | 'light';
 }
-
-const { mode = 'light' } = Astro.props;
-const isDark = mode === 'dark';
 ---
 <nav
-  class:list={[
-    'w-full border-b',
-    isDark ? 'bg-transparent border-white/10' : 'bg-white border-[var(--color-rule)]',
-  ]}
+  class="w-full border-b border-[var(--color-rule)] bg-[var(--color-surface)]/90 backdrop-blur-sm sticky top-0 z-50"
   aria-label="Main navigation"
 >
-  <div class="max-w-4xl mx-auto px-4 sm:px-6">
-    <div class="flex items-center justify-between h-16">
+  <div class="max-w-[1120px] mx-auto px-5 sm:px-10">
+    <div class="flex items-center justify-between h-[68px]">
       <a
         href="/"
-        class:list={[
-          'text-lg font-bold no-underline tracking-tight',
-          isDark ? 'text-white' : 'text-[var(--color-ink)]',
-        ]}
+        class="font-[family-name:var(--font-mono)] text-[15px] font-medium no-underline text-[var(--color-ink)] tracking-tight"
       >
-        {siteConfig.title}
+        randy<span class="text-[var(--color-accent)]">.</span>walker
       </a>
 
-      <ul class="hidden sm:flex items-center gap-6">
+      <div class="hidden sm:flex items-center gap-2">
         {mainMenu.map((item) => (
-          <li>
-            <a
-              href={item.url}
-              class:list={[
-                'text-sm font-medium no-underline hover:opacity-80',
-                isDark ? 'text-white' : 'text-[var(--color-ink-soft)]',
-              ]}
-            >
-              {item.text}
-            </a>
-          </li>
+          <a
+            href={item.url}
+            class="flex items-center h-11 px-4 text-sm font-medium no-underline text-[var(--color-ink-soft)] rounded-md hover:text-[var(--color-ink)] hover:bg-[var(--color-surface-soft)] transition-colors"
+          >
+            {item.text}
+          </a>
         ))}
-      </ul>
+        <a
+          href="/feed.xml"
+          aria-label="RSS feed"
+          class="flex items-center justify-center w-11 h-11 ml-2 border border-[var(--color-rule)] rounded-md text-[var(--color-ink-soft)] no-underline hover:text-[var(--color-accent)] hover:border-[var(--color-accent)] transition-colors"
+        >
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 11a9 9 0 0 1 9 9"/><path d="M4 4a16 16 0 0 1 16 16"/><circle cx="5" cy="19" r="1"/></svg>
+        </a>
+      </div>
 
       <button
-        class="sm:hidden p-2 rounded-md"
+        class="sm:hidden flex items-center justify-center w-11 h-11 border border-[var(--color-rule)] rounded-md text-[var(--color-ink-soft)]"
         id="mobile-menu-btn"
         aria-label="Toggle navigation menu"
         aria-expanded="false"
       >
-        <svg class:list={['w-6 h-6', isDark ? 'text-white' : 'text-[var(--color-ink)]']} fill="none" stroke="currentColor" viewBox="0 0 24 24">
-          <path class="hamburger-open" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
-          <path class="hamburger-close hidden" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+        <svg class="w-[18px] h-[18px]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path class="hamburger-open" stroke-linecap="round" stroke-width="2" d="M4 7h16M4 12h16M4 17h16" />
+          <path class="hamburger-close hidden" stroke-linecap="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
         </svg>
       </button>
     </div>
   </div>
 
-  <div id="mobile-menu" class="sm:hidden hidden border-t border-[var(--color-rule)] bg-white">
-    <ul class="px-4 py-3 space-y-1">
+  <div id="mobile-menu" class="sm:hidden hidden border-t border-[var(--color-rule)] bg-[var(--color-surface-soft)]">
+    <ul class="px-5 py-3 space-y-1">
       {mainMenu.map((item) => (
         <li>
-          <a href={item.url} class="block px-3 py-2 text-sm text-[var(--color-ink-soft)] no-underline hover:bg-[var(--color-surface-soft)] rounded">
+          <a href={item.url} class="flex items-center h-11 px-3 text-sm text-[var(--color-ink-soft)] no-underline hover:bg-[var(--color-surface-raised)] rounded-md">
             {item.text}
           </a>
         </li>
       ))}
+      <li>
+        <a href="/feed.xml" class="flex items-center h-11 px-3 text-sm text-[var(--color-ink-soft)] no-underline hover:bg-[var(--color-surface-raised)] rounded-md">
+          RSS
+        </a>
+      </li>
     </ul>
   </div>
 </nav>

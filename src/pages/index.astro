@@ -1,8 +1,9 @@
 ---
 import { getCollection } from 'astro:content';
 import BaseLayout from '../layouts/BaseLayout.astro';
-import BlogCard from '../components/BlogCard.astro';
-import Pagination from '../components/Pagination.astro';
+import FeaturedPost from '../components/FeaturedPost.astro';
+import PostRow from '../components/PostRow.astro';
+import SectionLabel from '../components/SectionLabel.astro';
 import { siteConfig } from '../data/siteConfig';
 
 const PAGE_SIZE = 9;
@@ -10,26 +11,80 @@ const PAGE_SIZE = 9;
 const posts = (await getCollection('blog', ({ data }) => data.draft !== true))
   .sort((a, b) => b.data.date.getTime() - a.data.date.getTime());
 
-const pageOne = posts.slice(0, PAGE_SIZE);
+const [featured, ...rest] = posts;
+const recent = rest.slice(0, PAGE_SIZE - 1);
 const lastPage = Math.max(1, Math.ceil(posts.length / PAGE_SIZE));
-const nextUrl = lastPage > 1 ? '/page/2/' : undefined;
+const oldestYear = posts.length ? new Date(posts[posts.length - 1].data.date).getFullYear() : null;
 ---
 <BaseLayout>
-  <section class="max-w-4xl mx-auto px-4 sm:px-6 pt-16 pb-10">
-    <h1 class="text-4xl sm:text-5xl font-bold tracking-tight">{siteConfig.title}</h1>
-    <p class="mt-4 text-lg text-[var(--color-ink-soft)] max-w-2xl">
-      {siteConfig.tagline}
-    </p>
-    <p class="mt-4 text-[var(--color-muted)] max-w-2xl">
-      {siteConfig.author.bio}
-    </p>
+  <!-- hero -->
+  <section class="relative overflow-hidden border-b border-[var(--color-rule)]">
+    <div
+      aria-hidden="true"
+      class="pointer-events-none absolute -top-[340px] left-1/2 -ml-[550px] w-[1100px] h-[700px]"
+      style="background: radial-gradient(ellipse at center, rgba(90,215,232,0.13) 0%, rgba(90,215,232,0.04) 42%, rgba(13,15,18,0) 70%);"
+    ></div>
+
+    <div class="relative max-w-[1120px] mx-auto px-5 sm:px-10 pt-16 sm:pt-24 pb-14 sm:pb-20">
+      <div class="flex items-center gap-3 mb-6 sm:mb-7">
+        <span class="w-1.5 h-1.5 rounded-full bg-[var(--color-accent)] shadow-[0_0_12px_rgba(90,215,232,0.9)]"></span>
+        <span class="font-[family-name:var(--font-mono)] text-[11px] sm:text-xs font-medium tracking-[0.14em] uppercase text-[var(--color-accent)]">
+          {siteConfig.author.jobTitle} — {siteConfig.author.worksFor}
+        </span>
+      </div>
+
+      <h1 class="!mb-0 max-w-[880px] text-[34px] sm:text-[52px] lg:text-[62px] font-semibold leading-[1.06] tracking-[-0.03em] text-[var(--color-ink-bright)] text-pretty">
+        Technology, homelabs, and the business of building things.
+      </h1>
+
+      <p class="mt-6 sm:mt-7 mb-0 max-w-[620px] text-base sm:text-lg leading-relaxed text-[var(--color-ink-soft)]">
+        {siteConfig.tagline}
+      </p>
+
+      <div class="flex flex-wrap items-center gap-6 sm:gap-8 mt-9 sm:mt-11">
+        <a
+          href="#posts"
+          class="flex items-center gap-2.5 h-12 px-6 rounded-md no-underline bg-[var(--color-accent)] text-[var(--color-accent-ink)] text-[15px] font-semibold hover:bg-[var(--color-accent-hover)] transition-colors"
+        >
+          Read the latest
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+        </a>
+        <div class="flex items-center gap-2.5 font-[family-name:var(--font-mono)] text-xs tracking-wide text-[var(--color-muted)]">
+          <span class="text-[var(--color-ink)]">{posts.length}</span> posts
+          {oldestYear && (
+            <>
+              <span class="text-[#323a45]">/</span>
+              since <span class="text-[var(--color-ink)]">{oldestYear}</span>
+            </>
+          )}
+        </div>
+      </div>
+    </div>
   </section>
 
-  <section class="max-w-5xl mx-auto px-4 sm:px-6 pb-16">
-    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-      {pageOne.map((post) => <BlogCard post={post} />)}
+  {featured && (
+    <section class="max-w-[1120px] mx-auto px-5 sm:px-10 pt-14 sm:pt-18">
+      <SectionLabel label="Featured" />
+      <FeaturedPost post={featured} />
+    </section>
+  )}
+
+  <section id="posts" class="max-w-[1120px] mx-auto px-5 sm:px-10 pt-14 sm:pt-16">
+    <SectionLabel label="Recent" />
+    <div class="flex flex-col">
+      {recent.map((post) => <PostRow post={post} />)}
     </div>
 
-    <Pagination currentPage={1} lastPage={lastPage} nextUrl={nextUrl} />
+    {lastPage > 1 && (
+      <div class="flex justify-center pt-12">
+        <a
+          href="/page/2/"
+          class="flex items-center gap-2.5 h-12 px-7 rounded-md no-underline border border-[#2c3540] text-[15px] font-medium text-[var(--color-ink)] hover:border-[var(--color-accent)] hover:text-[var(--color-accent)] transition-colors"
+        >
+          Older posts
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+        </a>
+      </div>
+    )}
   </section>
 </BaseLayout>

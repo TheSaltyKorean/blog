@@ -1,0 +1,68 @@
+---
+import { bespokeImage } from '../utils/postImage';
+
+interface Props {
+  post: {
+    data: {
+      title: string;
+      date: Date;
+      permalink: string;
+      categories: string[];
+      post_image?: string;
+      meta_description?: string;
+    };
+    body?: string;
+  };
+}
+
+const { post } = Astro.props;
+const d = new Date(post.data.date);
+const stamp = `${d.getFullYear()}.${String(d.getMonth() + 1).padStart(2, '0')}.${String(d.getDate()).padStart(2, '0')}`;
+const image = bespokeImage(post.data.post_image);
+
+const raw = post.data.meta_description
+  || (post.body ? post.body.replace(/[#*_`>\-]/g, '').replace(/\s+/g, ' ').trim().slice(0, 190) : '');
+const excerpt = raw.length === 190 ? raw + '…' : raw;
+---
+<a
+  href={post.data.permalink}
+  class:list={[
+    'group block no-underline rounded-xl border border-[var(--color-rule)] overflow-hidden',
+    'bg-gradient-to-br from-[var(--color-surface-raised)] to-[var(--color-surface-soft)]',
+    'hover:border-[#33404e] transition-colors',
+  ]}
+>
+  <div class:list={['grid gap-0 sm:gap-10', image ? 'lg:grid-cols-[600px_minmax(0,1fr)] lg:p-7' : '']}>
+    {image && (
+      <img
+        src={image}
+        alt={post.data.title}
+        width="600"
+        height="338"
+        class="w-full lg:w-[600px] aspect-[16/9] object-cover lg:rounded-lg border-b lg:border border-[var(--color-rule)]"
+      />
+    )}
+
+    <div class:list={['p-6 sm:p-8', image ? 'lg:p-0 lg:pr-3 lg:self-center' : '']}>
+      <div class="flex items-center gap-2.5 flex-wrap mb-5">
+        {post.data.categories.slice(0, 2).map((cat) => (
+          <span class="font-[family-name:var(--font-mono)] text-[11px] font-medium tracking-[0.1em] uppercase text-[var(--color-accent)] bg-[rgba(90,215,232,0.1)] border border-[rgba(90,215,232,0.22)] rounded px-2.5 py-1">
+            {cat}
+          </span>
+        ))}
+        <span class="font-[family-name:var(--font-mono)] text-xs tracking-wide text-[var(--color-muted)]">{stamp}</span>
+      </div>
+
+      <h2 class="!mt-0 !mb-0 text-[26px] sm:text-[32px] font-semibold leading-[1.16] tracking-tight text-[var(--color-ink-bright)] text-pretty group-hover:text-[var(--color-accent)] transition-colors">
+        {post.data.title}
+      </h2>
+
+      {excerpt && <p class="mt-4 mb-0 text-base leading-relaxed text-[var(--color-ink-soft)]">{excerpt}</p>}
+
+      <div class="flex items-center gap-2.5 mt-6 text-[15px] font-medium text-[var(--color-accent)]">
+        Read the write-up
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" class="group-hover:translate-x-1 transition-transform"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+      </div>
+    </div>
+  </div>
+</a>
