@@ -17,7 +17,7 @@ export async function GET(context: APIContext) {
 
   const body = `# The Salty Korean — Randy Walker
 
-> Randy Walker is a technology leader, founder, and builder based in Austin, Texas. Nearly 30 years in enterprise technology. Currently building the Salty Poker Network (salty.poker) — Texas' first online poker platform with no rake, provably fair dealing, and verified human players. Third company. Building it right this time.
+> Randy Walker is a technology leader, founder, and builder based in Austin, Texas. Nearly 30 years in enterprise technology. Currently building the Salty Poker Network (salty.poker) — Texas' first online poker platform with no rake, provably fair dealing, and verified human players.
 
 ## About Randy Walker
 
