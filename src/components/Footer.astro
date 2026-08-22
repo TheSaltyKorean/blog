@@ -2,47 +2,57 @@
 import { siteConfig } from '../data/siteConfig';
 
 const year = new Date().getFullYear();
-const buildDate = new Date().toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: 'numeric' });
+
+const socials = [
+  { url: siteConfig.socialUrls.github, label: 'GitHub', path: 'M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22' },
+  { url: siteConfig.socialUrls.linkedin, label: 'LinkedIn', path: 'M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-4 0v7h-4v-7a6 6 0 0 1 6-6z' },
+  { url: siteConfig.socialUrls.twitter, label: 'Twitter', path: 'M22 4s-.7 2.1-2 3.4c1.6 10-9.4 17.3-18 11.6 2.2.1 4.4-.6 6-2C3 15.5.5 9.6 3 5c2.2 2.6 5.6 4.1 9 4-.9-4.2 4-6.6 7-3.8 1.1 0 3-1.2 3-1.2z' },
+];
 ---
-<footer class="border-t border-[var(--color-rule)] bg-[var(--color-surface-soft)] mt-16" role="contentinfo">
-  <div class="max-w-4xl mx-auto px-4 sm:px-6 py-10">
-    <div class="flex flex-col sm:flex-row sm:items-start sm:justify-between gap-8">
-      <div>
-        <a href="/" class="text-lg font-bold no-underline text-[var(--color-ink)]">
-          {siteConfig.title}
+<footer class="mt-24 border-t border-[var(--color-rule)] bg-[#0a0c0f]" role="contentinfo">
+  <div class="max-w-[1120px] mx-auto px-5 sm:px-10 py-14">
+    <div class="flex flex-col sm:flex-row sm:justify-between sm:items-start gap-10">
+      <div class="max-w-md">
+        <a href="/" class="font-[family-name:var(--font-mono)] text-[15px] font-medium no-underline text-[var(--color-ink)]">
+          randy<span class="text-[var(--color-accent)]">.</span>walker
         </a>
-        <p class="mt-2 text-sm text-[var(--color-muted)] max-w-md">
-          {siteConfig.tagline}
+        <p class="mt-3.5 text-sm leading-relaxed text-[var(--color-muted)]">
+          {siteConfig.author.bio} Writing from {siteConfig.author.location}.
         </p>
       </div>
 
-      <ul class="flex items-center gap-4" aria-label="Social links">
+      <ul class="flex items-center gap-2.5" aria-label="Social links">
+        {socials.map((s) => (
+          <li>
+            <a
+              href={s.url}
+              target="_blank"
+              rel="noopener"
+              aria-label={s.label}
+              class="flex items-center justify-center w-11 h-11 border border-[var(--color-rule)] rounded-md text-[var(--color-muted)] no-underline hover:text-[var(--color-accent)] hover:border-[var(--color-accent)] transition-colors"
+            >
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d={s.path} />
+                {s.label === 'LinkedIn' && <><rect x="2" y="9" width="4" height="12" /><circle cx="4" cy="4" r="2" /></>}
+              </svg>
+            </a>
+          </li>
+        ))}
         <li>
-          <a href={siteConfig.socialUrls.twitter} target="_blank" rel="noopener" aria-label="Twitter" class="text-[var(--color-muted)] hover:text-[var(--color-ink)] no-underline">
-            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 4s-.7 2.1-2 3.4c1.6 10-9.4 17.3-18 11.6 2.2.1 4.4-.6 6-2C3 15.5.5 9.6 3 5c2.2 2.6 5.6 4.1 9 4-.9-4.2 4-6.6 7-3.8 1.1 0 3-1.2 3-1.2z"/></svg>
-          </a>
-        </li>
-        <li>
-          <a href={siteConfig.socialUrls.github} target="_blank" rel="noopener" aria-label="GitHub" class="text-[var(--color-muted)] hover:text-[var(--color-ink)] no-underline">
-            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
-          </a>
-        </li>
-        <li>
-          <a href={siteConfig.socialUrls.linkedin} target="_blank" rel="noopener" aria-label="LinkedIn" class="text-[var(--color-muted)] hover:text-[var(--color-ink)] no-underline">
-            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-4 0v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
-          </a>
-        </li>
-        <li>
-          <a href={siteConfig.socialUrls.instagram} target="_blank" rel="noopener" aria-label="Instagram" class="text-[var(--color-muted)] hover:text-[var(--color-ink)] no-underline">
-            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+          <a
+            href="/feed.xml"
+            aria-label="RSS feed"
+            class="flex items-center justify-center w-11 h-11 border border-[var(--color-rule)] rounded-md text-[var(--color-muted)] no-underline hover:text-[var(--color-accent)] hover:border-[var(--color-accent)] transition-colors"
+          >
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 11a9 9 0 0 1 9 9"/><path d="M4 4a16 16 0 0 1 16 16"/><circle cx="5" cy="19" r="1"/></svg>
           </a>
         </li>
       </ul>
     </div>
 
-    <div class="mt-8 pt-6 border-t border-[var(--color-rule)] flex flex-col sm:flex-row sm:items-center sm:justify-between gap-2 text-xs text-[var(--color-muted)]">
-      <p>&copy; {year} {siteConfig.author.name}. All rights reserved.</p>
-      <p>Updated {buildDate}</p>
+    <div class="mt-10 pt-6 border-t border-[var(--color-rule-soft)] flex flex-col sm:flex-row sm:justify-between gap-2 font-[family-name:var(--font-mono)] text-xs text-[var(--color-faint)]">
+      <p>&copy; {year} {siteConfig.author.name}</p>
+      <p>thesaltykorean.com</p>
     </div>
   </div>
 </footer>
