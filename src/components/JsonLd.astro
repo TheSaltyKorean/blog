@@ -1,13 +1,37 @@
 ---
 import { siteConfig } from '../data/siteConfig';
 
+export interface ArticleMeta {
+  headline: string;
+  description?: string;
+  url: string;
+  image?: string;
+  datePublished: string;
+  dateModified?: string;
+  keywords?: string[];
+  section?: string;
+}
+
+export interface Crumb {
+  name: string;
+  url: string;
+}
+
+interface Props {
+  article?: ArticleMeta;
+  breadcrumbs?: Crumb[];
+}
+
+const { article, breadcrumbs } = Astro.props;
+
+const abs = (path: string) => new URL(path, siteConfig.url).href;
+
 const personSchema = {
-  '@context': 'https://schema.org',
   '@type': 'Person',
   '@id': `${siteConfig.url}#person`,
   name: siteConfig.author.name,
   url: siteConfig.url,
-  image: new URL(siteConfig.author.image, siteConfig.url).href,
+  image: abs(siteConfig.author.image),
   jobTitle: siteConfig.author.jobTitle,
   worksFor: {
     '@type': 'Organization',
@@ -28,5 +52,55 @@ const personSchema = {
     siteConfig.socialUrls.facebook,
   ],
 };
+
+// A Blog node rather than a bare WebSite: the whole property is a blog, and it
+// gives every BlogPosting an isPartOf target to hang off.
+const siteSchema = {
+  '@type': 'Blog',
+  '@id': `${siteConfig.url}#website`,
+  url: siteConfig.url,
+  name: siteConfig.title,
+  description: siteConfig.description,
+  inLanguage: 'en-US',
+  publisher: { '@id': `${siteConfig.url}#person` },
+  author: { '@id': `${siteConfig.url}#person` },
+};
+
+const graph: Record<string, unknown>[] = [personSchema, siteSchema];
+
+if (article) {
+  graph.push({
+    '@type': 'BlogPosting',
+    '@id': `${article.url}#article`,
+    headline: article.headline,
+    ...(article.description ? { description: article.description } : {}),
+    url: article.url,
+    mainEntityOfPage: { '@type': 'WebPage', '@id': article.url },
+    datePublished: article.datePublished,
+    dateModified: article.dateModified || article.datePublished,
+    ...(article.image ? { image: abs(article.image) } : {}),
+    author: { '@id': `${siteConfig.url}#person` },
+    publisher: { '@id': `${siteConfig.url}#person` },
+    isPartOf: { '@id': `${siteConfig.url}#website` },
+    inLanguage: 'en-US',
+    ...(article.keywords?.length ? { keywords: article.keywords.join(', ') } : {}),
+    ...(article.section ? { articleSection: article.section } : {}),
+  });
+}
+
+if (breadcrumbs?.length) {
+  graph.push({
+    '@type': 'BreadcrumbList',
+    '@id': `${breadcrumbs[breadcrumbs.length - 1].url}#breadcrumb`,
+    itemListElement: breadcrumbs.map((crumb, i) => ({
+      '@type': 'ListItem',
+      position: i + 1,
+      name: crumb.name,
+      item: abs(crumb.url),
+    })),
+  });
+}
+
+const schema = { '@context': 'https://schema.org', '@graph': graph };
 ---
-<script type="application/ld+json" set:html={JSON.stringify(personSchema)} />
+<script type="application/ld+json" set:html={JSON.stringify(schema)} />
