@@ -34,17 +34,17 @@ export const siteConfig: SiteConfig = {
   title: 'Randy Walker',
   tagline: 'Technology leadership, career insights, and the business of innovation.',
   description:
-    "Randy Walker's thoughts, stories and ideas. President of Harvest Data Corp, Microsoft MVP award winner, ASP Insider and tech enthusiast.",
+    "Randy Walker's thoughts, stories and ideas on technology and building companies. Founder and CTO of SK Meridian LLC, former Microsoft MVP and ASP Insider.",
   url: 'https://thesaltykorean.com',
   favicon: '/favicon.svg',
   ogImage: '/assets/images/og-image.png',
   author: {
     name: 'Randy Walker',
-    bio: 'Owner of SK Meridian LLC, former President of Harvest Data Corp, and former Microsoft MVP.',
+    bio: 'Founder and CTO of SK Meridian LLC, former President of Harvest Data Corp, and former Microsoft MVP.',
     location: 'Bentonville, Arkansas',
     // TODO: /assets/images/authors/randy-walker.jpg was not in Phase 0 manifest — not migrated yet
     image: '/assets/images/authors/randy-walker.jpg',
-    jobTitle: 'Owner',
+    jobTitle: 'Founder and CTO',
     worksFor: 'SK Meridian LLC',
   },
   social: {
