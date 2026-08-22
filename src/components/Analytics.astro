@@ -1,30 +1,53 @@
 ---
 /**
- * Google Analytics 4.
+ * Analytics and tracking tags.
  *
- * Property "The Salty Korean - GA4" (364271200), stream 4895532335. The
- * property was created during the Jekyll era but the tag was never carried
- * across to Astro, so it recorded nothing until 2026-08-07.
+ * Two independent trackers, both rendered only in production builds so
+ * `npm run dev` does not write test traffic into either. Deliberately not
+ * included in RedirectStub.astro — redirect hops are not pageviews worth
+ * counting.
  *
- * Rendered only in production builds so `npm run dev` does not write test
- * traffic into the property. Deliberately not included in RedirectStub.astro —
- * redirect hops are not pageviews worth counting.
+ * 1. Google Analytics 4 — property "The Salty Korean - GA4" (364271200),
+ *    stream 4895532335. The property was created during the Jekyll era but the
+ *    tag was never carried across to Astro, so it recorded nothing until
+ *    2026-08-07.
+ *
+ * 2. Cloudflare Web Analytics — privacy-first, no cookies, and it reports the
+ *    Core Web Vitals field data that Google actually ranks on. Installed as an
+ *    explicit snippet rather than Cloudflare's "automatic setup" edge
+ *    injection: the automatic mode was enabled on 2026-08-22 and never
+ *    injected the beacon into the served HTML, including after a full cache
+ *    purge. The snippet is also version-controlled, which the edge toggle is
+ *    not. If anyone re-enables automatic injection in the dashboard, remove
+ *    this block or every pageview gets counted twice.
+ *
+ * GOTCHA: Randy's own Chrome runs the Google Analytics Opt-out Add-on
+ * (extension fllaojicojecljbmefodhfapmkghcbnh), so gtag loads but never sends
+ * a collect beacon and GA Realtime stays 0 for him. That is not a bug — verify
+ * GA from a different browser. Cloudflare Web Analytics is unaffected by it.
  */
-const MEASUREMENT_ID = 'G-MFKMPMJ07G';
+const GA_MEASUREMENT_ID = 'G-MFKMPMJ07G';
+const CF_BEACON_TOKEN = '483754ee3aba4d9ebf49ff0cc5446c7c';
 const enabled = import.meta.env.PROD;
 ---
 {
   enabled && (
     <>
-      <script async src={`https://www.googletagmanager.com/gtag/js?id=${MEASUREMENT_ID}`} />
-      <script is:inline define:vars={{ MEASUREMENT_ID }}>
+      <script async src={`https://www.googletagmanager.com/gtag/js?id=${GA_MEASUREMENT_ID}`} />
+      <script is:inline define:vars={{ GA_MEASUREMENT_ID }}>
         window.dataLayer = window.dataLayer || [];
         function gtag() {
           dataLayer.push(arguments);
         }
         gtag('js', new Date());
-        gtag('config', MEASUREMENT_ID);
+        gtag('config', GA_MEASUREMENT_ID);
       </script>
+
+      <script
+        type="module"
+        src="https://static.cloudflareinsights.com/beacon.min.js"
+        data-cf-beacon={`{"token": "${CF_BEACON_TOKEN}"}`}
+      />
     </>
   )
 }
