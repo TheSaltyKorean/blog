@@ -21,6 +21,6 @@ const { Content } = await render(entry);
 const description = entry.data.meta_description || excerpt(entry.body);
 const minutes = readingTime(entry.body);
 ---
-<BlogPost frontmatter={entry.data} description={description} readingTime={minutes} related={related}>
+<BlogPost frontmatter={entry.data} description={description} readingTime={minutes} related={related} noindex={entry.data.noindex}>
   <Content />
 </BlogPost>

@@ -8,6 +8,7 @@ categories:
   - development
 tags: []
 post_image: /assets/images/art/thumb/bg3.webp
+noindex: true
 ---
 
 Please come join us at the Charity event "We Are Microsoft".  Throughout the weekend, starting this Friday, we will be working on charity software development.  Right now [Mark Leon Watson](http://www.markwatson.net/) and I will be working on <span class="skimlinks-unlinked">Irving.Net</span> web project, and I'm looking forward to working with someone whom I've only ever met online.

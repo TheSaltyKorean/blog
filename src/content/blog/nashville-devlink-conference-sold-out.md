@@ -11,6 +11,7 @@ tags:
   - .Net
   - Microsoft
 post_image: /assets/images/art/thumb/bg20.webp
+noindex: true
 ---
 
 August 22-23

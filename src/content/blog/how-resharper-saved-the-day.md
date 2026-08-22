@@ -6,7 +6,7 @@ author: Randy Walker
 categories:
   - development
 tags: []
-post_image: /assets/images/art/thumb/bg15.webp
+post_image: /assets/images/blog/how-resharper-saved-the-day.webp
 ---
 
 The Back Story:

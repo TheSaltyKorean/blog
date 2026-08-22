@@ -7,7 +7,8 @@ categories:
   - microsoft
   - development
 tags: []
-post_image: /assets/images/art/thumb/bg3.webp
+post_image: /assets/images/blog/microsoft-2010-product-tour.webp
+noindex: true
 ---
 
 I’m proud to announce that two Microsoft employees, Sarika Calla and Kevin Halverson, who works on the Visual Studio Product Team will be visiting various User Groups and Companies in Arkansas and Texas!

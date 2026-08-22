@@ -7,6 +7,7 @@ categories:
   - technology
 tags: []
 post_image: /assets/images/art/thumb/bg1.webp
+noindex: true
 ---
 
 Surprisingly enough, [Chris Love](http://professionalaspnet.com/) wins the Microsoft Certification Exam Voucher.

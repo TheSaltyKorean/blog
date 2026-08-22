@@ -8,6 +8,7 @@ categories:
   - development
 tags: []
 post_image: /assets/images/art/thumb/bg8.webp
+noindex: true
 ---
 
 On December 4th, the first inaugural MSDN Express event was a resounding success.  We had around 17 in attendance and learned a lot about some of Microsoft's new technologies.  A big thank you goes out to Zain Naboulsi, our MSDN Developer Evangelist.  Zain, on his own initiative is helping put Northwest Arkansas on the roadmap for Microsoft's Evangelism team.  It's been a long time coming that our region has seen some focus and the ability to draw in such high level talent.

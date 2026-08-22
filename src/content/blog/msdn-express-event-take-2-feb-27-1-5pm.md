@@ -12,6 +12,7 @@ tags:
   - MSDN
   - MSDN Express
 post_image: /assets/images/art/thumb/bg5.webp
+noindex: true
 ---
 
 We've scheduled the next MSDN Express event to take place on February 27th, from 1pm-5pm.  [Zain Naboulsi](http://blogs.msdn.com/zainnab) (our MSDN Evangelist) will be presenting topics TBA.  Location will be at the New Horizons office in Rogers.

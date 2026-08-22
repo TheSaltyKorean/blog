@@ -11,6 +11,7 @@ tags:
   - Charity
   - .Net
 post_image: /assets/images/art/thumb/bg20.webp
+noindex: true
 ---
 
 This past weekend seems like a dream.  That's probably because it was a sleep deprived coding marathon of epic proportions.  Some getting more sleep than others.  Of course it didn't help that I didn't get much sleep the night before we left.

@@ -10,6 +10,7 @@ categories:
   - development
 tags: []
 post_image: /assets/images/art/thumb/bg23.webp
+noindex: true
 ---
 
 I received an e-mail (copied below) about Microsoft ending the paid referrals to new subscribers of adCenter.  I find this extremely perplexing because of Google's dominance in this area, plus Microsoft's bid for Yahoo!.  The number one reason for Microsoft to buy Yahoo! is so it can merge the two online advertising programs.

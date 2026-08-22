@@ -8,6 +8,7 @@ categories:
   - career
 tags: []
 post_image: /assets/images/art/thumb/bg19.webp
+noindex: true
 ---
 
 With the help of [Chris Koenig](http://blogs.msdn.com/chkoenig/) blog site, I was finally able to track down the link and information on how to submit a speaking proposal to TechEd 2008.

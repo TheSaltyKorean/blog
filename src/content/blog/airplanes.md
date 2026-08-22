@@ -6,7 +6,7 @@ author: Randy Walker
 categories:
   - personal
 tags: []
-post_image: /assets/images/art/thumb/bg26.webp
+post_image: /assets/images/blog/airplanes.webp
 ---
 
 As many of you know, I have a passion for music.  And after being gone 3 weeks, it’s nice to be home and discover the new music that has hit the scene over the past few weeks.  One song in particular struck a cord with me and in a matter of a few weeks while I was gone, it went from being unheard of to being ranked number 3.
