@@ -37,8 +37,22 @@ interface Props {
         </a>
       </div>
 
+      {/*
+        Archive stays visible at every width, not tucked into the hamburger.
+        Below the sm breakpoint the whole link row above is display:none, which
+        put the full-archive view — the most useful way into 147 posts, and the
+        one Randy actually navigates by — behind a tap nobody makes.
+      */}
+      <div class="sm:hidden flex items-center gap-1.5">
+        <a
+          href="/archive/"
+          class="flex items-center h-11 px-3 text-sm font-medium no-underline text-[var(--color-ink-soft)] border border-[var(--color-rule)] rounded-md hover:text-[var(--color-accent)] hover:border-[var(--color-accent)] transition-colors"
+        >
+          Archive
+        </a>
+
       <button
-        class="sm:hidden flex items-center justify-center w-11 h-11 border border-[var(--color-rule)] rounded-md text-[var(--color-ink-soft)]"
+        class="flex items-center justify-center w-11 h-11 border border-[var(--color-rule)] rounded-md text-[var(--color-ink-soft)]"
         id="mobile-menu-btn"
         aria-label="Toggle navigation menu"
         aria-expanded="false"
@@ -48,12 +62,13 @@ interface Props {
           <path class="hamburger-close hidden" stroke-linecap="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
         </svg>
       </button>
+      </div>
     </div>
   </div>
 
   <div id="mobile-menu" class="sm:hidden hidden border-t border-[var(--color-rule)] bg-[var(--color-surface-soft)]">
     <ul class="px-5 py-3 space-y-1">
-      {mainMenu.map((item) => (
+      {mainMenu.filter((item) => item.url !== '/archive/').map((item) => (
         <li>
           <a href={item.url} class="flex items-center h-11 px-3 text-sm text-[var(--color-ink-soft)] no-underline hover:bg-[var(--color-surface-raised)] rounded-md">
             {item.text}
