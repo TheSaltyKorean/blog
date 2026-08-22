@@ -41,7 +41,7 @@ export const siteConfig: SiteConfig = {
   author: {
     name: 'Randy Walker',
     bio: 'Founder and CTO of SK Meridian LLC, former President of Harvest Data Corp, and former Microsoft MVP.',
-    location: 'Bentonville, Arkansas',
+    location: 'Austin, Texas',
     // TODO: /assets/images/authors/randy-walker.jpg was not in Phase 0 manifest — not migrated yet
     image: '/assets/images/authors/randy-walker.jpg',
     jobTitle: 'Founder and CTO',
