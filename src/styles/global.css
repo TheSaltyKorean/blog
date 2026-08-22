@@ -29,43 +29,54 @@
   --font-serif: Georgia, 'Times New Roman', serif;
 }
 
-html {
-  scroll-behavior: smooth;
-  color: var(--color-ink);
-  background: var(--color-surface);
-  color-scheme: dark;
+/*
+ * Element defaults live in `@layer base`.
+ *
+ * This is load-bearing, not stylistic. Tailwind v4 emits its utilities into
+ * `@layer utilities`, and in the CSS cascade UNLAYERED rules beat layered ones
+ * no matter the specificity. An unlayered `a { color: … }` therefore overrode
+ * every `text-[var(--color-…)]` sitting on an anchor — which painted the whole
+ * nav and the hero button accent-on-accent, cyan text on a cyan fill.
+ */
+@layer base {
+  html {
+    scroll-behavior: smooth;
+    color: var(--color-ink);
+    background: var(--color-surface);
+    color-scheme: dark;
+  }
+
+  body {
+    font-family: var(--font-sans);
+    font-size: 17px;
+    line-height: 1.65;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    color: var(--color-ink);
+    background: var(--color-surface);
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-family: var(--font-display);
+    font-weight: 600;
+    line-height: 1.2;
+    letter-spacing: -0.02em;
+    color: var(--color-ink-bright);
+  }
+
+  h1 { font-size: 2.6rem; margin-bottom: 1rem; letter-spacing: -0.03em; }
+  h2 { font-size: 1.7rem; margin-top: 2.5rem; margin-bottom: 0.75rem; }
+  h3 { font-size: 1.3rem; margin-top: 1.75rem; margin-bottom: 0.5rem; }
+  h4 { font-size: 1.1rem; margin-top: 1.25rem; margin-bottom: 0.5rem; }
+
+  p { margin-bottom: 1.1em; }
+
+  a {
+    color: var(--color-accent);
+    text-decoration: none;
+  }
+  a:hover { color: var(--color-accent-hover); }
 }
-
-body {
-  font-family: var(--font-sans);
-  font-size: 17px;
-  line-height: 1.65;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  color: var(--color-ink);
-  background: var(--color-surface);
-}
-
-h1, h2, h3, h4, h5, h6 {
-  font-family: var(--font-display);
-  font-weight: 600;
-  line-height: 1.2;
-  letter-spacing: -0.02em;
-  color: var(--color-ink-bright);
-}
-
-h1 { font-size: 2.6rem; margin-bottom: 1rem; letter-spacing: -0.03em; }
-h2 { font-size: 1.7rem; margin-top: 2.5rem; margin-bottom: 0.75rem; }
-h3 { font-size: 1.3rem; margin-top: 1.75rem; margin-bottom: 0.5rem; }
-h4 { font-size: 1.1rem; margin-top: 1.25rem; margin-bottom: 0.5rem; }
-
-p { margin-bottom: 1.1em; }
-
-a {
-  color: var(--color-accent);
-  text-decoration: none;
-}
-a:hover { color: var(--color-accent-hover); }
 
 /* Body copy inside an article still gets underlines — they carry meaning in
    running prose, where a bare colour change is easy to miss. */
