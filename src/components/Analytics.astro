@@ -12,7 +12,13 @@
  *    tag was never carried across to Astro, so it recorded nothing until
  *    2026-08-07.
  *
- * 2. Cloudflare Web Analytics — privacy-first, no cookies, and it reports the
+ * 2. Microsoft Clarity — project y6hiwhmtje, under randy.walker@live.com. Adds
+ *    heatmaps and session recordings, which is the layer that actually shows
+ *    WHY click-through is near zero rather than just reporting that it is.
+ *    Clarity masks sensitive content by default; that default is left on.
+ *    Also links to Bing Webmaster Tools, keeping the Microsoft side coherent.
+ *
+ * 3. Cloudflare Web Analytics — privacy-first, no cookies, and it reports the
  *    Core Web Vitals field data that Google actually ranks on. Installed as an
  *    explicit snippet rather than Cloudflare's "automatic setup" edge
  *    injection: the automatic mode was enabled on 2026-08-22 and never
@@ -27,6 +33,7 @@
  * GA from a different browser. Cloudflare Web Analytics is unaffected by it.
  */
 const GA_MEASUREMENT_ID = 'G-MFKMPMJ07G';
+const CLARITY_PROJECT_ID = 'y6hiwhmtje';
 const CF_BEACON_TOKEN = '483754ee3aba4d9ebf49ff0cc5446c7c';
 const enabled = import.meta.env.PROD;
 ---
@@ -41,6 +48,21 @@ const enabled = import.meta.env.PROD;
         }
         gtag('js', new Date());
         gtag('config', GA_MEASUREMENT_ID);
+      </script>
+
+      <script is:inline define:vars={{ CLARITY_PROJECT_ID }}>
+        (function (c, l, a, r, i, t, y) {
+          c[a] =
+            c[a] ||
+            function () {
+              (c[a].q = c[a].q || []).push(arguments);
+            };
+          t = l.createElement(r);
+          t.async = 1;
+          t.src = 'https://www.clarity.ms/tag/' + i;
+          y = l.getElementsByTagName(r)[0];
+          y.parentNode.insertBefore(t, y);
+        })(window, document, 'clarity', 'script', CLARITY_PROJECT_ID);
       </script>
 
       <script
