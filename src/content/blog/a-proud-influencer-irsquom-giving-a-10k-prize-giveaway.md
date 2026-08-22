@@ -7,6 +7,7 @@ categories:
   - technology
 tags: []
 post_image: /assets/images/art/thumb/bg2.webp
+noindex: true
 ---
 
 Fair warning, I’m combining several blog posts into one.

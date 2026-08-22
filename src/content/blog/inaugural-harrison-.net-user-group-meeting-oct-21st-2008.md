@@ -8,6 +8,7 @@ categories:
   - career
 tags: []
 post_image: /assets/images/art/thumb/bg7.webp
+noindex: true
 ---
 
 I’m happy to announce that [Brandon King](http://www.peleta.com) has organized the first Harrison .Net User Group meeting for Oct 21st, 2008.  The meeting will be held at [Roosters BBQ](http://www.roostersbar-b-q.com/), [Google Map](http://maps.google.com/maps?f=q&hl=en&geocode=&q=Roosters,+harrison,ar&ie=UTF8&ll=36.237558,-93.131104&spn=0.041606,0.090637&t=h&z=14&iwloc=A).

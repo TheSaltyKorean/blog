@@ -11,6 +11,7 @@ tags:
   - Programming
   - SQL Server
 post_image: /assets/images/art/thumb/bg18.webp
+noindex: true
 ---
 
 I suppose I was naive in thinking that once I received my Microsoft MVP award, I could breathe a bit.  But we've had sooo much Developer Community activity, I haven't had a chance to breathe, much less blog.  I still haven't had an opportunity to blog about the MVP Summit!  Needless to say, the MVP Summit was a blast (other than having a digestive track illness, where I missed the last day's keynotes).  The best thing about the Summit was the ability to meet and talk directly with the product teams.

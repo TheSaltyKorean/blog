@@ -7,7 +7,7 @@ categories:
   - microsoft
   - development
 tags: []
-post_image: /assets/images/art/thumb/bg7.webp
+post_image: /assets/images/blog/microsoft-lightswitch.webp
 ---
 
 [http://www.microsoft.com/visualstudio/en-us/lightswitch](http://www.microsoft.com/visualstudio/en-us/lightswitch "http://www.microsoft.com/visualstudio/en-us/lightswitch") 

@@ -16,6 +16,8 @@ const redirectPaths = new Set(redirects.map((r) => r.from));
  * Reading the files here rather than through the content collection because
  * astro.config runs before the collection exists.
  */
+const noindexPaths = new Set();
+
 function postDates() {
   const dir = 'src/content/blog';
   const map = new Map();
@@ -25,6 +27,7 @@ function postDates() {
     const fm = src.split('---')[1] || '';
     const permalink = fm.match(/^permalink:\s*(.+)$/m)?.[1]?.trim().replace(/^["']|["']$/g, '');
     const date = fm.match(/^date:\s*(.+)$/m)?.[1]?.trim().replace(/^["']|["']$/g, '');
+    if (permalink && /^noindex:\s*true\s*$/m.test(fm)) noindexPaths.add(permalink);
     if (permalink && date) {
       const d = new Date(date);
       if (!Number.isNaN(d.getTime())) map.set(permalink, d.toISOString());
@@ -49,6 +52,9 @@ export default defineConfig({
         // Google can follow them, but they must not be advertised in the
         // sitemap alongside the canonical /tag/business-help/.
         if (/^\/tag\/[^/]*(%20|\s)/.test(pathname)) return false;
+        // A noindex page must not be advertised in the sitemap — telling Google
+        // "crawl this" and "do not index this" at once is a contradictory signal.
+        if (noindexPaths.has(pathname)) return false;
         return !redirectPaths.has(pathname);
       },
       serialize(item) {

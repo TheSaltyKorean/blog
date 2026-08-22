@@ -6,7 +6,7 @@ author: Randy Walker
 categories:
   - technology
 tags: []
-post_image: /assets/images/art/thumb/bg2.webp
+post_image: /assets/images/blog/antitrust-lawsuit-versus-megagiant-oclc.webp
 ---
 
 [http://www.libraryjournal.com/lj/home/886099-264/skyriver_and_innovative_interfaces_file.html.csp](http://www.libraryjournal.com/lj/home/886099-264/skyriver_and_innovative_interfaces_file.html.csp "http://www.libraryjournal.com/lj/home/886099-264/skyriver_and_innovative_interfaces_file.html.csp")

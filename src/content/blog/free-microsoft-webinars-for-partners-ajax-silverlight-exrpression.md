@@ -8,6 +8,7 @@ categories:
   - development
 tags: []
 post_image: /assets/images/art/thumb/bg5.webp
+noindex: true
 ---
 
 Microsoft is offering the following free webinars for Microsoft Partners:

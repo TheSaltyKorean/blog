@@ -8,6 +8,7 @@ categories:
   - development
 tags: []
 post_image: /assets/images/art/thumb/bg1.webp
+noindex: true
 ---
 
 I received this in the Microsoft Partner e-Newsletter:

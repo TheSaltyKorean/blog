@@ -26,3 +26,6 @@ pnpm-debug.log*
 # Cowork / Claude session state — local-only operating notes
 CLAUDE.md
 memory.md
+
+# Local review scratch — lists personal posts, not for a public repo
+PERSONAL-REVIEW.md

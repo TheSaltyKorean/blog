@@ -8,6 +8,7 @@ categories:
   - development
 tags: []
 post_image: /assets/images/art/thumb/bg23.webp
+noindex: true
 ---
 
 As part of the Microsoft Windows Server 2008 Certification program, the Microsoft Partner Program is offering $150 credit to the first 5000 partners who sign up.  You can find out more here: [https://microsoft.mrmpslc.com/InnovateOnWindowsServer/KeywordAdvertising.aspx](https://microsoft.mrmpslc.com/InnovateOnWindowsServer/KeywordAdvertising.aspx "https://microsoft.mrmpslc.com/InnovateOnWindowsServer/KeywordAdvertising.aspx").

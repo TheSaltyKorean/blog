@@ -8,6 +8,7 @@ categories:
   - career
 tags: []
 post_image: /assets/images/art/thumb/bg20.webp
+noindex: true
 ---
 
 As promised, here is the link to [download](http://dq15kw.bay.livefilestore.com/y1plC27HBm31FO0vX3AT12vbezHqrrnXHVf_jHWxOFsXFlQcFrag-e0IzDpF3_jWDW3M5dcS4dwCWQ/Running%20your%20own%20Software%20Shop.pptx?download) the Presentation from my Starting and Running your own Software Business session at [devLink](http://www.devlink.net/) in Nashville / Murfreesboro Tennessee

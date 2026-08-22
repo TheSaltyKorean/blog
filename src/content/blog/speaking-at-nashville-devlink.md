@@ -11,6 +11,7 @@ tags:
   - devLink
   - Business Help
 post_image: /assets/images/art/thumb/bg19.webp
+noindex: true
 ---
 
 It's always an honor to be asked to speak at an event.  Fortunately John Kellar who chairs the Nashville devLink event hasn't heard about my reputation, lol.

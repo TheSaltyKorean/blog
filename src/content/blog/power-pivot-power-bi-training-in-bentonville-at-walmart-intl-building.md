@@ -8,6 +8,7 @@ categories:
   - development
 tags: []
 post_image: /assets/images/blog/power-pivot-power-bi-training-in-bentonville-at-walmart-intl-building.webp
+noindex: true
 ---
 
 

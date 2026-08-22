@@ -8,6 +8,7 @@ categories:
   - development
 tags: []
 post_image: /assets/images/art/thumb/bg3.webp
+noindex: true
 ---
 
 I've always been a big fan of <span class="skimlinks-unlinked">AHA-Soft.com</span> products.  I recently received an e-mail telling me that for Christmas I could choose 2 free icons for being registered on their website.  This offer expires 12/31/2007.

@@ -9,6 +9,7 @@ categories:
 tags:
   - Microsoft Certification
 post_image: /assets/images/art/thumb/bg2.webp
+noindex: true
 ---
 
 I've recently come into several Certification Exam Vouchers and have decided to host a giveaway.  Just post a comment to the blog, and I'll randomly select a winner.  All entries must be in by June 30th, 2008.

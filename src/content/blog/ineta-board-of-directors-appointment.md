@@ -8,6 +8,7 @@ categories:
   - career
 tags: []
 post_image: /assets/images/art/thumb/bg19.webp
+noindex: true
 ---
 
 INETA has a great gimmick.  Give someone a award and then recruit them to do volunteer work!  While I am completely joking, I was recently appointed to INETA’s Board of Directors.  Congratulations go out to my fellow Board Members.

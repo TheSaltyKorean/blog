@@ -10,6 +10,7 @@ tags:
   - Fort Smith
   - .Net
 post_image: /assets/images/art/thumb/bg8.webp
+noindex: true
 ---
 
 I was able to meet last week and help the new group who is trying to form a .Net User Group in Fort Smith.  I will post more information as I find it.  If you are interested in attending, learning about, or helping form the new FSDNUG, please contact one of the following people:

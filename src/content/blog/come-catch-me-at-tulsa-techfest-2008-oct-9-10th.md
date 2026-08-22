@@ -8,6 +8,7 @@ categories:
   - career
 tags: []
 post_image: /assets/images/art/thumb/bg18.webp
+noindex: true
 ---
 
 Please join me in Tulsa on October 9th & 10th for the annual Tulsa TechFest event!  I’ve had several people ask me about when I’ll be doing my Small Business talk again, which will be on Oct 9th at 1pm.  If you are interested in starting your own software business, you won’t want to miss this!
