@@ -19,6 +19,31 @@ interface Props {
 }
 
 const { frontmatter, description } = Astro.props;
+
+const published = new Date(frontmatter.date);
+const primaryCategory = frontmatter.categories[0];
+const postUrl = new URL(frontmatter.permalink, 'https://thesaltykorean.com').href;
+
+const article = {
+  headline: frontmatter.title,
+  description,
+  url: postUrl,
+  image: frontmatter.post_image,
+  datePublished: published.toISOString(),
+  keywords: frontmatter.tags,
+  section: primaryCategory,
+};
+
+// Home > Category > Post. Category tier only when the post declares one, so we
+// never emit a crumb pointing at a page that does not exist.
+const breadcrumbs = [
+  { name: 'Home', url: '/' },
+  ...(primaryCategory
+    ? [{ name: primaryCategory, url: `/category/${slugify(primaryCategory)}/` }]
+    : []),
+  { name: frontmatter.title, url: frontmatter.permalink },
+];
+
 const formattedDate = new Date(frontmatter.date).toLocaleDateString('en-US', {
   year: 'numeric',
   month: 'long',
@@ -30,6 +55,8 @@ const formattedDate = new Date(frontmatter.date).toLocaleDateString('en-US', {
   description={description || frontmatter.meta_description}
   canonical={frontmatter.permalink}
   ogImage={frontmatter.post_image}
+  article={article}
+  breadcrumbs={breadcrumbs}
 >
   <article class="max-w-3xl mx-auto px-4 sm:px-6 py-12">
     <header class="mb-8">

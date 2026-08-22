@@ -2,6 +2,7 @@
 import '../styles/global.css';
 import SEOHead from '../components/SEOHead.astro';
 import JsonLd from '../components/JsonLd.astro';
+import type { ArticleMeta, Crumb } from '../components/JsonLd.astro';
 import Analytics from '../components/Analytics.astro';
 import Nav from '../components/Nav.astro';
 import Footer from '../components/Footer.astro';
@@ -12,9 +13,11 @@ interface Props {
   canonical?: string;
   ogImage?: string;
   noindex?: boolean;
+  article?: ArticleMeta;
+  breadcrumbs?: Crumb[];
 }
 
-const { title, description, canonical, ogImage, noindex } = Astro.props;
+const { title, description, canonical, ogImage, noindex, article, breadcrumbs } = Astro.props;
 ---
 <!doctype html>
 <html lang="en">
@@ -25,8 +28,14 @@ const { title, description, canonical, ogImage, noindex } = Astro.props;
       canonical={canonical}
       ogImage={ogImage}
       noindex={noindex}
+      article={article && {
+        publishedTime: article.datePublished,
+        modifiedTime: article.dateModified,
+        tags: article.keywords,
+        section: article.section,
+      }}
     />
-    <JsonLd />
+    <JsonLd article={article} breadcrumbs={breadcrumbs} />
     <Analytics />
   </head>
   <body class="min-h-screen flex flex-col">
