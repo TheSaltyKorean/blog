@@ -33,3 +33,20 @@ export function legacySlug(value: string): string | null {
   const legacy = String(value).toLowerCase().trim();
   return legacy && legacy !== slugify(value) ? legacy : null;
 }
+
+/**
+ * Display form of a tag or category name.
+ *
+ * Categories are stored lowercase in front matter ("technology"), which is
+ * fine inside a sentence but reads as a typo in a SERP breadcrumb, where
+ * Google prints the BreadcrumbList `name` verbatim. Title-cases each word and
+ * leaves already-capitalised names alone, so ".NET" and "SQL Server" survive.
+ */
+export function displayName(value: string): string {
+  return String(value)
+    .split(/\s+/)
+    .map((word) =>
+      /[A-Z]/.test(word) ? word : word.charAt(0).toUpperCase() + word.slice(1)
+    )
+    .join(' ');
+}

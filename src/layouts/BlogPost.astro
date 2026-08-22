@@ -1,6 +1,6 @@
 ---
 import BaseLayout from './BaseLayout.astro';
-import { slugify } from '../utils/slugify';
+import { slugify, displayName } from '../utils/slugify';
 
 interface Props {
   frontmatter: {
@@ -39,7 +39,7 @@ const article = {
 const breadcrumbs = [
   { name: 'Home', url: '/' },
   ...(primaryCategory
-    ? [{ name: primaryCategory, url: `/category/${slugify(primaryCategory)}/` }]
+    ? [{ name: displayName(primaryCategory), url: `/category/${slugify(primaryCategory)}/` }]
     : []),
   { name: frontmatter.title, url: frontmatter.permalink },
 ];

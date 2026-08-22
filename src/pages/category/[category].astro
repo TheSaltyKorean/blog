@@ -29,7 +29,7 @@ export async function getStaticPaths() {
 
 const { category, display, posts } = Astro.props;
 const titleCase = display.charAt(0).toUpperCase() + display.slice(1);
-const pageTitle = `Posts in ${titleCase} — Randy Walker`;
+const pageTitle = `Posts in ${titleCase}`;
 const description = `All posts by Randy Walker in the ${titleCase} category.`;
 ---
 <BaseLayout title={pageTitle} description={description}>

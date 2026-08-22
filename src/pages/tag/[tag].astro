@@ -43,7 +43,10 @@ export async function getStaticPaths() {
 
 const { display, posts, redirectTo } = Astro.props;
 
-const pageTitle = redirectTo ? '' : `Posts tagged "${display}" — Randy Walker`;
+// The site-name suffix is applied centrally in SEOHead, which also skips it
+// when the title already names the site — so the "Randy Walker" tag no longer
+// renders as `Posts tagged "Randy Walker" — Randy Walker`.
+const pageTitle = redirectTo ? '' : `Posts tagged "${display}"`;
 const description = redirectTo ? '' : `All posts by Randy Walker tagged ${display}.`;
 ---
 {
