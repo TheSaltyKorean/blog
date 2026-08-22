@@ -5,6 +5,7 @@ export interface NavItem {
 
 export const mainMenu: NavItem[] = [
   { text: 'Home', url: '/' },
+  { text: 'Archive', url: '/archive/' },
   { text: 'About', url: '/about/' },
   { text: 'Contact', url: '/contact/' },
 ];
