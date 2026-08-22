@@ -1,0 +1,79 @@
+---
+import { getCollection } from 'astro:content';
+import BaseLayout from '../layouts/BaseLayout.astro';
+import SectionLabel from '../components/SectionLabel.astro';
+
+/*
+ * A complete, flat index of every post, grouped by year.
+ *
+ * This exists for crawl depth. Pagination puts the oldest posts sixteen clicks
+ * from the homepage, and nothing in a post body links to another post, so the
+ * 2007-2010 archive was effectively orphaned — reachable only by walking the
+ * pager or landing on a tag page. One page linking all of them puts every post
+ * two clicks from the root.
+ */
+const posts = (await getCollection('blog', ({ data }) => data.draft !== true))
+  .sort((a, b) => b.data.date.getTime() - a.data.date.getTime());
+
+const byYear = new Map<number, typeof posts>();
+for (const post of posts) {
+  const y = new Date(post.data.date).getFullYear();
+  if (!byYear.has(y)) byYear.set(y, []);
+  byYear.get(y)!.push(post);
+}
+const years = [...byYear.keys()].sort((a, b) => b - a);
+---
+<BaseLayout
+  title="Archive"
+  description={`Every post on thesaltykorean.com — ${posts.length} of them, ${years[years.length - 1]} to ${years[0]}, grouped by year.`}
+>
+  <section class="max-w-[1120px] mx-auto px-5 sm:px-10 pt-16 sm:pt-20 pb-4">
+    <h1 class="!mb-0 text-[34px] sm:text-[46px] font-semibold tracking-[-0.03em] text-[var(--color-ink-bright)]">Archive</h1>
+    <p class="mt-5 mb-0 max-w-[620px] text-base sm:text-lg leading-relaxed text-[var(--color-ink-soft)]">
+      Everything published here — {posts.length} posts, {years[years.length - 1]} to {years[0]}.
+    </p>
+  </section>
+
+  <section class="max-w-[1120px] mx-auto px-5 sm:px-10 pb-8">
+    <nav aria-label="Jump to year" class="flex flex-wrap gap-2 mt-8 mb-14">
+      {years.map((y) => (
+        <a
+          href={`#y${y}`}
+          class="font-[family-name:var(--font-mono)] text-xs no-underline text-[var(--color-ink-soft)] border border-[var(--color-rule)] rounded px-3 py-2 hover:border-[var(--color-accent)] hover:text-[var(--color-accent)] transition-colors"
+        >
+          {y}
+        </a>
+      ))}
+    </nav>
+
+    {years.map((year) => (
+      <div id={`y${year}`} class="mb-14 scroll-mt-24">
+        <SectionLabel label={`${year} — ${byYear.get(year)!.length} posts`} />
+        <ul class="flex flex-col">
+          {byYear.get(year)!.map((post) => {
+            const d = new Date(post.data.date);
+            const stamp = `${String(d.getMonth() + 1).padStart(2, '0')}.${String(d.getDate()).padStart(2, '0')}`;
+            return (
+              <li>
+                <a
+                  href={post.data.permalink}
+                  class="group grid grid-cols-[52px_minmax(0,1fr)] sm:grid-cols-[64px_minmax(0,1fr)_auto] gap-4 sm:gap-6 items-baseline py-3 border-b border-[var(--color-rule-soft)] no-underline"
+                >
+                  <span class="font-[family-name:var(--font-mono)] text-xs text-[var(--color-muted)]">{stamp}</span>
+                  <span class="text-[15px] sm:text-base leading-snug text-[var(--color-ink)] group-hover:text-[var(--color-accent)] transition-colors">
+                    {post.data.title}
+                  </span>
+                  {post.data.categories[0] && (
+                    <span class="hidden sm:block font-[family-name:var(--font-mono)] text-[11px] tracking-[0.1em] uppercase text-[#5b6470]">
+                      {post.data.categories[0]}
+                    </span>
+                  )}
+                </a>
+              </li>
+            );
+          })}
+        </ul>
+      </div>
+    ))}
+  </section>
+</BaseLayout>

@@ -3,16 +3,17 @@ import { getCollection, render } from 'astro:content';
 import BlogPost from '../layouts/BlogPost.astro';
 import { excerpt } from '../utils/excerpt';
 import { readingTime } from '../utils/readingTime';
+import { relatedPosts } from '../utils/related';
 
 export async function getStaticPaths() {
   const entries = await getCollection('blog', ({ data }) => data.draft !== true);
   return entries.map((entry) => ({
     params: { slug: entry.data.permalink.replace(/^\/+|\/+$/g, '') },
-    props: { entry },
+    props: { entry, related: relatedPosts(entry, entries) },
   }));
 }
 
-const { entry } = Astro.props;
+const { entry, related } = Astro.props;
 const { Content } = await render(entry);
 
 // Falls back to the post's opening prose when front matter has no
@@ -20,6 +21,6 @@ const { Content } = await render(entry);
 const description = entry.data.meta_description || excerpt(entry.body);
 const minutes = readingTime(entry.body);
 ---
-<BlogPost frontmatter={entry.data} description={description} readingTime={minutes}>
+<BlogPost frontmatter={entry.data} description={description} readingTime={minutes} related={related}>
   <Content />
 </BlogPost>

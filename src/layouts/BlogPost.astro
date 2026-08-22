@@ -19,9 +19,11 @@ interface Props {
   description?: string;
   /** Whole minutes, computed from the body by the page that has it. */
   readingTime?: number;
+  /** Posts sharing tags/categories — internal links for crawlers and readers. */
+  related?: Array<{ data: { title: string; date: Date; permalink: string; categories: string[] } }>;
 }
 
-const { frontmatter, description, readingTime } = Astro.props;
+const { frontmatter, description, readingTime, related = [] } = Astro.props;
 
 const published = new Date(frontmatter.date);
 const primaryCategory = frontmatter.categories[0];
@@ -160,13 +162,45 @@ const formattedDate = new Date(frontmatter.date).toLocaleDateString('en-US', {
         </footer>
       )}
 
-      <nav class="mt-12 pt-8 border-t border-[var(--color-rule-soft)]">
+      {related.length > 0 && (
+        <section class="mt-12 pt-8 border-t border-[var(--color-rule-soft)]" aria-labelledby="related-heading">
+          <h2 id="related-heading" class="!mt-0 !mb-4 font-[family-name:var(--font-mono)] text-[11px] font-semibold tracking-[0.14em] uppercase text-[var(--color-muted)]">
+            Related
+          </h2>
+          <ul class="flex flex-col">
+            {related.map((r) => {
+              const rd = new Date(r.data.date);
+              return (
+                <li>
+                  <a
+                    href={r.data.permalink}
+                    class="group grid grid-cols-[64px_minmax(0,1fr)] gap-5 items-baseline py-3.5 border-b border-[var(--color-rule-soft)] no-underline"
+                  >
+                    <span class="font-[family-name:var(--font-mono)] text-xs text-[var(--color-muted)]">{rd.getFullYear()}</span>
+                    <span class="text-[15px] leading-snug text-[var(--color-ink)] group-hover:text-[var(--color-accent)] transition-colors">
+                      {r.data.title}
+                    </span>
+                  </a>
+                </li>
+              );
+            })}
+          </ul>
+        </section>
+      )}
+
+      <nav class="mt-12 pt-8 border-t border-[var(--color-rule-soft)] flex flex-wrap gap-3">
         <a
           href="/"
           class="inline-flex items-center gap-2.5 h-12 px-6 rounded-md no-underline border border-[#2c3540] text-[15px] font-medium text-[var(--color-ink)] hover:border-[var(--color-accent)] hover:text-[var(--color-accent)] transition-colors"
         >
           <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M19 12H5M11 18l-6-6 6-6"/></svg>
           All posts
+        </a>
+        <a
+          href="/archive/"
+          class="inline-flex items-center gap-2.5 h-12 px-6 rounded-md no-underline border border-[#2c3540] text-[15px] font-medium text-[var(--color-ink)] hover:border-[var(--color-accent)] hover:text-[var(--color-accent)] transition-colors"
+        >
+          Full archive
         </a>
       </nav>
     </div>
