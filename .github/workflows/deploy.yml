@@ -24,6 +24,10 @@ jobs:
         uses: withastro/action@v3
         with:
           node-version: 22
+        env:
+          # Web3Forms access key for the /contact/ form. Opaque ID, not an
+          # email address. Set in repo Settings > Secrets and variables > Actions.
+          PUBLIC_WEB3FORMS_KEY: ${{ secrets.WEB3FORMS_KEY }}
   deploy:
     environment:
       name: github-pages
