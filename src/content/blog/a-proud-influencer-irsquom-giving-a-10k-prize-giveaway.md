@@ -6,7 +6,7 @@ author: Randy Walker
 categories:
   - technology
 tags: []
-post_image: /assets/images/art/thumb/bg2.webp
+post_image: /assets/images/blog/a-proud-influencer-irsquom-giving-a-10k-prize-giveaway.webp
 noindex: true
 ---
 

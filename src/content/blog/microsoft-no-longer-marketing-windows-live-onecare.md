@@ -7,7 +7,7 @@ categories:
   - microsoft
   - development
 tags: []
-post_image: /assets/images/art/thumb/bg5.webp
+post_image: /assets/images/blog/microsoft-no-longer-marketing-windows-live-onecare.webp
 noindex: true
 ---
 

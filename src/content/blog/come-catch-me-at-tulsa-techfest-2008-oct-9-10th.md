@@ -7,7 +7,7 @@ categories:
   - community
   - career
 tags: []
-post_image: /assets/images/art/thumb/bg18.webp
+post_image: /assets/images/blog/come-catch-me-at-tulsa-techfest-2008-oct-9-10th.webp
 noindex: true
 ---
 

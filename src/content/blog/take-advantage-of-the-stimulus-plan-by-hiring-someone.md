@@ -7,7 +7,7 @@ categories:
   - entrepreneurship
   - business
 tags: []
-post_image: /assets/images/art/thumb/bg23.webp
+post_image: /assets/images/blog/take-advantage-of-the-stimulus-plan-by-hiring-someone.webp
 ---
 
 In case you didn’t know, businesses can take advantage of the stimulus package by hiring an unemployed worker.  The Hiring Incentives to Restore Employment (HIRE) Act can pay the business portion of the Social Security taxes as well as give you a $1000 general business tax credit.

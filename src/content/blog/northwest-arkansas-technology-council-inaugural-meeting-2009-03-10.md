@@ -7,7 +7,7 @@ categories:
   - community
   - career
 tags: []
-post_image: /assets/images/art/thumb/bg1.webp
+post_image: /assets/images/blog/northwest-arkansas-technology-council-inaugural-meeting-2009-03-10.webp
 ---
 
 This is an open invitation to join us in helping form the Northwest Arkansas Technology Council.  The discussion for the inaugural meeting will center on who and what we are and the beginning phases of our purpose.  If you feel you have something to contribute to our pioneering efforts, or know of someone who can, please consider joining us, or forward the following information on.

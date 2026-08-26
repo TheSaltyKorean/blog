@@ -7,7 +7,7 @@ categories:
   - community
   - career
 tags: []
-post_image: /assets/images/art/thumb/bg6.webp
+post_image: /assets/images/blog/ozarks-.net-user-group-ndash-claudio-lassala-laptop-giveaway.webp
 ---
 
 I wanted to make sure and draw attention to the effort that [Brandon King](http://www.peleta.com) in Harrison, Arkansas has given towards promoting this event.  There are some major giveaways, and we will be arranging a carpool from Springdale to drive the 1:30 to give a good showing from the NWA DNUG crew.

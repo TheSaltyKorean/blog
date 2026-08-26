@@ -6,7 +6,7 @@ author: Randy Walker
 categories:
   - personal
 tags: []
-post_image: /assets/images/art/thumb/bg27.webp
+post_image: /assets/images/blog/bulgogi-to-beignets.webp
 ---
 
 While it’s still a full month away, I’m getting super excited about my upcoming trips.

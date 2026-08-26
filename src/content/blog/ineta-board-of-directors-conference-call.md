@@ -8,7 +8,7 @@ categories:
   - career
 tags:
   - INETA
-post_image: /assets/images/art/thumb/bg18.webp
+post_image: /assets/images/blog/ineta-board-of-directors-conference-call.webp
 noindex: true
 ---
 

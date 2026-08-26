@@ -7,7 +7,7 @@ categories:
   - community
   - career
 tags: []
-post_image: /assets/images/art/thumb/bg7.webp
+post_image: /assets/images/blog/inaugural-harrison-.net-user-group-meeting-oct-21st-2008.webp
 noindex: true
 ---
 

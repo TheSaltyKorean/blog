@@ -6,7 +6,7 @@ author: Randy Walker
 categories:
   - technology
 tags: []
-post_image: /assets/images/art/thumb/bg4.webp
+post_image: /assets/images/blog/steve-ballmerrsquos-recent-ceo-letter-ndash-do-more-with-less.webp
 ---
 
 The following is Steve Ballmer’s recent letter to CEOs titled ‘The New Efficiency’.

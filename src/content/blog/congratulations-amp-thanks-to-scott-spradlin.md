@@ -6,7 +6,7 @@ author: Randy Walker
 categories:
   - technology
 tags: []
-post_image: /assets/images/art/thumb/bg4.webp
+post_image: /assets/images/blog/congratulations-amp-thanks-to-scott-spradlin.webp
 ---
 
 [![ScottSpradlin](http://gwb.blob.core.windows.net/rwalker/WindowsLiveWriter/CongratulationsThankstoScottSpradlin_202/ScottSpradlin_thumb.jpg "ScottSpradlin")](http://gwb.blob.core.windows.net/rwalker/WindowsLiveWriter/CongratulationsThankstoScottSpradlin_202/ScottSpradlin_2.jpg) 

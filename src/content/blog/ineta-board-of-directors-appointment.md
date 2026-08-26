@@ -7,7 +7,7 @@ categories:
   - community
   - career
 tags: []
-post_image: /assets/images/art/thumb/bg19.webp
+post_image: /assets/images/blog/ineta-board-of-directors-appointment.webp
 noindex: true
 ---
 

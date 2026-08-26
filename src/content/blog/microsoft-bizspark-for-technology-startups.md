@@ -7,7 +7,7 @@ categories:
   - microsoft
   - development
 tags: []
-post_image: /assets/images/art/thumb/bg23.webp
+post_image: /assets/images/blog/microsoft-bizspark-for-technology-startups.webp
 ---
 
 I love it when someone else writes up my blog postings for me!

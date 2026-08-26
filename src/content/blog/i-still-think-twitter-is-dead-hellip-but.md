@@ -6,7 +6,7 @@ author: Randy Walker
 categories:
   - technology
 tags: []
-post_image: /assets/images/art/thumb/bg30.webp
+post_image: /assets/images/blog/i-still-think-twitter-is-dead-hellip-but.webp
 ---
 
 Twitter finally hit the mainstream about 8 months ago, but I’ve been saying for a couple of years now, without a real way for the company to earn money, what’s the future fate of Twitter?

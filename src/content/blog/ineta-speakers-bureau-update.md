@@ -7,7 +7,7 @@ categories:
   - community
   - career
 tags: []
-post_image: /assets/images/art/thumb/bg20.webp
+post_image: /assets/images/blog/ineta-speakers-bureau-update.webp
 ---
 
 As most of you know, I serve on the INETA (International .Net Association) Board of Directors, being in charge of the Speakers Bureau and other Speaker programs.  There have been several rumors floating around with a lot of misconceptions and I wanted to clarify a few things.

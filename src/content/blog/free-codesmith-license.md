@@ -6,7 +6,7 @@ author: Randy Walker
 categories:
   - development
 tags: []
-post_image: /assets/images/art/thumb/bg16.webp
+post_image: /assets/images/blog/free-codesmith-license.webp
 ---
 
 The catch?  Attend the [Ozarks .Net User Group](http://www.odnug.org/) meeting on April 1st.

@@ -6,7 +6,7 @@ author: Randy Walker
 categories:
   - technology
 tags: []
-post_image: /assets/images/art/thumb/bg2.webp
+post_image: /assets/images/blog/wishing-you-were-at-pdc-we-saved-the-jacksons-amp.webp
 ---
 
 Yes, I too wish I were in L.A. with all our geek friends.  But thanks to fellow VB MVP, Julia Lerman, she has helped point out how we can view all the content at PDC without spending the thousands of dollars and travel time.

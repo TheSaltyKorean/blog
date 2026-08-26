@@ -9,7 +9,7 @@ categories:
 tags:
   - Microsoft
   - Azure
-post_image: /assets/images/art/thumb/bg4.webp
+post_image: /assets/images/blog/letter-from-steve-ballmer-ceo-microsoft.webp
 ---
 
 I occasionally receive letters sent out to the Industry Executives from the top dogs at Microsoft.  Here’s the one I just received outlining their newest initiative called Windows Azure, which was just announced at the Microsoft Professional Developers Conference.

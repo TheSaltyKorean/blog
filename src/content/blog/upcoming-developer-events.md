@@ -7,7 +7,7 @@ categories:
   - community
   - career
 tags: []
-post_image: /assets/images/art/thumb/bg2.webp
+post_image: /assets/images/blog/upcoming-developer-events.webp
 ---
 
 Jan 29 – [Holiday Party](https://www.codezone.com/UGEventView.CodezoneCom?EventID=5664) @ Fast Lanes, Lowell, Arkansas  
