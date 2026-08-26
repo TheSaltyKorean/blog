@@ -7,7 +7,7 @@ categories:
   - community
   - career
 tags: []
-post_image: /assets/images/art/thumb/bg18.webp
+post_image: /assets/images/blog/ineta-community-champion-awardee.webp
 ---
 
 I was a bit shocked when I received the email announcing that I am one of ten Community Champions awarded.  A huge thank you to those that nominated me.  It’s always a good feeling of accomplishment when you’re recognized for your efforts.
@@ -65,7 +65,7 @@ Please contact us with any comments and feedback.
 INETA Community Champions Team  
 [noram.champs@ineta.org](mailto:noram.champs@ineta.org)
 
-Morgan Baker | [[redacted]](mailto:[redacted]) | [redacted] INETA North America, Vice President | [www.ineta.org](http://www.ineta.org)
+Morgan Baker, INETA North America, Vice President | [www.ineta.org](http://www.ineta.org)
 
 
 

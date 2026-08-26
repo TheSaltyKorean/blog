@@ -41,7 +41,7 @@ So what did I do?  I [twittered / tweeted](http://twitter.com/) about how frust
 > 
 > Dell Customer Advocate
 > 
-> Email: [[redacted]](mailto:[redacted])
+> Email: _(contact address removed)_
 
 Needless to say I was completely shocked.  I followed up asking if it was an automated task, and I received another response:
 
