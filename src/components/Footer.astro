@@ -1,5 +1,6 @@
 ---
 import { siteConfig } from '../data/siteConfig';
+import PreferredSource from './PreferredSource.astro';
 
 const year = new Date().getFullYear();
 
@@ -48,6 +49,17 @@ const socials = [
           </a>
         </li>
       </ul>
+    </div>
+
+    <div class="mt-10 pt-8 border-t border-[var(--color-rule-soft)]">
+      <h2 class="!mt-0 !mb-3 font-[family-name:var(--font-mono)] text-[11px] font-semibold tracking-[0.14em] uppercase text-[var(--color-muted)]">
+        Follow on Google
+      </h2>
+      <p class="mb-4 max-w-md text-sm leading-relaxed text-[var(--color-muted)]">
+        Mark this site as a preferred source and new posts show up more often in
+        your Search, Discover, and News results.
+      </p>
+      <PreferredSource />
     </div>
 
     <div class="mt-10 pt-6 border-t border-[var(--color-rule-soft)] flex flex-col sm:flex-row sm:justify-between gap-2 font-[family-name:var(--font-mono)] text-xs text-[var(--color-faint)]">
