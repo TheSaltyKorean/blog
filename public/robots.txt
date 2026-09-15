@@ -33,7 +33,7 @@ Allow: /
 #        these to see the 404. A Disallow freezes them in the index instead of
 #        removing them.
 #
-#   /YYYY/MM/DD/slug/  (26 generated stubs under src/pages/2008|2009|2010|2017|2018)
+#   /YYYY/MM/DD/slug/  (193 generated stubs under src/pages/, from src/data/redirects.ts)
 #     -> canonical + meta-refresh to the current post URL. A Disallow stops
 #        Google following them, so 15 years of legacy WordPress URLs would pass
 #        no signal to the posts that replaced them.
