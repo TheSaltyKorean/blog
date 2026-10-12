@@ -1,0 +1,14 @@
+---
+/**
+ * Loader for Google's Preferred Sources button.
+ *
+ * Kept separate from PreferredSource.astro so the script is requested exactly
+ * once per page from <head>, no matter how many buttons a page renders. Astro
+ * would otherwise emit a duplicate <script> per component instance.
+ *
+ * `async` because nothing above the fold depends on it — the button is in the
+ * footer, and a blocking third-party request there would cost real LCP on a
+ * site whose Core Web Vitals we actually watch (see Analytics.astro).
+ */
+---
+<script async src="https://news.google.com/swg/js/v1/publisher.js"></script>

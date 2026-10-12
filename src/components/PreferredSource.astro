@@ -1,0 +1,55 @@
+---
+/**
+ * Google "Preferred Sources" button.
+ *
+ * Lets a reader mark thesaltykorean.com as a preferred source in Google, which
+ * surfaces posts more often in Top Stories, the "From your sources" carousel,
+ * Discover, and AI Overviews — and stamps citations with a badge. Google
+ * launched the embeddable version in August 2025 as a lever for publishers
+ * losing referral traffic to AI answers.
+ *
+ * Two halves, and they are deliberately split:
+ *
+ * 1. `publisher.js` is loaded once from BaseLayout's <head> (see
+ *    PreferredSourceScript.astro). It hydrates every button on the page.
+ * 2. This component renders the button container itself. `data-theme="dark"`
+ *    matches the site palette; without it Google renders the light variant on
+ *    our near-black footer.
+ *
+ * The <noscript> deeplink is not decoration — the whole button is third-party
+ * JS, so without it the feature simply vanishes for no-JS readers and for
+ * anyone whose blocker eats news.google.com. The deeplink URL is the documented
+ * fallback and needs no script.
+ *
+ * ELIGIBILITY GOTCHA: only domain- and subdomain-level sites qualify, and the
+ * site must already be listed in Google's source preferences tool. If
+ * thesaltykorean.com is not in that tool yet, the button renders but resolves
+ * to nothing useful. Verify by opening the deeplink below directly — if it
+ * offers to add the site, the button works.
+ *
+ * Docs: https://developers.google.com/search/docs/appearance/preferred-sources
+ */
+import { siteConfig } from '../data/siteConfig';
+
+interface Props {
+  /** Extra classes for the wrapper, so callers control spacing. */
+  class?: string;
+}
+
+const { class: className = '' } = Astro.props;
+
+// Derived from siteConfig so the deeplink cannot drift from the canonical host.
+const host = new URL(siteConfig.url).hostname;
+const deeplink = `https://www.google.com/preferences/source?q=${host}`;
+---
+<div class={className}>
+  <div google-add-preferred-source-btn data-theme="dark"></div>
+  <noscript>
+    <a
+      href={deeplink}
+      class="inline-block font-[family-name:var(--font-mono)] text-xs no-underline text-[var(--color-ink-soft)] border border-[var(--color-rule)] rounded-[5px] px-3 py-1.5 hover:border-[var(--color-accent)] hover:text-[var(--color-accent)] transition-colors"
+    >
+      Add {host} as a preferred source on Google
+    </a>
+  </noscript>
+</div>
