@@ -27,6 +27,24 @@ const blog = defineCollection({
      * of the site's quality average.
      */
     noindex: z.boolean().default(false),
+    /**
+     * Point this post's rel=canonical at a different URL.
+     *
+     * For true duplicates — the same article sitting at two permalinks, which
+     * the WordPress/Jekyll migrations produced more than once. Both URLs stay
+     * live and readable (nothing 404s, no inbound link breaks), but they stop
+     * competing with each other in search and Google consolidates the ranking
+     * signals onto the kept version.
+     *
+     * Prefer this over `noindex` for duplicates: noindex removes the page but
+     * discards its link equity, whereas a cross-canonical transfers it. Use
+     * `noindex` for pages that are merely low-value rather than duplicated.
+     *
+     * A canonicalised post is also dropped from the sitemap by astro.config.mjs
+     * — a sitemap is a list of canonical URLs, so listing a page that disclaims
+     * its own canonical is a contradictory signal.
+     */
+    canonical_url: z.string().optional(),
   }),
 });
 

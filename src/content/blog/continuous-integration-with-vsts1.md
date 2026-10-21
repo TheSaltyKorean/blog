@@ -8,6 +8,13 @@ categories:
   - development
 tags: []
 post_image: /assets/images/blog/continuous-integration-with-vsts1.webp
+# Exact duplicate of /continuous-integration-with-vsts-tips-1-2/ — same title,
+# same date (2016-12-02), same body, produced twice by the WordPress/Jekyll
+# migration. That copy is the better one: this file's images are still
+# `file:///C:/Users/RandyWalker/AppData/Local/Temp/OpenLiveWriter.../*.jpg`
+# local paths that cannot resolve for any reader. Kept live so no inbound
+# link breaks, but canonicalised so the two stop competing.
+canonical_url: /continuous-integration-with-vsts-tips-1-2/
 ---
 Now that the blog is officially announced and released, I thought I'd show you a quick tip in how we were able to update our main website through continuous integration and continuous deployment.  Since this particular website is used just for our marketing purposes, we currently aren't using deployment slots, so this helps us out a great deal.
 

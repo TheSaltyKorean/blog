@@ -14,6 +14,7 @@ interface Props {
     meta_title?: string;
     meta_description?: string;
     post_image?: string;
+    canonical_url?: string;
   };
   /** Resolved meta description; falls back to frontmatter.meta_description. */
   description?: string;
@@ -29,7 +30,14 @@ const { frontmatter, description, readingTime, related = [], noindex = false } =
 
 const published = new Date(frontmatter.date);
 const primaryCategory = frontmatter.categories[0];
-const postUrl = new URL(frontmatter.permalink, 'https://thesaltykorean.com').href;
+/*
+ * The canonical URL, not necessarily this page's own permalink: a post with
+ * `canonical_url` in front matter is a duplicate pointing at the kept version.
+ * BlogPosting.url / @id / mainEntityOfPage must agree with rel=canonical —
+ * structured data that names a different URL than the canonical link is a
+ * contradictory signal and Google will pick one of them arbitrarily.
+ */
+const postUrl = new URL(frontmatter.canonical_url || frontmatter.permalink, 'https://thesaltykorean.com').href;
 
 const article = {
   headline: frontmatter.title,
@@ -63,7 +71,7 @@ const formattedDate = new Date(frontmatter.date).toLocaleDateString('en-US', {
 <BaseLayout
   title={frontmatter.meta_title || frontmatter.title}
   description={description || frontmatter.meta_description}
-  canonical={frontmatter.permalink}
+  canonical={frontmatter.canonical_url || frontmatter.permalink}
   ogImage={frontmatter.post_image}
   article={article}
   breadcrumbs={breadcrumbs}

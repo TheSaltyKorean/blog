@@ -42,8 +42,17 @@ export const siteConfig: SiteConfig = {
     name: 'Randy Walker',
     bio: 'Founder and CTO of SK Meridian LLC, former President of Harvest Data Corp, and former Microsoft MVP.',
     location: 'Austin, Texas',
-    // TODO: /assets/images/authors/randy-walker.jpg was not in Phase 0 manifest — not migrated yet
-    image: '/assets/images/authors/randy-walker.jpg',
+    /*
+     * Emitted as Person.image in the JSON-LD @graph on every page, so it must
+     * resolve. /assets/images/authors/randy-walker.jpg was never in the Phase 0
+     * migration manifest and public/assets/images/authors/ does not exist, so
+     * the schema advertised a hard 404 sitewide — an image property Google
+     * cannot fetch is worse than no image property. Pointed at the OG image,
+     * which is a real asset, until an actual headshot is added; swap this for
+     * a square portrait when one exists (Google prefers >=1200px, and a Person
+     * image is what can surface in a knowledge panel).
+     */
+    image: '/assets/images/og-image.png',
     jobTitle: 'Founder and CTO',
     worksFor: 'SK Meridian LLC',
   },

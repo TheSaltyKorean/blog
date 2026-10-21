@@ -70,6 +70,11 @@ function postDates() {
     const permalink = fm.match(/^permalink:\s*(.+)$/m)?.[1]?.trim().replace(/^["']|["']$/g, '');
     const date = fm.match(/^date:\s*(.+)$/m)?.[1]?.trim().replace(/^["']|["']$/g, '');
     if (permalink && /^noindex:\s*true\s*$/m.test(fm)) noindexPaths.add(permalink);
+    // A post whose rel=canonical points elsewhere is a duplicate of the page it
+    // names. The sitemap is a list of canonical URLs, so it must not advertise
+    // one that disclaims itself. Reuses noindexPaths because the sitemap
+    // treatment is identical: drop the URL, keep the page live and crawlable.
+    if (permalink && /^canonical_url:\s*\S/m.test(fm)) noindexPaths.add(permalink);
     if (permalink && date) {
       const d = new Date(date);
       if (!Number.isNaN(d.getTime())) {
@@ -94,6 +99,9 @@ export default defineConfig({
         const pathname = new URL(page).pathname;
         if (pathname === '/thank-you/' || pathname === '/404' || pathname === '/404/') return false;
         if (/^\/(elements|home-pages|portfolio|blogs|contact\/contact-)/.test(pathname)) return false;
+        // Paginated listing pages are noindex,follow (see src/pages/page/[page].astro).
+        // A noindex URL must not also be advertised in the sitemap.
+        if (/^\/page\/\d+\/$/.test(pathname)) return false;
         // Legacy tag URLs (/tag/business%20help/, /tag/.net/, /tag/RegEx/) are
         // emitted as noindex redirect stubs pointing at their slugified
         // equivalent. They stay crawlable so Google can follow them, but must

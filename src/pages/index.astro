@@ -15,8 +15,21 @@ const [featured, ...rest] = posts;
 const recent = rest.slice(0, PAGE_SIZE - 1);
 const lastPage = Math.max(1, Math.ceil(posts.length / PAGE_SIZE));
 const oldestYear = posts.length ? new Date(posts[posts.length - 1].data.date).getFullYear() : null;
+
+/*
+ * The homepage is the single most-visited page on the site (178 of 296 views in
+ * the Aug 26 - Sep 22 2026 GA window) and until now it was the only page that
+ * passed no title or description to BaseLayout. It therefore inherited
+ * siteConfig.title verbatim and shipped `<title>Randy Walker</title>` — a
+ * 12-character, brand-only title carrying no topical keyword at all, so the
+ * root URL could only ever rank for the name. The title below mirrors the H1
+ * and stays under 60 characters; because it already contains the site name,
+ * SEOHead's withSiteName() leaves it alone rather than suffixing it.
+ */
+const pageTitle = 'Randy Walker \u2014 Technology, Homelabs & Building Things';
+const pageDescription = `Founder, CTO and former Microsoft MVP Randy Walker on AI-assisted development, Azure architecture, homelabs, and building companies \u2014 ${posts.length} posts since ${oldestYear}.`;
 ---
-<BaseLayout>
+<BaseLayout title={pageTitle} description={pageDescription}>
   <!-- hero -->
   <section class="relative overflow-hidden border-b border-[var(--color-rule)]">
     <div

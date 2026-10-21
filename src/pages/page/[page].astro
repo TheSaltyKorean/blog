@@ -29,10 +29,32 @@ export async function getStaticPaths() {
 const { pagePosts, currentPage, lastPage } = Astro.props;
 const prevUrl = currentPage === 2 ? '/' : `/page/${currentPage - 1}/`;
 const nextUrl = currentPage < lastPage ? `/page/${currentPage + 1}/` : undefined;
-const title = `Page ${currentPage}`;
-const description = `Blog archive page ${currentPage} of ${lastPage} — posts by Randy Walker.`;
+const title = `All posts, page ${currentPage} of ${lastPage}`;
+const description = `Page ${currentPage} of ${lastPage} in the full post index for thesaltykorean.com — writing by Randy Walker on technology, cloud, homelabs, and building companies.`;
+
+/*
+ * noindex, FOLLOW on every paginated page.
+ *
+ * /page/2/ through /page/{lastPage}/ are 16 thin listing pages whose only
+ * content is nine post rows that each already exist as their own indexable
+ * URL. They carry no prose of their own, so there is no query they can win,
+ * and they were competing with / and /archive/ for the same "all posts"
+ * intent while adding ~16 near-duplicate URLs to the index.
+ *
+ * Dropping them is safe here specifically because crawl coverage does not
+ * depend on them: /archive/ links every post in one page (see the comment in
+ * archive.astro, which exists for exactly this reason) and the sitemap lists
+ * every post URL directly. FOLLOW is the important half — the pager still
+ * passes link equity through to the posts it lists, it just stops asking to
+ * be indexed itself.
+ *
+ * Paired with a matching exclusion in astro.config.mjs's sitemap filter, since
+ * advertising a noindex URL in the sitemap is a contradictory signal.
+ *
+ * To reverse: drop `noindex` here and the /page/ rule from the sitemap filter.
+ */
 ---
-<BaseLayout title={title} description={description}>
+<BaseLayout title={title} description={description} noindex={true}>
   <section class="max-w-[1120px] mx-auto px-5 sm:px-10 pt-16 pb-16">
     <header class="mb-8">
       <h1 class="text-2xl sm:text-3xl font-bold tracking-tight">All posts</h1>

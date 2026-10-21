@@ -1,6 +1,7 @@
 ---
 import { getCollection } from 'astro:content';
 import BaseLayout from '../../layouts/BaseLayout.astro';
+import { taxonomyDescription } from '../../utils/taxonomyDescription';
 import PostRow from '../../components/PostRow.astro';
 import RedirectStub from '../../components/RedirectStub.astro';
 import { slugify, legacySlug } from '../../utils/slugify';
@@ -47,7 +48,7 @@ const { display, posts, redirectTo } = Astro.props;
 // when the title already names the site — so the "Randy Walker" tag no longer
 // renders as `Posts tagged "Randy Walker" — Randy Walker`.
 const pageTitle = redirectTo ? '' : `Posts tagged "${display}"`;
-const description = redirectTo ? '' : `All posts by Randy Walker tagged ${display}.`;
+const description = redirectTo ? '' : taxonomyDescription('tag', display, posts);
 ---
 {
   redirectTo ? (

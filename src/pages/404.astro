@@ -1,15 +1,90 @@
 ---
+import { getCollection } from 'astro:content';
 import BaseLayout from '../layouts/BaseLayout.astro';
+
+/*
+ * The 404 took 18 views at a 100% bounce rate in the Aug 26 - Sep 22 2026 GA
+ * window — every single person who landed here left the site. It offered one
+ * link ("Back to home") and nothing else, so a visitor arriving from a stale
+ * 15-year-old WordPress or Jekyll URL had no path to the thing they wanted.
+ *
+ * Giving it real exits turns those sessions into pageviews and, because the
+ * page is noindex,FOLLOW, also hands crawlers that hit a retired URL a live
+ * set of internal links instead of a terminal node.
+ */
+const posts = (await getCollection('blog', ({ data }) => data.draft !== true))
+  .sort((a, b) => b.data.date.getTime() - a.data.date.getTime())
+  .slice(0, 6);
+
+const destinations = [
+  { href: '/archive/', label: 'Full archive', note: 'Every post, grouped by year' },
+  { href: '/about/', label: 'About Randy', note: 'Background, roles, and certifications' },
+  { href: '/contact/', label: 'Contact', note: 'Questions, consulting, or speaking' },
+];
 ---
-<BaseLayout title="Page not found" description="The page you're looking for can't be found." noindex={true}>
-  <section class="max-w-2xl mx-auto px-4 sm:px-6 py-24 text-center">
-    <p class="text-7xl sm:text-8xl font-bold tracking-tight text-[var(--color-accent)]">404</p>
-    <h1 class="mt-4 text-2xl">Page not found</h1>
-    <p class="mt-3 text-[var(--color-muted)]">
-      The page you're looking for doesn't exist or has moved.
+<BaseLayout
+  title="Page not found"
+  description="That page doesn't exist or has moved. Browse the latest posts or the full archive instead."
+  noindex={true}
+>
+  <section class="max-w-[760px] mx-auto px-5 sm:px-10 py-16 sm:py-20">
+    <p class="font-[family-name:var(--font-mono)] text-[11px] font-semibold tracking-[0.14em] uppercase text-[var(--color-accent)]">
+      404
     </p>
-    <p class="mt-8">
-      <a href="/" class="inline-block px-5 py-2.5 bg-[var(--color-accent)] text-[var(--color-accent-ink)] font-medium rounded-md no-underline hover:bg-[var(--color-accent-hover)] transition-colors">
+    <h1 class="!mb-0 mt-4 text-[30px] sm:text-[40px] font-semibold leading-[1.12] tracking-[-0.025em] text-[var(--color-ink-bright)]">
+      That page isn't here anymore.
+    </h1>
+    <p class="mt-5 mb-0 text-base sm:text-lg leading-relaxed text-[var(--color-ink-soft)]">
+      This site has moved across a few platforms since 2007, and some old links didn't
+      survive the trip. Here's where to go instead.
+    </p>
+
+    <h2 class="!mb-4 mt-12 font-[family-name:var(--font-mono)] text-[11px] font-semibold tracking-[0.14em] uppercase text-[var(--color-muted)]">
+      Latest posts
+    </h2>
+    <ul class="flex flex-col">
+      {posts.map((post) => {
+        const d = new Date(post.data.date);
+        return (
+          <li>
+            <a
+              href={post.data.permalink}
+              class="group grid grid-cols-[64px_minmax(0,1fr)] gap-5 items-baseline py-3.5 border-b border-[var(--color-rule-soft)] no-underline"
+            >
+              <span class="font-[family-name:var(--font-mono)] text-xs text-[var(--color-muted)]">{d.getFullYear()}</span>
+              <span class="text-[15px] leading-snug text-[var(--color-ink)] group-hover:text-[var(--color-accent)] transition-colors">
+                {post.data.title}
+              </span>
+            </a>
+          </li>
+        );
+      })}
+    </ul>
+
+    <h2 class="!mb-4 mt-12 font-[family-name:var(--font-mono)] text-[11px] font-semibold tracking-[0.14em] uppercase text-[var(--color-muted)]">
+      Elsewhere on the site
+    </h2>
+    <ul class="flex flex-col">
+      {destinations.map((d) => (
+        <li>
+          <a
+            href={d.href}
+            class="group flex flex-wrap items-baseline gap-x-3 gap-y-1 py-3.5 border-b border-[var(--color-rule-soft)] no-underline"
+          >
+            <span class="text-[15px] font-medium text-[var(--color-ink)] group-hover:text-[var(--color-accent)] transition-colors">
+              {d.label}
+            </span>
+            <span class="text-sm text-[var(--color-muted)]">{d.note}</span>
+          </a>
+        </li>
+      ))}
+    </ul>
+
+    <p class="mt-12">
+      <a
+        href="/"
+        class="inline-flex items-center gap-2.5 h-12 px-6 rounded-md no-underline bg-[var(--color-accent)] text-[var(--color-accent-ink)] text-[15px] font-semibold hover:bg-[var(--color-accent-hover)] transition-colors"
+      >
         Back to home
       </a>
     </p>
