@@ -121,6 +121,12 @@ const accessKey = import.meta.env.PUBLIC_WEB3FORMS_KEY;
         const result = await response.json().catch(() => ({}));
 
         if (response.ok && result.success) {
+          // GA4's recommended lead event, so a submission can be marked as a
+          // key event in the property. gtag only exists in production builds
+          // (Analytics.astro), hence the optional call.
+          (window as { gtag?: (...args: unknown[]) => void }).gtag?.('event', 'generate_lead', {
+            form_id: 'contact-form',
+          });
           form.hidden = true;
           success.hidden = false;
           success.scrollIntoView({ behavior: 'smooth', block: 'center' });

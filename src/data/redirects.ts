@@ -32,7 +32,7 @@ export const redirects: RedirectEntry[] = [
   },
   {
     "from": "/2007/12/20/tulsa-installfest--tons-of-fun/",
-    "to": "/tulsa-installfest--tons-of-fun/"
+    "to": "/tulsa-installfest-tons-of-fun/"
   },
   {
     "from": "/2007/12/20/updated-msdn-flash-features-zain-naboulsi/",
@@ -148,7 +148,7 @@ export const redirects: RedirectEntry[] = [
   },
   {
     "from": "/2008/01/28/partner-program-subsidies---easy-way-to-earn-extra-cash/",
-    "to": "/partner-program-subsidies---easy-way-to-earn-extra-cash/"
+    "to": "/partner-program-subsidies-easy-way-to-earn-extra-cash/"
   },
   {
     "from": "/2008/01/29/american-express-line-of-credit-woes-and-rant/",
@@ -527,8 +527,16 @@ export const redirects: RedirectEntry[] = [
     "to": "/cloudxplorer-discount/"
   },
   {
+    "from": "/tulsa-installfest--tons-of-fun/",
+    "to": "/tulsa-installfest-tons-of-fun/"
+  },
+  {
+    "from": "/partner-program-subsidies---easy-way-to-earn-extra-cash/",
+    "to": "/partner-program-subsidies-easy-way-to-earn-extra-cash/"
+  },
+  {
     "from": "/blog/page3/",
-    "to": "/blog/"
+    "to": "/archive/"
   },
   {
     "from": "/blogs/boxed-classic-sidebar/page/11/",
