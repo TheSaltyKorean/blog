@@ -41,12 +41,19 @@ export function legacySlug(value: string): string | null {
  * fine inside a sentence but reads as a typo in a SERP breadcrumb, where
  * Google prints the BreadcrumbList `name` verbatim. Title-cases each word and
  * leaves already-capitalised names alone, so ".NET" and "SQL Server" survive.
+ * Lowercase acronyms are upper-cased whole: "ai" is "AI", not "Ai".
  */
+const ACRONYMS = new Set(['ai', 'sql', 'ev', 'mcp', 'it', 'dax', 'vsts', 'ssh', 'seo']);
+
 export function displayName(value: string): string {
   return String(value)
     .split(/\s+/)
     .map((word) =>
-      /[A-Z]/.test(word) ? word : word.charAt(0).toUpperCase() + word.slice(1)
+      /[A-Z]/.test(word)
+        ? word
+        : ACRONYMS.has(word)
+          ? word.toUpperCase()
+          : word.charAt(0).toUpperCase() + word.slice(1)
     )
     .join(' ');
 }

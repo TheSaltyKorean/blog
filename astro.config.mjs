@@ -67,8 +67,15 @@ function postDates() {
   for (const file of fs.readdirSync(dir).filter((f) => f.endsWith('.md'))) {
     const src = fs.readFileSync(path.join(dir, file), 'utf8');
     const fm = src.split('---')[1] || '';
-    const permalink = fm.match(/^permalink:\s*(.+)$/m)?.[1]?.trim().replace(/^["']|["']$/g, '');
-    const date = fm.match(/^date:\s*(.+)$/m)?.[1]?.trim().replace(/^["']|["']$/g, '');
+    // Long permalinks are written as a folded scalar (`permalink: >-` with the
+    // value on the next line); reading only the first line dropped <lastmod>
+    // for those posts.
+    const permalink = fm
+      .match(/^permalink:\s*(?:>-?\s*\n\s+)?(.+)$/m)?.[1]
+      ?.trim()
+      .replace(/^["']|["']$/g, '');
+    // `updated` (last substantive revision) wins over the publication date.
+    const date = (fm.match(/^updated:\s*(.+)$/m) || fm.match(/^date:\s*(.+)$/m))?.[1]?.trim().replace(/^["']|["']$/g, '');
     if (permalink && /^noindex:\s*true\s*$/m.test(fm)) noindexPaths.add(permalink);
     // A post whose rel=canonical points elsewhere is a duplicate of the page it
     // names. The sitemap is a list of canonical URLs, so it must not advertise

@@ -6,7 +6,7 @@ permalink: /patent-pending/
 author: "Randy Walker"
 categories: [building, patents]
 tags: [patents, uspto, salty-poker, multi-table, translation, pro-se, methodology]
-meta_description: "Two provisional patent applications, filed pro se, on the multi-tile workspace and on automatic chat translation. Here is what is actually in them and why the architecture matters."
+meta_description: "Two provisional patents, filed pro se: a multi-tile workspace and automatic chat translation. What is actually in them and why the architecture matters."
 ---
 
 I filed two provisional patent applications with the USPTO this week. Priority dates locked in. I filed both myself — *pro se* — which means no patent attorney, just a 100+ page spec, a lot of research, and a willingness to read federal statute until my eyes crossed.

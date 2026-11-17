@@ -15,7 +15,7 @@ tags:
 post_image: /assets/images/art/thumb/bg29.webp
 ---
 
-[![](http://assets0.twitter.com/images/twitter.gif?1202865923)](http://twitter.com/vonlar) [![](http://www.linkedin.com/img/logos/logo.gif)](http://www.linkedin.com/in/vonlar) [![](http://money.cnn.com/blogs/browser/uploaded_images/logo_facebook-rgb-7inch-785733.jpg)](http://www.facebook.com/profile.php?id=565952914)
+ [![](https://www.linkedin.com/img/logos/logo.gif)](http://www.linkedin.com/in/vonlar) 
 
 Social computing, while not a new phenomenon, has had a huge push in the past couple years.  Gone is the day of MySpace, and the new kid on the block is [Facebook](http://www.facebook.com/profile.php?id=565952914), [Twitter](http://twitter.com/vonlar), [LinkedIn](http://www.linkedin.com/in/vonlar) (Honorable mention to Plaxo, who needs to find their niche a bit better other than contact synching).  Here are three different stories that have impacted me in the last week concerning social computing.
 

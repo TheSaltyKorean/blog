@@ -52,7 +52,7 @@ The Info:
 > 
 > ##### BIOGRAPHY
 > 
-> ![Mr. Claudio  Lassala](http://www.odnug.org/images/MvpPhoto.jpg)
+> 
 > 
 > Claudio Lassala is a Senior Developer at EPS Software Corp. He has presented several lectures at Microsoft events such as PDC Brazil and various other Microsoft seminars, as well as several conferences and user groups across North America and Brazil. He is a multiple winner of the Microsoft MVP Award since 2001 (for Visual FoxPro in 2001-2002, and for C# ever since), an INETA speaker, and also holds the MCSD for .NET certification. He has articles published on several magazines, such as MSDN Brazil Magazine, CoDe Magazine, UTMag, Developers Magazine, and FoxPro Advisor. More detailed information regarding his presentations and articles can be found in his [MVP Profile.](https://mvp.support.microsoft.com/default.aspx/profile=ec6b1e0b-8efc-4530-97b0-55bd924e26d0) You can also read more about Claudio on his [blog](http://claudiolassala.spaces.live.com) or on [Twitter](http://twitter.com/ClaudioLassala)
 > 

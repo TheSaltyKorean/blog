@@ -33,7 +33,14 @@ export function excerpt(body: string, maxLength: number = MAX_LENGTH): string {
     // Emphasis markers.
     .replace(/(\*\*|__|\*|_)/g, '')
     .replace(/&nbsp;/g, ' ')
+    // Bare URLs. Several 2008-era posts open with a pasted link, which then
+    // became the first thing a searcher saw in the snippet.
+    .replace(/\bhttps?:\/\/\S+/g, ' ')
     .replace(/\s+/g, ' ')
+    .trim()
+    // Cross-posting notes ("This was originally posted at … on 12/16/2007")
+    // describe where the post came from, not what it says.
+    .replace(/^\(?\s*This was originally posted\b[^)]*?(?:\)|\d{4})\s*/i, '')
     .trim();
 
   if (!text) return '';

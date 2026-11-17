@@ -17,7 +17,7 @@ I received an e-mail (copied below) about Microsoft ending the paid referrals to
 
 So why kill the one program that helps encourage people to use their online advertising?  At least this program encouraged me to list it and recommend it, whereas I never would have before.  Perhaps some of can shed some light on the subject.  Note that they are still paying for subscribers to their toolbar and virus service, two services that I will not be referring to any customers.
 
-> ![](http://content.kowabunga.net/akinnelly/microsoft/ms_header.gif)
+> 
 > 
 > **adCenter Affiliate Program to Close February 29, 2008**  
 > Thank you for your participation in the adCenter Affiliate program. Unfortunately, the adCenter offer will no longer be available after February 29th, 2008\.

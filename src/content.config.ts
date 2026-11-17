@@ -6,6 +6,13 @@ const blog = defineCollection({
   schema: z.object({
     title: z.string(),
     date: z.coerce.date(),
+    /**
+     * Last substantive revision. Feeds BlogPosting.dateModified,
+     * article:modified_time and the sitemap <lastmod>. Set it when the content
+     * materially changes (a correction, an update note), not for typo fixes:
+     * Google discounts dateModified that moves without a real change.
+     */
+    updated: z.coerce.date().optional(),
     categories: z.array(z.string()).default([]),
     tags: z.array(z.string()).default([]),
     author: z.string().default('Randy Walker'),

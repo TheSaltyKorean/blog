@@ -43,9 +43,9 @@ This is the part worth talking about if you build things.
 
 JobHunter wasn't designed upfront. It was built by running it on real applications, hitting edge cases, and removing them one at a time — using Claude as a development partner throughout. Not as a chatbot I asked questions to. As a pair programmer that could hold the entire codebase in context across sessions.
 
-The iteration loop was simple: run Auto-Fill on a Workday application, find what didn't work, describe it precisely, get the fix. Every feature exists because a real job board exposed a gap. The US state abbreviation mapping exists because one Workday instance uses TX and another uses Texas and a third uses Texas (TX). The duplicate resume upload prevention exists because I hit Auto-Fill twice and uploaded my PDF twice.
+[The iteration loop](/the-iteration-loop-is-still-the-job/) was simple: run Auto-Fill on a Workday application, find what didn't work, describe it precisely, get the fix. Every feature exists because a real job board exposed a gap. The US state abbreviation mapping exists because one Workday instance uses TX and another uses Texas and a third uses Texas (TX). The duplicate resume upload prevention exists because I hit Auto-Fill twice and uploaded my PDF twice.
 
-None of that was anticipated. All of it got built. That's the methodology — spec the target state, iterate toward it, let the agent handle the execution.
+None of that was anticipated. All of it got built. That's the methodology — [spec the target state](/spec-driven-development-needed-a-rewrite/), iterate toward it, let the agent handle the execution.
 
 ## When the AI Answers the Hard Questions
 

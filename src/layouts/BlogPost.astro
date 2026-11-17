@@ -7,6 +7,7 @@ interface Props {
   frontmatter: {
     title: string;
     date: Date;
+    updated?: Date;
     author: string;
     categories: string[];
     tags: string[];
@@ -45,6 +46,7 @@ const article = {
   url: postUrl,
   image: frontmatter.post_image,
   datePublished: published.toISOString(),
+  dateModified: frontmatter.updated ? new Date(frontmatter.updated).toISOString() : undefined,
   keywords: frontmatter.tags,
   section: primaryCategory,
 };
@@ -143,6 +145,8 @@ const formattedDate = new Date(frontmatter.date).toLocaleDateString('en-US', {
           alt={frontmatter.title}
           width="820"
           height="462"
+          fetchpriority="high"
+          decoding="async"
           class="w-full aspect-[16/9] object-cover rounded-[10px] border border-[var(--color-rule)]"
         />
       </div>
@@ -153,30 +157,10 @@ const formattedDate = new Date(frontmatter.date).toLocaleDateString('en-US', {
         <slot />
       </div>
 
-      {frontmatter.tags.length > 0 && (
-        <footer class="mt-12 pt-8 border-t border-[var(--color-rule-soft)]">
-          <h2 class="!mt-0 !mb-4 font-[family-name:var(--font-mono)] text-[11px] font-semibold tracking-[0.14em] uppercase text-[var(--color-muted)]">
-            Tagged
-          </h2>
-          <ul class="flex flex-wrap gap-2" aria-label="Tags">
-            {frontmatter.tags.map((tag) => (
-              <li>
-                <a
-                  href={`/tag/${slugify(tag)}/`}
-                  class="inline-block font-[family-name:var(--font-mono)] text-xs no-underline text-[var(--color-ink-soft)] border border-[var(--color-rule)] rounded-[5px] px-3 py-1.5 hover:border-[var(--color-accent)] hover:text-[var(--color-accent)] transition-colors"
-                >
-                  {tag}
-                </a>
-              </li>
-            ))}
-          </ul>
-        </footer>
-      )}
-
       {related.length > 0 && (
         <section class="mt-12 pt-8 border-t border-[var(--color-rule-soft)]" aria-labelledby="related-heading">
           <h2 id="related-heading" class="!mt-0 !mb-4 font-[family-name:var(--font-mono)] text-[11px] font-semibold tracking-[0.14em] uppercase text-[var(--color-muted)]">
-            Related
+            Keep reading
           </h2>
           <ul class="flex flex-col">
             {related.map((r) => {
@@ -197,6 +181,26 @@ const formattedDate = new Date(frontmatter.date).toLocaleDateString('en-US', {
             })}
           </ul>
         </section>
+      )}
+
+      {frontmatter.tags.length > 0 && (
+        <footer class="mt-12 pt-8 border-t border-[var(--color-rule-soft)]">
+          <h2 class="!mt-0 !mb-4 font-[family-name:var(--font-mono)] text-[11px] font-semibold tracking-[0.14em] uppercase text-[var(--color-muted)]">
+            Tagged
+          </h2>
+          <ul class="flex flex-wrap gap-2" aria-label="Tags">
+            {frontmatter.tags.map((tag) => (
+              <li>
+                <a
+                  href={`/tag/${slugify(tag)}/`}
+                  class="inline-block font-[family-name:var(--font-mono)] text-xs no-underline text-[var(--color-ink-soft)] border border-[var(--color-rule)] rounded-[5px] px-3 py-1.5 hover:border-[var(--color-accent)] hover:text-[var(--color-accent)] transition-colors"
+                >
+                  {tag}
+                </a>
+              </li>
+            ))}
+          </ul>
+        </footer>
       )}
 
       <nav class="mt-12 pt-8 border-t border-[var(--color-rule-soft)] flex flex-wrap gap-3">

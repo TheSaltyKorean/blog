@@ -10,10 +10,7 @@ tags:
   - ai
   - productivity
   - family
-meta_description: >-
-  A real-world experience using AI to plan family activities with GetOut passes
-  — and why two hours of corrections taught me more about AI's limits than any
-  demo ever could.
+meta_description: "Using AI to plan family outings with GetOut passes, and why two hours of corrections taught me more about AI's limits than any demo could."
 ---
 
 Let me start by saying we genuinely love GetOut. We were Pogo Pass loyalists — the kind of people who had it auto-renewed and actually used it. So when Pogo Pass merged with GetOutPass to become **GetOut** in February 2026, we were cautiously optimistic. New name, bigger venue network, same idea: pay once, play all year. We're in.

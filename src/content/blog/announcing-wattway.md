@@ -11,7 +11,7 @@ meta_description: "DC fast charging runs $0.20 to $0.59 per kWh — nearly 3× f
 
 Every DC fast charger pushes the same electrons into your battery. What they charge for those electrons is not remotely the same. Across the sixteen networks WattWay tracks, the spread runs from **$0.20**/kWh to **$0.59**/kWh — nearly **3×**, for an identical product.
 
-On a single 70&nbsp;kWh fill-up that is the difference between $14 and $41. Over a two-thousand-mile road trip, it is the difference between a cheap week and an expensive one. And almost nobody knows which stall they are pulling into until they are already plugged in.
+On a single 70&nbsp;kWh fill-up that is the difference between $14 and $41. Over a two-thousand-mile road trip, it is the difference between a cheap week and an expensive one. And almost nobody knows which stall they are pulling into until they are already plugged in. I paid as much as 62 cents a kilowatt-hour at one stop on [a thousand-mile trip in the Ioniq 9](/1000-miles-ioniq-9/), and found out at the stall.
 
 That is what [WattWay](https://wattway.net) is for. It is free, it needs no account, and it is live now.
 

@@ -7,7 +7,7 @@ author: "Randy Walker"
 categories: [building, ai]
 tags: [claude, mcp, tailscale, ssh, homelab, comfyui, image-generation]
 meta_title: "Claude + SSH over MCP: A Homelab MCP Server with Tailscale"
-meta_description: "Give Claude SSH access to your homelab with an MCP server over Tailscale — bash, browser automation, and unlimited local ComfyUI image generation. Includes the Windows SSH gotcha that cost me an evening."
+meta_description: "Give Claude SSH access to your homelab with MCP over Tailscale: bash, a real browser, and free local ComfyUI image generation. Plus the Windows SSH fix."
 ---
 
 One of the more useful things I've done with my homelab recently is wiring it directly into Claude via MCP. Bash execution, browser automation, image generation — all available as tools Claude can reach for mid-conversation, running on real hardware sitting on my desk.
@@ -172,7 +172,7 @@ claude mcp add image /opt/your-image-server/venv/bin/python3 -- /opt/your-image-
 
 A Linux shell, a real browser, and unlimited local image generation — all available to Claude mid-conversation. The latency is low enough to be invisible on a local network. There's nothing to maintain between sessions on the Windows side. And if you have an NVIDIA GPU sitting in a machine that's already on, you're generating images for free, as many as you want, as fast as the hardware can run them.
 
-The setup takes an hour or two to get right the first time. After that it just runs.
+The setup takes an hour or two to get right the first time. After that it just runs. Just remember that an AI with a shell on real hardware is still an AI — [you still have to test what it does](/you-still-have-to-test/).
 
 — Randy
 

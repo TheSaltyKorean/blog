@@ -11,7 +11,7 @@ meta_description: "How I built a style-guide skill to keep my writing voice cons
 
 Writing a bunch of blog posts in a single session with AI is a good way to notice something you otherwise wouldn't: the voice drifts.
 
-Not dramatically. Not in any way a casual reader would catch. But enough that you look back at the first post and the fifth post and feel a slight difference in cadence, word choice, energy. And if you're building two blogs with four distinct content modes — each with different audiences, different rules, different things they can and cannot say — that drift compounds fast.
+Not dramatically. Not in any way a casual reader would catch. But enough that you look back at the first post and the fifth post and feel a slight difference in cadence, word choice, energy. And if you're building two blogs — this one and the [salty.poker blog](https://salty.poker/blog/) — with four distinct content modes — each with different audiences, different rules, different things they can and cannot say — that drift compounds fast.
 
 The fix was obvious. Build a style guide and turn it into a skill.
 
@@ -19,7 +19,7 @@ The fix was obvious. Build a style guide and turn it into a skill.
 
 In the context of working with Claude, a skill is a structured markdown file with YAML frontmatter that lives in the project knowledge base. When I ask for a blog post, Claude loads it automatically and works from the rules inside — voice, tone, structure, content boundaries, a do-not-use list, and a table of established facts that should appear consistently across every post.
 
-It is, in miniature, the same principle as the 100+ page spec driving the platform build. Define the rules once in a durable artifact. Let the execution layer work from them. Stop re-explaining things you already decided.
+It is, in miniature, the same principle as the [100+ page spec](/spec-driven-development-needed-a-rewrite/) driving the platform build. Define the rules once in a durable artifact. Let the execution layer work from them. Stop re-explaining things you already decided.
 
 ## The Do-Not-Use List
 
@@ -47,7 +47,7 @@ The process of writing a style guide forces you to describe something you usuall
 
 The other thing I learned: the posts themselves are what produced the skill. I didn't sit down and write a style guide in the abstract. I wrote posts, noticed what worked and what didn't, made corrections, and then distilled those corrections into rules. The skill is the compressed, reusable output of that iteration.
 
-Which is, come to think of it, exactly how the platform spec got built too.
+Which is, come to think of it, exactly how the platform spec got built too. [The iteration loop is still the job](/the-iteration-loop-is-still-the-job/), even when the job is writing.
 
 ## What Changes Now
 

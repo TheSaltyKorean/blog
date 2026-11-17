@@ -9,7 +9,7 @@ tags: []
 post_image: /assets/images/blog/congratulations-amp-thanks-to-scott-spradlin.webp
 ---
 
-[![ScottSpradlin](http://gwb.blob.core.windows.net/rwalker/WindowsLiveWriter/CongratulationsThankstoScottSpradlin_202/ScottSpradlin_thumb.jpg "ScottSpradlin")](http://gwb.blob.core.windows.net/rwalker/WindowsLiveWriter/CongratulationsThankstoScottSpradlin_202/ScottSpradlin_2.jpg) 
+[![ScottSpradlin](https://gwb.blob.core.windows.net/rwalker/WindowsLiveWriter/CongratulationsThankstoScottSpradlin_202/ScottSpradlin_thumb.jpg "ScottSpradlin")](https://gwb.blob.core.windows.net/rwalker/WindowsLiveWriter/CongratulationsThankstoScottSpradlin_202/ScottSpradlin_2.jpg) 
 
 [Scott Spradlin](http://geekswithblogs.net/sspradlin), one of most influential people I know in the world of Microsoft programming, has gone way too long without being recognized.  I remember having talked with Scott on many occasions about user groups and Ineta.  He’s been one of those long time influentials, mostly behind the scenes, serving in various roles with INETA and being the glue that helped connect St. Louis developers together.  Scott served as the Regional Mentor for INETA for many years, helping several user groups get started.
 

@@ -6,7 +6,7 @@ permalink: /the-iteration-loop-is-still-the-job/
 author: "Randy Walker"
 categories: [building, ai]
 tags: [claude-code, agentic-ai, docker, debugging, methodology]
-meta_description: "Spec-driven agentic development compresses the build phase. It does not eliminate the iteration loop. A debugging story from this week and what it says about the methodology."
+meta_description: "Spec-driven agentic development compresses the build phase. It does not eliminate the iteration loop. A debugging story and what it says about the method."
 ---
 
 Let me tell you what happened when the fixes went in and nothing changed.

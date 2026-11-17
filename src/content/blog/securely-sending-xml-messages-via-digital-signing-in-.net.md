@@ -15,7 +15,7 @@ Originally found on [MSDN](http://msdn2.microsoft.com/en-us/security/cc178917.as
 
 [**How Do I: Add Security to Visual Basic and Visual C# Applications with Digital Signatures?**](http://download.microsoft.com/download/4/2/a/42a7d297-1c25-43a5-b357-a0895e5ef2ee/WinVideo-Security-Verify.wmv)
 
-[![](http://msdn2.microsoft.com/cc178917.Security-Verify.jpg)](http://download.microsoft.com/download/4/2/a/42a7d297-1c25-43a5-b357-a0895e5ef2ee/WinVideo-Security-Verify.wmv)Join Will DePalo as he shows you how to tighten security on your XML documents built with Visual Basic .NET and Visual C# by verifying digital signatures.  
+Join Will DePalo as he shows you how to tighten security on your XML documents built with Visual Basic .NET and Visual C# by verifying digital signatures.  
 _Presented by Will DePalo on January 29, 2008_  
 Length: 20 minutes 19 seconds
 

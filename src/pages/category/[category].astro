@@ -3,7 +3,7 @@ import { getCollection } from 'astro:content';
 import BaseLayout from '../../layouts/BaseLayout.astro';
 import { taxonomyDescription } from '../../utils/taxonomyDescription';
 import PostRow from '../../components/PostRow.astro';
-import { slugify } from '../../utils/slugify';
+import { slugify, displayName } from '../../utils/slugify';
 
 export async function getStaticPaths() {
   const allPosts = await getCollection('blog', ({ data }) => data.draft !== true);
@@ -29,8 +29,10 @@ export async function getStaticPaths() {
 }
 
 const { category, display, posts } = Astro.props;
-const titleCase = display.charAt(0).toUpperCase() + display.slice(1);
-const pageTitle = `Posts in ${titleCase}`;
+const titleCase = displayName(display);
+// "Posts in Data" was under 30 characters for half the categories and led
+// with filler; the category name is the term people actually search for.
+const pageTitle = `${titleCase} Articles and Notes`;
 const description = taxonomyDescription('category', titleCase, posts);
 ---
 <BaseLayout title={pageTitle} description={description}>

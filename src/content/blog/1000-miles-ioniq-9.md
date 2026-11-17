@@ -6,7 +6,7 @@ post_image: /assets/images/blog/1000-miles-ioniq-9.webp
 author: "Randy Walker"
 categories: [personal]
 tags: [ev, ioniq-9, road-trip, charging, austin]
-meta_description: "A 1,000-mile road trip in the Hyundai Ioniq 9: two charging accounts, camping in utility mode, Austin's cheap public chargers, and the tailgate that beat a dresser."
+meta_description: "A 1,000-mile road trip in the Hyundai Ioniq 9: two charging accounts, camping in utility mode, Austin's cheap chargers, and the tailgate that beat a dresser."
 ---
 
 In a parking lot at the Northwest Arkansas Mall, I folded the seats flat, rolled out a foam pad, and slept in the back of my car on purpose — and I loved every minute of it.

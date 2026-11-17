@@ -9,7 +9,7 @@ tags: []
 post_image: /assets/images/art/thumb/bg4.webp
 ---
 
-[![jay-smith_80x80](http://gwb.blob.core.windows.net/rwalker/WindowsLiveWriter/CongratulationsThankstoJaySmithMichaelPa_10419/jay-smith_80x80_5.png) ![MichaelHeadshotSquare](http://gwb.blob.core.windows.net/rwalker/WindowsLiveWriter/CongratulationsThankstoJaySmithMichaelPa_10419/MichaelHeadshotSquare_thumb.jpg)](http://jaysmith.us/)
+[![jay-smith_80x80](https://gwb.blob.core.windows.net/rwalker/WindowsLiveWriter/CongratulationsThankstoJaySmithMichaelPa_10419/jay-smith_80x80_5.png) ![MichaelHeadshotSquare](https://gwb.blob.core.windows.net/rwalker/WindowsLiveWriter/CongratulationsThankstoJaySmithMichaelPa_10419/MichaelHeadshotSquare_thumb.jpg)](http://jaysmith.us/)
 
 A big heartfelt thank you and congratulations to two of the developer community builders in the Northwest Arkansas area, Jay Smith and Michael Paladino with special mention to Zach Young. As a Microsoft MVP, one of our benefits this year, is the ability to award people with a special prize. This prize is an MSDN Premium account with Visual Studio Team Suite, which includes nearly all of Microsoft's business software, free of charge.
 

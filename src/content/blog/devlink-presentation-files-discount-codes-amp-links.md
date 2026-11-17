@@ -15,7 +15,7 @@ As promised, here is the link to [download](http://dq15kw.bay.livefilestore.com/
 
 [10% off Xheo Licensing: AHCO1008](http://www.xheo.com/) Licensing and Obfuscation
 
-[RingCentral.com](http://www.kqzyfj.com/click-2791885-10462298) ![](http://www.tqlkg.com/image-2791885-10462298)Virtual PBX Phone System
+[RingCentral.com](http://www.kqzyfj.com/click-2791885-10462298) ![](https://www.tqlkg.com/image-2791885-10462298)Virtual PBX Phone System
 
 [RentACoder](http://www.rentacoder.com/RentACoder/SmallBiz.asp?txtFromURL=AId_6386616) Where I outsource software development
 

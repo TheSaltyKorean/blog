@@ -16,25 +16,25 @@ While they haven’t posted the announcement on the website yet, you can read mo
 
 Below is the Newsletter announcement.
 
-![*](http://www.ineta.org/newsletters/images/ts.gif)
 
-![*](http://www.ineta.org/newsletters/images/ts.gif)
+
+
 
 
 
 **Community Champions Winners Announced**
 
 
-![*](http://www.ineta.org/newsletters/images/ts.gif)
 
 
 
 
 
-![](http://www.ineta.org/newsletters/images/ts.gif)
 
 
-**INETA Community Champion Award Winners**![Champs Logo](http://www.ineta.org/images/CommunityChampionsSmall.jpg)
+
+
+**INETA Community Champion Award Winners**
 
 Please join us in congratulating the recipients of the Q4 2008 INETA Community Champion Award!
 
@@ -69,8 +69,8 @@ Morgan Baker, INETA North America, Vice President | [www.ineta.org](http://www.i
 
 
 
-![*](http://www.ineta.org/newsletters/images/ts.gif)
 
 
 
-![*](http://www.ineta.org/newsletters/images/ts.gif)
+
+

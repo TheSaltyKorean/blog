@@ -19,7 +19,7 @@ I was able to meetup with the organizers of the event, Jason Pluenneke, Curt Wol
 
 I will be donating several swag items, if you haven't already been enticed into attending.  There will be a free copy of the Heroes Happen Here bundle which includes licensed copies of SQL Server 2008, Visual Studio 2008 and Windows Server 2008.  I'm also bringing a copy of PC-Cillin Anti Virus, an MSDN t-shirt, and a Visual Studio t-shirt.  Chris Koenig is also sending some swag to be given away.
 
-> **[![nwasql_logo_09](http://gwb.blob.core.windows.net/rwalker/WindowsLiveWriter/NorthwestArkansasSQLServerUserGroup1stMe_E7C3/nwasql_logo_09_thumb.gif)](http://gwb.blob.core.windows.net/rwalker/WindowsLiveWriter/NorthwestArkansasSQLServerUserGroup1stMe_E7C3/nwasql_logo_09_2.gif)**
+> **[![nwasql_logo_09](https://gwb.blob.core.windows.net/rwalker/WindowsLiveWriter/NorthwestArkansasSQLServerUserGroup1stMe_E7C3/nwasql_logo_09_thumb.gif)](https://gwb.blob.core.windows.net/rwalker/WindowsLiveWriter/NorthwestArkansasSQLServerUserGroup1stMe_E7C3/nwasql_logo_09_2.gif)**
 > 
 > **The first meeting of  
 > ****The Northwest Arkansas SQL Users Group  

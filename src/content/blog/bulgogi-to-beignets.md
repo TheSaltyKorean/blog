@@ -17,4 +17,4 @@ While in my absence, June 1st-4th, I’ve setup a tour across Arkansas and Texas
 
 As soon as I get back from Korea, I’m off to New Orleans!  It’s been years since I’ve been there (pre-Katrina), and I have a hankering for some Beignets and Cafe Ole from Cafe Du Monde.  The big news?  **I’m hosting a PARTY on Bourbon Street!**  The party will be very exclusive, featuring a crawfish and shrimp boil, various Cajun dishes, and an open bar.  Huge thanks to Infragistics for putting up the initial sponsor money.  See you guys at Microsoft’s TechEd 2010!
 
-[![2006_11_cafe_du_monde_beignets](/images/posts/2006_11_cafe_du_monde_beignets_thumb.jpg "2006_11_cafe_du_monde_beignets")](http://gwb.blob.core.windows.net/rwalker/WindowsLiveWriter/BulgogitoBeignets_136A2/2006_11_cafe_du_monde_beignets_2.jpg)
+![Beignets and coffee at Café du Monde in New Orleans](/images/posts/2006_11_cafe_du_monde_beignets_thumb.jpg)

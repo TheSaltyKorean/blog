@@ -17,11 +17,7 @@ Recently while cleaning up a bunch of old hard drives and getting ready to sell 
 
 Task: Create folders based off of the modified date of photos, then move the photo into the folder
 
-Example:
-
-[![image](/images/posts/use-vs-codeimage_thumb.png "image")](https://harvestblog.blob.core.windows.net/media/2016/12/image.png)
-
-As you can see from the screenshot above, we have 3 different dates.  I want this picture put into the folder named 2015-01-30 because that’s the best date that can be found according to when the picture was taken, not when it was moved or “created” because obviously those dates are wrong.
+Example: a photo’s properties show three different dates (created, modified, and date taken).  I want this picture put into the folder named 2015-01-30 because that’s the best date that can be found according to when the picture was taken, not when it was moved or “created” because obviously those dates are wrong.
 
 So let’s see how we can do this.
 
@@ -29,9 +25,7 @@ So let’s see how we can do this.
 
 Navigate over to [https://code.visualstudio.com](https://code.visualstudio.com "https://code.visualstudio.com") and download the software.  You’ll want to do this on Windows, although VS Code will work on Mac, Linux, and Windows.
 
-Once installed, then you want to run it and click the bottom left button and install the PowerShell extension.  Screenshot below.
-
-[![image](/images/posts/installing-VS-codeimage_thumb1.png "image")](https://harvestblog.blob.core.windows.net/media/2016/12/image1.png)
+Once installed, then you want to run it and click the bottom left button and install the PowerShell extension.
 
 *   Step 1: Click on the extensions icon
 *   Step 2: Search for [PowerShell](https://msdn.microsoft.com/en-us/powershell/)

@@ -6,7 +6,7 @@ permalink: /you-still-have-to-test/
 author: "Randy Walker"
 categories: [building, ai]
 tags: [claude-code, agentic-ai, testing, methodology, salty-poker]
-meta_description: "AI-generated code does not get a testing exemption. A walk through what an end-to-end Playwright session caught on the salty.poker build, and why integration testing is the part the methodology cannot delegate away."
+meta_description: "AI-generated code gets no testing exemption. What an end-to-end Playwright run caught on the salty.poker build, and why integration testing stays with you."
 ---
 
 Let me be direct: AI-generated code does not get a testing exemption.
